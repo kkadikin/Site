@@ -1,10 +1,12 @@
-baseURL = "http://kkadikin.ru/"
+baseURL = "https://kkadikin.ru/"
 languageCode = "ru-ru"
 title = "Konstantin Kadikin"
 theme = "navigator"
 copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
 
-
+# Каталог публикации документа.
+# Настройка для работы одного из вариантов публикации сайта на pages.github.io
+publishDir = "docs"
 
 # We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
 
