@@ -14,8 +14,8 @@ publishDir = "docs"
 [menu]
     # Navbar Menus
     [[menu.nav]]
-#        name    = "About me"
-        name    = "Обо мне"
+        name    = "About me2"
+#        name    = "Обо мне"
         url     = "/about"
         weight  = 2
 #    [[menu.nav]]
