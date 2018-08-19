@@ -15,7 +15,7 @@ publishDir = "docs"
     # Navbar Menus
     [[menu.nav]]
 #        name    = "About me"
-        name    = "Обо мне1"
+        name    = "Обо мне"
         url     = "/about"
         weight  = 2
 #    [[menu.nav]]
@@ -89,7 +89,7 @@ publishDir = "docs"
     [params.hero]
         enable  = true
         heading = "О сайте"
-        description = "Сайт находится в разработке, но я стараюсь как могу :-)"
+        description = "Сайт находится в разработке, но я стараюсь как могу :-) А пока - увы, терпите!"
         button  = true
         btnText = "Know More"
         btnURL  = "https://themefisher.com/"
