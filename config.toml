@@ -88,8 +88,8 @@ publishDir = "docs"
     # Hero Area Section
     [params.hero]
         enable  = true
-        heading = "We love to make brands grow"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+        heading = "О сайте"
+        description = "Сайт находится в разработке, но я стараюсь как могу :-)"
         button  = true
         btnText = "Know More"
         btnURL  = "https://themefisher.com/"
