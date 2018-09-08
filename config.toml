@@ -127,7 +127,8 @@ publishDir = "docs"
     # Contact Section
     [params.contact]
         enable  = true
-        topTitle= "DROP US A NOTE"
+    # topTitle= "DROP US A NOTE"
+        topTitle= "ОСТАВЬТЕ ЗАМЕТКУ"
         title   = "Contact Us."
         subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
         address = "14/05, Stockhome <br> Victori Palace , United States"
