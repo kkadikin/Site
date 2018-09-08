@@ -25,31 +25,38 @@
             <div class="contact-form col-12 col-md-6 ">
                 <form id="contact-form" method="post" action="sendmail.php" role="form">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                        <!--KK 08.09.2018 Your Name-->
+                        <input type="text" placeholder="Укажите имя" class="form-control" name="name" id="name">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                        <!--KK 08.09.2018 Your Email-->
+                        <input type="email" placeholder="Укажите электронный адрес" class="form-control" name="email" id="email">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                        <!--KK 08.09.2018 Subject-->
+                        <input type="text" placeholder="Укажите тему обращения" class="form-control" name="subject" id="subject">
                     </div>
 
                     <div class="form-group">
-                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                        <!--KK 08.09.2018 Message-->
+                        <textarea rows="6" placeholder="Введите сообщение" class="form-control" name="message" id="message"></textarea>
                     </div>
 
                     <div id="mail-success" class="success">
-                        Thank you. The Mailman is on His Way :)
+                        <!--KK 08.09.2018 Thank you. The Mailman is on His Way :)-->
+                        Спасибо. Почтальон уже в пути :)
                     </div>
 
                     <div id="mail-fail" class="error">
-                        Sorry, don't know what happened. Try later :(
+                        <!--KK 08.09.2018 Sorry, don't know what happened. Try later :(-->
+                        Извините, не знаю, что произошло. Попробуйте, пожалуйста, позже:(
                     </div>
 
                     <div id="cf-submit">
-                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                        <!--KK 08.09.2018 Submit-->
+                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Отправить">
                     </div>
                 </form>
             </div>
@@ -58,14 +65,16 @@
             <div class="col-12 col-md-4">
                 <div class="address-block contact-meta-block">
                     <i class="tf-ion-android-pin"></i>
-                    <h4>Мои координаты</h4>
+                    <!--KK 08.09.2018 Our Location-->
+                    <h4>Координаты</h4>
                     {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="phone-block contact-meta-block">
                     <i class="tf-ion-ios-telephone"></i>
-                    <h4>Позвоните мне</h4>
+                    <!--KK 08.09.2018 Call Us-->
+                    <h4>Контактный телефон</h4>
                     <p>
                          {{ with .Site.Params.contact.phone }}Office: {{.}} {{ end }} 
                         <br> {{ with .Site.Params.contact.fax }} Fax: {{ . }} {{ end }}

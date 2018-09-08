@@ -14,32 +14,32 @@ publishDir = "docs"
 [menu]
     # Navbar Menus
     [[menu.nav]]
-#        name    = "About me"
+# KK 08.09.2018 name = "About me"
         name    = "Обо мне"
         url     = "/about"
         weight  = 2
-#    [[menu.nav]]
-#        name    = "Service"
-#        name    = "Услуги"
-#        url     = "/service"
-#        weight  = 3
+# KK 08.09.2018 [[menu.nav]]
+# KK 08.09.2018 name = "Service"
+# KK 08.09.2018 name = "Услуги"
+# KK 08.09.2018 url  = "/service"
+# KK 08.09.2018 weight  = 3
     [[menu.nav]]
-#        name    = "Subjects"
+# KK 08.09.2018 name = "Subjects"
         name    = "Тематика"
         url     = "/subjects"
         weight  = 3
     [[menu.nav]]
-#        name    = "Portfolio"
+# KK 08.09.2018 name = "Portfolio"
         name    = "Демо"
         url     = "/portfolio"
         weight  = 4
     [[menu.nav]]
-    #    name    = "Blog"
+# KK 08.09.2018 name = "Blog"
         name    = "Блог"
         url     = "/blog"
         weight  = 5
     [[menu.nav]]
-#        name    = "Contact"
+# KK 08.09.2018 name = "Contact"
         name    = "Контакты"
         url     = "/contact"
         weight  = 6
@@ -82,7 +82,7 @@ publishDir = "docs"
     # home = "Home"
     home = "Главная"
     logo = "images/logo.png"
-    dateFormat = "6 January 2006"
+    dateFormat = "6 January 1981"
     footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
 
     # Hero Area Section
@@ -127,20 +127,23 @@ publishDir = "docs"
     # Contact Section
     [params.contact]
         enable  = true
-    # topTitle= "DROP US A NOTE"
-        topTitle= "ОСТАВЬТЕ СООБЩЕНИЕ"
-    # title   = "Contact Us."
+    # KK 08.09.2018 topTitle = "DROP US A NOTE"    
+        topTitle= "Оставьте сообщение"
+    # KK 08.09.2018 title = "Contact Us."
         title   = "Напишите мне"
-        subtitle= "Доброго времени суток, я постараюсь оперативно ответить на Ваш вопрос"
-    # address = "14/05, Stockhome <br> Victori Palace , United States"
+    # KK 08.09.2018 subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        subtitle= "Доброго времени суток, я постараюсь оперативно ответить на Ваш запрос"
+    # KK 08.09.2018 address = "14/05, Stockhome <br> Victori Palace , United States"
         address = "Санкт-Петербург, Россия"
-    #    phone   = "(03) 9283 2617"
-    # fax     = "+61 3827 3590"
+    # KK 08.09.2018 phone = "(03) 9283 2617"     
+        phone   = "+7 (XXX) XXX-XX-XX"
+    # KK 08.09.2018 fax     = "+61 3827 3590"
         facebook= "https://www.facebook.com/"
-    # twitter = "https://twitter.com/"
-    # linkedin= "https://www.linkedin.com/"
-    # dribbble= "https://dribbble.com/"
-    # instagram= "https://www.instagram.com/"
+    # KK 08.09.2018 twitter = "https://twitter.com/"
+    # KK 08.09.2018 linkedin= "https://www.linkedin.com/"
+    # KK 08.09.2018 dribbble= "https://dribbble.com/"
+    # KK 08.09.2018instagram= "https://www.instagram.com/"
+    # KK 08.09.2018 Координаты изменены
         mapLatitude = "59.939095" 
         mapLongitude= "30.315868"
         mapMarker   = "images/marker.png"
