@@ -18,7 +18,8 @@
             {{ "<!-- Contact Details -->" | safeHTML }}
             <div class="col-12 col-md-6">
                 <div class="map">
-                    <div id="map" data-lat="{{ .Site.Params.contact.mapLatitude }}" data-long="{{ .Site.Params.contact.mapLongitude }}" data-marker="{{ .Site.Params.contact.mapMarker | absURL }}"></div>
+                    <!-- <div id="map" data-lat="{{ .Site.Params.contact.mapLatitude }}" data-long="{{ .Site.Params.contact.mapLongitude }}" data-marker="{{ .Site.Params.contact.mapMarker | absURL }}"></div> -->
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CBBVANtrcB" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
                 </div>
             </div>
             {{ "<!-- Contact Form -->" | safeHTML }}

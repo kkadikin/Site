@@ -1,0 +1,149 @@
+baseURL = "https://kkadikin.ru/"
+languageCode = "ru-ru"
+title = "Konstantin Kadikin"
+theme = "navigator"
+copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
+
+# Каталог публикации документа.
+# Настройка для работы одного из вариантов публикации сайта на pages.github.io
+publishDir = "docs"
+
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+# KK 08.09.2018 name = "About me"
+        name    = "Обо мне"
+        url     = "/about"
+        weight  = 2
+# KK 08.09.2018 [[menu.nav]]
+# KK 08.09.2018 name = "Service"
+# KK 08.09.2018 name = "Услуги"
+# KK 08.09.2018 url  = "/service"
+# KK 08.09.2018 weight  = 3
+    [[menu.nav]]
+# KK 08.09.2018 name = "Subjects"
+        name    = "Тематика"
+        url     = "/subjects"
+        weight  = 3
+    [[menu.nav]]
+# KK 08.09.2018 name = "Portfolio"
+        name    = "Демо"
+        url     = "/portfolio"
+        weight  = 4
+    [[menu.nav]]
+# KK 08.09.2018 name = "Blog"
+        name    = "Блог"
+        url     = "/blog"
+        weight  = 5
+    [[menu.nav]]
+# KK 08.09.2018 name = "Contact"
+        name    = "Контакты"
+        url     = "/contact"
+        weight  = 6
+
+    
+    # Footer Service Menu
+    [[menu.service]]
+        name    = "Graphic Design"
+        url     = "/service"
+        weight  = 1
+    [[menu.service]]
+        name    = "Web Design"
+        url     = "/service"
+        weight  = 2
+    [[menu.service]]
+        name    = "Web Development"
+        url     = "/service"
+        weight  = 3
+
+    # Footer Quick links Menu
+    [[menu.quicklink]]
+        name    = "Partners"
+        url     = "/about"
+        weight  = 1
+    [[menu.quicklink]]
+        name    = "About"
+        url     = "/about"
+        weight  = 2
+    [[menu.quicklink]]
+        name    = "FAQ's"
+        url     = "/about"
+        weight  = 3
+    [[menu.quicklink]]
+        name    = "Badges"
+        url     = "/about"
+        weight  = 4
+
+# Site Params
+[params]
+    # home = "Home"
+    home = "Главная"
+    logo = "images/logo.png"
+    dateFormat = "6 January 1981"
+    footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+
+    # Hero Area Section
+    [params.hero]
+        enable  = true
+        heading = "О сайте"
+        description = "Сайт находится в разработке, но я стараюсь как могу :-) А пока - увы, терпите!"
+        button  = true
+        btnText = "Know More"
+        btnURL  = "https://themefisher.com/"
+        videoThumb = "images/slider/video-player-thumb.jpg"
+        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+
+    # About 2 Section
+    [params.aboutSm]
+        enable  = true
+        title   = "Что такое Костя в этом мире? We have explored the digital landscape with passion for a long time"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+
+    # Subjects Section On Homepage
+    [params.subjects]
+        enable  = true
+#        topTitle= "OUR UNTOLD STORY"
+        title   = "Subjects."
+#        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+
+    # Blog Section On Homepage
+    [params.blog]
+        enable  = true
+        topTitle= "OUR UNTOLD STORY"
+        title   = "Blog."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+
+    # Call to Action Section on About Page
+    [params.cta]
+        enable  = true
+        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+        title   = "Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        btnText = "Contact Us"
+
+    # Contact Section
+    [params.contact]
+        enable  = true
+    # KK 08.09.2018 topTitle = "DROP US A NOTE"    
+        topTitle= "Оставьте сообщение"
+    # KK 08.09.2018 title = "Contact Us."
+        title   = "Напишите мне"
+    # KK 08.09.2018 subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        subtitle= "Доброго времени суток, я постараюсь оперативно ответить на Ваш запрос"
+    # KK 08.09.2018 address = "14/05, Stockhome <br> Victori Palace , United States"
+        address = "Санкт-Петербург, Россия"
+    # KK 08.09.2018 phone = "(03) 9283 2617"     
+        phone   = "+7 (XXX) XXX-XX-XX"
+    # KK 08.09.2018 fax     = "+61 3827 3590"
+        facebook= "https://www.facebook.com/"
+    # KK 08.09.2018 twitter = "https://twitter.com/"
+    # KK 08.09.2018 linkedin= "https://www.linkedin.com/"
+    # KK 08.09.2018 dribbble= "https://dribbble.com/"
+    # KK 08.09.2018instagram= "https://www.instagram.com/"
+    # KK 08.09.2018 Координаты изменены
+        mapLatitude = "59.939095" 
+        mapLongitude= "30.315868"
+        mapMarker   = "images/marker.png"
