@@ -3,6 +3,7 @@ languageCode = "ru-ru"
 title = "Konstantin Kadikin"
 theme = "navigator-hugo"
 copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
+publishDir = "docs"
 
 # Build robots.txt file
 enableRobotsTXT = true
