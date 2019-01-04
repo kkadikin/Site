@@ -1,13 +1,18 @@
 [about]
-other = "FR About"
+# KK 04.01.2019 //"FR About"
+other = "Команда"
 [service]
-other = "FR Service"
+# KK 04.01.2019 //"FR Service"
+other = "Услуги"
 [portfolio]
-other = "FR Portfolio"
+# KK 04.01.2019 //"FR Portfolio"
+other = "Портфолио"
 [blog]
-other = "FR Blog"
+# KK 04.01.2019 //"FR Blog"
+other = "Блог"
 [contact]
-other = "FR Contact"
+# KK 04.01.2019 //"FR Contact"
+other = "Контакты"
 
 [graphicdesign]
 other = "FR Graphic Design"

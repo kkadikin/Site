@@ -37,7 +37,7 @@ DefaultContentLanguage = "en"
     title = "FRANCAIS Example site multi-language"
     dateFormat = "2 January 2006"
 
-# KK 04.01.2019 //FR Home
+# KK 04.01.2019 //"FR Home"
     home = "Домой"
     logo = "images/logo.png"
     menufixed = false
@@ -51,10 +51,13 @@ DefaultContentLanguage = "en"
     # Hero Area Section
     [Languages.fr.params.hero]
         enable  = true
-        heading = "FRANCAIS We love to make brands grow"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+# KK 04.01.2019 //"FRANCAIS We love to make brands grow"
+        heading = "Ваши капризы - наша работа"
+# KK 04.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+        description = "Всем привет, я - собака Смайл, этот сайт посвящен Microsoft Power BI"
         button  = true
-        btnText = "Know More"
+# KK 04.01.2019 //"Know More"
+        btnText = "Узнать больше"
         btnURL  = "https://themefisher.com/"
         videoThumb = "images/slider/video-player-thumb.jpg"
         videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
@@ -105,7 +108,8 @@ DefaultContentLanguage = "en"
     title = "ENGLISH Example site multi-language"
     dateFormat = "January 2, 2006"
 
-    home = "EN Home"
+# KK 04.01.2019 //"EN Home"
+    home = "Home"
     logo = "images/logo.png"
     menufixed = false
 
@@ -118,8 +122,10 @@ DefaultContentLanguage = "en"
     # Hero Area Section
     [Languages.en.params.hero]
         enable  = true
-        heading = "ENGLISH We love to make brands grow"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+# KK 04.01.2019 //"ENGLISH We love to make brands grow"
+        heading = "We always pander to your whims"
+# KK 04.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+        description = "Hello everyone, my name is Smile, this site is dedicated to Microsoft Power BI"
         button  = true
         btnText = "Know More"
         btnURL  = "https://themefisher.com/"

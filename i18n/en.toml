@@ -1,13 +1,18 @@
 [about]
-other = "EN About"
+# KK 04.01.2019 //"EN About"
+other = "Team"
 [service]
-other = "EN Service"
+# KK 04.01.2019 //"EN Service"
+other = "Service"
 [portfolio]
-other = "EN Portfolio"
+# KK 04.01.2019 //"EN Portfolio"
+other = "Portfolio"
 [blog]
-other = "EN Blog"
+# KK 04.01.2019 //"EN Blog"
+other = "Blog"
 [contact]
-other = "EN Contact"
+# KK 04.01.2019 //"EN Contact"
+other = "Contact"
 
 [graphicdesign]
 other = "EN Graphic Design"
