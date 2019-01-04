@@ -37,7 +37,8 @@ DefaultContentLanguage = "en"
     title = "FRANCAIS Example site multi-language"
     dateFormat = "2 January 2006"
 
-    home = "FR Home"
+# KK 04.01.2019 //FR Home
+    home = "Домой"
     logo = "images/logo.png"
     menufixed = false
 
