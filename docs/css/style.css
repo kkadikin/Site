@@ -628,8 +628,8 @@ a:focus, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
   text-align: center;
 }
 
