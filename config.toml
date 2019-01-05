@@ -58,9 +58,12 @@ DefaultContentLanguage = "en"
         button  = true
 # KK 04.01.2019 //"Know More"
         btnText = "Узнать больше"
-        btnURL  = "https://themefisher.com/"
-        videoThumb = "images/slider/video-player-thumb.jpg"
-        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+# KK 05.01.2019 //"https://themefisher.com/"
+        btnURL  = "https://powerbi.microsoft.com/ru-ru/"
+# KK 05.01.2019 //"images/slider/video-player-thumb.jpg"
+        videoThumb = "images/slider/Smile_main.jpg"
+# KK 05.01.2019  //Деактивируем ссылку на видео
+       videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
     # About 2 Section
     [Languages.fr.params.aboutSm]
@@ -128,9 +131,12 @@ DefaultContentLanguage = "en"
         description = "Hello everyone, my name is Smile, this site is dedicated to Microsoft Power BI"
         button  = true
         btnText = "Know More"
-        btnURL  = "https://themefisher.com/"
-        videoThumb = "images/slider/video-player-thumb.jpg"
-        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+# KK 05.01.2019 //"https://themefisher.com/"
+        btnURL  = "https://powerbi.microsoft.com/en-us/"
+# KK 05.01.2019 //"images/slider/video-player-thumb.jpg"
+        videoThumb = "images/slider/Smile_main.jpg"
+# KK 05.01.2019  //Деактивируем ссылку на видео
+       videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
     # About 2 Section
     [Languages.en.params.aboutSm]
