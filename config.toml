@@ -61,7 +61,7 @@ DefaultContentLanguage = "en"
 # KK 05.01.2019 //"https://themefisher.com/"
         btnURL  = "https://powerbi.microsoft.com/ru-ru/"
 # KK 05.01.2019 //"images/slider/video-player-thumb.jpg"
-        videoThumb = "images/slider/Smile_main.jpg"
+        videoThumb = "images/slider/Smile_main_image_eng.png"
 # KK 05.01.2019  //Деактивируем ссылку на видео
 #       videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
@@ -133,9 +133,9 @@ DefaultContentLanguage = "en"
         btnText = "Know More"
 # KK 05.01.2019 //"https://themefisher.com/"
         btnURL  = "https://powerbi.microsoft.com/en-us/"
-# KK 05.01.2019 //"images/slider/video-player-thumb.jpg"
-        videoThumb = "images/slider/Smile_main.jpg"
-# KK 05.01.2019  //Деактивируем ссылку на видео "https://www.youtube.com/embed/g3-VxLQO7do"
+# KK 06.01.2019 //"images/slider/video-player-thumb.jpg"
+        videoThumb = "images/slider/Smile_main_image_rus.png"
+# KK 06.01.2019  //Деактивируем ссылку на видео "https://www.youtube.com/embed/g3-VxLQO7do"
 #       videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
     # About 2 Section
