@@ -60,10 +60,10 @@ DefaultContentLanguage = "en"
         btnText = "Узнать больше"
 # KK 05.01.2019 //"https://themefisher.com/"
         btnURL  = "https://powerbi.microsoft.com/ru-ru/"
-# KK 05.01.2019 //"images/slider/video-player-thumb.jpg"
+# KK 06.01.2019 //"images/slider/video-player-thumb.jpg"
         videoThumb = "images/slider/Smile_main_image_rus.png"
-# KK 05.01.2019  //Деактивируем ссылку на видео
-#       videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+# KK 06.01.2019  //Деактивируем ссылку на видео
+        videoURL   = "images/slider/Smile_main_video_rus.mp4"
 
     # About 2 Section
     [Languages.fr.params.aboutSm]
