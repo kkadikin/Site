@@ -34,7 +34,8 @@ DefaultContentLanguage = "en"
     [Languages.fr]
     weight = 1
     languageCode = "fr-fr"
-    title = "FRANCAIS Example site multi-language"
+# KK 07.01.2019 //Меняем название вкладки в браузере "FRANCAIS Example site multi-language"
+    title = "kkadikin_rus"
     dateFormat = "2 January 2006"
 
 # KK 04.01.2019 //"FR Home"
@@ -108,7 +109,8 @@ DefaultContentLanguage = "en"
     [Languages.en]
     weight = 2
     languageCode = "en-us"
-    title = "ENGLISH Example site multi-language"
+# KK 07.01.2019 //Меняем название вкладки в браузере "ENGLISH Example site multi-language"
+    title = "kkadikin_eng"
     dateFormat = "January 2, 2006"
 
 # KK 04.01.2019 //"EN Home"
