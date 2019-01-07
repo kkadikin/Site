@@ -133,6 +133,21 @@
   </url>
   
   <url>
+    <loc>https://kkadikin.ru/fr/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kkadikin.ru/fr/</loc>
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <priority>0</priority>
@@ -145,21 +160,6 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://kkadikin.ru/fr/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/fr/tags/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/tags/"
                 />
   </url>
   
