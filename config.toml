@@ -56,11 +56,10 @@ DefaultContentLanguage = "en"
         heading = "Ваши капризы - наша забота"
 # KK 06.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
 # KK 11.01.2019 // Выставлены теги
-        description = """\
+        description = """
         Всем привет, меня зовут Смайл. \
         Этот сайт посвящен  системе Microsoft Power BI. \
-        К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-) \
-        """
+        К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"""
         button  = true
 # KK 04.01.2019 //"Know More"
         btnText = "Узнать больше"
