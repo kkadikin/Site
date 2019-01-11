@@ -131,7 +131,7 @@ DefaultContentLanguage = "en"
 # KK 04.01.2019 //"ENGLISH We love to make brands grow"
         heading = "We always pander to your whims"
 # KK 06.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-        description = "Hello everyone, my name is Smile! </p> This site is dedicated to Microsoft Power BI system. <br> Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
+        description = "Hello everyone, my name is Smile! \n This site is dedicated to Microsoft Power BI system. \n Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
         button  = true
         btnText = "Know More"
 # KK 05.01.2019 //"https://themefisher.com/"
