@@ -55,8 +55,8 @@ DefaultContentLanguage = "en"
 # KK 06.01.2019 //"FRANCAIS We love to make brands grow"
         heading = "Ваши капризы - наша забота"
 # KK 06.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-# KK 11.01.2019 // Выставлены теги
-        description = "Всем привет, меня зовут Смайл. <br> Этот сайт посвящен  системе Microsoft Power BI. К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"
+# KK 13.01.2019 // Выставлены теги
+        description = "Всем привет, меня зовут Смайл. <br> Этот сайт посвящен  системе Microsoft Power BI. <br> К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"
         button  = true
 # KK 04.01.2019 //"Know More"
         btnText = "Узнать больше"
@@ -78,7 +78,7 @@ DefaultContentLanguage = "en"
         enable  = true
         topTitle= "OUR UNTOLD STORY"
         title   = "FRANCAIS Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        subtitle= "Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
     # Contact Section
     [Languages.fr.params.contact]
@@ -86,7 +86,7 @@ DefaultContentLanguage = "en"
         topTitle= "DROP US A NOTE"
         title   = "FRANCAIS Contact Us."
         subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
-        address = "14/05, Stockhome <br> Victori Palace , United States"
+        address = "14/05, Stockhome  <br> Victori Palace , United States"
         phone   = "(03) 9283 2617"
         fax     = "+61 3827 3590"
         facebook= "https://www.facebook.com/"
@@ -103,7 +103,7 @@ DefaultContentLanguage = "en"
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
         title   = "FRANCAIS Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
         btnText = "Nous contacter"
 
     ############# 2 - Site en ENGLISH
@@ -130,8 +130,8 @@ DefaultContentLanguage = "en"
         enable  = true
 # KK 04.01.2019 //"ENGLISH We love to make brands grow"
         heading = "We always pander to your whims"
-# KK 06.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-        description = "Hello everyone, my name is Smile! This site is dedicated to Microsoft Power BI system. Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
+# KK 13.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+        description = "Hello everyone, my name is Smile! <br> This site is dedicated to Microsoft Power BI system. <br> Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
         button  = true
         btnText = "Know More"
 # KK 05.01.2019 //"https://themefisher.com/"
