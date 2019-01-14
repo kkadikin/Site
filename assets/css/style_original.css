@@ -477,7 +477,7 @@ a:focus, a:hover {
 
 .navigation .navbar-nav > li > a {
   color: #707d8f;
-  font-size: 25px;
+  font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
