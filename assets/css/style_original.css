@@ -608,7 +608,7 @@ a:focus, a:hover {
 
 /* KK 14.01.2019 Опыты*/
 .hero-area .block .btn-main, .hero-area .block .btn-main-sm {
-  margin-right: 80px;
+  margin-right: 8px;
 }
 
 .video-player iframe {
