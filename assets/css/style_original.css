@@ -8,7 +8,7 @@ body {
 p {
   font-family: "Titillium Web", sans-serif;
   color: #9a9a9a;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -606,7 +606,6 @@ a:focus, a:hover {
   margin-top: 50px;
 }
 
-/* KK 14.01.2019 Опыты*/
 .hero-area .block .btn-main, .hero-area .block .btn-main-sm {
   margin-right: 8px;
 }
