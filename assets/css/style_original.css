@@ -606,10 +606,10 @@ a:focus, a:hover {
   margin-top: 50px;
 }
 
-/* KK 14.01.2019 Опыты
+/* KK 14.01.2019 Опыты*/
 .hero-area .block .btn-main, .hero-area .block .btn-main-sm {
-  margin-right: 8px;
-}*/
+  margin-right: 80px;
+}
 
 .video-player iframe {
   width: 100%;
