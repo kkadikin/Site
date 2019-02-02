@@ -56,7 +56,7 @@ DefaultContentLanguage = "en"
         heading = "Ваши капризы - наша забота"
 # KK 06.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
 # KK 13.01.2019 // Выставлены теги
-        description = "Всем привет, меня зовут Смайл. <br> Этот сайт посвящен  системе Microsoft Power BI. <br> К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"
+        description = "Всем привет, меня зовут Смайл. </p> Этот сайт посвящен  системе Microsoft Power BI. </p> К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"
         button  = true
 # KK 04.01.2019 //"Know More"
         btnText = "Узнать больше"
@@ -131,7 +131,7 @@ DefaultContentLanguage = "en"
 # KK 04.01.2019 //"ENGLISH We love to make brands grow"
         heading = "We always pander to your whims"
 # KK 13.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-        description = "Hello everyone, my name is Smile! <br> This site is dedicated to Microsoft Power BI system. <br> Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
+        description = "Hello everyone, my name is Smile! </br> This site is dedicated to Microsoft Power BI system. </br> Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
         button  = true
         btnText = "Know More"
 # KK 05.01.2019 //"https://themefisher.com/"
