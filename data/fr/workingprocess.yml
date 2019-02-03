@@ -1,8 +1,6 @@
 enable  : true
-#KK 03.02.2019 Метка языка в названии topTitle: FRANCAIS HOW WE WORKS
 topTitle: FRANCAIS HOW WE WORKS
-#KK 03.02.2019 Метка языка в названии title   : FRANCAIS Our Work Process
-title   : Our Work Process
+title   : FRANCAIS Our Work Process
 subtitle: FRANCAIS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
 item    :
   - number  : 1
