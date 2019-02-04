@@ -1197,12 +1197,22 @@ a:focus, a:hover {
   }
 }
 
+/*KK 03.02.2019 Изменение стиля по этапам рабочего процесса
 .service-2 .service-item {
   background: #fff;
   border: 1px solid #eee;
   padding: 50px 20px;
   margin-right: -1px;
   margin-bottom: -1px;
+  transition: all 0.3s ease 0s;
+}*/
+
+.service-2 .service-item {
+  background: #ab4f51d1;
+  border: 1px solid #1e2532;
+  padding: 20px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   transition: all 0.3s ease 0s;
 }
 
