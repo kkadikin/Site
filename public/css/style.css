@@ -7,7 +7,8 @@ body {
 
 p {
   font-family: "Titillium Web", sans-serif;
-  color: #9a9a9a;
+/*KK 05.02.2019 Изменение цвета с #9a9a9a на #fff*/   
+  color: #fff;
   font-size: 15px;
 }
 
