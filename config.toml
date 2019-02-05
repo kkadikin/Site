@@ -115,7 +115,7 @@ DefaultContentLanguage = "en"
     dateFormat = "January 2, 2006"
 
 # KK 04.01.2019 //"EN Home"
-    home = "Home"
+    home = "Home "
     logo = "images/logo.png"
     menufixed = false
 
