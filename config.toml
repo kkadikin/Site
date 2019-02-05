@@ -114,8 +114,8 @@ DefaultContentLanguage = "en"
     title = "kkadikin_eng"
     dateFormat = "January 2, 2006"
 
-# KK 04.01.2019 //"EN Home"
-    home = "Home "
+# KK 04.01.2019 //"EN Home" и 05.02.2019 "&nbsp";
+    home = "Home&nbsp;"
     logo = "images/logo.png"
     menufixed = false
 
