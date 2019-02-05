@@ -475,6 +475,7 @@ a:focus, a:hover {
   color: #fff;
 }
 
+/*KK 05.02.2019 Изменение цвета меню с 707d8f на ffc107, а также margin-left: 260px!important;*/
 .navigation .navbar-nav > li > a {
   color: #fff;
   font-size: 15px;
