@@ -477,13 +477,13 @@ a:focus, a:hover {
 
 /*KKKK*/
 .navigation .navbar-nav > li > a {
-  color: #c7bd31;
+  color: #fff;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
-  margin-left: 260px!important;
-}
+  margin-left: 260px
+  }
 
 @media (max-width: 480px) {
   .navigation .navbar-nav > li > a {
