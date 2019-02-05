@@ -6,8 +6,8 @@ body {
 }
 
 p {
-/*KK 05.02.2019 Изменение цвета с #9a9a9a на #fff*/  
-  color: #fff;
+/*KK 05.02.2019 Изменение цвета с #9a9a9a на #52141a*/  
+  color: #52141a;
   font-size: 15px;
 }
 
@@ -477,7 +477,7 @@ a:focus, a:hover {
 
 /*KK 05.02.2019 Изменение цвета меню с 707d8f на ffc107*/
 .navigation .navbar-nav > li > a {
-  color: #52141a;
+  color: #fff;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
