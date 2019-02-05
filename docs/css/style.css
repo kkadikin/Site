@@ -7,8 +7,7 @@ body {
 
 p {
   font-family: "Titillium Web", sans-serif;
-/*KK 05.02.2019 Изменение цвета с #9a9a9a на #fff*/  
-  color: #fff;
+  color: #9a9a9a;
   font-size: 15px;
 }
 
@@ -475,14 +474,13 @@ a:focus, a:hover {
 .navigation .navbar-nav > li.active a {
   color: #fff;
 }
-/*KK 05.02.2019 Изменение цвета меню с 707d8f на ffc107, а также margin-left: 260px!important;*/
+
 .navigation .navbar-nav > li > a {
-  color: #fff;
+  color: #707d8f;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
-  margin-left: 260px!important;
 }
 
 @media (max-width: 480px) {
