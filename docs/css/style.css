@@ -481,7 +481,6 @@ a:focus, a:hover {
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
-  margin-left: 260px!important;
 }
 
 @media (max-width: 480px) {
