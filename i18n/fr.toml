@@ -2,8 +2,8 @@
 # KK 04.01.2019 //"FR About"
 other = "Команда"
 [service]
-# KK 04.01.2019 //"FR Service" и 05.02.2019 "&nbsp;"
-other = "Услуги&nbsp;"
+# KK 04.01.2019 //"FR Service"
+other = "Услуги"
 [portfolio]
 # KK 04.01.2019 //"FR Portfolio"
 other = "Портфолио"
