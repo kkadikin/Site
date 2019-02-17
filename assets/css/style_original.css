@@ -1183,9 +1183,9 @@ a:focus, a:hover {
   font-size: 18px;
 }
 
-/*KK 17.02.2019 Изменение цвета с #777 на #ab4f51d1--Добавление font-size: 17px; */  
+/*KK 17.02.2019 Изменение цвета с #777 на #52141a--Добавление font-size: 17px; */  
 .services .service-block p {
-  color: #ab4f51d1;
+  color: #52141a;
   font-size: 17px;
 }
 
