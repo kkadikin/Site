@@ -329,10 +329,10 @@ a:focus, a:hover {
   text-align: center;
 }
 
+/*KK 14.02.2019 Убираем форматирование текста  text-transform: capitalize;*/
 .title h2 {
   font-size: 35px;
   color: #232323;
-/*KK 14.02.2019 Убираем форматирование текста  text-transform: capitalize;*/
   margin-bottom: 8px;
   font-weight: 700;
 }
@@ -1145,8 +1145,18 @@ a:focus, a:hover {
 /*=================================================================
   Services section
 ==================================================================*/
+/*KK 17.02.2019 Изменение стиля по блокам Power BI
 .services .service-block {
   padding: 30px 20px;
+}*/
+
+.services .service-block {
+  padding: 20px;
+  background: #ab4f51d1;
+  border: 1px solid #1e2532;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 480px) {
