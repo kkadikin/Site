@@ -1180,9 +1180,10 @@ a:focus, a:hover {
 
 .services .service-block h3 {
   color: #333;
-  font-size: 18px;
+  font-size: 20px;
 }
 
+/*KK 05.02.2019 Изменение цвета с #777 на #ab4f51d1--Добавление font-size: 17px; */  
 .services .service-block p {
   color: #ab4f51d1;
   font-size: 17px;
