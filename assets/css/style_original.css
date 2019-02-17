@@ -1184,7 +1184,8 @@ a:focus, a:hover {
 }
 
 .services .service-block p {
-  color: #777;
+  color: #ab4f51d1;
+  font-size: 17px;
 }
 
 /*=================================================================
