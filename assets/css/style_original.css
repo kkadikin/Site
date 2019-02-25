@@ -329,7 +329,7 @@ a:focus, a:hover {
   text-align: center;
 }
 
-/*KK 14.02.2019 Убираем форматирование текста  text-transform: capitalize;*/
+/*KK 14.02.2019--Убираем форматирование текста  text-transform: capitalize;*/
 .title h2 {
   font-size: 35px;
   color: #232323;
@@ -345,8 +345,9 @@ a:focus, a:hover {
   text-transform: uppercase;
 }
 
+/*KK 25.02.2019--Изменение цвета с 848484 на #383e47*/
 .title p {
-  color: #848484;
+  color: #383e47;
   width: 50%;
   margin: 0 auto;
 }
