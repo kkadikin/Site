@@ -70,7 +70,8 @@ DefaultContentLanguage = "en"
     # About 2 Section
     [Languages.fr.params.aboutSm]
         enable  = true
-        title   = "FRANCAIS We have explored the digital landscape with passion for a long time"
+# KK 25.02.2019 //FRANCAIS We have explored the digital landscape with passion for a long time
+        title   = "Мы долгое время изучали систему Power BI с нездоровым энтузиазмом :-)"
         description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
 
     # Blog Section On Homepage
@@ -144,7 +145,8 @@ DefaultContentLanguage = "en"
     # About 2 Section
     [Languages.en.params.aboutSm]
         enable  = true
-        title   = "ENGLISH We have explored the digital landscape with passion for a long time"
+# KK 25.02.2019 //We have explored the digital landscape with passion for a long time
+        title   = "We have explored Power BI system with unhealthy passion for a long time :-)"
         description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
 
     # Blog Section On Homepage
