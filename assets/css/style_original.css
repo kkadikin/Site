@@ -1184,9 +1184,9 @@ a:focus, a:hover {
   font-size: 18px;
 }
 
-/*KK 25.02.2019 Добавление font-size: 17px; */  
+/*KK 25.02.2019--Изменение цвета #777 на #383e47--Добавление font-size: 17px; */  
 .services .service-block p {
-  color: #777;
+  color: #383e47;
   font-size: 17px;
 }
 
@@ -1211,7 +1211,7 @@ a:focus, a:hover {
   }
 }
 
-/*KK 03.02.2019 Изменение стиля по этапам рабочего процесса
+/*KK 25.02.2019 Изменение стиля по этапам рабочего процесса
 .service-2 .service-item {
   background: #fff;
   border: 1px solid #eee;
@@ -1222,8 +1222,7 @@ a:focus, a:hover {
 }*/
 
 .service-2 .service-item {
-  background: #ab4f51d1;
-  border: 1px solid #1e2532;
+  background: #f9f9f9;
   padding: 20px 20px;
   margin-right: 10px;
   margin-bottom: 10px;
