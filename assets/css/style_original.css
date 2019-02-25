@@ -1147,15 +1147,14 @@ a:focus, a:hover {
 /*=================================================================
   Services section
 ==================================================================*/
-/*KK 17.02.2019 Изменение стиля по блокам Power BI
+/*KK 25.02.2019 Изменение стиля по блокам Power BI
 .services .service-block {
   padding: 30px 20px;
 }*/
 
 .services .service-block {
   padding: 20px;
-  background: #ab4f51d1;
-  border: 1px solid #1e2532;
+  background: #fff;
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 0.3s ease 0s;
