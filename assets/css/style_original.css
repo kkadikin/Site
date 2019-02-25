@@ -1154,7 +1154,7 @@ a:focus, a:hover {
 
 .services .service-block {
   padding: 20px;
-  background: #fff;
+  background: #ffffff;
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 0.3s ease 0s;
@@ -1184,9 +1184,9 @@ a:focus, a:hover {
   font-size: 18px;
 }
 
-/*KK 17.02.2019 Изменение цвета с #777 на #52141a--Добавление font-size: 17px; */  
+/*KK 25.02.2019 Добавление font-size: 17px; */  
 .services .service-block p {
-  color: #52141a;
+  color: #777;
   font-size: 17px;
 }
 
