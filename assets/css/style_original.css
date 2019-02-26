@@ -6,9 +6,9 @@ body {
 }
 
 p {
-/*KK 25.02.2019 Изменение цвета с #9a9a9a на #383e47*/  
+/*KK 25.02.2019 Изменение цвета с #9a9a9a на #383e47 и размера шрифта с 15px на 17px*/  
   color: #383e47;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -585,8 +585,10 @@ a:focus, a:hover {
   }
 }
 
+/*KK 26.02.2019 Изменение размера шрифта с 15px на 17px*/
 .hero-area .block {
   color: #fff;
+  font-size: 17px;
   padding-left: 30px;
 }
 
