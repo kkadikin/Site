@@ -1232,12 +1232,13 @@ a:focus, a:hover {
   transition: all 0.3s ease 0s;
 }
 
+/*KK 26.02.2019 Изменение цвета цифр с #f3f1f1 на #e6e6e6*/
 .service-2 .service-item .count {
   font-size: 80px;
   position: absolute;
   top: 0;
   left: 20px;
-  color: #f3f1f1;
+  color: #e6e6e6;
   font-weight: 700;
 }
 
