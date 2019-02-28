@@ -1,25 +1,32 @@
 enable : true
 item    :
   - quote       : >
-      FRANCAIS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-1.jpg
-    clientName  : FRANCAIS Matt Cutts
-    clientDesignation: CEO , Company Name
+# KK 28.02.2019--ENGLISH Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
+      Мы иначе смотрим на дизайн. Дизайн — это не то, как продукт выглядит и воспринимается. Дизайн — это то, как он работает.
+# KK 28.02.2019--images/client-logo/clients-1.jpg
+    clientThumb : images/client-logo/quote-1.png
+# KK 28.02.2019--ENGLISH Matt Cutts
+    clientName  : Стив Джобс
+# KK 28.02.2019--CEO , Company Name
+    clientDesignation: Apple
 
+# KK 28.02.2019--Внесены аналогичные правки
   - quote       : >
-      FRANCAIS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-2.jpg
-    clientName  : FRANCAIS Elon Mask
-    clientDesignation: CEO , Company Name
+      Если вы не желаете слышать критику, пожалуйста, не делайте ничего нового.
+    clientThumb : images/client-logo/quote-2.png
+    clientName  : Джефф Безос
+    clientDesignation: Amazon
 
+# KK 28.02.2019--Внесены аналогичные правки
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-1.jpg
-    clientName  : FRANCAIS Matt Cutts
-    clientDesignation: CEO , Company Name
+      Ваши самые несчастные клиенты - это ваш самый большой источник знаний.
+    clientThumb : images/client-logo/quote-3.png
+    clientName  : Билл Гейтс
+    clientDesignation: Microsoft
 
+# KK 28.02.2019--Внесены аналогичные правки
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-2.jpg
-    clientName  : FRANCAIS Elon Mask
-    clientDesignation: CEO , Company Name
+      Можно быть серьезным без костюма.
+    clientThumb : images/client-logo/quote-4.png
+    clientName  : Ларри Пейдж
+    clientDesignation: Google
