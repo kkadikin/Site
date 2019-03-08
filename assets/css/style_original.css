@@ -1478,7 +1478,7 @@ a:focus, a:hover {
   color: #fff;
 }
 
-/*KK 08.0.2019 Изменение параметра margin-bottom с 4px на 10px*/
+/*KK 08.03.2019 Изменение параметра margin-bottom с 4px на 10px*/
 .testimonial .item .client-meta h4 {
   margin-bottom: 10px;
 }
