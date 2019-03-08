@@ -1448,8 +1448,10 @@ a:focus, a:hover {
 /*=================================================================
   Testimonial section
 ==================================================================*/
+
+/*KK 08.03.2019 Изменение цвета с #f0326b на #1f2532*/
 .testimonial {
-  background: #f0326b;
+  background: #1f2532;
   position: relative;
 }
 
@@ -1476,18 +1478,21 @@ a:focus, a:hover {
   color: #fff;
 }
 
+/*KK 08.0.2019 Изменение параметра margin-bottom с 4px на 10px*/
 .testimonial .item .client-meta h4 {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
+/*KK 08.0.2019 Изменение размера шрифта с 12px на 24px*/
 .testimonial .item .client-meta span {
   font-size: 12px;
 }
 
+/*KK 08.0.2019 Изменение параметра width с 90px на 150px*/
 .testimonial .item .client-thumb img {
   display: inline-block;
   border-radius: 100%;
-  width: 90px;
+  width: 150px;
   height: auto;
 }
 
