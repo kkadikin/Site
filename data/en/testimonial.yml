@@ -1,30 +1,23 @@
 enable : true
 item    :
   - quote       : >
-# KK 28.02.2019--ENGLISH Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
       That’s not what we think design is. It’s not just what it looks like and feels like. Design is how it works.
-# KK 28.02.2019--images/client-logo/clients-1.jpg
     clientThumb : images/client-logo/clients-1.jpg
-# KK 28.02.2019--ENGLISH Matt Cutts
-    clientName  : Steve Jobs
-# KK 28.02.2019--CEO , Company Name
-    clientDesignation: Apple
+    clientName  : ENGLISH Matt Cutts
+    clientDesignation: CEO , Company Name
 
-# KK 28.02.2019--Внесены аналогичные правки
   - quote       : >
       If you never want be criticezed, for goodness sake don't anything new.
     clientThumb : images/client-logo/clients-2.jpg
     clientName  : Jeff Bezos
     clientDesignation: Amazon
 
-# KK 28.02.2019--Внесены аналогичные правки
   - quote       : >
       Your most unhappy customers are your greatest source of learning.
     clientThumb : images/client-logo/clients-3.jpg
     clientName  : Bill Gates
     clientDesignation: Microsoft
 
-# KK 28.02.2019--Внесены аналогичные правки
     - quote       : >
       You can be serious without a suit.
     clientThumb : images/client-logo/clients-4.jpg
