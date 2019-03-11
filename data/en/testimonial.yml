@@ -1,25 +1,25 @@
 enable : true
 item    :
   - quote       : >
-      That’s not what we think design is. It’s not just what it looks like and feels like. Design is how it works.
+      ENGLISH Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
     clientThumb : images/client-logo/clients-1.jpg
     clientName  : ENGLISH Matt Cutts
     clientDesignation: CEO , Company Name
 
   - quote       : >
-      If you never want be criticezed, for goodness sake don't anything new.
+      Если вы не желаете слышать критику, пожалуйста, не делайте ничего нового.
     clientThumb : images/client-logo/clients-2.jpg
-    clientName  : Jeff Bezos
+    clientName  : Джефф Безос
     clientDesignation: Amazon
 
   - quote       : >
-      Your most unhappy customers are your greatest source of learning.
+      Ваши самые несчастные клиенты - это ваш самый большой источник знаний.
     clientThumb : images/client-logo/clients-3.jpg
-    clientName  : Bill Gates
+    clientName  : Билл Гейтс
     clientDesignation: Microsoft
 
-    - quote       : >
-      You can be serious without a suit.
+  - quote       : >
+      Можно быть серьезным без костюма.
     clientThumb : images/client-logo/clients-4.jpg
-    clientName  : ELarry Page
+    clientName  : Ларри Пейдж
     clientDesignation: Google
