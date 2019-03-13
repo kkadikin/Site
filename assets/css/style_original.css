@@ -443,9 +443,17 @@ a:focus, a:hover {
   padding-top: 30px;
 }
 
-.bg-pricing {
+/* KK 13.03.2019 Изменения свойств вывода картинки*/
+/*.bg-pricing {
   background: url("../images/pricing-bg.jpg");
   background-size: cover;
+}*/
+
+.bg-pricing {
+  background: url("../images/pricing-bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .single-page-header {
@@ -987,12 +995,10 @@ a:focus, a:hover {
 /*=================================================================
   Pricing section
 ==================================================================*/
+/*KK 13.03.2019 Убрано margin-bottom: 15px, border-radius: 3px, padding-bottom: 40px, замена цвета f9f9f9*/
 .pricing-table .pricing-item {
-  margin-bottom: 15px;
-  border-radius: 3px;
-  padding-bottom: 40px;
   text-align: center;
-  background: #f9f9f9;
+  background: #fff;
 }
 
 .pricing-table .pricing-item a.btn-main, .pricing-table .pricing-item a.btn-main-sm {
@@ -1014,27 +1020,28 @@ a:focus, a:hover {
   margin-right: 6px;
 }
 
+/*KK 13.03.2019 Изменение стиля по блокам цен: padding: 30px 0 20px, убрано border-top-right-radius: 3px и border-top-left-radius: 3px, добавлено height: 20rem*/
 .pricing-table .price-title {
-  padding: 30px 0 20px;
+  padding: 20px 0 20px;
   text-align: center;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
   color: #fff;
+  height: 20rem;
 }
 
+/*KK 13.03.2019 Изменение стиля по блокам цен: font-size: 15px, убрано text-transform: uppercase;*/
 .pricing-table .price-title > h3 {
   color: #fff;
   font-weight: 700;
   margin: 0 0 5px;
-  font-size: 15px;
-  text-transform: uppercase;
+  font-size: 14px;
 }
 
+/*KK 13.03.2019 Изменение стиля по блокам цен: замена цвета #fff, размера шрифта 14px, толщина шрифта с 400, положение текста 18*/
 .pricing-table .price-title > p {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
+  color: #383e47;
+  font-size: 17px;
+  font-weight: 550;
+  line-height: 235px;
   margin-top: 5px;
   width: 60%;
   margin: 0 auto;
