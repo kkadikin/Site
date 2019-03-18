@@ -147,7 +147,8 @@ DefaultContentLanguage = "en"
         enable  = true
 # KK 25.02.2019 //We have explored the digital landscape with passion for a long time
         title   = "We have explored Power BI system with unhealthy passion for a long time"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+# KK 18.03.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?
+        description = "What is Power BI? Power BI is an Analytics system, that allows you to quickly assess the state of your business for management decisions. At the moment, Power BI is an evolutionary system, the functionality of which is constantly expanding.</p>"
 
     # Blog Section On Homepage
     [Languages.en.params.blog]
