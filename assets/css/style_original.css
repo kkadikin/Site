@@ -378,10 +378,8 @@ a:focus, a:hover {
   background: #f9f9f9;
 }
 
-/* KK 23.03.2019 Изменение ширины по умолчанию, добавлено width: 360px; */
 .color-gray {
   color: #777;
-  width: 360px;
 }
 
 /* KK 25.02.2019--Уьираем тень с фотографий
@@ -1091,13 +1089,10 @@ a:focus, a:hover {
   width: 32.33%;
 }
 
-/*KK 23.03.2019 Добавление отступов - padding*/
 .portfolio-block {
   position: relative;
   transition: .3s all;
   overflow: hidden;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .portfolio-block:before {
@@ -1267,23 +1262,19 @@ a:focus, a:hover {
   transition: all 0.3s ease 0s;
 }
 
-/* KK 23.03.2019 Замена цвета #f0326b на #f9f9f9, добавление выравнивания по центру text-align: center; */
 .service-list .block {
-  background: #f9f9f9;
+  background: #f0326b;
   color: #fff;
   padding: 30px;
-  text-align: center;
 }
 
 .service-list .block i {
   font-size: 30px;
 }
 
-/* KK 23.03.2019 Добавление цвета #333333 */
 .service-list .block h3 {
   font-size: 22px;
   margin: 10px 0;
-  color: #333333;
 }
 
 .service-list .block ul li {
@@ -1390,8 +1381,7 @@ a:focus, a:hover {
 /*=================================================================
   Our Team
   ==================================================================*/
-/* KK 23.03.2019 Замена цвета #fff на #f9f9f9 */
-  .team-member {
+.team-member {
   background: #fff;
   margin-bottom: 15px;
 }
