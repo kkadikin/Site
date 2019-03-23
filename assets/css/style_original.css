@@ -1392,7 +1392,7 @@ a:focus, a:hover {
   ==================================================================*/
 /* KK 23.03.2019 Замена цвета #fff на #f9f9f9 */
   .team-member {
-  background: #fff;
+  background: #f9f9f9;
   margin-bottom: 15px;
 }
 
