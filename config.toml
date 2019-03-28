@@ -104,9 +104,12 @@ DefaultContentLanguage = "en"
     [Languages.fr.params.cta]
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "FRANCAIS Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-        btnText = "Nous contacter"
+    # KK 28.03.2019 Замена FRANCAIS Let's Create Something Together на Ключ на старт!
+        title   = "Ключ на старт!"
+    # KK 28.03.2019 Удаление текста
+    #   subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+    # KK 28.03.2019 Замена Nous contacter
+        btnText = "Напишите нам"
 
     ############# 2 - Site en ENGLISH
     [Languages.en]
@@ -180,8 +183,10 @@ DefaultContentLanguage = "en"
     [Languages.en.params.cta]
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "ENGLISH Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+    # KK 28.03/2019 Замена ENGLISH Let's Create Something Together на All systems go!
+        title   = "All systems go!"
+    # KK 28.03/2019 Удаление текста
+    #   subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
         btnText = "Contact Us"
 
 # We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
