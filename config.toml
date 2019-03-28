@@ -183,9 +183,9 @@ DefaultContentLanguage = "en"
     [Languages.en.params.cta]
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-    # KK 28.03/2019 Замена ENGLISH Let's Create Something Together на All systems go!
+    # KK 28.03.2019 Замена ENGLISH Let's Create Something Together на All systems go!
         title   = "All systems go!"
-    # KK 28.03/2019 Удаление текста
+    # KK 28.03.2019 Удаление текста
     #   subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
         btnText = "Contact Us"
 
