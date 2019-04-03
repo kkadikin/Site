@@ -95,15 +95,13 @@ DefaultContentLanguage = "en"
         address = "Санкт-Петербург, <br> Россия"
     # KK 03.04.2019 Замена (03) 9283 2617 на +7 921 359 34 37
         phone   = "+7 921 359 34 37"
-    # KK 03.04.2019 Удаление лишних ссылок
+    # KK 03.04.2019 Удаление всех ссылок
     #   fax     = "+61 3827 3590"
-        facebook= "https://www.facebook.com/"
+    #   facebook= "https://www.facebook.com/"
     #   twitter = "https://twitter.com/"
     #   linkedin= "https://www.linkedin.com/"
     #   dribbble= "https://dribbble.com/"
-        instagram= "https://www.instagram.com/"
-    # KK 03.04.2019 Добавление
-        whatsapp = "https://www.whatsapp.com"
+    #   instagram= "https://www.instagram.com/"
     # KK 03.04.2019 Замена координат 51.507351 и -0.127758
         mapLatitude = "59.939095"
         mapLongitude= "30.315868"
@@ -182,15 +180,13 @@ DefaultContentLanguage = "en"
         address = "St. Petersburg, <br> Russia"
     # KK 03.04.2019 Замена (03) 9283 2617 на +7 921 359 34 37
         phone   = "+7 921 359 34 37"
-    # KK 03.04.2019 Удаление лишних ссылок
+    # KK 03.04.2019 Удаление всех ссылок
     #   fax     = "+61 3827 3590"
-        facebook= "https://www.facebook.com/"
+    #   facebook= "https://www.facebook.com/"
     #   twitter = "https://twitter.com/"
     #   linkedin= "https://www.linkedin.com/"
     #   dribbble= "https://dribbble.com/"
-        instagram= "https://www.instagram.com/"
-    # KK 03.04.2019 Добавление
-        whatsapp = "https://www.whatsapp.com"
+    #   instagram= "https://www.instagram.com/"
     # KK 03.04.2019 Замена координат 51.507351 и -0.127758
         mapLatitude = "59.939095"
         mapLongitude= "30.315868"
