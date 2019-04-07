@@ -428,9 +428,10 @@ a:focus, a:hover {
   border-radius: 0;
 }
 
+/* KK 07.04.2019 Изменение фона кнопки с #f0326b на background-image: linear-gradient(100deg,#f9643d,#fe2a77);*/
 .commonTab .nav-tabs .nav-item .nav-link.active {
   border: 1px solid #f0326b;
-  background: #f0326b;
+  background-image: linear-gradient(100deg,#f9643d,#fe2a77);
   color: #fff;
 }
 
