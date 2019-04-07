@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ENGLISH Blog on kkadikin_eng</title>
+    <title>Blog on kkadikin_eng</title>
     <link>https://kkadikin.ru/en/blog/</link>
-    <description>Recent content in ENGLISH Blog on kkadikin_eng</description>
+    <description>Recent content in Blog on kkadikin_eng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
@@ -12,7 +12,8 @@
 	<atom:link href="https://kkadikin.ru/en/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
+  </channel>
+</rss> <item>
       <title>Blog Photos on Phone</title>
       <link>https://kkadikin.ru/en/blog/blog-photos-on-phone/</link>
       <pubDate>Sun, 08 Jul 2018 12:22:40 +0600</pubDate>
