@@ -85,8 +85,8 @@ DefaultContentLanguage = "en"
     # Contact Section
     [Languages.fr.params.contact]
         enable  = true
-    # KK 03.04.2019 Замена DROP US A NOTE на Оставьте сообщение
-        topTitle= "Оставьте сообщение"
+    # KK 03.04.2019 Замена DROP US A NOTE на ОСТАВЬТЕ СООБЩЕНИЕ
+        topTitle= "ОСТАВЬТЕ СООБЩЕНИЕ"
     # KK 03.04.2019 Замена FRANCAIS Contact Us. на Свяжитесь с нами
         title   = "Свяжитесь с нами"
     # KK 03.04.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
@@ -102,10 +102,10 @@ DefaultContentLanguage = "en"
     #   linkedin= "https://www.linkedin.com/"
     #   dribbble= "https://dribbble.com/"
     #   instagram= "https://www.instagram.com/"
-    # KK 03.04.2019 Замена координат 51.507351 и -0.127758
-        mapLatitude = "59.939095"
-        mapLongitude= "30.315868"
-        mapMarker   = "images/marker.png"
+    # KK 21.04.2019 Удаление координат
+    #   mapLatitude = "59.939095"
+    #   mapLongitude= "30.315868"
+    #   mapMarker   = "images/marker.png"
 
     # Call to Action Section on About Page
     [Languages.fr.params.cta]
@@ -187,10 +187,10 @@ DefaultContentLanguage = "en"
     #   linkedin= "https://www.linkedin.com/"
     #   dribbble= "https://dribbble.com/"
     #   instagram= "https://www.instagram.com/"
-    # KK 03.04.2019 Замена координат 51.507351 и -0.127758
-        mapLatitude = "59.939095"
-        mapLongitude= "30.315868"
-        mapMarker   = "images/marker.png"
+    # KK 21.04.2019 Удаление координат
+    #   mapLatitude = "59.939095"
+    #   mapLongitude= "30.315868"
+    #   mapMarker   = "images/marker.png"
 
     # Call to Action Section on About Page
     [Languages.en.params.cta]
