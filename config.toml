@@ -87,8 +87,8 @@ DefaultContentLanguage = "en"
         enable  = true
     # KK 03.04.2019 Замена DROP US A NOTE на ОСТАВЬТЕ СООБЩЕНИЕ
         topTitle= "ОСТАВЬТЕ СООБЩЕНИЕ"
-    # KK 03.04.2019 Замена FRANCAIS Contact Us. на Свяжитесь с нами
-        title   = "Свяжитесь с нами"
+    # KK 03.04.2019 Замена FRANCAIS Contact Us. на Контакты
+        title   = "Контакты"
     # KK 03.04.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
         subtitle= "Приветствую, я постараюсь ответить на каждый вопрос как можно скорее."
     # KK 03.04.2019 Замена 14/05, Stockhome  <br> Victori Palace , United States на Санкт-Петербург, <br> Россия
@@ -115,8 +115,8 @@ DefaultContentLanguage = "en"
         title   = "Ключ на старт!"
     # KK 28.03.2019 Удаление текста
     #   subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-    # KK 28.03.2019 Замена Nous contacter на Свяжитесь с нами
-        btnText = "Свяжитесь с нами"
+    # KK 28.03.2019 Замена Nous contacter на Контакты
+        btnText = "Контакты"
 
     ############# 2 - Site en ENGLISH
     [Languages.en]
