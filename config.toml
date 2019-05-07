@@ -78,9 +78,12 @@ DefaultContentLanguage = "en"
     # Blog Section On Homepage
     [Languages.ru.params.blog]
         enable  = true
-        topTitle= "OUR UNTOLD STORY"
-        title   = "FRANCAIS Blog."
-        subtitle= "Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+# KK 07.05.2019 Замена OUR UNTOLD STORY на НЕРАССКАЗАННАЯ ИСТОРИЯ
+        topTitle= "НЕРАССКАЗАННАЯ ИСТОРИЯ"
+# KK 07.05.2019 Замена FRANCAIS Blog. на Блог
+        title   = "Блог"
+# KK 07.05.2019 Замена Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+        subtitle= "Вот основная причина создания этого сайта)"
 
     # Contact Section
     [Languages.ru.params.contact]
@@ -165,8 +168,10 @@ DefaultContentLanguage = "en"
     [Languages.en.params.blog]
         enable  = true
         topTitle= "OUR UNTOLD STORY"
+# KK 07.05.2019 Замена ENGLISH Blog. на Blog
         title   = "ENGLISH Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+# KK 07.05.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+        subtitle= "Here is the main reason of creating this site)"
 
     # Contact Section
     [Languages.en.params.contact]
