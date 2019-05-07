@@ -24,7 +24,8 @@ DefaultContentLanguage = "en"
 
     # Gestion des langues : FR / EN / NL / DE
     [[Params.listeLangues]]
-    code = "fr"
+# KK 07.05.2019 Замена fr на ru
+    code = "ru"
     [[Params.listeLangues]]
     code = "en"
 
@@ -33,7 +34,8 @@ DefaultContentLanguage = "en"
     ############ 1 - Site en FRANCAIS
     [Languages.fr]
     weight = 1
-    languageCode = "fr-fr"
+# KK 07.05.2019 Замена fr-fr на ru-ru
+    languageCode = "ru-ru"
 # KK 07.01.2019 //Меняем название вкладки в браузере "FRANCAIS Example site multi-language"
     title = "kkadikin_rus"
     dateFormat = "2 January 2006"
