@@ -1,0 +1,29 @@
+[about]
+# KK 04.01.2019 //"FR About"
+other = "Команда"
+[service]
+# KK 04.01.2019 //"FR Service"
+other = "Услуги"
+[portfolio]
+# KK 04.01.2019 //"FR Portfolio"
+other = "Портфолио"
+[blog]
+# KK 04.01.2019 //"FR Blog"
+other = "Блог"
+[contact]
+# KK 04.01.2019 //"FR Contact"
+other = "Контакты"
+
+[graphicdesign]
+other = "FR Graphic Design"
+[webdesign]
+other = "FR Web Design"
+[webdevelopment]
+other = "FR Web Development"
+
+[partners]
+other = "FR Partners"
+[faqs]
+other = "FR FAQ's"
+[badges]
+other = "FR Badges"
