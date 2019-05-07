@@ -118,7 +118,7 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/fr/categories/</loc>
+    <loc>https://kkadikin.ru/ru/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -133,7 +133,7 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/fr/tags/</loc>
+    <loc>https://kkadikin.ru/ru/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -148,7 +148,7 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/fr/</loc>
+    <loc>https://kkadikin.ru/ru/</loc>
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
