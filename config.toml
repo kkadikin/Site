@@ -24,16 +24,16 @@ DefaultContentLanguage = "en"
 
     # Gestion des langues : FR / EN / NL / DE
     [[Params.listeLangues]]
-    code = "fr"
+    code = "ru"
     [[Params.listeLangues]]
     code = "en"
 
 # Gestion des langues : FR / EN / NL / DE
 [Languages]
     ############ 1 - Site en FRANCAIS
-    [Languages.fr]
+    [Languages.ru]
     weight = 1
-    languageCode = "fr-fr"
+    languageCode = "ru-ru"
 # KK 07.01.2019 //Меняем название вкладки в браузере "FRANCAIS Example site multi-language"
     title = "kkadikin_rus"
     dateFormat = "2 January 2006"
@@ -50,7 +50,7 @@ DefaultContentLanguage = "en"
     footerSubscribeTitle = "FRANCAIS Subscribe"
 
     # Hero Area Section
-    [Languages.fr.params.hero]
+    [Languages.ru.params.hero]
         enable  = true
 # KK 06.01.2019 //"FRANCAIS We love to make brands grow"
         heading = "Ваши капризы - наша забота"
@@ -76,14 +76,14 @@ DefaultContentLanguage = "en"
         description = "Что такое Power BI? Power BI - это система аналитики, которая позволяет вам быстро оценить состояние вашего бизнеса для принятия управленческих решений. На данный момент Power BI является развивающейся системой, функциональность которой постоянно расширяется."
 
     # Blog Section On Homepage
-    [Languages.fr.params.blog]
+    [Languages.ru.params.blog]
         enable  = true
         topTitle= "OUR UNTOLD STORY"
         title   = "FRANCAIS Blog."
         subtitle= "Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
     # Contact Section
-    [Languages.fr.params.contact]
+    [Languages.ru.params.contact]
         enable  = true
     # KK 03.04.2019 Замена DROP US A NOTE на ОСТАВЬТЕ СООБЩЕНИЕ
         topTitle= "ОСТАВЬТЕ СООБЩЕНИЕ"
@@ -108,7 +108,7 @@ DefaultContentLanguage = "en"
     #   mapMarker   = "images/marker.png"
 
     # Call to Action Section on About Page
-    [Languages.fr.params.cta]
+    [Languages.ru.params.cta]
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
     # KK 28.03.2019 Замена FRANCAIS Let's Create Something Together на Ключ на старт!
