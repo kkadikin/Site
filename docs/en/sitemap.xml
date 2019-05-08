@@ -5,47 +5,11 @@
   <url>
     <loc>https://kkadikin.ru/en/blog/blog-photos-on-phone/</loc>
     <lastmod>2018-07-08T12:22:40+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
   </url>
   
   <url>
     <loc>https://kkadikin.ru/en/blog/blog-photos-on-phone/</loc>
     <lastmod>2018-07-08T12:22:40+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/</loc>
-    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/"
-                />
   </url>
   
   <url>
@@ -140,6 +104,22 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kkadikin.ru/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/en/</loc>
+    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/"
                 />
   </url>
   
