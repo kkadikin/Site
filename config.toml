@@ -18,7 +18,7 @@ pygmentsCodeFences = true
 defaultContentLanguageInSubdir = true
 DefaultContentLanguage = "en"
 
-# Site Params   
+# Site Params
 [params]
     logo = "images/logo.png"
 
