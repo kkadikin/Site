@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kkadikin.ru/en/blog/my-first-post/</loc>
+    <lastmod>2019-05-08T11:52:28+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kkadikin.ru/en/blog/blog-photos-on-phone/</loc>
     <lastmod>2018-08-17T11:54:04+03:00</lastmod>
   </url>
@@ -32,8 +37,8 @@
     <lastmod>2018-08-17T11:54:04+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/blog/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -47,8 +52,8 @@
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/blog/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -62,8 +67,8 @@
     <lastmod>2018-08-17T11:54:04+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/blog/are-you-doing-the-right-way/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/blog/are-you-doing-the-right-way/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -77,8 +82,8 @@
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/blog/are-you-doing-the-right-way/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/blog/are-you-doing-the-right-way/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -94,7 +99,7 @@
   
   <url>
     <loc>https://kkadikin.ru/en/blog/ten-things-about-business/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
+    <lastmod>2019-05-08T11:53:22+03:00</lastmod>
   </url>
   
   <url>
@@ -102,8 +107,8 @@
     <lastmod>2018-08-17T11:54:04+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/contact/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/contact/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -117,8 +122,8 @@
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/contact/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/contact/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -132,8 +137,8 @@
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/portfolio/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/portfolio/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -147,8 +152,8 @@
     <lastmod>2018-08-17T11:54:04+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/portfolio/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/portfolio/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -162,8 +167,8 @@
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/service/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/service/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -182,8 +187,8 @@
     <lastmod>2018-08-17T11:54:04+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/service/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/service/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -197,8 +202,8 @@
     <lastmod>2019-03-15T16:23:59+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/about/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -212,8 +217,8 @@
     <lastmod>2018-09-25T13:39:56+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/about/"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -232,6 +237,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://kkadikin.ru/en/categories/"
                 />
@@ -247,6 +257,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://kkadikin.ru/en/tags/"
                 />
@@ -254,12 +269,17 @@
   
   <url>
     <loc>https://kkadikin.ru/en/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
+    <lastmod>2019-05-08T11:52:28+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
                 href="https://kkadikin.ru/ru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kkadikin.ru/fr/"
                 />
     <xhtml:link
                 rel="alternate"
