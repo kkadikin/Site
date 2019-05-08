@@ -3,37 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kkadikin.ru/ru/blog/my-first-post/</loc>
-    <lastmod>2019-05-08T11:50:04+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/ru/blog/</loc>
-    <lastmod>2019-05-08T11:50:04+03:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/blog/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kkadikin.ru/ru/categories/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -75,7 +44,6 @@
   
   <url>
     <loc>https://kkadikin.ru/ru/</loc>
-    <lastmod>2019-05-08T11:50:04+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
