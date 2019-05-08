@@ -10,7 +10,7 @@ enableRobotsTXT = true
 # google analytics tracking id
 googleAnalytics = ""
 
-enableGitInfo = true
+enableGitInfo = false
 pygmentsCodeFences = true
 
 # Multilangues setup
@@ -22,189 +22,146 @@ DefaultContentLanguage = "en"
 [params]
     logo = "images/logo.png"
 
-    # Gestion des langues : FR / EN / NL / DE
+    # Gestion des langues : RU / EN / NL / DE
     [[Params.listeLangues]]
     code = "ru"
     [[Params.listeLangues]]
     code = "en"
 
-# Gestion des langues : FR / EN / NL / DE
+# Gestion des langues : RU / EN / NL / DE
 [Languages]
-    ############ 1 - Site en FRANCAIS
+    ############ 1 - Site en RUSSIAN
     [Languages.ru]
     weight = 1
     languageCode = "ru-ru"
-# KK 07.01.2019 //Меняем название вкладки в браузере "FRANCAIS Example site multi-language"
-    title = "kkadikin_rus"
+    title = "RUSSIAN Example site multi-language"
     dateFormat = "2 January 2006"
 
-# KK 04.01.2019 //"FR Home"
     home = "Домой"
     logo = "images/logo.png"
     menufixed = false
 
-    footerDescription = "FRANCAIS Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-    footerServiceTitle = "FRANCAIS Services"
-    footerQuicklinkTitle = "FRANCAIS Quick links"
-    footerAboutTitle = "FRANCAIS About"
-    footerSubscribeTitle = "FRANCAIS Subscribe"
+    footerDescription = "RUSSIAN Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+    footerServiceTitle = "RUSSIAN Services"
+    footerQuicklinkTitle = "RUSSIAN Quick links"
+    footerAboutTitle = "RUSSIAN About"
+    footerSubscribeTitle = "RUSSIAN Subscribe"
 
     # Hero Area Section
     [Languages.ru.params.hero]
         enable  = true
-# KK 06.01.2019 //"FRANCAIS We love to make brands grow"
         heading = "Ваши капризы - наша забота"
-# KK 06.01.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
-# KK 13.01.2019 // Выставлены теги
-        description = "Всем привет, меня зовут Смайл. Этот сайт посвящен  системе Microsoft Power BI. К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"
+        description = "Всем привет, меня зовут Смайл! Этот сайт посвящен системе Microsoft Power BI. К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"
         button  = true
-# KK 04.01.2019 //"Know More"
-        btnText = "Узнать больше"
-# KK 05.01.2019 //"https://themefisher.com/"
+        btnText = "Дополнительные сведения"
         btnURL  = "https://powerbi.microsoft.com/ru-ru/"
-# KK 06.01.2019 //"images/slider/video-player-thumb.jpg"
         videoThumb = "images/slider/Smile_main_image_rus.png"
-# KK 06.01.2019  //Меняем ссылку на видео
         videoURL   = "images/slider/Smile_main_video_rus.mp4"
 
     # About 2 Section
-    [Languages.fr.params.aboutSm]
+    [Languages.ru.params.aboutSm]
         enable  = true
-# KK 25.02.2019 Замена FRANCAIS We have explored the digital landscape with passion for a long time
         title   = "С нездоровым энтузиазмом мы долгое время изучали систему Power BI"
-# KK 18.03.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?
-        description = "Что такое Power BI? Power BI - это система аналитики, которая позволяет вам быстро оценить состояние вашего бизнеса для принятия управленческих решений. На данный момент Power BI является развивающейся системой, функциональность которой постоянно расширяется."
+        description = "Что такое Power BI? \b Power BI - это система аналитики, которая позволяет вам быстро оценить состояние вашего бизнеса для принятия управленческих решений. На данный момент Power BI является развивающейся системой, функциональность которой постоянно расширяется."
 
     # Blog Section On Homepage
     [Languages.ru.params.blog]
         enable  = true
-# KK 07.05.2019 Замена OUR UNTOLD STORY на НЕРАССКАЗАННАЯ ИСТОРИЯ
-        topTitle= "НЕРАССКАЗАННАЯ ИСТОРИЯ"
-# KK 07.05.2019 Замена FRANCAIS Blog. на Блог
-        title   = "Блог"
-# KK 07.05.2019 Замена Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-        subtitle= "Вот основная причина создания этого сайта)"
+        topTitle= "OUR UNTOLD STORY"
+        title   = "RUSSIAN Blog."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
     # Contact Section
     [Languages.ru.params.contact]
         enable  = true
-    # KK 03.04.2019 Замена DROP US A NOTE на ОСТАВЬТЕ СООБЩЕНИЕ
-        topTitle= "ОСТАВЬТЕ СООБЩЕНИЕ"
-    # KK 03.04.2019 Замена FRANCAIS Contact Us. на Контакты
-        title   = "Контакты"
-    # KK 03.04.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-        subtitle= "Приветствую, я постараюсь ответить на каждый вопрос как можно скорее."
-    # KK 03.04.2019 Замена 14/05, Stockhome  <br> Victori Palace , United States на Санкт-Петербург, <br> Россия
-        address = "Санкт-Петербург, <br> Россия"
-    # KK 03.04.2019 Замена (03) 9283 2617 на +7 921 359 34 37
-        phone   = "+7 921 359 34 37"
-    # KK 03.04.2019 Удаление всех ссылок
-    #   fax     = "+61 3827 3590"
-    #   facebook= "https://www.facebook.com/"
-    #   twitter = "https://twitter.com/"
-    #   linkedin= "https://www.linkedin.com/"
-    #   dribbble= "https://dribbble.com/"
-    #   instagram= "https://www.instagram.com/"
-    # KK 21.04.2019 Удаление координат
-    #   mapLatitude = "59.939095"
-    #   mapLongitude= "30.315868"
-    #   mapMarker   = "images/marker.png"
+        topTitle= "DROP US A NOTE"
+        title   = "RUSSIAN Contact Us."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        address = "14/05, Stockhome <br> Victori Palace , United States"
+        phone   = "(03) 9283 2617"
+        fax     = "+61 3827 3590"
+        facebook= "https://www.facebook.com/"
+        twitter = "https://twitter.com/"
+        linkedin= "https://www.linkedin.com/"
+        dribbble= "https://dribbble.com/"
+        instagram= "https://www.instagram.com/"
+        mapLatitude = "51.507351"
+        mapLongitude= "-0.127758"
+        mapMarker   = "images/marker.png"
 
     # Call to Action Section on About Page
     [Languages.ru.params.cta]
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-    # KK 28.03.2019 Замена FRANCAIS Let's Create Something Together на Ключ на старт!
-        title   = "Ключ на старт!"
-    # KK 28.03.2019 Удаление текста
-    #   subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-    # KK 28.03.2019 Замена Nous contacter на Контакты
-        btnText = "Контакты"
+        title   = "RUSSIAN Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        btnText = "Nous contacter"
 
     ############# 2 - Site en ENGLISH
     [Languages.en]
     weight = 2
     languageCode = "en-us"
-# KK 07.01.2019 //Меняем название вкладки в браузере "ENGLISH Example site multi-language"
-    title = "kkadikin_eng"
+    title = "Example site multi-language"
     dateFormat = "January 2, 2006"
 
-# KK 04.01.2019 //"EN Home" и 05.02.2019 "&nbsp";
     home = "Home"
     logo = "images/logo.png"
     menufixed = false
 
-    footerDescription = "ENGLISH Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-    footerServiceTitle = "ENGLISH Service"
-    footerQuicklinkTitle = "ENGLISH Quicklinks"
-    footerAboutTitle = "ENGLISH About"
-    footerSubscribeTitle = "ENGLISH Subscribe"
+    footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+    footerServiceTitle = "Service"
+    footerQuicklinkTitle = "Quicklinks"
+    footerAboutTitle = "About"
+    footerSubscribeTitle = "Subscribe"
 
     # Hero Area Section
     [Languages.en.params.hero]
         enable  = true
-# KK 04.01.2019 //"ENGLISH We love to make brands grow"
         heading = "We always pander to your whims"
-# KK 25.04.2019 //"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
         description = "Hello everyone, my name is Smile! This site is dedicated to Microsoft Power BI system. Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
         button  = true
-        btnText = "Know More"
-# KK 05.01.2019 //"https://themefisher.com/"
+        btnText = "Learn more"
         btnURL  = "https://powerbi.microsoft.com/en-us/"
-# KK 06.01.2019 //"images/slider/video-player-thumb.jpg"
         videoThumb = "images/slider/Smile_main_image_eng.png"
-# KK 06.01.2019  //Меняем ссылку на видео "https://www.youtube.com/embed/g3-VxLQO7do"
         videoURL   = "images/slider/Smile_main_video_eng.mp4"
 
     # About 2 Section
     [Languages.en.params.aboutSm]
         enable  = true
-# KK 25.02.2019 //We have explored the digital landscape with passion for a long time
-        title   = "We have explored Power BI system with unhealthy passion for a long time"
-# KK 18.03.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?
-        description = "What is Power BI? Power BI is an Analytics system, that allows you to quickly assess the state of your business for management decisions. At the moment, Power BI is an evolutionary system, the functionality of which is constantly expanding.</p>"
+        title   = "We have explored the digital landscape with passion for a long time"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
 
     # Blog Section On Homepage
     [Languages.en.params.blog]
         enable  = true
         topTitle= "OUR UNTOLD STORY"
-# KK 07.05.2019 Замена ENGLISH Blog. на Blog
-        title   = "ENGLISH Blog."
-# KK 07.05.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-        subtitle= "Here is the main reason of creating this site)"
+        title   = "Blog."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
 
     # Contact Section
     [Languages.en.params.contact]
         enable  = true
         topTitle= "DROP US A NOTE"
-    # KK 03.04.2019 Замена ENGLISH Contact Us. на Contact Us
-        title   = "Contact Us"
-    # KK 03.04.2019 Замена Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-        subtitle= "Greetings, I will try to answer to your question as soon as possible."
-    # KK 03.04.2019 Замена 14/05, Stockhome  <br> Victori Palace , United States на St. Petersburg, <br> Russia
-        address = "St. Petersburg, <br> Russia"
-    # KK 03.04.2019 Замена (03) 9283 2617 на +7 921 359 34 37
-        phone   = "+7 921 359 34 37"
-    # KK 03.04.2019 Удаление всех ссылок
-    #   fax     = "+61 3827 3590"
-    #   facebook= "https://www.facebook.com/"
-    #   twitter = "https://twitter.com/"
-    #   linkedin= "https://www.linkedin.com/"
-    #   dribbble= "https://dribbble.com/"
-    #   instagram= "https://www.instagram.com/"
-    # KK 21.04.2019 Удаление координат
-    #   mapLatitude = "59.939095"
-    #   mapLongitude= "30.315868"
-    #   mapMarker   = "images/marker.png"
+        title   = "Contact Us."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        address = "14/05, Stockhome <br> Victori Palace , United States"
+        phone   = "(03) 9283 2617"
+        fax     = "+61 3827 3590"
+        facebook= "https://www.facebook.com/"
+        twitter = "https://twitter.com/"
+        linkedin= "https://www.linkedin.com/"
+        dribbble= "https://dribbble.com/"
+        instagram= "https://www.instagram.com/"
+        mapLatitude = "51.507351"
+        mapLongitude= "-0.127758"
+        mapMarker   = "images/marker.png"
 
     # Call to Action Section on About Page
     [Languages.en.params.cta]
         enable  = true
         bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-    # KK 28.03.2019 Замена ENGLISH Let's Create Something Together на All systems go!
-        title   = "All systems go!"
-    # KK 28.03.2019 Удаление текста
-    #   subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        title   = "Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
         btnText = "Contact Us"
 
 # We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font

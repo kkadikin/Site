@@ -3,283 +3,158 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/blog-photos-on-phone/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/blog-photos-on-phone/</loc>
-    <lastmod>2018-09-25T13:39:56+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/the-nourish-box-august/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/this-show-has-divided/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/why-you-need-a-statement-bag-this-season/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
+    <loc>https://example.org/en/blog/blog-photos-on-phone/</loc>
+    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/blog/"
+                hreflang="en"
+                href="https://example.org/en/blog/blog-photos-on-phone/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/blog/"
+                href="https://example.org/en/blog/blog-photos-on-phone/"
                 />
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/</loc>
-    <lastmod>2018-09-25T13:39:56+03:00</lastmod>
+    <loc>https://example.org/en/blog/blog-photos-on-phone/</loc>
+    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/blog/"
+                hreflang="en"
+                href="https://example.org/en/blog/blog-photos-on-phone/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/blog/"
+                href="https://example.org/en/blog/blog-photos-on-phone/"
                 />
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/are-you-doing-the-right-way/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/blog/are-you-doing-the-right-way/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/are-you-doing-the-right-way/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/are-you-doing-the-right-way/</loc>
-    <lastmod>2018-09-25T13:39:56+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/blog/are-you-doing-the-right-way/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/are-you-doing-the-right-way/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/something-i-need-to-tell-you/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/ten-things-about-business/</loc>
-    <lastmod>2019-05-08T11:53:22+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/contact/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/contact/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/contact/</loc>
-    <lastmod>2018-09-25T13:39:56+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/contact/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/portfolio/</loc>
-    <lastmod>2018-09-25T13:39:56+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/portfolio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/portfolio/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/portfolio/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/portfolio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/portfolio/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/service/</loc>
-    <lastmod>2018-09-25T13:39:56+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/service/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/service/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/subjects/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/service/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/service/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/service/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/about/</loc>
-    <lastmod>2019-03-15T16:23:59+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/about/</loc>
-    <lastmod>2018-09-25T13:39:56+03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/categories/</loc>
+    <loc>https://example.org/en/</loc>
+    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/categories/"
+                href="https://example.org/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/categories/"
+                href="https://example.org/en/"
                 />
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/tags/</loc>
-    <priority>0</priority>
+    <loc>https://example.org/en/blog/installation/</loc>
+    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/blog/the-nourish-box-august/</loc>
+    <lastmod>2018-07-08T12:20:58+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/blog/this-show-has-divided/</loc>
+    <lastmod>2018-07-08T12:18:46+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/blog/why-you-need-a-statement-bag-this-season/</loc>
+    <lastmod>2018-07-08T12:11:29+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/blog/</loc>
+    <lastmod>2018-07-07T18:23:33+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/tags/"
+                href="https://example.org/ru/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/tags/"
+                href="https://example.org/en/blog/"
                 />
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/</loc>
-    <lastmod>2018-08-17T11:54:04+03:00</lastmod>
-    <priority>0</priority>
+    <loc>https://example.org/en/blog/are-you-doing-the-right-way/</loc>
+    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/"
+                href="https://example.org/ru/blog/are-you-doing-the-right-way/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/"
+                href="https://example.org/en/blog/are-you-doing-the-right-way/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/blog/something-i-need-to-tell-you/</loc>
+    <lastmod>2018-07-07T17:04:02+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/blog/ten-things-about-business/</loc>
+    <lastmod>2018-07-07T16:57:54+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/contact/</loc>
+    <lastmod>2018-07-07T15:53:27+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/portfolio/</loc>
+    <lastmod>2018-07-07T15:45:06+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/service/</loc>
+    <lastmod>2018-07-07T14:53:13+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/about/</loc>
+    <lastmod>2018-07-07T12:37:52+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://example.org/ru/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.org/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.org/en/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://example.org/ru/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.org/en/tags/"
                 />
   </url>
   

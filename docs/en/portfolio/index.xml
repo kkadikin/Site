@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portfolio on kkadikin_eng</title>
-    <link>https://kkadikin.ru/en/portfolio/</link>
-    <description>Recent content in Portfolio on kkadikin_eng</description>
+    <title>Portfolio on Example site multi-language</title>
+    <link>https://example.org/en/portfolio/</link>
+    <description>Recent content in Portfolio on Example site multi-language</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
     <lastBuildDate>Sat, 07 Jul 2018 15:45:06 +0600</lastBuildDate>
     
-	<atom:link href="https://kkadikin.ru/en/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.org/en/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

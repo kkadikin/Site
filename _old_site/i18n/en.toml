@@ -1,0 +1,29 @@
+[about]
+# KK 04.01.2019 //"EN About"
+other = "Team"
+[service]
+# KK 04.01.2019 //"EN Service"
+other = "Service"
+[portfolio]
+# KK 04.01.2019 //"EN Portfolio"
+other = "Portfolio"
+[blog]
+# KK 04.01.2019 //"EN Blog"
+other = "Blog"
+[contact]
+# KK 04.01.2019 //"EN Contact"
+other = "Contact"
+
+[graphicdesign]
+other = "EN Graphic Design"
+[webdesign]
+other = "EN Web Design"
+[webdevelopment]
+other = "EN Web Development"
+
+[partners]
+other = "EN Partners"
+[faqs]
+other = "EN FAQ's"
+[badges]
+other = "EN Badges"

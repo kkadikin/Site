@@ -7,36 +7,36 @@ filtermenu :
   - name      : Photography
     category  : photography
 
-#  - name      : Ios App
-#   category  : ios
+  - name      : Ios App
+    category  : ios
 
   - name      : Development
     category  : development
 
-#  - name      : Design
-#    category  : design
+  - name      : Design
+    category  : design
 
 item   :
-  - title : Производственный календарь
+  - title : AirBnB Postcard
     image : images/portfolio/portfolio-1.jpg
     category  : photography
 
-  - title : Отсутствие сотрудников
+  - title : D Design
     image : images/portfolio/portfolio-2.jpg
-    category  : photography
+    category  : ios, design
 
-# - title : Xbox 360
-#   image : images/portfolio/portfolio-3.jpg
-#   category  : photography development
+  - title : Xbox 360
+    image : images/portfolio/portfolio-3.jpg
+    category  : photography, development
 
-# - title : Ballon Card
-#   image : images/portfolio/portfolio-4.jpg
-#   category  : ios
+  - title : Ballon Card
+    image : images/portfolio/portfolio-4.jpg
+    category  : ios
 
-#  - title : Ready Toons
-#    image : images/portfolio/portfolio-5.jpg
-#    category  : design
+  - title : Ready Toons
+    image : images/portfolio/portfolio-5.jpg
+    category  : design
 
-#  - title : Illustration
-#    image : images/portfolio/portfolio-6.jpg
-#    category  : development
+  - title : Illustration
+    image : images/portfolio/portfolio-6.jpg
+    category  : development

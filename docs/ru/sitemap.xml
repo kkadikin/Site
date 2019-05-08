@@ -3,62 +3,79 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kkadikin.ru/ru/categories/</loc>
-    <priority>0</priority>
+    <loc>https://example.org/ru/blog/are-you-doing-the-right-way/</loc>
+    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/categories/"
+                href="https://example.org/en/blog/are-you-doing-the-right-way/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/categories/"
+                href="https://example.org/ru/blog/are-you-doing-the-right-way/"
                 />
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/tags/</loc>
+    <loc>https://example.org/ru/blog/</loc>
+    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/tags/"
+                href="https://example.org/en/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/tags/"
+                href="https://example.org/ru/blog/"
                 />
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/</loc>
+    <loc>https://example.org/ru/</loc>
+    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kkadikin.ru/fr/"
+                href="https://example.org/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/"
+                href="https://example.org/ru/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.org/ru/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.org/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://example.org/ru/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.org/ru/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.org/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://example.org/ru/tags/"
                 />
   </url>
   
