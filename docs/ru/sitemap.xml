@@ -34,6 +34,21 @@
   </url>
   
   <url>
+    <loc>https://kkadikin.ru/ru/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/categories/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kkadikin.ru/ru/</loc>
     <lastmod>2018-07-07T17:04:41+06:00</lastmod>
     <priority>0</priority>
@@ -46,21 +61,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://kkadikin.ru/ru/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/ru/categories/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://kkadikin.ru/ru/categories/"
                 />
   </url>
   
