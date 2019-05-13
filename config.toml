@@ -60,8 +60,8 @@ DefaultContentLanguage = "en"
         button              = true
         btnText             = "Дополнительные сведения"
         btnURL              = "https://powerbi.microsoft.com/ru-ru/"
-        videoThumb          = "images/slider/video-player-thumb.jpg"
-        videoURL            = "https://www.youtube.com/embed/g3-VxLQO7do"
+        videoThumb          = "/images/smile_main.png"
+        videoURL            = "/images/smile_main_video_rus.mp4"
 
     # About 2 Section
     [Languages.ru.params.aboutSm]
@@ -132,8 +132,8 @@ DefaultContentLanguage = "en"
         button              = true
         btnText             = "Learn More"
         btnURL              = "https://powerbi.microsoft.com/en-us/"
-        videoThumb          = "images/slider/video-player-thumb.jpg"
-        videoURL            = "https://www.youtube.com/embed/g3-VxLQO7do"
+        videoThumb          = "/images/smile_main.png"
+        videoURL            = "/images/smile_main_video_eng.mp4"
 
     # About 2 Section
     [Languages.en.params.aboutSm]
