@@ -1,7 +1,7 @@
 enable  : true
-topTitle: FRANCAIS HOW WE WORKS
-title   : FRANCAIS Our Work Process
-subtitle: FRANCAIS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+topTitle: RUSSIAN HOW WE WORKS
+title   : RUSSIAN Our Work Process
+subtitle: RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
 item    :
   - number  : 1
     icon    : tf-ion-ios-briefcase-outline

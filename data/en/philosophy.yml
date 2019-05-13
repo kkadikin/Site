@@ -5,9 +5,8 @@ subtitle  : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reic
 tabItem   :
   - id        : philosophy
     title     : Our Philosophy
-    heading   : Наша философия
+    heading   : We Create Designs and technology
     content   : >
-      О сколько нам мгновений чудных готовит просвященья дух!
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptate molestias, quaerat quo natus dolor harum voluptatibus modi dicta ducimus. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae officia earum dolore est quaerat cupiditate voluptatibus id, magni alias veniam voluptate, libero explicabo, distinctio atque!
     image     : images/company/company-image.jpg
 

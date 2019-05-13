@@ -1,5 +1,5 @@
 [about]
-other = "Team"
+other = "About"
 [service]
 other = "Service"
 [portfolio]
@@ -9,16 +9,10 @@ other = "Blog"
 [contact]
 other = "Contact"
 
-[graphicdesign]
-other = "EN Graphic Design"
-[webdesign]
-other = "EN Web Design"
-[webdevelopment]
-other = "EN Web Development"
+[Power_BI_Desktop]
+other = "Power BI Desktop"
+[Power_BI_Service]
+other = "Power BI Service"
+[Power_BI_Mobile]
+other = "Power BI Mobile"
 
-[partners]
-other = "EN Partners"
-[faqs]
-other = "EN FAQ's"
-[badges]
-other = "EN Badges"

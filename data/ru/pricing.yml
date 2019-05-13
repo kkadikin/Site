@@ -1,10 +1,10 @@
 enable  : true
 topTitle: EASY PRICING
-title   : FRANCAIS Pricing.
+title   : RUSSIAN Pricing.
 subtitle : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
 
 item  :
-  - name        : FRANCAIS BASIC
+  - name        : RUSSIAN BASIC
     price       : $99
     description : Perfect for single freelancers who work by themselves
     featurelist :

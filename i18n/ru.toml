@@ -1,5 +1,5 @@
 [about]
-other = "Команда"
+other = "О нас"
 [service]
 other = "Услуги"
 [portfolio]
@@ -9,16 +9,6 @@ other = "Блог"
 [contact]
 other = "Контакты"
 
-[graphicdesign]
-other = "RU Graphic Design"
-[webdesign]
-other = "RU Web Design"
-[webdevelopment]
-other = "RU Web Development"
 
-[partners]
-other = "RU Partners"
-[faqs]
-other = "RU FAQ's"
-[badges]
-other = "RU Badges"
+
+

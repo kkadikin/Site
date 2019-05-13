@@ -7,18 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Sat, 07 Jul 2018 17:04:41 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Are You Doing the Right Way</title>
-      <link>https://kkadikin.ru/ru/blog/are-you-doing-the-right-way/</link>
-      <pubDate>Sat, 07 Jul 2018 17:04:41 +0600</pubDate>
+      <title>Мой первый пост</title>
+      <link>https://kkadikin.ru/ru/blog/blog_ru/first_message/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/are-you-doing-the-right-way/</guid>
-      <description>Введение ываываы Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Turpis massa tincidunt dui ut ornare lectus sit amet est. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. At volutpat diam ut venenatis. Mi quis hendrerit dolor magna eget. Dui ut ornare lectus sit amet est placerat. Urna cursus eget nunc scelerisque viverra.</description>
+      <guid>https://kkadikin.ru/ru/blog/blog_ru/first_message/</guid>
+      <description>A cleansing hot shower or bath I like to start with taking a shower or a bath when getting ready for bed. I’ll always incorporate either Himalayan pink salt or Epsom salt into my routine. Then, I’ll do an in-shower meditation, just releasing my day and allowing it to wash down the drain. I like to start from the neck down to symbolize washing and removing anything, and then I go from the feet up after to symbolize recharging my energy.</description>
+    </item>
+    
+    <item>
+      <title>Моя первая разработка</title>
+      <link>https://kkadikin.ru/ru/blog/develop/first_article/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/develop/first_article/</guid>
+      <description>A cleansing hot shower or bath I like to start with taking a shower or a bath when getting ready for bed. I’ll always incorporate either Himalayan pink salt or Epsom salt into my routine. Then, I’ll do an in-shower meditation, just releasing my day and allowing it to wash down the drain. I like to start from the neck down to symbolize washing and removing anything, and then I go from the feet up after to symbolize recharging my energy.</description>
+    </item>
+    
+    <item>
+      <title>Моя первая статья</title>
+      <link>https://kkadikin.ru/ru/blog/article_ru/first_article/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_ru/first_article/</guid>
+      <description>A cleansing hot shower or bath I like to start with taking a shower or a bath when getting ready for bed. I’ll always incorporate either Himalayan pink salt or Epsom salt into my routine. Then, I’ll do an in-shower meditation, just releasing my day and allowing it to wash down the drain. I like to start from the neck down to symbolize washing and removing anything, and then I go from the feet up after to symbolize recharging my energy.</description>
     </item>
     
   </channel>

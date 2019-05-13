@@ -3,38 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/blog-photos-on-phone/</loc>
-    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/blog-photos-on-phone/</loc>
-    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kkadikin.ru/en/blog/blog-photos-on-phone/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kkadikin.ru/en/</loc>
-    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -49,23 +19,18 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/installation/</loc>
-    <lastmod>2018-07-08T12:22:40+06:00</lastmod>
+    <loc>https://kkadikin.ru/en/blog/article_en/first_article/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/the-nourish-box-august/</loc>
-    <lastmod>2018-07-08T12:20:58+06:00</lastmod>
+    <loc>https://kkadikin.ru/en/blog/blog_en/first_message/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/this-show-has-divided/</loc>
-    <lastmod>2018-07-08T12:18:46+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/why-you-need-a-statement-bag-this-season/</loc>
-    <lastmod>2018-07-08T12:11:29+06:00</lastmod>
+    <loc>https://kkadikin.ru/en/blog/article_en/second_article/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -84,48 +49,63 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/en/blog/are-you-doing-the-right-way/</loc>
-    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
+    <loc>https://kkadikin.ru/en/contact/</loc>
+    <lastmod>2018-07-07T15:53:27+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/blog/are-you-doing-the-right-way/"
+                href="https://kkadikin.ru/ru/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/blog/are-you-doing-the-right-way/"
+                href="https://kkadikin.ru/en/contact/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/something-i-need-to-tell-you/</loc>
-    <lastmod>2018-07-07T17:04:02+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/ten-things-about-business/</loc>
-    <lastmod>2018-07-07T16:57:54+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/contact/</loc>
-    <lastmod>2018-07-07T15:53:27+06:00</lastmod>
   </url>
   
   <url>
     <loc>https://kkadikin.ru/en/portfolio/</loc>
     <lastmod>2018-07-07T15:45:06+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/portfolio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/portfolio/"
+                />
   </url>
   
   <url>
     <loc>https://kkadikin.ru/en/service/</loc>
     <lastmod>2018-07-07T14:53:13+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/service/"
+                />
   </url>
   
   <url>
     <loc>https://kkadikin.ru/en/about/</loc>
     <lastmod>2018-07-07T12:37:52+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/about/"
+                />
   </url>
   
   <url>

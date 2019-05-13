@@ -18,17 +18,17 @@ pygmentsCodeFences = true
 defaultContentLanguageInSubdir = true
 DefaultContentLanguage = "en"
 
-# Site Params   
+# Site Params
 [params]
-    logo = "images/logo.png"
+    logo    = "images/logo.png"
 
-    # Gestion des langues : RU / EN / NL / DE
+    # Gestion des langues : RU / EN
     [[Params.listeLangues]]
     code = "ru"
     [[Params.listeLangues]]
     code = "en"
 
-# Gestion des langues : RU / EN / NL / DE
+# Gestion des langues : RU / EN 
 [Languages]
     ############ 1 - Site en RUSSIAN
     [Languages.ru]
@@ -41,28 +41,31 @@ DefaultContentLanguage = "en"
     logo = "images/logo.png"
     menufixed = false
 
-    footerDescription = "RUSSIAN Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-    footerServiceTitle = "RUSSIAN Services"
-    footerQuicklinkTitle = "RUSSIAN Quick links"
-    footerAboutTitle = "RUSSIAN About"
-    footerSubscribeTitle = "RUSSIAN Subscribe"
+    footerDescription       = "Мобильный телефон:"
+    footerDescription_2     = "+7 921 359 34 37"
+    footerDescription_3     = "E-mail:"
+    footerDescription_4     = "kadikin@mail.ru"
+    footerServiceTitle      = "Продукты"
+    footerQuicklinkTitle    = "Быстрые ссылки"
+    footerAboutTitle        = "Для связи"
+    footerSubscribeTitle    = "Добро пожаловать"
 
     # Hero Area Section
     [Languages.ru.params.hero]
         enable  = true
-        heading = "Ваши капризы - наша забота"
-        description = "Всем привет, меня зовут Смайл! Этот сайт посвящен системе Microsoft Power BI. К сожалению, основной контент сайта будет доступен на русском языке, так как с англо-собачьим словарем имеются проблемы :-)"
+        heading = "RUSSIAN We love to make brands grow"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
         button  = true
-        btnText = "Дополнительные сведения"
-        btnURL  = "https://powerbi.microsoft.com/ru-ru/"
-        videoThumb = "images/slider/Smile_main_image_rus.png"
-        videoURL   = "images/slider/Smile_main_video_rus.mp4"
+        btnText = "Know More"
+        btnURL  = "https://themefisher.com/"
+        videoThumb = "images/slider/video-player-thumb.jpg"
+        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
     # About 2 Section
     [Languages.ru.params.aboutSm]
         enable  = true
-        title   = "С нездоровым энтузиазмом мы долгое время изучали систему Power BI"
-        description = "Что такое Power BI? \b Power BI - это система аналитики, которая позволяет вам быстро оценить состояние вашего бизнеса для принятия управленческих решений. На данный момент Power BI является развивающейся системой, функциональность которой постоянно расширяется."
+        title   = "RUSSIAN We have explored the digital landscape with passion for a long time"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
 
     # Blog Section On Homepage
     [Languages.ru.params.blog]
@@ -97,33 +100,36 @@ DefaultContentLanguage = "en"
         subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
         btnText = "Nous contacter"
 
-    ############# 2 - Site en ENGLISH
+    ############# 2 - Site ENGLISH
     [Languages.en]
     weight = 2
     languageCode = "en-us"
     title = "Example site multi-language"
     dateFormat = "January 2, 2006"
 
-    home = "Home"
+    home = "EN Home"
     logo = "images/logo.png"
     menufixed = false
 
-    footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-    footerServiceTitle = "Service"
-    footerQuicklinkTitle = "Quicklinks"
-    footerAboutTitle = "About"
-    footerSubscribeTitle = "Subscribe"
+    footerDescription       = "Mobile phone:"
+    footerDescription_2     = "+7 921 359 34 37"
+    footerDescription_3     = "E-mail:"
+    footerDescription_4     = "kadikin@mail.ru"
+    footerServiceTitle      = "Products"
+    footerQuicklinkTitle    = "Quick links"
+    footerAboutTitle        = "Contact us"
+    footerSubscribeTitle    = "You are welcome"
 
     # Hero Area Section
     [Languages.en.params.hero]
         enable  = true
-        heading = "We always pander to your whims"
-        description = "Hello everyone, my name is Smile! This site is dedicated to Microsoft Power BI system. Unfortunately, the basic content of the site will be available in Russian, because I have some problems with the English-dog dictionary :-)"
+        heading = "We love to make brands grow"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
         button  = true
-        btnText = "Learn more"
-        btnURL  = "https://powerbi.microsoft.com/en-us/"
-        videoThumb = "images/slider/Smile_main_image_eng.png"
-        videoURL   = "images/slider/Smile_main_video_eng.mp4"
+        btnText = "Know More"
+        btnURL  = "https://themefisher.com/"
+        videoThumb = "images/slider/video-player-thumb.jpg"
+        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
     # About 2 Section
     [Languages.en.params.aboutSm]
@@ -192,32 +198,36 @@ DefaultContentLanguage = "en"
 
     # Footer Service Menu
     [[menu.service]]
-        name    = "graphicdesign"
-        url     = "service"
+        name    = "Power_BI_Desktop"
+        url     = "https://powerbi.microsoft.com/en-us/desktop/"
         weight  = 1
     [[menu.service]]
-        name    = "webdesign"
-        url     = "service"
+        name    = "Power_BI_Service"
+        url     = "https://powerbi.microsoft.com/en-us/features/"
         weight  = 2
     [[menu.service]]
-        name    = "webdevelopment"
-        url     = "service"
+        name    = "Power_BI_Mobile"
+        url     = "https://powerbi.microsoft.com/en-us/mobile/"
         weight  = 3
 
     # Footer Quick links Menu
     [[menu.quicklink]]
-        name    = "partners"
+        name    = "about"
         url     = "about"
         weight  = 1
     [[menu.quicklink]]
-        name    = "about"
-        url     = "about"
+        name    = "service"
+        url     = "service"
         weight  = 2
     [[menu.quicklink]]
-        name    = "faqs"
-        url     = "about"
+        name    = "portfolio"
+        url     = "portfolio"
         weight  = 3
     [[menu.quicklink]]
-        name    = "badges"
-        url     = "about"
+        name    = "blog"
+        url     = "blog"
         weight  = 4
+    [[menu.quicklink]]
+        name    = "contact"
+        url     = "contact"
+        weight  = 5

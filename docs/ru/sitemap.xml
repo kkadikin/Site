@@ -3,24 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kkadikin.ru/ru/blog/are-you-doing-the-right-way/</loc>
-    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
+    <loc>https://kkadikin.ru/ru/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/blog/are-you-doing-the-right-way/"
+                href="https://kkadikin.ru/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/blog/are-you-doing-the-right-way/"
+                href="https://kkadikin.ru/ru/"
                 />
   </url>
   
   <url>
+    <loc>https://kkadikin.ru/ru/blog/blog_ru/first_message/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/ru/blog/develop/first_article/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/ru/blog/article_ru/first_article/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kkadikin.ru/ru/blog/</loc>
-    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2018-07-07T18:23:33+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,18 +49,62 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/</loc>
-    <lastmod>2018-07-07T17:04:41+06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://kkadikin.ru/ru/contact/</loc>
+    <lastmod>2018-07-07T15:53:27+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kkadikin.ru/en/"
+                href="https://kkadikin.ru/en/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kkadikin.ru/ru/"
+                href="https://kkadikin.ru/ru/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/ru/portfolio/</loc>
+    <lastmod>2018-07-07T15:45:06+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/portfolio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/portfolio/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/ru/service/</loc>
+    <lastmod>2018-07-07T14:53:13+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/service/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/service/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/ru/about/</loc>
+    <lastmod>2018-07-07T12:37:52+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/about/"
                 />
   </url>
   

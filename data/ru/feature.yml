@@ -1,12 +1,12 @@
 enable  : true
 item  :
   - icon  : tf-ion-ios-copy-outline
-    title : FRANCAIS WordPress Theme
+    title : RUSSIAN WordPress Theme
     description : >
       Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
 
   - icon  : tf-ion-ios-alarm-outline
-    title : FRANCAIS Responsive Design
+    title : RUSSIAN Responsive Design
     description : >
       Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
 
