@@ -17,9 +17,11 @@
         <div class="row">
             {{ "<!-- Contact Details -->" | safeHTML }}
             <div class="col-12 col-md-6">
-                <div class="map">
-                    <div id="map" data-lat="{{ .Site.Params.contact.mapLatitude }}" data-long="{{ .Site.Params.contact.mapLongitude }}" data-marker="{{ .Site.Params.contact.mapMarker | absURL }}"></div>
-                </div>
+            <!-- Konstantin 13.05.2019 Замена формы карты на картинку-->
+            <!--<div class="map">
+                    <div id="map" data-lat="{{ .Site.Params.contact.mapLatitude }}" data-long="{{ .Site.Params.contact.mapLongitude }}" data-marker="{{ .Site.Params.contact.mapMarker | absURL }}"></div>                 
+                </div> -->
+                <img class="img-fluid" src="/images/about/map-eng.jpg">
             </div>
             {{ "<!-- Contact Form -->" | safeHTML }}
             <div class="contact-form col-12 col-md-6 ">
