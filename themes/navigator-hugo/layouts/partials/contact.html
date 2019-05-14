@@ -21,7 +21,9 @@
             <!--<div class="map">
                     <div id="map" data-lat="{{ .Site.Params.contact.mapLatitude }}" data-long="{{ .Site.Params.contact.mapLongitude }}" data-marker="{{ .Site.Params.contact.mapMarker | absURL }}"></div>                 
                 </div> -->
-                <img class="img-fluid" src="/images/about/map-eng.jpg">
+            <!-- Konstantin 14.05.2019 Картинка с учетом языка -->
+            <!--<img class="img-fluid" src="/images/about/map-eng.jpg"> -->
+                <img class="img-fluid" src="{{ with .Site.Params.contact.cityMap }}{{.| absURL }}{{ end }}" alt="cityMap">
             </div>
             {{ "<!-- Contact Form -->" | safeHTML }}
             <div class="contact-form col-12 col-md-6 ">
