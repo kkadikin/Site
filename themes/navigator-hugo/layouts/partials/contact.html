@@ -61,14 +61,14 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="address-block contact-meta-block">
-                    <i class="tf-ion-android-pin"></i>
+                <img class="img-fluid" src="/images/company/place-marker.png">
                     <h4>Our Location</h4>
                     {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="phone-block contact-meta-block">
-                    <i class="tf-ion-ios-telephone"></i>
+                <img class="img-fluid" src="/images/company/outgoing-call.png">
                     <h4>Call Us</h4>
                     <p>
                         {{ with .Site.Params.contact.phone }}Mobile phone: <br> {{.}} {{ end }} 
@@ -77,7 +77,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="social-icons-block contact-meta-block">
-                    <i class="tf-ion-ios-contact"></i>
+                <img class="img-fluid" src="/images/company/feedback.png">
                     <h4>Write Us</h4>
                     <p>
                         {{ with .Site.Params.contact.mail }}E-mail: <br> {{.}} {{ end }} 
