@@ -34,7 +34,7 @@ DefaultContentLanguage = "en"
     [Languages.ru]
     weight = 1
     languageCode = "ru-ru"
-    title = "RUSSIAN Example site multi-language"
+    title = "Konstantin Kadikin"
     dateFormat = "2 January 2006"
 
     home                    = "Домой"
@@ -99,7 +99,7 @@ DefaultContentLanguage = "en"
     [Languages.en]
     weight = 2
     languageCode = "en-us"
-    title = "Example site multi-language"
+    title = "Konstantin Kadikin"
     dateFormat = "January 2, 2006"
 
     home                    = "Home"
