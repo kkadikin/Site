@@ -1,16 +1,16 @@
 enable  : true
 item  :
-  - icon  : tf-ion-ios-copy-outline
-    title : FRANCAIS WordPress Theme
+  - image : images/about/desktop.png
+    title : Power BI Desktop
     description : >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      Создавайте яркие интерактивные отчеты с помощью средств визуальной аналитики, которые всегда под рукой.
 
-  - icon  : tf-ion-ios-alarm-outline
-    title : FRANCAIS Responsive Design
+  - image : images/about/service.png
+    title : Power BI Service
     description : >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      Поделитесь своими данными в облаке для совместной работы.
 
-  - icon  : tf-ion-ios-book-outline
-    title : Media & Advertisement
+  - image : images/about/mobile.png
+    title : Power BI Mobile
     description : >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      Сохраняйте доступ к своим данным в любое время.
