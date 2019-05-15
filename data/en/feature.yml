@@ -1,16 +1,16 @@
 enable  : true
 item  :
-  - icon  : tf-ion-ios-copy-outline
+  - image : images/about/desktop.png
     title : Power BI Desktop
     description : >
       Create strike, interactive reports with visual analytics, that just a touch away.
 
-  - icon  : tf-ion-ios-alarm-outline
+  - image : images/about/service.png
     title : Power BI Service
     description : >
       Share your data  at the cloud for teamwork.
 
-  - icon  : tf-ion-ios-book-outline
+  - image : images/about/mobile.png
     title : Power BI Mobile
     description : >
       Stay connected to your data any time you like.

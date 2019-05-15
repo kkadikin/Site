@@ -17,7 +17,6 @@
                         <h2>{{ . }}</h2>
                     {{ end }}
                     {{ with .Site.Params.hero.description }}<p>{{ . }}<br> {{ end }}
-                <!-- Konstantin 13.05.2019 Добавление дополнительных частей - 2, 3 -->
                     {{ with .Site.Params.hero.description_2 }}{{ . }}<br> {{ end }}
                     {{ with .Site.Params.hero.description_3 }}{{ . }}</p> {{ end }}
                     {{ if .Site.Params.hero.button }}
