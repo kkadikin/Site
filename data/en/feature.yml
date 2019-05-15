@@ -1,16 +1,16 @@
 enable  : true
 item  :
   - icon  : tf-ion-ios-copy-outline
-    title : WordPress Theme
+    title : Power BI Desktop
     description : >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      Create strike, interactive reports with visual analytics, that just a touch away.
 
   - icon  : tf-ion-ios-alarm-outline
-    title : Responsive Design
+    title : Power BI Service
     description : >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      Share your data  at the cloud for teamwork.
 
   - icon  : tf-ion-ios-book-outline
-    title : Media & Advertisement
+    title : Power BI Mobile
     description : >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      Stay connected to your data any time you like.

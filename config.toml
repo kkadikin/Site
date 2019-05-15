@@ -66,8 +66,8 @@ DefaultContentLanguage = "en"
     # About 2 Section
     [Languages.ru.params.aboutSm]
         enable  = true
-        title   = "RUSSIAN We have explored the digital landscape with passion for a long time"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+        title   = "С нездоровым энтузиазмом мы долгое время изучали систему Power BI"
+        description = "Что такое Power BI? <br> Power BI - это система аналитики, которая позволяет вам быстро оценить состояние вашего бизнеса для принятия управленческих решений. <br> На данный момент Power BI является развивающейся системой, функциональность которой постоянно расширяется."
 
     # Blog Section On Homepage
     [Languages.ru.params.blog]
@@ -130,9 +130,9 @@ DefaultContentLanguage = "en"
 
     # About 2 Section
     [Languages.en.params.aboutSm]
-        enable  = true
-        title   = "We have explored the digital landscape with passion for a long time"
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+        enable              = true
+        title               = "We have explored Power BI system with unhealthy passion for a long time"
+        description         = "What is Power BI? <br> Power BI is an Analytics system, that allows you to quickly assess the state of your business for management decisions. <br> At the moment, Power BI is an evolutionary system, the functionality of which is constantly expanding."
 
     # Blog Section On Homepage
     [Languages.en.params.blog]
