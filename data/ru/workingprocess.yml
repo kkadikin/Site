@@ -1,28 +1,29 @@
-enable  : true
-topTitle: RUSSIAN HOW WE WORKS
-title   : RUSSIAN Our Work Process
-subtitle: RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-item    :
-  - number  : 1
-    icon    : tf-ion-ios-briefcase-outline
-    title   : Project Analysis
-    description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+enable          : true
+topTitle        : КАК МЫ РАБОТАЕМ
+title           : Рабочий процесс
+subtitle        : "Основные стадии нашего взаимодействия представлены ниже:"
 
-  - number  : 2
-    icon    : tf-ion-ios-alarm-outline
-    title   : Time Management
+item            :
+  - number      : 1
+    image       : images/about/discussion.png
+    title       : Обсуждение
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+                  Обсуждение идеи.
 
-  - number  : 3
-    icon    : tf-ion-ios-email-outline
-    title   : Mail Support
+  - number      : 2
+    image       : images/about/negotiation.png
+    title       : Переговоры
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+                  Определение объема работ.
 
-  - number  : 4
-    icon    : tf-ion-ios-locked-outline
-    title   : Secure System
+  - number      : 3
+    image       : images/about/development.png
+    title       : Разработка
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+                  Разработка отчета.
+
+  - number      : 4
+    image       : images/about/transfer.png
+    title       : Передача
+    description : >
+                  Передача файла.

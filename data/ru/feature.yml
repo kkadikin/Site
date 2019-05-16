@@ -1,16 +1,17 @@
-enable  : true
-item  :
-  - image : images/about/desktop.png
-    title : Power BI Desktop
-    description : >
-      Создавайте яркие интерактивные отчеты с помощью средств визуальной аналитики, которые всегда под рукой.
+enable          : true
 
-  - image : images/about/service.png
-    title : Power BI Service
+item            :
+  - image       : images/about/desktop.png
+    title       : Power BI Desktop
     description : >
-      Поделитесь своими данными в облаке для совместной работы.
+                  Создавайте яркие интерактивные отчеты с помощью средств визуальной аналитики, которые всегда под рукой.
 
-  - image : images/about/mobile.png
-    title : Power BI Mobile
+  - image       : images/about/service.png
+    title       : Power BI Service
     description : >
-      Сохраняйте доступ к своим данным в любое время.
+                  Поделитесь своими данными в облаке для совместной работы.
+
+  - image       : images/about/mobile.png
+    title       : Power BI Mobile
+    description : >
+                  Сохраняйте доступ к своим данным в любое время.

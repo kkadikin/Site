@@ -1,28 +1,29 @@
-enable  : true
-topTitle: HOW WE WORKS
-title   : Our Work Process
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-item    :
-  - number  : 1
-    icon    : tf-ion-ios-briefcase-outline
-    title   : Project Analysis
-    description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+enable          : true
+topTitle        : HOW WE WORKS
+title           : Our Work Process
+subtitle        : "Basic stages of our interaction are presented below:"
 
-  - number  : 2
-    icon    : tf-ion-ios-alarm-outline
-    title   : Time Management
+item            :
+  - number      : 1
+    image       : images/about/discussion.png
+    title       : Discussion
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+                  Idea discussion.
 
-  - number  : 3
-    icon    : tf-ion-ios-email-outline
-    title   : Mail Support
+  - number      : 2
+    image       : images/about/negotiation.png
+    title       : Negotiation
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+                  Determination the scope of work.
 
-  - number  : 4
-    icon    : tf-ion-ios-locked-outline
-    title   : Secure System
+  - number      : 3
+    image       : images/about/development.png
+    title       : Development
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.
+                  Report development.
+
+  - number      : 4
+    image       : images/about/transfer.png
+    title       : Transfer
+    description : >
+                  File transfer.

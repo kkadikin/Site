@@ -27,15 +27,9 @@
                             {{ with .number }}
                                 <span class="count">{{ . }}.</span>
                             {{ end }}
-                            {{ with .icon }}
-                                <i class="{{ . }}"></i>
-                            {{ end }}
-                            {{ with .title }}
-                                <h4>{{ . }}</h4>
-                            {{ end }}
-                            {{ with .description }}
-                                <p>{{ . }}</p>
-                            {{ end }}
+                            <img class="img-fluid" src="{{.image | absURL }}">
+                            <h3>{{ .title }}</h3>
+                            <p>{{ .description }}</p>
                         </div>
                     </div>
                     {{ if eq (mod $index 2) 1 }}

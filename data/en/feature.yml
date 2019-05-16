@@ -1,16 +1,17 @@
-enable  : true
-item  :
-  - image : images/about/desktop.png
-    title : Power BI Desktop
-    description : >
-      Create strike, interactive reports with visual analytics, that just a touch away.
+enable          : true
 
-  - image : images/about/service.png
-    title : Power BI Service
+item            :
+  - image       : images/about/desktop.png
+    title       : Power BI Desktop
     description : >
-      Share your data  at the cloud for teamwork.
+                  Create strike, interactive reports with visual analytics, that just a touch away.
 
-  - image : images/about/mobile.png
-    title : Power BI Mobile
+  - image       : images/about/service.png
+    title       : Power BI Service
     description : >
-      Stay connected to your data any time you like.
+                  Share your data  at the cloud for teamwork.
+
+  - image       : images/about/mobile.png
+    title       : Power BI Mobile
+    description : >
+                  Stay connected to your data any time you like.
