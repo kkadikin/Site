@@ -1,21 +1,12 @@
-enable    : true
-title     : RUSSIAN We care about our work
-description: >
-  RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorem, saepe ab, optio obcaecati id asperiores. Ab ullam qui architecto at eos distinctio debitis, libero reprehenderit excepturi rem ut odit est nam magni ratione necessitatibus, quod eaque, eius minima tempora deleniti illum aliquam! Perferendis optio dolorum blanditiis sapiente aperiam quaerat.
-image     : images/about/about-3.jpg
-servicelist:
-  - name    : Creative Designers
-  - name    : Genius Developers
-  - name    : Growth Hackers
-  - name    : Marketing Masterminds
-clientLogo:
-  - image   : images/client-logo/logo1.png
-  - image   : images/client-logo/logo-2.png
-  - image   : images/client-logo/logo-3.png
-  - image   : images/client-logo/logo-4.png
-  - image   : images/client-logo/logo-5.png
-  - image   : images/client-logo/logo1.png
-  - image   : images/client-logo/logo-2.png
-  - image   : images/client-logo/logo-3.png
-  - image   : images/client-logo/logo-4.png
-  - image   : images/client-logo/logo-5.png
+enable      : true
+title       : Этапы разработки
+
+image       : images/about/about-3.jpg
+servicelist :
+  - name    : Загрузка данных
+  - name    : Обработка данных
+  - name    : Связи между данными
+  - name    : Дополнительные расчеты
+  - name    : Визуализация данных
+  - name    : Дизайн продукта (опционально)
+  - name    : Публикация данных (опционально)

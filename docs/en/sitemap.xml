@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kkadikin.ru/en/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -16,6 +16,11 @@
                 hreflang="en"
                 href="https://kkadikin.ru/en/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/en/blog/article_en/third_article/</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
