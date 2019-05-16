@@ -4,17 +4,17 @@ title           : Our Service
 subtitle        : "We can help you on the following:"
 
 item            :
-  - image       : images/about/desktop.png
+  - image       : images/about/desktop-grey.png
     title       : Power BI Desktop
     description : >
                   Develop reports using certified connectors to data sources and set of visuals comes as "pre-packaged".
 
-  - image       : images/about/service.png
+  - image       : images/about/service-grey.png
     title       : Power BI Service
     description : >
                   Workspace organization, set up access rights and dashboards configure.
 
-  - image       : images/about/mobile.png
+  - image       : images/about/mobile-grey.png
     title       : Power BI Mobile
     description : >
                   Create reports optimized for the mobile applications.

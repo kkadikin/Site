@@ -4,17 +4,17 @@ title           : Наши услуги
 subtitle        : "Мы можем помочь вам в следующих областях:"
 
 item            :
-  - image       : images/about/desktop.png
+  - image       : images/about/desktop-grey.png.png
     title       : Power BI Desktop
     description : >
                   Разработка отчетов с использованием сертифицированных коннекторов к источникам данных, и набора визуальных элементов, входящего в комплект поставки.
 
-  - image       : images/about/service.png
+  - image       : images/about/service-grey.png.png
     title       : Power BI Service
     description : >
                   Организация рабочего пространства, разграничение прав доступа и настройка панелей мониторинга
 
-  - image       : images/about/mobile.png
+  - image       : images/about/mobile-grey.png.png
     title       : Power BI Mobile
     description : >
                   Создание отчетов, оптимизированных для мобильных приложений.
