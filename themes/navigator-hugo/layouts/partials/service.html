@@ -17,8 +17,9 @@
                 {{ range .item }}
                 <div class="col-md-4">
                     <div class="block">
-                        {{ with .icon }}<i class="{{.}}"></i>{{ end }}
-                        {{ with .title }}<h3>{{.}}</h3>{{ end }}
+                        <img class="img-fluid" src="{{.image | absURL }}">
+                        <h3>{{ .title }}</h3>
+                        <p>{{ .description }}</p>
                         <ul>
                             {{ range .list }}
                             <li>{{.name}}</li>

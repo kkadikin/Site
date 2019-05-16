@@ -1,28 +1,20 @@
-enable    : true
-topTitle  : A LIST OF SERVICES
-title     : Our Service.
-subtitle  : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-item      :
-  - icon  : tf-ion-ios-copy-outline
-    title : Branding
-    list  :
-      - name : Brand Strategy
-      - name : Advertising / Campaigns
-      - name : Product Design
-      - name : Video / Photography
+enable          : true
+topTitle        : A LIST OF SERVICES
+title           : Our Service
+subtitle        : "We can help you on the following:"
 
-  - icon  : tf-ion-ios-alarm-outline
-    title : Branding
-    list  :
-      - name : Web Design
-      - name : E- Commerce Site Design
-      - name : App Development
-      - name : Mobile UI Design
+item            :
+  - image       : images/about/desktop.png
+    title       : Power BI Desktop
+    description : >
+                  Develop reports using certified connectors to data sources and set of visuals comes as "pre-packaged".
 
-  - icon  : tf-ion-ios-book-outline
-    title : IOS App Development
-    list  :
-      - name : Game Development
-      - name : Game Design
-      - name : Social Media Marketing
-      - name : Mobile UI Design
+  - image       : images/about/service.png
+    title       : Power BI Service
+    description : >
+                  Workspace organization, set up access rights and dashboards configure.
+
+  - image       : images/about/mobile.png
+    title       : Power BI Mobile
+    description : >
+                  Create reports optimized for the mobile applications.

@@ -1,28 +1,20 @@
-enable    : true
-topTitle  : RUSSIAN A LIST OF SERVICES
-title     : RUSSIAN Our Service.
-subtitle  : RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-item      :
-  - icon  : tf-ion-ios-copy-outline
-    title : RUSSIAN Branding
-    list  :
-      - name : Brand Strategy
-      - name : Advertising / Campaigns
-      - name : Product Design
-      - name : Video / Photography
+enable          : true
+topTitle        : СПИСОК УСЛУГ
+title           : Наши услуги
+subtitle        : "Мы можем помочь вам в следующих областях:"
 
-  - icon  : tf-ion-ios-alarm-outline
-    title : RUSSIAN Branding
-    list  :
-      - name : Web Design
-      - name : E- Commerce Site Design
-      - name : App Development
-      - name : Mobile UI Design
+item            :
+  - image       : images/about/desktop.png
+    title       : Power BI Desktop
+    description : >
+                  Разработка отчетов с использованием сертифицированных коннекторов к источникам данных, и набора визуальных элементов, входящего в комплект поставки.
 
-  - icon  : tf-ion-ios-book-outline
-    title : RUSSIAN IOS App Development
-    list  :
-      - name : Game Development
-      - name : Game Design
-      - name : Social Media Marketing
-      - name : Mobile UI Design
+  - image       : images/about/service.png
+    title       : Power BI Service
+    description : >
+                  Организация рабочего пространства, разграничение прав доступа и настройка панелей мониторинга
+
+  - image       : images/about/mobile.png
+    title       : Power BI Mobile
+    description : >
+                  Создание отчетов, оптимизированных для мобильных приложений.
