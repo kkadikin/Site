@@ -1,42 +1,20 @@
-enable  : true
-topTitle: RUSSIAN RECENT WORK
-title   : RUSSIAN WORK SHOWCASE.
-subtitle: RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+enable        : true
+topTitle      : ПОСЛЕДНИЕ РАБОТЫ
+title         : ВИТРИНА РАБОТ
+subtitle      : "Здесь представлены несколько примеров нашей работы:"
 
-filtermenu :
-  - name      : Photography
+filtermenu    :
+  - name      : Фотографии
     category  : photography
 
-  - name      : Ios App
-    category  : ios
-
-  - name      : Development
+  - name      : Разработки
     category  : development
-
-  - name      : Design
-    category  : design
 
 item   :
-  - title : AirBnB Postcard
-    image : images/portfolio/portfolio-1.jpg
+  - title     : Production schedule
+    image     : images/portfolio/portfolio-1.jpg
     category  : photography
 
-  - title : D Design
-    image : images/portfolio/portfolio-2.jpg
-    category  : ios, design
-
-  - title : Xbox 360
-    image : images/portfolio/portfolio-3.jpg
-    category  : photography, development
-
-  - title : Ballon Card
-    image : images/portfolio/portfolio-4.jpg
-    category  : ios
-
-  - title : Ready Toons
-    image : images/portfolio/portfolio-5.jpg
-    category  : design
-
-  - title : Illustration
-    image : images/portfolio/portfolio-6.jpg
-    category  : development
+  - title     : Absence report
+    image     : images/portfolio/portfolio-2.jpg
+    category  : photography
