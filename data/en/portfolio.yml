@@ -4,6 +4,9 @@ title         : WORK SHOWCASE
 subtitle      : "Some samples of our work are presented here:"
 
 filtermenu    :
+  - name      : All
+    category  : all
+
   - name      : Photography
     category  : photography
 

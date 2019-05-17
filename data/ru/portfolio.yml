@@ -4,6 +4,9 @@ title         : ВИТРИНА РАБОТ
 subtitle      : "Здесь представлены несколько примеров нашей работы:"
 
 filtermenu    :
+  - name      : Все
+    category  : all
+    
   - name      : Фотографии
     category  : photography
 
