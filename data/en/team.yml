@@ -3,7 +3,7 @@ topTitle          : TEAM MEMBER
 title             : Our Team
 subtitle          : "Here we are, your future heroes!"
 
-member  :
+member            :
   - image         : images/team/member-1.jpg
     name          : Dog Smile
     designation   : Little idea factory

@@ -1,7 +1,7 @@
-enable    : true
-title     : Development steps
+enable      : true
+title       : Development steps
 
-image     : images/about/about-3.jpg
+image       : images/about/about-3.jpg
 servicelist:
   - name    : Data loading
   - name    : Data processing
