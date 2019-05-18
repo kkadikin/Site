@@ -1,25 +1,26 @@
-enable    : true
-topTitle  : RUSSIAN LITTLE MORE BRIEF
-title     : RUSSIAN About Us.
-subtitle  : RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
-tabItem   :
+enable        : true
+topTitle      : LITTLE MORE BRIEF
+title         : About Us
+subtitle      : "Something more about our views:"
+
+tabItem       :
   - id        : philosophy
-    title     : RUSSIAN Our Philosophy
-    heading   : RUSSIAN We Create Designs and technology
+    title     : Философия
+    heading   : Наша философия
     content   : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptate molestias, quaerat quo natus dolor harum voluptatibus modi dicta ducimus. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae officia earum dolore est quaerat cupiditate voluptatibus id, magni alias veniam voluptate, libero explicabo, distinctio atque!
-    image     : images/company/company-image.jpg
+                Нам не страшен серый волк, серый волк, серый волк...
+    image     : images/company/company-1.jpg
 
   - id        : mission
-    title     : RUSSIAN Mission
-    heading   : RUSSIAN Our Mission
+    title     : Миссия
+    heading   : Наша миссия
     content   : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptate molestias, quaerat quo natus dolor harum voluptatibus modi dicta ducimus. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae officia earum dolore est quaerat cupiditate voluptatibus id, magni alias veniam voluptate, libero explicabo, distinctio atque!
-    image     : images/company/company-image-2.jpg
+                Совершенствуясь самостоятельно, мы можем помочь кому-нибудь еще.
+    image     : images/company/company-2.jpg
 
   - id        : vision
-    title     : RUSSIAN Vision
-    heading   : RUSSIAN Our Vision
+    title     : Видение
+    heading   : Наше видение
     content   : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptate molestias, quaerat quo natus dolor harum voluptatibus modi dicta ducimus. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae officia earum dolore est quaerat cupiditate voluptatibus id, magni alias veniam voluptate, libero explicabo, distinctio atque!
-    image     : images/company/company-image-3.jpg
+                Чем проще, тем лучше.
+    image     : images/company/company-3.jpg
