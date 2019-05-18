@@ -8,3 +8,10 @@ other = "Портфолио"
 other = "Блог"
 [contact]
 other = "Контакты"
+
+[Power_BI_Desktop]
+other = "Power BI Desktop"
+[Power_BI_Service]
+other = "Power BI Service"
+[Power_BI_Mobile]
+other = "Power BI Mobile"
