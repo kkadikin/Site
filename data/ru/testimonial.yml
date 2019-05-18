@@ -1,25 +1,30 @@
-enable : true
-item    :
-  - quote       : >
-      RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-1.jpg
-    clientName  : RUSSIAN Matt Cutts
-    clientDesignation: CEO , Company Name
+enable                : true
+item                  :
 
-  - quote       : >
-      RUSSIAN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-2.jpg
-    clientName  : RUSSIAN Elon Mask
-    clientDesignation: CEO , Company Name
+  - quote             : >
+                        Работать надо не 12 часов.
+    quote_2           : А головой.
+    clientThumb       : images/client-logo/person-1.jpg
+    clientName        : Стив Джобс
+    clientDesignation : Apple
 
-  - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-1.jpg
-    clientName  : RUSSIAN Matt Cutts
-    clientDesignation: CEO , Company Name
+  - quote             : >
+                        Если вы не желаете слышать критику, 
+    quote_2           : пожалуйста, не делайте ничего нового.
+    clientThumb       : images/client-logo/person-2.jpg
+    clientName        : Джефф Безос
+    clientDesignation : Amazon
 
-  - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-2.jpg
-    clientName  : RUSSIAN Elon Mask
-    clientDesignation: CEO , Company Name
+  - quote             : >
+                        Ваши самые несчастные клиенты - 
+    quote_2           : это ваш самый большой источник знаний.
+    clientThumb       : images/client-logo/person-3.jpg
+    clientName        : Билл Гейтс
+    clientDesignation : Microsoft
+
+  - quote             : >
+                        Если нам не доверяют,
+    quote_2           : значит у нас нет бизнеса.
+    clientThumb       : images/client-logo/person-2.jpg
+    clientName        : Ларри Пейдж
+    clientDesignation : Google

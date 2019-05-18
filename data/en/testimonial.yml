@@ -1,25 +1,30 @@
 enable                : true
 item                  :
+
   - quote             : >
-                        Do not work 12 hours a day. Use your head."
+                        Do not work 12 hours a day.
+    quote_2           : Use your head.
     clientThumb       : images/client-logo/person-1.jpg
     clientName        : Steve Jobs
     clientDesignation : Apple
 
   - quote             : >
-                        If you never want be criticezed, for goodness sake don't anything new.
+                        If you never want be criticezed,
+    quote_2           : for goodness sake don't anything new.
     clientThumb       : images/client-logo/person-2.jpg
     clientName        : Jeff Bezos
     clientDesignation : Amazon
 
   - quote             : >
-                        Your most unhappy customers are your greatest source of learning.
+                        Your most unhappy customers
+    quote_2           : are your greatest source of learning.
     clientThumb       : images/client-logo/person-3.jpg
     clientName        : Bill Gates
     clientDesignation : Microsoft
 
   - quote             : >
-                        If we are not trusted, we have no business.
+                        If we are not trusted,
+    quote_2           : we have no business.
     clientThumb       : images/client-logo/person-2.jpg
     clientName        : Larry Page
     clientDesignation : Google
