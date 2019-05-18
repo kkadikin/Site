@@ -89,10 +89,11 @@ DefaultContentLanguage = "en"
 
     # Call to Action Section on About Page
     [Languages.ru.params.cta]
-        enable  = true
-        bg      = "images/call-to-action/background.jpg"
-        title   = "Ключ на старт!"
-        btnText = "Контакты"
+        enable              = true
+        bg                  = "images/call-to-action/background.jpg"
+        title               = "Ключ на старт!"
+        btnText             = "Контакты"
+        btnURL              = "https://kkadikin.ru/ru/contact/"
 
     ############# 2 - Site ENGLISH
     [Languages.en]
@@ -153,10 +154,11 @@ DefaultContentLanguage = "en"
 
     # Call to Action Section on About Page
     [Languages.en.params.cta]
-        enable  = true
-        bg      = "images/call-to-action/background.jpg"
-        title   = "All systems go!"
-        btnText = "Contact Us"
+        enable              = true
+        bg                  = "images/call-to-action/background.jpg"
+        title               = "All systems go!"
+        btnText             = "Contact Us"
+        btnURL              = "https://kkadikin.ru/en/contact/"
 
 # We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
 
