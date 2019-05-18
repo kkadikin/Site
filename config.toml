@@ -90,10 +90,9 @@ DefaultContentLanguage = "en"
     # Call to Action Section on About Page
     [Languages.ru.params.cta]
         enable  = true
-        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "RUSSIAN Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
-        btnText = "Nous contacter"
+        bg      = "images/call-to-action/background.jpg"
+        title   = "Ключ на старт!"
+        btnText = "Контакты"
 
     ############# 2 - Site ENGLISH
     [Languages.en]
@@ -155,9 +154,8 @@ DefaultContentLanguage = "en"
     # Call to Action Section on About Page
     [Languages.en.params.cta]
         enable  = true
-        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
-        title   = "Let's Create Something Together"
-        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        bg      = "images/call-to-action/background.jpg"
+        title   = "All systems go!"
         btnText = "Contact Us"
 
 # We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
