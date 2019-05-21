@@ -202,7 +202,7 @@ DefaultContentLanguage = "en"
         url     = "https://powerbi.microsoft.com/en-us/mobile/"
         weight  = 3
 
-    # Footer Quick links Menu
+    # Footer Quick links Menu--
     [[menu.quicklink]]
         name    = "about"
         url     = "about"
