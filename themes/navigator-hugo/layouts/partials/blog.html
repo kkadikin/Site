@@ -7,7 +7,8 @@
                 <div class="title text-center">
                     {{ with .Site.Params.blog.topTitle }}<h4>{{ . }}</h4>{{ end }}
                     {{ with .Site.Params.blog.title }}<h2>{{ . }}</h2><span class="border"></span>{{ end }}
-                    {{ with .Site.Params.blog.subtitle }}<p>{{ . }}</p>{{ end }}
+                    {{ with .Site.Params.blog.subtitle }}<p>{{ . }}<br>{{ end }}
+                    {{ with .Site.Params.blog.subtitle_2 }}{{ . }}</p>{{ end }}
                 </div>
             </div>
         </div>

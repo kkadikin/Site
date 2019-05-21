@@ -65,16 +65,17 @@ DefaultContentLanguage = "en"
 
     # About 2 Section
     [Languages.ru.params.aboutSm]
-        enable  = true
-        title   = "С нездоровым энтузиазмом мы долгое время изучали систему Power BI"
-        description = "Что такое Power BI? <br> Power BI - это система аналитики, которая позволяет вам быстро оценить состояние вашего бизнеса для принятия управленческих решений. <br> На данный момент Power BI является развивающейся системой, функциональность которой постоянно расширяется."
+        enable              = true
+        title               = "С нездоровым энтузиазмом мы долгое время изучали систему Power BI"
+        description         = "Что такое Power BI? <br> Power BI - это система аналитики, которая позволяет вам быстро оценить состояние вашего бизнеса для принятия управленческих решений. <br> На данный момент Power BI является развивающейся системой, функциональность которой постоянно расширяется."
 
     # Blog Section On Homepage
     [Languages.ru.params.blog]
-        enable  = true
-        topTitle= "OUR UNTOLD STORY"
-        title   = "RUSSIAN Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        enable              = true
+        topTitle            = "ЗАПИСКИ ОХОТНИКА"
+        title               = "Блог"
+        subtitle            = "Данный раздел содержит следующую информацию:"
+        subtitle_2          = "короткие сообщения, тематические статьи, описание разработок."
 
     # Contact Section
     [Languages.ru.params.contact]
@@ -137,9 +138,10 @@ DefaultContentLanguage = "en"
     # Blog Section On Homepage
     [Languages.en.params.blog]
         enable  = true
-        topTitle= "OUR UNTOLD STORY"
-        title   = "Blog."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        topTitle= "HUNTER NOTES"
+        title   = "Blog"
+        subtitle            = "This section contains the following information:"
+        subtitle_2          = "short messages, feature stories, description of developments."
 
     # Contact Section
     [Languages.en.params.contact]
