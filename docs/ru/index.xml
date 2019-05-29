@@ -7,13 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Мой второй пост</title>
+      <title>Всем привет!</title>
+      <link>https://kkadikin.ru/ru/blog/blog_ru/blog_001/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_ru/blog_001/</guid>
+      <description>От автора Рвав-рвав, с вами я, собака Смайл! Есть прекрасная новость: мы с хозяином начинаем публиковать контент.
+Раздел &amp;ldquo;Блог&amp;rdquo; будет содержать следующую информацию:
+&amp;ndash; короткие сообщения - описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query;
+&amp;ndash; тематические статьи - описание кейсов, формируемых в процессе реализации конкретной задачи;
+&amp;ndash; описание разработок - собственно, этим все сказано, см. раздел &amp;ldquo;Портфолио&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Мой второй пост 1</title>
       <link>https://kkadikin.ru/ru/blog/blog_ru/second_message/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       

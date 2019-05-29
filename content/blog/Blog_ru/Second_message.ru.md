@@ -1,5 +1,5 @@
 ---
-title: Мой второй пост
+title: Мой второй пост 1
 date: 2019-05-12
 image: images/blog/post-3.jpg
 author: Admin
