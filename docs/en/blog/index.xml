@@ -13,6 +13,19 @@
     
     
     <item>
+      <title>Всем привет!</title>
+      <link>https://kkadikin.ru/en/blog/blog_ru/blog_001_ru/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/en/blog/blog_ru/blog_001_ru/</guid>
+      <description>От автора Рвав-рвав, с вами я, собака Смайл! Есть прекрасная новость: мы с хозяином начинаем публиковать контент.
+Раздел &amp;ldquo;Блог&amp;rdquo; будет содержать следующую информацию:
+&amp;ndash; короткие сообщения - описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query;
+&amp;ndash; тематические статьи - описание кейсов, формируемых в процессе реализации конкретной задачи;
+&amp;ndash; описание разработок - собственно, этим все сказано, см. раздел &amp;ldquo;Портфолио&amp;rdquo;.</description>
+    </item>
+    
+    <item>
       <title>My third article</title>
       <link>https://kkadikin.ru/en/blog/article_en/third_article/</link>
       <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
