@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kkadikin.ru/en/blog/blog_en/blog_001/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kkadikin.ru/en/</loc>
-    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -16,26 +21,6 @@
                 hreflang="en"
                 href="https://kkadikin.ru/en/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/article_en/third_article/</loc>
-    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/article_en/first_article/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/blog_en/first_message/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kkadikin.ru/en/blog/article_en/second_article/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
