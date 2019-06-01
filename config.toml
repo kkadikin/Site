@@ -16,7 +16,7 @@ pygmentsCodeFences = true
 # Multilangues setup
 # Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
 defaultContentLanguageInSubdir = true
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "ru"
 
 # Site Params
 [params]
@@ -56,7 +56,8 @@ DefaultContentLanguage = "en"
         heading             = "Ваши капризы - наша забота"
         description         = "Всем привет, меня зовут Смайл." 
         description_2       = "Этот сайт посвящен системе Microsoft Power BI."
-        description_3       = "К сожалению, основной контент сайта будет доступен на русском языке, так как с английским языком имеются проблемы :-)"
+    # KK 01.06.2019 Убрано по комментариям, добавлю что-то позже
+    #   description_3       = "К сожалению, основной контент сайта будет доступен на русском языке, так как с английским языком имеются проблемы :-)"
         button              = true
         btnText             = "Дополнительные сведения"
         btnURL              = "https://powerbi.microsoft.com/ru-ru/"
@@ -122,7 +123,8 @@ DefaultContentLanguage = "en"
         heading             = "We always pander to your whims"
         description         = "Hello everyone, my name is Smile!"
         description_2       = "This site is dedicated to Microsoft Power BI system."
-        description_3       = "Unfortunately, the basic content of the site will be available in Russian, because I have some problems with English :-)"
+    # KK 01.06.2019 Убрано по комментариям, добавлю что-то позже
+    #   description_3       = "Unfortunately, the basic content of the site will be available in Russian, because I have some problems with English :-)"
         button              = true
         btnText             = "Learn More"
         btnURL              = "https://powerbi.microsoft.com/en-us/"
