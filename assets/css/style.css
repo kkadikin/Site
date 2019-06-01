@@ -1557,16 +1557,19 @@ a:focus, a:hover {
 .post-item .post-meta {
   font-size: 14px;
   color: #888;
+  text-align: justify;
 }
 
 .post-item .post-meta a {
   color: #000;
   margin: 3px 0;
+  text-align: justify;
 }
 
 .post-item .post-content p {
   color: #757575;
   margin: 10px 0;
+  text-align: justify;
 }
 
 .post-item .btn-main, .post-item .btn-main-sm {
@@ -1586,6 +1589,7 @@ a:focus, a:hover {
 
 #blog-page {
   margin: 0 0 40px;
+  text-align: justify;
 }
 
 .post-excerpt {
