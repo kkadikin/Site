@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Производственный календарь</title>
+      <link>https://kkadikin.ru/ru/blog/dev_ru/dev_001/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/dev_ru/dev_001/</guid>
+      <description>Рвав-рвав, всем хорошего настроения!
+Представляем вашему вниманию свою 1-ю разработку &amp;ndash; отчет &amp;ldquo;Производственный календарь&amp;rdquo;. Проба пера, так сказать.
+Итак, начинаем.
+ Календарь реализован при помощи DAX и Power Query, он содержит следующие расчеты:
+ Общее количество календарных дней;
+ Количество рабочих дней;
+ Количество рабочих часов;
+ Количество нерабочих дней, а именно: выходных и праздничных, отдельно показаны так называемые &amp;ldquo;перенесенные&amp;rdquo; дни.
+Все показатели рассчитаны при помощи мер на уровне DAX, исходный набор дат сделан на уровне Power Query.</description>
+    </item>
     
     <item>
       <title>Приветствие</title>
