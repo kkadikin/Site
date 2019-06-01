@@ -1474,6 +1474,7 @@ a:focus, a:hover {
 .post-item {
   background: #fff;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 .post-item .post-thumb {
