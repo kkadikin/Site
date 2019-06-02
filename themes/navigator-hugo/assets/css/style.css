@@ -1479,37 +1479,45 @@ a:focus, a:hover {
 
 .post-item .post-thumb {
   margin-right: 10px;
+  text-align: justify;
 }
 
 .post-item .post-thumb img {
   height: auto;
+  text-align: justify;
 }
 
 .post-item .post-title {
   margin-top: 20px;
+  text-align: justify;
 }
 
 .post-item .post-title h3 {
   font-size: 23px;
+  text-align: justify;
 }
 
 .post-item .post-title h3 a {
   color: #000;
+  text-align: justify;
 }
 
 .post-item .post-meta {
   font-size: 14px;
   color: #888;
+  text-align: justify;
 }
 
 .post-item .post-meta a {
   color: #000;
   margin: 3px 0;
+  text-align: justify;
 }
 
 .post-item .post-content p {
-  color: #3333cc;
+  color: #757575;
   margin: 10px 0;
+  text-align: justify;
 }
 
 .post-item .btn-main, .post-item .btn-main-sm {
@@ -1517,6 +1525,7 @@ a:focus, a:hover {
   margin-top: 10px;
   padding: 8px 20px;
   margin: 15px 0;
+  text-align: justify;
 }
 
 /*=================================================================
