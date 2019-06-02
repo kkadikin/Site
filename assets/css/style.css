@@ -1532,26 +1532,32 @@ a:focus, a:hover {
 .post-item {
   background: #fff;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 .post-item .post-thumb {
   margin-right: 10px;
+  text-align: justify;
 }
 
 .post-item .post-thumb img {
   height: auto;
+  text-align: justify;
 }
 
 .post-item .post-title {
   margin-top: 20px;
+  text-align: justify;
 }
 
 .post-item .post-title h3 {
   font-size: 23px;
+  text-align: justify;
 }
 
 .post-item .post-title h3 a {
   color: #000;
+  text-align: justify;
 }
 
 .post-item .post-meta {
@@ -1577,6 +1583,7 @@ a:focus, a:hover {
   margin-top: 10px;
   padding: 8px 20px;
   margin: 15px 0;
+  text-align: justify;
 }
 
 /*=================================================================
