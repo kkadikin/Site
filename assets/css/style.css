@@ -1596,6 +1596,9 @@ a:focus, a:hover {
 
 #blog-page {
   margin: 0 0 40px;
+}
+
+.blog-single {
   text-align: justify;
 }
 
