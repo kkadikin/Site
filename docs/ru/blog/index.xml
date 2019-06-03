@@ -14,12 +14,12 @@
     
     <item>
       <title>Производственный календарь</title>
-      <link>https://kkadikin.ru/ru/blog/dev_ru/dev_001/</link>
+      <link>https://kkadikin.ru/ru/blog/development_ru/dev_001/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/dev_ru/dev_001/</guid>
+      <guid>https://kkadikin.ru/ru/blog/development_ru/dev_001/</guid>
       <description>Рвав-рвав, всем хорошего настроения!
-Представляем вашему вниманию свою 1-ю разработку &amp;ndash; отчет &amp;ldquo;Производственный календарь&amp;rdquo;. Проба пера, так сказать.
+Представляем вашему вниманию свою 1-ю разработку &amp;ndash; отчет &amp;ldquo;Производственный календарь&amp;rdquo;.
 Итак, начинаем.
  Календарь реализован при помощи DAX и Power Query, он содержит следующие расчеты:
  Общее количество календарных дней;
@@ -30,14 +30,14 @@
     </item>
     
     <item>
-      <title>Приветствие</title>
+      <title>Вступительное слово</title>
       <link>https://kkadikin.ru/ru/blog/blog_ru/blog_001/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_ru/blog_001/</guid>
       <description>Рвав-рвав, с вами я, собака Смайл!
 Есть прекрасная новость: мы с хозяином начинаем публиковать контент.
-Раздел Блог будет содержать следующую информацию:
+ Раздел Блог будет содержать следующую информацию:
  короткие сообщения &amp;ndash; описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query;
  тематические статьи &amp;ndash; описание кейсов, формируемых в процессе реализации конкретной задачи;
  описание разработок &amp;ndash; собственно, этим все сказано, см. раздел Портфолио</description>
