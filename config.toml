@@ -88,9 +88,9 @@ DefaultContentLanguage = "ru"
         titlephone          = "Позвоните нам"
         titlemail           = "Напишите нам"
         address             = "Санкт-Петербург, <br> Россия"
-        phone               = "+7 921 359 34 37"
+        phone               = "Мобильный телефон: <br> +7 921 359 34 37"
         cityMap             = "/images/about/map-rus.jpg"
-        mail                = "kadikin@mail.ru"
+        mail                = "E-mail: <br> kadikin@mail.ru"
 
     # Call to Action Section on About Page
     [Languages.ru.params.cta]
@@ -158,9 +158,9 @@ DefaultContentLanguage = "ru"
         titlephone          = "Call Us"
         titlemail           = "Write Us"
         address             = "St. Petersburg, <br> Russia"
-        phone               = "+7 921 359 34 37"
+        phone               = "Mobile phone: <br> +7 921 359 34 37"
         cityMap             = "/images/about/map-eng.jpg"
-        mail                = "kadikin@mail.ru"
+        mail                = "E-mail: <br> kadikin@mail.ru"
 
     # Call to Action Section on About Page
     [Languages.en.params.cta]

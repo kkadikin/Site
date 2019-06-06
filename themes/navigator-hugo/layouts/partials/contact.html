@@ -57,25 +57,21 @@
                 <div class="address-block contact-meta-block">
                 <img class="img-fluid" src="/images/company/place-marker.png">
                     <h4>{{ with .Site.Params.contact.titleaddress }} {{ . | safeHTML }} {{ end }}</h4>
-                    {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
+                    <p> {{ with .Site.Params.contact.address }}   <p>{{ . | safeHTML }}</p>{{ end }}</p>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="phone-block contact-meta-block">
                 <img class="img-fluid" src="/images/company/outgoing-call.png">
                     <h4>{{ with .Site.Params.contact.titlephone }} {{ . | safeHTML }} {{ end }}</h4>
-                    <p>
-                        {{ with .Site.Params.contact.phone }}Mobile phone: <br> {{.}} {{ end }} 
-                    </p>
+                    <p> {{ with .Site.Params.contact.phone }}   <p>{{ . | safeHTML }}</p>{{ end }}</p>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="social-icons-block contact-meta-block">
                 <img class="img-fluid" src="/images/company/feedback.png">
                     <h4>{{ with .Site.Params.contact.titlemail }} {{ . | safeHTML }} {{ end }}</h4>
-                    <p>
-                        {{ with .Site.Params.contact.mail }}E-mail: <br> {{.}} {{ end }} 
-                    </p>
+                    <p>{{ with .Site.Params.contact.mail }}    <p>{{ . | safeHTML }}</p>{{ end }}</p>
                 </div>
             </div>
         </div>
