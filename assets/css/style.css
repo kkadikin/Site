@@ -1602,6 +1602,10 @@ a:focus, a:hover {
   text-align: justify;
 }
 
+.blog-img {
+  width: 100%;
+}
+
 .post-excerpt {
   padding: 0 20px;
   margin-bottom: 60px;
