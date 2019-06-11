@@ -1602,9 +1602,9 @@ a:focus, a:hover {
   text-align: justify;
 }
 
-.blog-img {
+/*.blog-img {
   width: 100% !important;
-}
+}*/
 
 .post-excerpt {
   padding: 0 20px;
