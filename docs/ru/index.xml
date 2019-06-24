@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Fri, 21 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,10 @@
     <item>
       <title>График работы сотрудников</title>
       <link>https://kkadikin.ru/ru/blog/development_ru/dev_002/</link>
-      <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/development_ru/dev_002/</guid>
-      <description>Рвав-рвав, за окном 28 градусов, всем прохлады!
+      <description>Рвав-рвав, собака Смайл на связи!
 Представляем вашему вниманию свою 2-ю разработку комплекта отчетности &amp;ldquo;Офисная жизнь&amp;rdquo; &amp;ndash; отчет &amp;ldquo;График работы сотрудников&amp;rdquo;, иллюстрирующий доступность сотрудников в плане выполнения поставленных задач.
  Отчет реализован при помощи DAX и Power Query, построен на базе производственного календаря, и, помимо распределения нерабочих дней согласно календарю, содержит следующие расчеты, которые можно получить по каждому работнику:
  Количество рабочих дней;
