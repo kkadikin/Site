@@ -11,4 +11,6 @@ author: Smile
 >
 > *Please, see my "Hunter notes" at [Blog](https://kkadikin.ru/ru/blog/) section in Russian.*
 >
-
+> *Sincerely yours,*
+>
+> *Smile*
