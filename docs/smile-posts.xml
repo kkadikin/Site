@@ -11,5 +11,19 @@
        <atom:link href="https://kkadikin.ru/smile-posts.xml" rel="self" type="application/rss+xml" />
    
    
+   <item>
+     <title>Opening remarks</title>
+     <link>https://kkadikin.ru/blog/blog_en/blog_001/</link>
+     <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+     
+     <guid>https://kkadikin.ru/blog/blog_en/blog_001/</guid>
+     <description> Rwaw-rwaw, dog Smile with you!
+There is great news: we are starting to publish content with my owner KK.
+Please, see my &amp;ldquo;Hunter notes&amp;rdquo; at Blog section in Russian.
+Sincerely yours,
+Smile
+ </description>
+   </item>
+   
  </channel>
 </rss>
