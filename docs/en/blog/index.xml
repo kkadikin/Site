@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Konstantin Kadikin</title>
@@ -8,7 +9,7 @@
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
     <lastBuildDate>Sat, 07 Jul 2018 18:23:33 +0600</lastBuildDate>
     
-        <atom:link href="https://kkadikin.ru/en/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kkadikin.ru/en/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,18 +18,12 @@
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/en/blog/blog_en/blog_001/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Rwaw-rwaw, dog Smile with you!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;There is great news: we are starting to publish content with my owner KK.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Please, see my &amp;ldquo;Hunter notes&amp;rdquo; at &lt;a href=&#34;https://kkadikin.ru/ru/blog/&#34;&gt;Blog&lt;/a&gt; section in Russian.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Sincerely yours,&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Smile&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description> Rwaw-rwaw, dog Smile with you!
+There is great news: we are starting to publish content with my owner KK.
+Please, see my &amp;ldquo;Hunter notes&amp;rdquo; at Blog section in Russian.
+Sincerely yours,
+Smile
+ </description>
     </item>
     
   </channel>
