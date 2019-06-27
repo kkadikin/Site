@@ -5,6 +5,13 @@ theme = "navigator-hugo"
 copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
 publishDir = "docs"
 
+#27.06.2019 KK RSS
+home = [ "RSS", "HTML"]
+
+#27.06.2019 KK RSS
+mediatype = "application/rss"
+baseName = "kkadikin-blog"
+
 # Build robots.txt file
 enableRobotsTXT = true
 # google analytics tracking id
