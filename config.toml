@@ -5,7 +5,10 @@ theme = "navigator-hugo"
 copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
 publishDir = "docs"
 #27.06.2019 KK RSS
+[outputs]
 home = [ "RSS", "HTML"]
+[outputFormats]
+[outputFormats.RSS]
 mediatype = "application/rss"
 baseName = "Smile-news"
 

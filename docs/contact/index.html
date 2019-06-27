@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru-ru"><head>
+<html class="no-js" lang="en-us"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Navigator Hugo Template">
@@ -78,8 +78,8 @@
 
 
 
-    <a href="https://kkadikin.ru/ru" class="selected"><img src= https://kkadikin.ru/images/logos/lang-ru.gif alt="IMAGE" />ru
-    
+    <a href="https://kkadikin.ru/ru"><img src= https://kkadikin.ru/images/logos/lang-ru.gif alt="IMAGE" />
+
 </a>
 
                         
@@ -90,8 +90,8 @@
 
 
 
-    <a href="https://kkadikin.ru/en"><img src= https://kkadikin.ru/images/logos/lang-en.gif alt="IMAGE" />
-
+    <a href="https://kkadikin.ru/en" class="selected"><img src= https://kkadikin.ru/images/logos/lang-en.gif alt="IMAGE" />en
+    
 </a>
 
                         
@@ -99,27 +99,27 @@
                     <div class="collapse navbar-collapse" id="navigation">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://kkadikin.ru/">Домой</a>
+                                <a class="nav-link" href="https://kkadikin.ru/">Home</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://kkadikin.ru/ru/about">О нас</a>
+                                <a class="nav-link" href="https://kkadikin.ru/about">About</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://kkadikin.ru/ru/service">Услуги</a>
+                                <a class="nav-link" href="https://kkadikin.ru/service">Service</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://kkadikin.ru/ru/portfolio">Портфолио</a>
+                                <a class="nav-link" href="https://kkadikin.ru/portfolio">Portfolio</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://kkadikin.ru/ru/blog">Блог</a>
+                                <a class="nav-link" href="https://kkadikin.ru/blog">Blog</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://kkadikin.ru/ru/contact">Контакты</a>
+                                <a class="nav-link" href="https://kkadikin.ru/contact">Contact</a>
                             </li>
                             
                         </ul>
@@ -136,13 +136,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Categories</h2>
+                <h2>Contact</h2>
                 <nav aria-label="breadcrumb mx-auto" role="navigation">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="https://kkadikin.ru/">Home</a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Categories</li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
                     </ol>
                 </nav>
             </div>
@@ -150,19 +150,86 @@
     </div>
 </section>
 
-<!-- Blog Section Start -->
-<section class="blog section" id="blog">
+
+<!-- Start Contact Us -->
+<section class="contact-us section bg-gray" id="contact">
     <div class="container">
         <div class="row">
-            
-            <div class="col-12 text-center">
-                
+            <div class="col">
+                <div class="title text-center">
+                    <h4>DROP US A NOTE</h4>
+                    
+                    <h2>Contact Us</h2>
+                    <span class="border"></span>
+                    
+                    <p>Greetings, I will try to answer to your question as soon as possible. Please, send your message by E-mail, this form is not active now.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Contact Details -->
+            <div class="col-12 col-md-6">
+                <img class="img-fluid" src="https://kkadikin.ru/images/about/map-eng.jpg" alt="cityMap">
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form col-12 col-md-6 ">
+                <form id="contact-form" method="post" action="sendmail.php" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name / Имя" class="form-control" name="name" id="name">
+                    </div>
 
+                    <div class="form-group">
+                        <input type="email" placeholder="E-mail / E-mail" class="form-control" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject / Тема" class="form-control" name="subject" id="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Message / Сообщение" class="form-control" name="message" id="message"></textarea>
+                    </div>
+
+                    <div id="mail-success" class="success">
+                        Thank you. The Mailman is on His Way :)
+                    </div>
+
+                    <div id="mail-fail" class="error">
+                        Sorry, don't know what happened. Try later :(
+                    </div>
+
+                    <div id="cf-submit">
+                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit / Передать">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="address-block contact-meta-block">
+                <img class="img-fluid" src="/images/company/place-marker.png">
+                    <h4> Location </h4>
+                    <p>    <p>St. Petersburg, <br> Russia</p></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="phone-block contact-meta-block">
+                <img class="img-fluid" src="/images/company/outgoing-call.png">
+                    <h4> Call Us </h4>
+                    <p>    <p>Mobile phone: <br> +7 921 359 34 37</p></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="social-icons-block contact-meta-block">
+                <img class="img-fluid" src="/images/company/feedback.png">
+                    <h4> Write Us </h4>
+                    <p>    <p>E-mail: <br> kadikin@mail.ru</p></p>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Blog Section End -->
+
 
 
         </div><!-- Footer Start -->
@@ -171,14 +238,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Для связи</h3>
-                    <p>Мобильный телефон:<br>
+                    <h3>Contact us</h3>
+                    <p>Mobile phone:<br>
                     &#43;7 921 359 34 37<br>
                     E-mail:<br>
                     kadikin@mail.ru</p>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Продукты</h3>
+                    <h3>Products</h3>
                     <ul>
                         
                         <li>
@@ -196,33 +263,33 @@
                     </ul>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Быстрые ссылки</h3>
+                    <h3>Quick links</h3>
                     <ul>
                         
                         <li>
-                            <a href="https://kkadikin.ru/ru/about">О нас</a>
+                            <a href="https://kkadikin.ru/about">About</a>
                         </li>
                         
                         <li>
-                            <a href="https://kkadikin.ru/ru/service">Услуги</a>
+                            <a href="https://kkadikin.ru/service">Service</a>
                         </li>
                         
                         <li>
-                            <a href="https://kkadikin.ru/ru/portfolio">Портфолио</a>
+                            <a href="https://kkadikin.ru/portfolio">Portfolio</a>
                         </li>
                         
                         <li>
-                            <a href="https://kkadikin.ru/ru/blog">Блог</a>
+                            <a href="https://kkadikin.ru/blog">Blog</a>
                         </li>
                         
                         <li>
-                            <a href="https://kkadikin.ru/ru/contact">Контакты</a>
+                            <a href="https://kkadikin.ru/contact">Contact</a>
                         </li>
                         
                     </ul>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Добро пожаловать</h3>
+                    <h3>You are welcome</h3>
                     <img class="img-fluid" src="/images/footer.png">
                 </div>
             </div>
