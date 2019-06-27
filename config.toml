@@ -10,7 +10,7 @@ home = [ "RSS", "HTML"]
 [outputFormats]
 [outputFormats.RSS]
 mediatype = "application/rss"
-baseName = "smile-posts"
+baseName = "feed"
 
 
 # Build robots.txt file
