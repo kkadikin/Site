@@ -19,23 +19,33 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/blog/article_ru/article_001/</loc>
+    <loc>https://kkadikin.ru/ru/blog/article_001/</loc>
     <lastmod>2019-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/blog/development_ru/dev_002/</loc>
+    <loc>https://kkadikin.ru/ru/blog/dev_002/</loc>
     <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/blog/development_ru/dev_001/</loc>
+    <loc>https://kkadikin.ru/ru/blog/dev_001/</loc>
     <lastmod>2019-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/blog/blog_ru/blog_001/</loc>
+    <loc>https://kkadikin.ru/ru/blog/blog_001/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kkadikin.ru/en/blog/blog_001/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kkadikin.ru/ru/blog/blog_001/"
+                />
   </url>
   
   <url>

@@ -14,10 +14,10 @@
     
     <item>
       <title>Создание календаря при помощи DAX</title>
-      <link>https://kkadikin.ru/ru/blog/article_ru/article_001/</link>
+      <link>https://kkadikin.ru/ru/blog/article_001/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/article_ru/article_001/</guid>
+      <guid>https://kkadikin.ru/ru/blog/article_001/</guid>
       <description>Рвав-рвав, собака Смайл продолжает эфир!
 Мы с хозяином собрались с силами, и решили написать свою 1-ю статью, посвященную созданию календаря. Несмотря на то, что не писал про это только ленивый, подобная вещь очень важна.
  Календарь в Power BI можно создать, по большому счету, 3-мя различными способами:
@@ -26,10 +26,10 @@
     
     <item>
       <title>График работы сотрудников</title>
-      <link>https://kkadikin.ru/ru/blog/development_ru/dev_002/</link>
+      <link>https://kkadikin.ru/ru/blog/dev_002/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/development_ru/dev_002/</guid>
+      <guid>https://kkadikin.ru/ru/blog/dev_002/</guid>
       <description>Рвав-рвав, собака Смайл на связи!
 Представляем вашему вниманию свою 2-ю разработку комплекта отчетности &amp;ldquo;Офисная жизнь&amp;rdquo; &amp;ndash; отчет &amp;ldquo;График работы сотрудников&amp;rdquo;, иллюстрирующий доступность сотрудников в плане выполнения поставленных задач.
  Отчет реализован при помощи DAX и Power Query, и построен на базе производственного календаря.
@@ -41,10 +41,10 @@
     
     <item>
       <title>Производственный календарь</title>
-      <link>https://kkadikin.ru/ru/blog/development_ru/dev_001/</link>
+      <link>https://kkadikin.ru/ru/blog/dev_001/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/development_ru/dev_001/</guid>
+      <guid>https://kkadikin.ru/ru/blog/dev_001/</guid>
       <description>Рвав-рвав, всем хорошего настроения!
 Представляем вашему вниманию свою 1-ю разработку комплекта отчетности &amp;ldquo;Офисная жизнь&amp;rdquo; &amp;ndash; отчет &amp;ldquo;Производственный календарь&amp;rdquo;.
 Итак, начинаем.
@@ -58,10 +58,10 @@
     
     <item>
       <title>Вступительное слово</title>
-      <link>https://kkadikin.ru/ru/blog/blog_ru/blog_001/</link>
+      <link>https://kkadikin.ru/ru/blog/blog_001/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/blog_ru/blog_001/</guid>
+      <guid>https://kkadikin.ru/ru/blog/blog_001/</guid>
       <description> Рвав-рвав, с вами я, собака Смайл!
 Есть прекрасная новость: мы с хозяином начинаем публиковать контент.
  Раздел Блог будет содержать следующую информацию:
