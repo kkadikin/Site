@@ -5,6 +5,16 @@ theme = "navigator-hugo"
 copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
 publishDir = "docs"
 
+#28.06.2019 KK RSS
+[outputs]
+home = [ "RSS", "HTML"]
+
+#28.06.2019 KK RSS
+[outputFormats]
+[outputFormats.RSS]
+
+mediatype = "application/rss"
+
 # Build robots.txt file
 enableRobotsTXT = true
 # google analytics tracking id
