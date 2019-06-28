@@ -14,7 +14,6 @@ home = [ "RSS", "HTML"]
 [outputFormats.RSS]
 
 mediatype = "application/rss"
-baseName = "feed"
 
 # Build robots.txt file
 enableRobotsTXT = true
