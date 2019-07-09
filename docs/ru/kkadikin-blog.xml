@@ -6,10 +6,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Wed, 26 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://kkadikin.ru/ru/kkadikin-blog.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Встроенная иерархия дат</title>
+      <link>https://kkadikin.ru/ru/blog/article_002/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_002/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Рвав-рвав, собака Смайл в студии!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Я собака обязательный, исполнительный, да и вообще, самый лучший :-Р&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;В связи с этим, несмотря на то, что &amp;ldquo;обещанного 3 года ждут&amp;rdquo;, подготовил заметку о плюсах и минусах использования встроенной иерархии дат, о которых обещал рассказать в своей статье &lt;a href=&#34;https://kkadikin.ru/ru/blog/article_001/&#34;&gt;Создание календаря при помощи DAX&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;В общем, идея написания материала возникла после общения с &amp;ldquo;матерыми волкодавами&amp;rdquo;, коммуникабельность и любопытство &amp;ndash; страшная сила!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Смотрите, что нарыл&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;За встроенную иерархию дат в Power BI отвечает опция, расположенная здесь:&lt;/p&gt;
+
+&lt;p&gt;File -&amp;gt; Options and settings -&amp;gt; Options -&amp;gt; Data Load -&amp;gt; Auto date/time&lt;/p&gt;
+
+&lt;p&gt;По умолчанию данная настройка активна, но ее, конечно, можно принудительно отключить, сняв соответствующий флаг и нажав кнопку &amp;ldquo;ОК&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Положительные моменты использования встроенной иерархии дат:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;li&gt;&lt;/strong&gt; Просто, быстро и удобно;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;li&gt;&lt;/strong&gt; Минимальные знания синтаксиса DAX при построении итоговой конструкции типа:&lt;/p&gt;
+
+&lt;p&gt;Year = &amp;lsquo;Calendar&amp;rsquo;[Date].[Year];&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;li&gt;&lt;/strong&gt; Отсутствие дополнительных телодвижений при построении визуальных элементов в случае, если в их конструкции используются временные отрезки.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Как я уже говорил, это наиболее подходящий способ для новичка, да и не только, за который я агитирую всеми ламами :-)&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Отрицательные моменты использования встроенной иерархии дат:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;li&gt;&lt;/strong&gt; При использовании встроенной иерархии дат неявным образом в системе создаются скрытые дополнительные столбцы, которых не видно невооруженным глазом. То есть увидеть их Power BI Desktop вы не сможите;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Лично мне в данном конкретном случае повезло, поскольку нюх у меня отличный, собакен я коммуникабельный, сам неплох, да и знакомые &amp;ldquo;матерые волкодавы&amp;rdquo; имеются!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;li&gt;&lt;/strong&gt; Более того, если в вашем наборе данных не один столбец с датами, это будет происходить каждый раз, то есть на каждый столбец с датами будет создано несколько скрытых дополнительных системных столбцов.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Проиллюстрировать отрицательные моменты нам поможет DAX Studio, пошаговая инструкция:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;li&gt;&lt;/strong&gt; Запустить DAX Studio:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kkadikin.ru/images/blog/art_002_screen_1.jpg&#34; alt=&#34;art_002_screen_1&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;По итогам при действительно больших объемах данных использование встроенной иерархии дат может отрицательно сказаться на производительности системы в целом, но ели ваши потребности относительно невелики, то на это можно не обращать внимания.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Создание календаря при помощи DAX</title>
@@ -124,7 +184,7 @@
 &lt;p&gt;&amp;lsquo;Calendar&amp;rsquo;[Date].[Month]&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Как вы, наверно, уже поняли, подобным образом мы получили минимальный набор временных разрезов, о котором упоминалось выше. Лично я за этот способ агитирую всеми лапами, однако, указанный способ имеет как достоинства, так и недостатки. Пожалуй, нужно не забыть создать соответствующую заметку&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Как вы, наверно, уже поняли, подобным образом мы получили минимальный набор временных разрезов, о котором упоминалось выше. Лично я за этот способ агитирую всеми лапами, однако, указанный способ имеет как достоинства, так и недостатки. Пожалуй, нужно не забыть написать статейку по этому поводу&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kkadikin.ru/images/blog/art_001_screen.jpg&#34; alt=&#34;art_001_screen&#34; /&gt;&lt;/p&gt;
