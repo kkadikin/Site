@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Wed, 26 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Встроенная иерархия дат</title>
+      <link>https://kkadikin.ru/ru/blog/article_002/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_002/</guid>
+      <description>Рвав-рвав, собака Смайл в студии!
+Я собака обязательный, исполнительный, да и вообще, самый лучший :-Р
+В связи с этим, несмотря на то, что &amp;ldquo;обещанного 3 года ждут&amp;rdquo;, подготовил заметку о плюсах и минусах использования встроенной иерархии дат, о которых обещал рассказать в своей статье Создание календаря при помощи DAX.
+В общем, идея написания материала возникла после общения с &amp;ldquo;матерыми волкодавами&amp;rdquo;, коммуникабельность и любопытство &amp;ndash; страшная сила!
+Смотрите, что нарыл&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>Создание календаря при помощи DAX</title>
