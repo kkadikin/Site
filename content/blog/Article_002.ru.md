@@ -1,7 +1,7 @@
 ---
 title: Нюансы использования встроенной иерархии дат
 date: 2019-07-09
-image: images/blog/blog_002_foto.jpg
+image: images/blog/art_002_foto.jpg
 author: Smile
 ---
 
