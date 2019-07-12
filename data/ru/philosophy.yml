@@ -1,7 +1,7 @@
 enable        : true
-topTitle      : LITTLE MORE BRIEF
-title         : About Us
-subtitle      : "Something more about our views:"
+topTitle      : НЕМНОГИМ БОЛЬШЕ
+title         : О нас
+subtitle      : "Кое-что еще про нас:"
 
 tabItem       :
   - id        : philosophy
