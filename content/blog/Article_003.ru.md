@@ -121,6 +121,6 @@ RETURN SWITCH ( TRUE (); _Toggle = 1; [RUR]; _Toggle = 2; [USD]; _Toggle = 3; [E
 
 > *Ваш Смайл.*
 
-**ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ **
+**ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ**
 
 <iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiOThiODY1Y2UtYmZiYy00N2VkLWE4MTgtZjJkMjMyMzE2MjQ1IiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
