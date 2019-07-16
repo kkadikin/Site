@@ -7,17 +7,21 @@ filtermenu    :
   - name      : Все
     category  : all
     
-  - name      : Фотографии
-    category  : photography
+  - name      : Статьи
+    category  : articles
 
   - name      : Разработки
-    category  : development
+    category  : developments
 
 item   :
   - title     : Production schedule
     image     : images/portfolio/portfolio-1.jpg
-    category  : photography
+    category  : developments
 
   - title     : Absence report
     image     : images/portfolio/portfolio-2.jpg
-    category  : photography
+    category  : developments
+
+  - title     : Measure as toggle
+    image     : images/portfolio/portfolio-3.jpg
+    category  : articles
