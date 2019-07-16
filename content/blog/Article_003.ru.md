@@ -123,4 +123,4 @@ RETURN SWITCH ( TRUE (); _Toggle = 1; [RUR]; _Toggle = 2; [USD]; _Toggle = 3; [E
 
 **ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ**
 
-<iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiOTUyMTk2ZDQtYWUwYi00ZDMxLThiZTEtMWY1Y2VlZWM2MWNmIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="680" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiZjIzOGUwODEtNGU0Ni00MzFkLTg1YWUtMzUzNjQwZjQ5NjRjIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
