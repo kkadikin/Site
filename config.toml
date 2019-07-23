@@ -83,13 +83,14 @@ DefaultContentLanguage = "ru"
         enable              = true
         topTitle            = "ОСТАВЬТЕ СООБЩЕНИЕ"
         title               = "Контакты"
-        subtitle            = "Приветствую, я постараюсь ответить на каждый вопрос как можно скорее. Пожалуйста, отправьте ваше сообщение на E-mail, данная форма сейчас неактивна."
+        subtitle            = "Приветствую, я постараюсь ответить на каждый вопрос как можно скорее. Пожалуйста, отправьте ваше сообщение на E-mail."
         titleaddress        = "Местонахождение"
         titlephone          = "Позвоните нам"
         titlemail           = "Напишите нам"
         address             = "Санкт-Петербург, <br> Россия"
         phone               = "Мобильный телефон: <br> +7 921 359 34 37"
         cityMap             = "/images/about/map-rus.jpg"
+        contactFoto         = "/images/about/contact.jpg"
         mail                = "E-mail: <br> kadikin@mail.ru"
 
     # Call to Action Section on About Page
@@ -153,13 +154,14 @@ DefaultContentLanguage = "ru"
         enable              = true
         topTitle            = "DROP US A NOTE"
         title               = "Contact Us"
-        subtitle            = "Greetings, I will try to answer to your question as soon as possible. Please, send your message by E-mail, this form is not active now."
+        subtitle            = "Greetings, I will try to answer to your question as soon as possible. Please, send your message by E-mail."
         titleaddress        = "Location"
         titlephone          = "Call Us"
         titlemail           = "Write Us"
         address             = "St. Petersburg, <br> Russia"
         phone               = "Mobile phone: <br> +7 921 359 34 37"
         cityMap             = "/images/about/map-eng.jpg"
+        contactFoto         = "/images/about/contact.jpg"
         mail                = "E-mail: <br> kadikin@mail.ru"
 
     # Call to Action Section on About Page

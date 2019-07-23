@@ -19,8 +19,11 @@
             <div class="col-12 col-md-6">
                 <img class="img-fluid" src="{{ with .Site.Params.contact.cityMap }}{{.| absURL }}{{ end }}" alt="cityMap">
             </div>
+            <div class="col-12 col-md-6">
+                <img class="img-fluid" src="{{ with .Site.Params.contact.contactFoto }}{{.| absURL }}{{ end }}" alt="contactFoto">
+            </div>
             {{ "<!-- Contact Form -->" | safeHTML }}
-<!--            <div class="contact-form col-12 col-md-6 ">
+<!--KK  23.07.2019 Скрытие формы отправки            <div class="contact-form col-12 col-md-6 ">
                 <form id="contact-form" method="post" action="sendmail.php" role="form">
                     <div class="form-group">
                         <input type="text" placeholder="Name / Имя" class="form-control" name="name" id="name">
