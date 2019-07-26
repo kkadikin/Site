@@ -8,6 +8,7 @@ tabItem       :
     title     : Философия
     heading   : Наша философия
     content   : >
+                <br>
                 Нам не страшен серый волк, серый волк, серый волк...
     image     : images/company/company-1.jpg
 
@@ -15,6 +16,7 @@ tabItem       :
     title     : Миссия
     heading   : Наша миссия
     content   : >
+                <br>
                 Совершенствуясь самостоятельно, мы можем помочь кому-нибудь еще.
     image     : images/company/company-2.jpg
 
@@ -22,5 +24,66 @@ tabItem       :
     title     : Видение
     heading   : Наше видение
     content   : >
+                <br>
                 Чем проще, тем лучше.
     image     : images/company/company-3.jpg
+
+  - id        : project
+    title     : Проекты
+    heading   : Проектный опыт
+    content   : >
+                <br>
+                <strong> Система Power BI </strong>
+                <li> НьюТек Сервисез - сфера услуг, нефтегазовый комплекс; <br>
+                <li> Тойота Мотор - автомобилестроение; <br>
+                <li> НижБел - торговля; <br>
+                <li> ЮникБро - сфера услуг, управляющая компания; <br>
+                <li> Выборжец - сельское хозяйство; <br>
+                <li> Скандик Констракшен - строительство; <br>
+                <li> Рейма - текстиль; <br>
+                <li> Рейнарс Алюминиум - строительство; <br>
+                <li> Группа "Кронштадт" - наукоемкая продукция.
+                <br>  <br>
+                <strong> Cистема Microsoft Dynamics NAV </strong>
+                <br> <br>
+                <li> Группа "Кронштадт" - наукоемкая продукция; <br>
+                <li> Транзас - морское направление.
+                <br> <br>
+                <strong> Система Oracle E-Business Suite </strong>
+                <br> <br>
+                <li> Федеральное казначейство - бюджетная система РФ; <br>
+                <li> Северо-Западный Телеком - телекоммуникации; <br>
+                <li> ТомскНефтехим - ‎нефтехимия.
+    image     : images/company/company-4.jpg
+
+  - id        : achievement
+    title     : Достижения
+    heading   : Список регалий
+    content   : >
+                <br>
+                <strong> Сертификат Microsoft - очный экзамен </strong>
+                <br>
+                <li> Analyzing and Visualizing Data with Microsoft Power BI.
+                <br> <br>
+                <strong> Курсы Microsoft - обучение через интернет </strong>
+                <br> <br>
+                <li> Massively Parallel Processing with ADW (Azure Data Warehouse); <br>
+                <li> Azure Data Service; <br>
+                <li> Analyzing and Visualizing Data with Excel; <br>
+                <li> Analyzing and Visualizing Data with Power BI; <br>
+                <li> Data Platform & Analytics Foundational for Data Analytics Competency; <br>
+                <li> SQL Server 2016 - Mission Critical and Hybrid; <br>
+                <li> Data Platform & Analytics Foundational for Data Platform Competency; <br>
+                <li> Business Intelligence for Data Analytics; <br>
+                <li> Big Data for Data Analytics; <br>
+                <li> Application Integration for Technical.
+    image     : images/company/company-5.jpg
+
+  - id        : job
+    title     : Работа
+    heading   : Место приложения усилий
+    content   : >
+                <br>
+                Обожаемый хозяин трудится в международной консалтинговой компании <a href="https://awara-it.com/ru/">Awara IT</a> <br>
+                Oфисы Awara IT расположены в России, Финляндии, Испании, США, Германии, Казахстане.
+    image     : images/company/company-6.jpg
