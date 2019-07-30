@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Mon, 29 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Отслеживание длительности проекта</title>
       <link>https://kkadikin.ru/ru/blog/article_004/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_004/</guid>
       <description>Рвав-рвав, зубастый собака Смайл рад вас приветствовать!
@@ -39,6 +39,7 @@
  Создание календаря при помощи DAX
  Нюансы использования встроенной иерархии дат
  Использование мер в качестве переключателя
+ Отслеживание длительности проекта
 РАЗРАБОТКИ
  Производственный календарь
  График работы сотрудников

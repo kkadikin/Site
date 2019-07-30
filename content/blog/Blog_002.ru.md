@@ -19,7 +19,9 @@ author: Smile
 
 **<li>** [Нюансы использования встроенной иерархии дат](https://kkadikin.ru/ru/blog/article_002/)
 
-**<li>** [Использование мер в качестве переключателя](https://kkadikin.ru/ru/blog/article_002/)
+**<li>** [Использование мер в качестве переключателя](https://kkadikin.ru/ru/blog/article_003/)
+
+**<li>** [Отслеживание длительности проекта](https://kkadikin.ru/ru/blog/article_004/)
 
 **РАЗРАБОТКИ**
 

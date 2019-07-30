@@ -1,6 +1,6 @@
 ---
 title: Отслеживание длительности проекта
-date: 2019-07-29
+date: 2019-07-30
 image: images/blog/art_004_foto.jpg
 author: Smile
 ---
