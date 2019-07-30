@@ -22,6 +22,10 @@ item   :
     image     : images/portfolio/portfolio-2.jpg
     category  : developments
 
-  - title     : Measure as toggle
+  - title     : Measure as a toggle
     image     : images/portfolio/portfolio-3.jpg
+    category  : articles
+
+  - title     : Project duration tracking
+    image     : images/portfolio/portfolio-4.jpg
     category  : articles

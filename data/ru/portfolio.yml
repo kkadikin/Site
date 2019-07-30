@@ -14,14 +14,18 @@ filtermenu    :
     category  : developments
 
 item   :
-  - title     : Production schedule
+  - title     : Производственный календарь
     image     : images/portfolio/portfolio-1.jpg
     category  : developments
 
-  - title     : Absence report
+  - title     : График работы сотрудников
     image     : images/portfolio/portfolio-2.jpg
     category  : developments
 
-  - title     : Measure as toggle
+  - title     : Использование мер в качестве переключателя
     image     : images/portfolio/portfolio-3.jpg
+    category  : articles
+
+  - title     : Отслеживание длительности проекта
+    image     : images/portfolio/portfolio-4.jpg
     category  : articles
