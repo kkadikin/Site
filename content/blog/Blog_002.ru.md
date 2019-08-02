@@ -13,6 +13,8 @@ author: Smile
 
 **<li>** [Вступительное слово ](https://kkadikin.ru/ru/blog/blog_001/)
 
+**<li>** [Мелкие радости - нюансы выбора значения в срезе ](https://kkadikin.ru/ru/blog/blog_003/)
+
 **ТЕМАТИЧЕСКИЕ СТАТЬИ:**
 
 **<li>** [Создание календаря при помощи DAX](https://kkadikin.ru/ru/blog/article_001/)

@@ -201,13 +201,28 @@
 <p>Менеджер =</p>
 
 <p>VAR _Manager =
-    VALUES ( Datset[Менеджер проекта] )
-VAR _QuantityRows =
-    COUNTROWS ( _Manager )
-VAR _Rezult =
-    IF ( _QuantityRows &gt; 1; &ldquo;Выберите менеджера&rdquo;; _Manager )
-RETURN
+    VALUES ( Datset[Менеджер проекта] )</p>
+
+<p>VAR _QuantityRows =
+    COUNTROWS ( _Manager )</p>
+
+<p>VAR _Rezult =
+    IF ( _QuantityRows &gt; 1; &ldquo;Выберите менеджера&rdquo;; _Manager )</p>
+
+<p>RETURN
     _Rezult</p>
+
+<p>Как вы можете убедиться, подобная штука поможет вам избежать несогласованности при визуализации данных, в случае, когда в фильтре ничего не выбрано.</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_5.jpg" alt="blog_003_screen_5" /></p>
+
+<blockquote>
+<p><em>Рвав-рвав, на этом все, пойду на праздник, авось, чего перепадет&hellip;</em></p>
+
+<p><em>Ваш Смайл</em></p>
+
+<p><em>P.S. Любителям понажимать на кнопочки &ndash; увы, в этой рубрике &ldquo;Мелкие радости&rdquo; вам облом :-Р</em></p>
+</blockquote>
 
             </div>
         </div>
