@@ -34,26 +34,25 @@ tabItem       :
     content   : >
                 <br>
                 <strong> Power BI system </strong>
-                <li> NewTech Services - service industry, oil and gas complex; <br>
-                <li> Toyota Motor - automotive industry; <br>
-                <li> NizhBel - retail; <br>
-                <li> UniqBro - service industry, management company; <br>
-                <li> Vyborgec - agriculture; <br>
-                <li> Scandic Construction - construction; <br>
-                <li> Reima - textile industry; <br>
-                <li> Reynaers Aluminium - construction; <br>
-                <li> "Kronshtadt" Group - high technology products.
+                <li> Service industry, oil and gas complex; <br>
+                <li> Automotive industry; <br>
+                <li> Retail; <br>
+                <li> Service industry, management company; <br>
+                <li> Agriculture; <br>
+                <li> Construction; <br>
+                <li> Textile industry; <br>
+                <li> High technology products.
                 <br>  <br>
                 <strong> Cистема Microsoft Dynamics NAV </strong>
                 <br> <br>
-                <li> "Kronshtadt" Group - high technology products; <br>
-                <li> Transas - sea ​​direction.
+                <li> High technology products; <br>
+                <li> Sea ​​direction.
                 <br> <br>
                 <strong> Система Oracle E-Business Suite </strong>
                 <br> <br>
-                <li> Federal Treasury - budget system of Russia; <br>
-                <li> North-West Telecom - telecommunications; <br>
-                <li> TomskNefteChim - petrochemistry industry.
+                <li> Budget system of Russia; <br>
+                <li> Telecommunications; <br>
+                <li> Petrochemistry industry.
     image     : images/company/company-4.jpg
 
   - id        : achievement
