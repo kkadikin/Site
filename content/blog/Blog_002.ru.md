@@ -15,6 +15,8 @@ author: Smile
 
 **<li>** [Мелкие радости - нюансы выбора значения в срезе ](https://kkadikin.ru/ru/blog/blog_003/)
 
+**<li>** [Мелкие радости - фиксация момента обновления отчетности ](https://kkadikin.ru/ru/blog/blog_004/)
+
 **ТЕМАТИЧЕСКИЕ СТАТЬИ:**
 
 **<li>** [Создание календаря при помощи DAX](https://kkadikin.ru/ru/blog/article_001/)
