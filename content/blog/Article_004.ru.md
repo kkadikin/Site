@@ -143,4 +143,4 @@ DIVIDE (
 
 **ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ**
 
-<<iframe width="680" height="510" src="https://app.powerbi.com/view?r=eyJrIjoiZTRhZGVmOWMtZjJjOC00ZjFkLTgwYTEtZWYzYWM4NTMzNzZhIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYjI4Yjg0NjctOGIwMy00YjkyLTk5ZDEtYWYzNjFmZjU3N2M3IiwidCI6IjE4YjFiOTZhLTk0MTQtNDE3MC1iNmNhLTZkODU3NTJlNTZmOCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
