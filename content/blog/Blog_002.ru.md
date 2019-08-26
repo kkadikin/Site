@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-08-23
+date: 2019-08-26
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -32,5 +32,7 @@ author: Smile
 **<li>** [Производственный календарь](https://kkadikin.ru/ru/blog/dev_001/)
 
 **<li>** [График работы сотрудников](https://kkadikin.ru/ru/blog/dev_002/)
+
+**<li>** [День рождения в коллективе](https://kkadikin.ru/ru/blog/dev_003/)
 
 > *Ваш Смайл*
