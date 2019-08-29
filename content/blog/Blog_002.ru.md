@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-08-26
+date: 2019-08-29
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -26,6 +26,8 @@ author: Smile
 **<li>** [Использование мер в качестве переключателя](https://kkadikin.ru/ru/blog/article_003/)
 
 **<li>** [Отслеживание длительности проекта](https://kkadikin.ru/ru/blog/article_004/)
+
+**<li>** [Параметры на уровне Power Query](https://kkadikin.ru/ru/blog/article_005/)
 
 **РАЗРАБОТКИ**
 
