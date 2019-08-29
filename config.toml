@@ -1,6 +1,6 @@
 baseURL = "https://kkadikin.ru/"
 languageCode = "ru-ru"
-title = "Smile solutions"
+title = "Smile IT solutions"
 theme = "navigator-hugo"
 copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
 publishDir = "docs"
@@ -34,7 +34,7 @@ DefaultContentLanguage = "ru"
     [Languages.ru]
     weight = 1
     languageCode = "ru-ru"
-    title = "Smile solutions"
+    title = "Smile IT solutions"
     dateFormat = "2 January 2006"
 
     home                    = "Домой"
@@ -105,7 +105,7 @@ DefaultContentLanguage = "ru"
     [Languages.en]
     weight = 2
     languageCode = "en-us"
-    title = "Smile solutions"
+    title = "Smile IT solutions"
     dateFormat = "January 2, 2006"
 
     home                    = "Home"
