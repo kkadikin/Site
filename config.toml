@@ -1,6 +1,6 @@
 baseURL = "https://kkadikin.ru/"
 languageCode = "ru-ru"
-title = "Konstantin Kadikin Sm"
+title = "Konstantin Kadikin"
 theme = "navigator-hugo"
 copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
 publishDir = "docs"
