@@ -1,5 +1,6 @@
 ---
 title: Параметры на уровне Power Query
+description: Smile
 date: 2019-08-29
 image: images/blog/art_005_foto.jpg
 author: Smile
