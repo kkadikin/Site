@@ -11,11 +11,13 @@ author: Smile
  
 **БЛОГ**
 
-**<li>** [Вступительное слово ](https://kkadikin.ru/ru/blog/blog_001/)
+**<li>** [Вступительное слово](https://kkadikin.ru/ru/blog/blog_001/)
 
-**<li>** [Мелкие радости - нюансы выбора значения в срезе ](https://kkadikin.ru/ru/blog/blog_003/)
+**<li>** [Мелкие радости - нюансы выбора значения в срезе](https://kkadikin.ru/ru/blog/blog_003/)
 
-**<li>** [Мелкие радости - фиксация момента обновления отчетности ](https://kkadikin.ru/ru/blog/blog_004/)
+**<li>** [Мелкие радости - фиксация момента обновления отчетности](https://kkadikin.ru/ru/blog/blog_004/)
+
+**<li>** [Мелкие радости - визуализация параметра Power Query](https://kkadikin.ru/ru/blog/blog_004/)
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ:**
 
