@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Мелкие радости - визуализация параметра Power Query</title>
+      <link>https://kkadikin.ru/ru/blog/blog_005/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_005/</guid>
+      <description>Рвав-рвав, сегодня я &amp;ndash; собака в кабачках!
+Перед вами &amp;ndash; 3-я заметка из нашего цикла &amp;ldquo;Мелкие радости&amp;rdquo;, и мы поговорим о том, как визуализировать значения параметров Power Query, в случае их использования в Power BI. Создание параметров различных видов уже было рассмотрено в статье Параметры на уровне Power Query. А поскольку 2 раза делать одно и то же лень, смекалистый собака Смайл будет, с вашего позволения, для данной публикации использовать сделанный ранее пример.</description>
+    </item>
+    
+    <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
       <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
