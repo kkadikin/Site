@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Smile IT solutions</title>
+    <title>Smile advisory</title>
     <link>https://kkadikin.ru/ru/</link>
-    <description>Recent content on Smile IT solutions</description>
+    <description>Recent content on Smile advisory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Параметры на уровне Power Query</title>
-      <link>https://kkadikin.ru/ru/blog/article_005/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/article_005/</guid>
-      <description>Рвав-рвав, здесь снова собака Смайл!
-Данная статья появилась по 2-м причинам:
- Появился запрос пользователей на этот счет вида: &amp;ldquo;С чем это едят?&amp;rdquo;.
- Шустрый собака, в качестве помощи, решил по-быстрому найти ссылку с ответом на этот вопрос, но ничего толкового нагуглить по этому поводу в короткое время не сумел.
-В результате пришлось на мобиле кратенько описывать данный вопрос, аж бесит (!), и где-то в планах появилось сделать собственный материал.</description>
-    </item>
-    
-    <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -43,6 +30,19 @@
  Использование мер в качестве переключателя
  Отслеживание длительности проекта
  Параметры на уровне Power Query</description>
+    </item>
+    
+    <item>
+      <title>Параметры на уровне Power Query</title>
+      <link>https://kkadikin.ru/ru/blog/article_005/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_005/</guid>
+      <description>Рвав-рвав, здесь снова собака Смайл!
+Данная статья появилась по 2-м причинам:
+ Появился запрос пользователей на этот счет вида: &amp;ldquo;С чем это едят?&amp;rdquo;.
+ Шустрый собака, в качестве помощи, решил по-быстрому найти ссылку с ответом на этот вопрос, но ничего толкового нагуглить по этому поводу в короткое время не сумел.
+В результате пришлось на мобиле кратенько описывать данный вопрос, аж бесит (!), и где-то в планах появилось сделать собственный материал.</description>
     </item>
     
     <item>
