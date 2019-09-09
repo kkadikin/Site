@@ -39,4 +39,6 @@ author: Smile
 
 **<li>** [День рождения в коллективе](https://kkadikin.ru/ru/blog/dev_003/)
 
+**<li>** [Аптечка первой помощи](https://kkadikin.ru/ru/blog/dev_004/)
+
 > *Ваш Смайл*
