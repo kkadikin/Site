@@ -19,7 +19,7 @@ author: Smile
 
 **<li>** [Мелкие радости - визуализация параметра Power Query](https://kkadikin.ru/ru/blog/blog_005/)
 
-**ТЕМАТИЧЕСКИЕ СТАТЬИ:**
+**ТЕМАТИЧЕСКИЕ СТАТЬИ**
 
 **<li>** [Создание календаря при помощи DAX](https://kkadikin.ru/ru/blog/article_001/)
 
