@@ -2,7 +2,7 @@
 <html class="no-js" lang="ru-ru"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Мелкие радости - визуализация параметра Power Query">
+<meta name="description" content="Мелкие радости - избавляемся от Blank / Пусто">
 <meta name="author" content="Themefisher.com">
 <meta name="generator" content="Hugo 0.55.5" />
 
@@ -132,8 +132,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <img src="https://kkadikin.ru/images/blog/blog_005_foto.jpg" class="w-100 mb-3" alt="Post-Image">
-                <h2>Мелкие радости - визуализация параметра Power Query</h2>
+                <img src="https://kkadikin.ru/images/blog/blog_006_foto.jpg" class="w-100 mb-3" alt="Post-Image">
+                <h2>Мелкие радости - избавляемся от Blank / Пусто</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -142,86 +142,62 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>30 August 2019</span>
+                            <span>12 September 2019</span>
                         </li>
                     </ul>
                 </div>
                 <blockquote>
-<p><em>Рвав-рвав, сегодня я &ndash; собака в кабачках!</em></p>
+<p><em>Рвав-рвав, я сегодня &ndash; собака-уничтожитель!</em></p>
 
-<p><em>Перед вами &ndash; 3-я заметка из нашего цикла &ldquo;Мелкие радости&rdquo;, и мы поговорим о том, как визуализировать значения параметров Power Query, в случае их использования в Power BI. Создание параметров различных видов уже было рассмотрено в статье <a href="https://kkadikin.ru/ru/blog/article_005/">Параметры на уровне Power Query</a>. А поскольку 2 раза делать одно и то же лень, смекалистый собака Смайл будет, с вашего позволения, для данной публикации использовать ранее сделанный ранее пример.</em></p>
+<p><em>Перед вами &ndash; 4-я заметка из нашего цикла &ldquo;Мелкие радости&rdquo;, и мы сегодня поговорим о том, как избавиться от значений типа &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) в некоторых визуальных элементах, которые появляются в результате фильтрации данных.</em></p>
 </blockquote>
 
 <p><strong>Пример:</strong></p>
 
-<p><strong><li></strong> Имеется набор данных, содержащий исходную информацию по проектам</p>
+<p><strong><li></strong> Имеется набор данных, содержащий исходную информацию в разрезе количества (столбец &ldquo;Количество&rdquo;) и номенклатуры (столбец &ldquo;Название&rdquo;, имеющий значения &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;), а также номенклатурный справочник, содержащий более полную номенклатуру, чем в исходном наборе (значение &ldquo;Апельсины&rdquo;):</p>
 
-<p><img src="https://kkadikin.ru/images/blog/blog_005_screen_1.jpg" alt="blog_005_screen_01" /></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_1.jpg" alt="blog_006_screen_01" /></p>
 
-<p><strong><li></strong> Параметр &ldquo;Дата&rdquo;, содержащий список значений, связанный с основным набором данных.</p>
+<p><strong><li></strong> Существует визуальный фильтр, построенный согласно номенклатурному справочнику, то есть содержащий 3 значения: &ldquo;Апельсины&rdquo;, &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;.</p>
+
+<p><strong><li></strong> Данные связаны между собой при  помощи однонаправленной связи &ldquo;Один-ко-многим&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_2.jpg" alt="blog_006_screen_02" /></p>
 
 <p><strong>Задача:</strong></p>
 
-<p>Вывести в визуальный элемент значение параметра &ldquo;Дата&rdquo;, созданного на уровне Power Query, используя элемент&rdquo;Card&rdquo; (&ldquo;Карточка&rdquo;).</p>
+<p>Поскольку фильтр построен на основании номенклатурного справочника, то при выборе значения &ldquo;Апельсины&rdquo;, элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) в стандартном исполнении отобразит значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;), что может создать определенные неудобства в восприятии данных. Так как количество &ndash; значение числовое, требуется заменить значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) на &ldquo;0&rdquo;.</p>
 
 <p><strong>Решение:</strong></p>
 
-<p><strong><li></strong> Переходим на уровень Power Query при помощи кнопки &ldquo;Edit Queries&rdquo; (&ldquo;Изменить запросы&rdquo;), расположенной на закладке &ldquo;Home&rdquo; (&ldquo;Главная&rdquo;).</p>
+<p><strong><li></strong> При построении элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) необходимо использовать меру, а не столбец &ldquo;Количество&rdquo; с данными исходного набора значений, или, в других случаях &ndash; рассчетный столбец. Применение меры позволит не использовать вшитый алгоритм рассчета при построении визуализации.</p>
 
-<p><strong><li></strong> Создаем пустой запрос при помощи контекстного меню &ldquo;New Query&rdquo; (Новый запрос) -&gt; &ldquo;Blank Query&rdquo; (&ldquo;Пустой запрос&rdquo;).</p>
+<p><strong><li></strong> Для более наглядной иллюстрации вшитый алгоритм подсчета количества единиц номенклатуры в визуальном элементе элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) можно заменить на аналогичный расчет при помощи меры, формула которой будет выглядеть следующим образом:</p>
 
-<p><strong><li></strong> Открываем редактор запросов при помощи кнопки &ldquo;Advanced Editor&rdquo; (&ldquo;Расширенный редактор&rdquo;), расположенной на закладке &ldquo;Home&rdquo; (&ldquo;Главная&rdquo;).</p>
+<p>Вид по умолчанию =</p>
 
-<p><strong><li></strong> Создаем отдельную таблицу, куда передаем значени параметра &ldquo;Дата&rdquo;, при помощи следующего кода:</p>
+<p>SUM ( &lsquo;Dataset&rsquo;[Количество] )</p>
 
-<p>let</p>
+<p><strong><li></strong> При выборе в фильтре значения, равного &ldquo;Апельсины&rdquo;, мера, описанная выше, отобразит значение, равное &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;):</p>
 
-<pre><code>Source = Table.FromRows({ { Дата } },{&quot;Дата отбора&quot;})
-</code></pre>
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_3.jpg" alt="blog_006_screen_03" /></p>
 
-<p>in</p>
+<p><strong><li></strong> Модифицировать работу указанного алгоритма можно, дополнительно используя функцию ISBLANK, конструкция меры при этом слегка усложнится, и примет следующий вид:</p>
 
-<pre><code>Source
-</code></pre>
+<p>Модифицированный вид =</p>
 
-<p><strong><li></strong> Для вывода результата запроса нажимаем кнопку &ldquo;Done&rdquo; (&ldquo;Применить&rdquo;):</p>
+<p>VAR _Quantity = SUM ( &lsquo;Dataset&rsquo;[Количество] )</p>
 
-<p><img src="https://kkadikin.ru/images/blog/blog_005_screen_2.jpg" alt="blog_005_screen_02" /></p>
+<p>VAR _Result = IF ( ISBLANK ( _Quantity ); 0; _Quantity )</p>
 
-<p><strong><li></strong> Приводим созданный запрос в порядок, а именно меняем название таблицы, присвоенное системой по умолчанию (&ldquo;Query1&rdquo;), на Options, а также присваиваем нужный тип данных, равный &ldquo;Date&rdquo;(&ldquo;Дата&rdquo;):</p>
+<p>RETURN _Result</p>
 
-<p><img src="https://kkadikin.ru/images/blog/blog_005_screen_3.jpg" alt="blog_005_screen_03" /></p>
-
-<p><strong><li></strong> Далее необходимо применить все изменения при помощи кнопки &ldquo;Close &amp; Apply&rdquo; (&ldquo;Закрыть и применить&rdquo;).</p>
-
-<p><strong><li></strong> Последним шагом является оформление визуального элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;).</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_005_screen_4.jpg" alt="blog_005_screen_04" /></p>
-
-<p><strong><li></strong> Проверить корректность работы, а именно изменение отображения значения параметра &ldquo;Дата&rdquo;, и соответствующую фильтрацию данных, можно при помощи кнопки &ldquo;Manage Parameters&rdquo; (&ldquo;Управление параметрами&rdquo;), осуществив ввод нового значения, и применив внесенные изменения при помощи кнопки &ldquo;Apply changes&rdquo; (&ldquo;Применить изменения&rdquo;).</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_005_screen_5.jpg" alt="blog_005_screen_05" /></p>
-
-<p><strong>Возможное применение:</strong></p>
-
-<p><strong><li></strong> Используя визуализацию параметров, не придется тренировать свою память :-)</p>
-
-<p><strong><li></strong> Производится экономия времени (не придется постоянно смотреть, исходя из чего отфильтрованы данные), в процессе тренировки памяти.</p>
-
-<p><strong><li></strong> А еще можно сделать красиво и функционально.</p>
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_4.jpg" alt="blog_006_screen_04" /></p>
 
 <blockquote>
-<p><em>Рвав-рвав, пойду отмывать кабачки, раскрою серкет &ndash; я сам не неряха, это маленькая хозяйка постаралась.</em></p>
+<p><em>Рвав-рвав, как говорится, &ldquo;The End&rdquo;, а применять данную фишечку, по мнению скромного меня, нужно везде, где возможно, так как, в конечном итоге, значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) плохо влияет на восприятие информации - раз, и портит итоговый дизайн - два.</em></p>
 
 <p><em>Ваш Смайл</em></p>
-
-<p><em>P.S. Любителям понажимать на кнопочки &ndash; повторяться не люблю, поэтому в дальнейшем буду просто выкладывать отчет, если посчитаю это необходимым!</em></p>
-
-<p><em>P.P.S. И снова активный собакен получил feedback с более изящным вариантом:</em></p>
-
-<p><em>При помощи контекстного меню, выделив параметр, можно поставить флаг &ldquo;Enable load&rdquo; (&ldquo;Включить загрузку&rdquo;), и тогда в модель в виде таблицы будет загружено скалярное значение.</em></p>
-
-<p><em>Пес Смайл безмерно рад, что развивается вместе с Вами!</em></p>
 </blockquote>
 
             </div>
