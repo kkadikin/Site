@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-09-12
+date: 2019-09-13
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -32,6 +32,8 @@ author: Smile
 **<li>** [Отслеживание длительности проекта](https://kkadikin.ru/ru/blog/article_004/)
 
 **<li>** [Параметры на уровне Power Query](https://kkadikin.ru/ru/blog/article_005/)
+
+**<li>** [Дорога в облака](https://kkadikin.ru/ru/blog/article_006/)
 
 **РАЗРАБОТКИ**
 

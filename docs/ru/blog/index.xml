@@ -26,21 +26,9 @@
     </item>
     
     <item>
-      <title>Мелкие радости - избавляемся от Blank / Пусто</title>
-      <link>https://kkadikin.ru/ru/blog/blog_006/</link>
-      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/blog_006/</guid>
-      <description>Рвав-рвав, я сегодня &amp;ndash; собака-уничтожитель!
-Перед вами &amp;ndash; 4-я заметка из нашего цикла &amp;ldquo;Мелкие радости&amp;rdquo;, и мы сегодня поговорим о том, как избавиться от значений типа &amp;ldquo;Blank&amp;rdquo; (&amp;ldquo;Пусто&amp;rdquo;) в некоторых визуальных элементах, которые появляются в результате фильтрации данных.
- Пример:
- Имеется набор данных, содержащий исходную информацию в разрезе количества (столбец &amp;ldquo;Количество&amp;rdquo;) и номенклатуры (столбец &amp;ldquo;Название&amp;rdquo;, имеющий значения &amp;ldquo;Груши&amp;rdquo; и &amp;ldquo;Яблоки&amp;rdquo;), а также номенклатурный справочник, содержащий более полную номенклатуру, чем в исходном наборе (значение &amp;ldquo;Апельсины&amp;rdquo;):</description>
-    </item>
-    
-    <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -54,6 +42,18 @@
 ТЕМАТИЧЕСКИЕ СТАТЬИ
  Создание календаря при помощи DAX
  Нюансы использования встроенной иерархии дат</description>
+    </item>
+    
+    <item>
+      <title>Мелкие радости - избавляемся от Blank / Пусто</title>
+      <link>https://kkadikin.ru/ru/blog/blog_006/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_006/</guid>
+      <description>Рвав-рвав, я сегодня &amp;ndash; собака-уничтожитель!
+Перед вами &amp;ndash; 4-я заметка из нашего цикла &amp;ldquo;Мелкие радости&amp;rdquo;, и мы сегодня поговорим о том, как избавиться от значений типа &amp;ldquo;Blank&amp;rdquo; (&amp;ldquo;Пусто&amp;rdquo;) в некоторых визуальных элементах, которые появляются в результате фильтрации данных.
+ Пример:
+ Имеется набор данных, содержащий исходную информацию в разрезе количества (столбец &amp;ldquo;Количество&amp;rdquo;) и номенклатуры (столбец &amp;ldquo;Название&amp;rdquo;, имеющий значения &amp;ldquo;Груши&amp;rdquo; и &amp;ldquo;Яблоки&amp;rdquo;), а также номенклатурный справочник, содержащий более полную номенклатуру, чем в исходном наборе (значение &amp;ldquo;Апельсины&amp;rdquo;):</description>
     </item>
     
     <item>
