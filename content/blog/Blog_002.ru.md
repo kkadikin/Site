@@ -35,6 +35,8 @@ author: Smile
 
 **<li>** [Дорога в облака](https://kkadikin.ru/ru/blog/article_006/)
 
+**<li>** [Построчное построение отчета](https://kkadikin.ru/ru/blog/article_007/)
+
 **РАЗРАБОТКИ**
 
 **<li>** [Производственный календарь](https://kkadikin.ru/ru/blog/dev_001/)
