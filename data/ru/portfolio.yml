@@ -37,3 +37,7 @@ item   :
   - title     : Аптечка первой помощи
     image     : images/portfolio/portfolio-6.jpg
     category  : developments
+
+  - title     : Ретроспектива
+    image     : images/portfolio/portfolio-7.jpg
+    category  : articles

@@ -37,3 +37,7 @@ item   :
   - title     : First aid kit
     image     : images/portfolio/portfolio-6.jpg
     category  : developments
+
+  - title     : Retrospective
+    image     : images/portfolio/portfolio-7.jpg
+    category  : articles
