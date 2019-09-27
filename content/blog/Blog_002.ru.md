@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-09-18
+date: 2019-09-27
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -36,6 +36,8 @@ author: Smile
 **<li>** [Дорога в облака](https://kkadikin.ru/ru/blog/article_006/)
 
 **<li>** [Построчное построение отчета](https://kkadikin.ru/ru/blog/article_007/)
+
+**<li>** [Ретроспектива](https://kkadikin.ru/ru/blog/article_008/)
 
 **РАЗРАБОТКИ**
 
