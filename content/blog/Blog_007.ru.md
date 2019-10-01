@@ -97,7 +97,7 @@ CALCULATE ( SUM ( 'Dataset'[Amount] ); FILTER ( ALL ( 'Dataset' ); 'Dataset'[Mon
 ![blog_007_screen_7] (https://kkadikin.ru/images/blog/blog_007_screen_7.jpg)
 
 
-***Выводы собаки Смайла***
+**Выводы собаки Смайла:**
 
 **<li>** *Как уже говорилось выше, в принципе, задача решена, поскольку при отсутствии фильтра по периоду рассчеты обоими способами идентичны;*
 
