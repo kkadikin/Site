@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Fri, 27 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Мелкие радости - быстрые меры или хозяйкам на заметку</title>
+      <link>https://kkadikin.ru/ru/blog/blog_007/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_007/</guid>
+      <description>Рвав-рвав, сегодня я &amp;ndash; собака-грязесобирака!
+Перед вами &amp;ndash; 5-я заметка из нашего цикла &amp;ldquo;Мелкие радости&amp;rdquo;, и ниже мы рассмотрим использование функционала построения мер при помощи встроенного мастера &amp;ndash; так называемые &amp;ldquo;Быстрые меры&amp;rdquo;. Принцип работы с функционалом будет рассмотрен на примере рассчета накопительного итога.
+ Пример:
+ Имеется набор данных, содержащий распределение различных сумм в разрезе статьи (столбец &amp;ldquo;Строка отчета&amp;rdquo;), и периода (соответствующие столбцы месяцев):
+Задача:
+Рассчитать суммы накопительного итога в разрезе соответствующего периода времени (месяц), используя 2 способа создание конечного рассчета:</description>
+    </item>
     
     <item>
       <title>Ретроспектива</title>
