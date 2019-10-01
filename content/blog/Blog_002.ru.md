@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-09-27
+date: 2019-10-01
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -20,6 +20,9 @@ author: Smile
 **<li>** [Мелкие радости - визуализация параметра Power Query](https://kkadikin.ru/ru/blog/blog_005/)
 
 **<li>** [Мелкие радости - избавляемся от Blank / Пусто](https://kkadikin.ru/ru/blog/blog_006/)
+
+**<li>** [Мелкие радости - быстрые меры, или хозяйкам на заметку](https://kkadikin.ru/ru/blog/blog_007/)
+
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ**
 
