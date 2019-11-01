@@ -27,9 +27,10 @@ author: Smile
 
 **<li>** Календарь выделен в качестве отдельной таблицы, при этом он создан "динамическим образом", а именно:
 
-Calendar = 
-
+```dax
+Calendar =
 CALENDAR ( FIRSTDATE ( 'Dataset'[Employment_Date] ); TODAY () )
+```
 
 
 **Задача:**
@@ -45,11 +46,11 @@ CALENDAR ( FIRSTDATE ( 'Dataset'[Employment_Date] ); TODAY () )
 
 **<li>** Для решение поставленной задачи необходимо однозначно понимать, работал ли конкретный сотрудник в определенный момент времени. Для этого в созданное представление добавлен пользовательский столбец "Working_Date", формирующийся следующим образом:
 
+```dax
 List.Dates ( [Employment_Date], 
-
 Duration.TotalDays( [Dismissal_Date] - [Employment_Date] ) + 1,
-
 #duration( 1, 0, 0, 0 ) )
+```
 
 *Рвав-рвав, есть один тонкий момент:*
 

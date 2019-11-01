@@ -187,35 +187,20 @@
 </blockquote>
 
 <p><strong><li></strong> Далее необходимо реализовать расчеты, позволяющие осуществить заlумку, озвученную выше. Для начала, можем разобраться с датами, тут все просто. Мера для получения текущей даты выглядит следующим образом:</p>
-
-<p>Текущая дата =</p>
-
-<p>TODAY ()</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Текущая дата =
+TODAY ()</code></pre></div>
 <p><strong><li></strong> Мера для получения даты начала проекта:</p>
-
-<p>Дата начала =</p>
-
-<p>MINX ( &lsquo;Dataset&rsquo;; &lsquo;Dataset&rsquo;[Дата начала проекта] )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Дата начала =
+MINX ( &#39;Dataset&#39;; &#39;Dataset&#39;[Дата начала проекта] )</code></pre></div>
 <p><strong><li></strong> Мера для получения даты окончания проекта:</p>
-
-<p>Дата окончания =</p>
-
-<p>MINX ( &lsquo;Dataset&rsquo;; &lsquo;Dataset&rsquo;[Дата окончания проекта] )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Дата окончания = 
+MINX ( &#39;Dataset&#39;; &#39;Dataset&#39;[Дата окончания проекта] )</code></pre></div>
 <p><strong><li></strong> Поскольку в качестве основного элемента визуализации &ldquo;прогресса&rdquo; проекта мы выбрали &ldquo;Gauge&rdquo; (&ldquo;Датчик&rdquo;), для того, чтобы его построить согласно описанным требованиям, нам понадобятся следующие элементы: Value (Значение), Minimum value (Минимальное значение), Maximum value (Максимальное значение) и Target value (Целевое значение). Мера для получения начального значения дуги, в днях, задана константой, и выглядит так:</p>
-
-<p>Начало проекта, дни =</p>
-
-<p>0</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Начало проекта, дни = 
+0</code></pre></div>
 <p><strong><li></strong> Мера для получения конечного значения дуги, в днях, выглядит так:</p>
-
-<p>Общая продолжительность проекта, дни =</p>
-
-<p>DATEDIFF ( &lsquo;Dataset&rsquo;[Дата начала]; &lsquo;Dataset&rsquo;[Дата окончания]; DAY ) + 1</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Общая продолжительность проекта, дни =
+DATEDIFF ( &#39;Dataset&#39;[Дата начала]; &#39;Dataset&#39;[Дата окончания]; DAY ) + 1</code></pre></div>
 <blockquote>
 <p><em>Рвав-рвав, совет от хитрой собаки Смайла: всегда проверяйте свои расчеты, или внимательно читайте документацию.</em></p>
 
@@ -225,53 +210,42 @@
 </blockquote>
 
 <p><strong><li></strong> Мера для получения количества дней, прошедших с момента запуска проекта, построена таким образом:</p>
-
-<p>Текущая продолжительность проекта, дни =</p>
-
-<p>var _Duration = DATEDIFF ( &lsquo;Dataset&rsquo;[Дата начала]; &lsquo;Dataset&rsquo;[Текущая дата]; DAY ) + 1</p>
-
-<p>var _Result = IF([Дата окончания]&lt;[Текущая дата]; [Общая продолжительность проекта, дни];_Duration)</p>
-
-<p>return _Result</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Текущая продолжительность проекта, дни =
+VAR _Duration =
+    DATEDIFF ( &#39;Dataset&#39;[Дата начала]; &#39;Dataset&#39;[Текущая дата]; DAY ) + 1
+VAR _Result =
+    IF (
+        [Дата окончания] &lt; [Текущая дата];
+        [Общая продолжительность проекта. дни];
+        _Duration
+    )
+RETURN
+    _Result</code></pre></div>
 <p><strong><li></strong> Теперь нам нужно сделать расчеты подобного рода для оформления длительности проекта в процентах. Меры для этого блока дополнительно должны иметь формат &ldquo;Persentage&rdquo;. Мера для получения начального значения дуги, задана константой, и выглядит так:</p>
-
-<p>Начало проекта, % =</p>
-
-<p>0</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Начало проекта, % = 
+0</code></pre></div>
 <p><strong><li></strong> Мера для получения конечного значения дуги, в процентах, задана константой, и выглядит так:</p>
-
-<p>Общая продолжительность проекта, % =</p>
-
-<p>1</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Общая продолжительность проекта, % = 
+1</code></pre></div>
 <p><strong><li></strong> Мера для получения количества дней, прошедших с момента запуска проекта, при пересчете в проценты, построена таким образом:</p>
 
 <p>Текущая продолжительность проекта, % =</p>
-
-<p>DIVIDE (
-    [Текущая продолжительность проекта, дни];
-    [Общая продолжительность проекта, дни];
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Текущая продолжительность проекта, % =
+DIVIDE (
+    [Текущая продолжительность проекта. дни];
+    [Общая продолжительность проекта. дни];
     0
-)</p>
-
+)</code></pre></div>
 <p><strong><li></strong> Мера для получения целевого значения (наши 85%), после которого планируеся проверить состояние проекта, задана константой, и выглядит следующим образом:</p>
-
-<p>Проверка проекта, % =</p>
-
-<p>0,85</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Проверка проекта, % = 
+0,85</code></pre></div>
 <blockquote>
 <p><em>Можно было, конечно реализовать это при помощи изменяемого пользователем параметра, но, поскольку описание процесса создания параметров это не &ldquo;пара строк&rdquo;, собака Смайл напишет отдельную статью по этому поводу в будущем. Тем более, что на это был запрос от аудитории, и удалось нагуглить только англо-язычный контент. Тем не менее, человеку мы с хозяином помогли, кратко описав решение проблемы</em></p>
 </blockquote>
 
 <p><strong><li></strong> Как вы, наверно, смогли заметить, при расчете мер для блока по количеству дней, формула подсчета целевого значения была пропущена, это было сделано умышленно, поскольку рассчитывать его константой неправильно, а &ldquo;85% &ndash; это всегда 85%&rdquo;. Тем не менее, теперь мы в состоянии почитать целевое значение для текщей продолжительности проекта в днях:</p>
-
-<p>Проверка проекта, дни =</p>
-
-<p>[Проверка проекта, %] * [Общая продолжительность проекта, дни]</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Проверка проекта, дни =
+[Проверка проекта. %] * [Общая продолжительность проекта. дни]</code></pre></div>
 <p>Собственно, с расчетами закончено. Общий комплект мер &ndash; 11 штук. Построение связей в нашем примере не нужно, поскольку все данные хранятся в одной таблице. Результат разработки представлен на рисунке ниже:</p>
 
 <p><img src="https://kkadikin.ru/images/blog/art_004_screen_2.jpg" alt="art_004_screen_2" /></p>

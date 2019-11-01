@@ -173,17 +173,10 @@
 <p><strong><li></strong> Открываем редактор запросов при помощи кнопки &ldquo;Advanced Editor&rdquo; (&ldquo;Расширенный редактор&rdquo;), расположенной на закладке &ldquo;Home&rdquo; (&ldquo;Главная&rdquo;).</p>
 
 <p><strong><li></strong> Создаем отдельную таблицу, куда передаем значени параметра &ldquo;Дата&rdquo;, при помощи следующего кода:</p>
-
-<p>let</p>
-
-<pre><code>Source = Table.FromRows({ { Дата } },{&quot;Дата отбора&quot;})
-</code></pre>
-
-<p>in</p>
-
-<pre><code>Source
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">let
+    Source = Table.FromRows({ { Дата } },{&#34;Дата отбора&#34;})
+in
+    Source</code></pre></div>
 <p><strong><li></strong> Для вывода результата запроса нажимаем кнопку &ldquo;Done&rdquo; (&ldquo;Применить&rdquo;):</p>
 
 <p><img src="https://kkadikin.ru/images/blog/blog_005_screen_2.jpg" alt="blog_005_screen_02" /></p>

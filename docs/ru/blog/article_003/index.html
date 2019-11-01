@@ -175,27 +175,18 @@
 <p><strong><li></strong> Создана таблица &ldquo;Exchange rates&rdquo; &ndash; таблица, содержащая входящие данные, а именно столбцы &ldquo;Код валюты&rdquo;, &ldquo;Дата&rdquo; и &ldquo;Курс валюты&rdquo;, таблица создана на уровне Power Query.</p>
 
 <p><strong><li></strong> Создана таблица &ldquo;Slicer&rdquo; &ndash; таблица, представляющая собой справочник валютных кодов, созданный на уровне DAX, при помощи следующей формулы:</p>
-
-<p>Slicer =</p>
-
-<p>DISTINCT (
-    SELECTCOLUMNS ( &lsquo;Exchange rates&rsquo;; &ldquo;Код валюты&rdquo;; &lsquo;Exchange rates&rsquo;[Код валюты] )
-)</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Slicer =
+DISTINCT (
+    SELECTCOLUMNS ( &#39;Exchange rates&#39;; &#34;Код валюты&#34;; &#39;Exchange rates&#39;[Код валюты] )
+)</code></pre></div>
 <p>Данная таблица будет содержать все, что необходимо для реализации меры-переключателя, визуальным воплощением переключателя, как вы, наверное, уже поняли из названия таблицы, будет обычный элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;).</p>
 
 <p><strong><li></strong> В таблице &ldquo;Slicer&rdquo; создан расчетный столбец &ldquo;Порядок&rdquo; &ndash; столбец, содержащий индекс, привязанный к определенному коду валюты, который необходим для корректной работы механизма переключения. Формула столбца следующая:</p>
-
-<p>Порядок =</p>
-
-<p>SWITCH ( &lsquo;Slicer&rsquo;[Код валюты]; &ldquo;RUR&rdquo;; 1; &ldquo;USD&rdquo;; 2; &ldquo;EUR&rdquo;; 3 )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Порядок =
+SWITCH ( &#39;Slicer&#39;[Код валюты]; &#34;RUR&#34;; 1; &#34;USD&#34;; 2; &#34;EUR&#34;; 3 )</code></pre></div>
 <p><strong><li></strong> В таблице &ldquo;Slicer&rdquo; также создан расчетный столбец &ldquo;Название&rdquo; &ndash; столбец, содержащий текстовые названия кодов валют, элемент необязателен, создан для удобства конечного пользователя. Формула столбца следующая:</p>
-
-<p>Название =</p>
-
-<p>SWITCH ( &lsquo;Slicer&rsquo;[Порядок]; 1; &ldquo;Российский рубль&rdquo;; 2; &ldquo;Доллар США&rdquo;; 3; &ldquo;Евро&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Название = 
+SWITCH ( &#39;Slicer&#39;[Порядок]; 1; &#34;Российский рубль&#34;; 2; &#34;Доллар США&#34;; 3; &#34;Евро&#34; )</code></pre></div>
 <p>В результате шагов, описаных выше, должна получиться таблица, представленная ниже</p>
 
 <p><img src="https://kkadikin.ru/images/blog/art_003_screen_2.jpg" alt="art_003_screen_2" /></p>
@@ -207,17 +198,18 @@
 <p><strong><li></strong> Далее необходимо реализовать рассчеты, позволяющие пересчитать исходную сумму в каждую из валют. Для этого необходимо создать, как минимум, две меры, для доллара США и евро, но в нашем примере для целей проверки корректности пересчета &ldquo;оригинальная сумма -&gt; пересчитанная сумма&rdquo;, также создается мера для российского рубля. Ее мы также будем использовать в дальнейшем для значения &ldquo;по умолчанию&rdquo;.</p>
 
 <p>Пример формулы может выглядеть следующим образом, хотя, конечно, вариантов может быть несколько:</p>
-
-<p>USD =</p>
-
-<p>VAR _StartAmount = SUM ( &lsquo;Dataset&rsquo;[Оригинальная  сумма] )</p>
-
-<p>VAR _Rate = MAXX ( FILTER ( &lsquo;Exchange rates&rsquo;; &lsquo;Exchange rates&rsquo;[Код валюты] = &ldquo;USD&rdquo; ); &lsquo;Exchange rates&rsquo;[Курс валюты] )</p>
-
-<p>VAR _EndAmount = DIVIDE ( _StartAmount; _Rate; 0 )</p>
-
-<p>RETURN _EndAmount</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">USD =
+VAR _StartAmount =
+    SUM ( &#39;Dataset&#39;[Оригинальная  сумма] )
+VAR _Rate =
+    MAXX (
+        FILTER ( &#39;Exchange rates&#39;; &#39;Exchange rates&#39;[Код валюты] = &#34;USD&#34; );
+        &#39;Exchange rates&#39;[Курс валюты]
+    )
+VAR _EndAmount =
+    DIVIDE ( _StartAmount; _Rate; 0 )
+RETURN
+    _EndAmount</code></pre></div>
 <blockquote>
 <p><em>Совет от хитрой собаки Смайла:</em></p>
 
@@ -227,13 +219,17 @@
 </blockquote>
 
 <p><strong><li></strong> формула меры-переключателя строится следующим образом:</p>
-
-<p>Переключатель =</p>
-
-<p>VAR _Toggle = SELECTEDVALUE ( &lsquo;Slicer&rsquo;[Порядок] )</p>
-
-<p>RETURN SWITCH ( TRUE (); _Toggle = 1; [RUR]; _Toggle = 2; [USD]; _Toggle = 3; [EUR]; [RUR] )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Переключатель =
+VAR _Toggle =
+    SELECTEDVALUE ( &#39;Slicer&#39;[Порядок] )
+RETURN
+    SWITCH (
+        TRUE ();
+        _Toggle = 1; [RUR];
+        _Toggle = 2; [USD];
+        _Toggle = 3; [EUR];
+        [RUR]
+    )</code></pre></div>
 <blockquote>
 <p><em>Товарищи, ловите очередное обещание:</em></p>
 

@@ -173,25 +173,20 @@
 <p><strong><li></strong> При построении элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) необходимо использовать меру, а не столбец &ldquo;Количество&rdquo; с данными исходного набора значений, или, в других случаях &ndash; рассчетный столбец. Применение меры позволит не использовать вшитый алгоритм рассчета при построении визуализации.</p>
 
 <p><strong><li></strong> Для более наглядной иллюстрации вшитый алгоритм подсчета количества единиц номенклатуры в визуальном элементе элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) можно заменить на аналогичный расчет при помощи меры, формула которой будет выглядеть следующим образом:</p>
-
-<p>Вид по умолчанию =</p>
-
-<p>SUM ( &lsquo;Dataset&rsquo;[Количество] )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Вид по умолчанию =
+SUM ( &#39;Dataset&#39;[Количество] )</code></pre></div>
 <p><strong><li></strong> При выборе в фильтре значения, равного &ldquo;Апельсины&rdquo;, мера, описанная выше, отобразит значение, равное &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;):</p>
 
 <p><img src="https://kkadikin.ru/images/blog/blog_006_screen_3.jpg" alt="blog_006_screen_3" /></p>
 
 <p><strong><li></strong> Модифицировать работу указанного алгоритма можно, дополнительно используя функцию ISBLANK, конструкция меры при этом слегка усложнится, и примет следующий вид:</p>
-
-<p>Модифицированный вид =</p>
-
-<p>VAR _Quantity = SUM ( &lsquo;Dataset&rsquo;[Количество] )</p>
-
-<p>VAR _Result = IF ( ISBLANK ( _Quantity ); 0; _Quantity )</p>
-
-<p>RETURN _Result</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Модифицированный вид =
+VAR _Quantity =
+    SUM ( &#39;Dataset&#39;[Количество] )
+VAR _Result =
+    IF ( ISBLANK ( _Quantity ); 0; _Quantity )
+RETURN
+    _Result</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_006_screen_4.jpg" alt="blog_006_screen_4" /></p>
 
 <blockquote>

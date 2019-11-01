@@ -42,9 +42,22 @@ author: Smile
 
 **<li>** В результате данных дейстыий будет сформирована конструкция следующего вида (имя по умолчанию изменено):
 
-Построение автоматически = 
-
-CALCULATE ( SUM ( 'Dataset'[Amount] ); FILTER ( CALCULATETABLE ( SUMMARIZE ( 'Dataset'; 'Dataset'[Month_Number]; 'Dataset'[Month_Name] ); ALLSELECTED ( 'Dataset' ) ); ISONORAFTER ( 'Dataset'[Month_Number]; MAX ( 'Dataset'[Month_Number] ); DESC; 'Dataset'[Month_Name]; MAX ( 'Dataset'[Month_Name] ); DESC ) ) )
+```dax
+Построение автоматически =
+CALCULATE (
+    SUM ( 'Dataset'[Amount] );
+    FILTER (
+        CALCULATETABLE (
+            SUMMARIZE ( 'Dataset'; 'Dataset'[Month_Number]; 'Dataset'[Month_Name] );
+            ALLSELECTED ( 'Dataset' )
+        );
+        ISONORAFTER (
+                'Dataset'[Month_Number]; MAX ( 'Dataset'[Month_Number] ); DESC;
+                'Dataset'[Month_Name]; MAX ( 'Dataset'[Month_Name] ); DESC
+        )
+    )
+)
+```
 
 *Рвав-рвав, как вы видите, конструкция довольно монструозная (аж лапки подрагивают!), но зато для того, чтобы ее построить, потребовались минимальные усилия!*
 
@@ -53,17 +66,26 @@ CALCULATE ( SUM ( 'Dataset'[Amount] ); FILTER ( CALCULATETABLE ( SUMMARIZE ( 'Da
 
 **<li>** Формирование меры для подсчета нарастающего итога вручную предполагает некоторые дополнительные действия со стороны конечного пользователя, а именно -- получение значения даты конца месяца, например, созданием дополнительного расчетного столбца, имеющего следующую формулу:
 
-Month_End = 
-
+```dax
+Month_End =
 EOMONTH ( 'Dataset'[Date]; 0 )
+```
 
 ![blog_007_screen_4] (https://kkadikin.ru/images/blog/blog_007_screen_4.jpg)
 
 **<li>** Конструкция нужной меры будет выглядеть следующим образом:
 
-Построение вручную = 
-
-CALCULATE ( SUM ( 'Dataset'[Amount] ); FILTER ( ALL ( 'Dataset' ); 'Dataset'[Month_End] <= MAX ( 'Dataset'[Month_End] ) ); VALUES ( 'Dataset'[Row] ) )
+```dax
+Построение вручную =
+CALCULATE (
+    SUM ( 'Dataset'[Amount] );
+    FILTER (
+        ALL ( 'Dataset' );
+        'Dataset'[Month_End] <= MAX ( 'Dataset'[Month_End] )
+    );
+    VALUES ( 'Dataset'[Row] )
+)
+```
 
 *Рвав-рвав, здесь конечная формула получилась гораздо "легче", и теперь главное -- это проверить корректность полученного результата.*
 

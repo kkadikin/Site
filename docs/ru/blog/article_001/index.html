@@ -191,11 +191,8 @@
 <p>Поэтому, при использовании функции CALENDARAUTO должна быть уверенность, что ваши данные корректны.</p>
 
 <p>Синтаксис данной функции:</p>
-
-<p>Table =</p>
-
-<p>CALENDARAUTO ()</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Table =
+CALENDARAUTO ()</code></pre></div>
 <p>Тип данных, если время вам не нужно, лучше поменять на Date, созданный столбец по умолчанию будет иметь имя Date.</p>
 
 <p><strong><li></strong> В тех случаях, когда предварительно загруженных данных, содержащих даты, нет, или если вам необходимо сформировать набор дат за неполный период времени, можно использовать функцию CALENDAR. Параментрами данной функции являются start_date и end_date, то есть начальная и конечная дата периода.</p>
@@ -203,11 +200,8 @@
 <p>Однако использовать конструкцию &ldquo;в лоб&rdquo;, написав формулу Table = CALENDAR(01.01.2019;31.12.2019) не получится, значения необходимо обработать дополнительно при помощи функции DATE, при этом также нужно учесть особенности синтаксиса.</p>
 
 <p>Итоговая конструкция для получения списка дат по 2019-му году будет выглядеть следующим образом:</p>
-
-<p>Table =</p>
-
-<p>CALENDAR ( DATE ( 2019; 01; 01 ); DATE ( 2019; 12; 31 ) )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Table =
+CALENDAR ( DATE ( 2019; 01; 01 ); DATE ( 2019; 12; 31 ) )</code></pre></div>
 <p>Как только рассчеты произведены, необходимо установить нужный тип данных, а также, в целях дополнительного удобства, можно переименовать получившуюся таблицу в Calendar.</p>
 
 <p><strong>Для наполнения получившейся таблицы нужными временными разрезами существует несколько вариантов:</strong></p>
@@ -223,35 +217,20 @@
 <p><strong>1-й способ &ndash; использование встроенной иерархии дат:</strong></p>
 
 <p><strong><li></strong> Формула для получения значения года выглядит следующим образом:</p>
-
-<p>Year =</p>
-
-<p>&lsquo;Calendar&rsquo;[Date].[Year]</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Year =
+&#39;Calendar&#39;[Date].[Year]</code></pre></div>
 <p><strong><li></strong> Формула для получения номера квартала:</p>
-
-<p>Quarter_Number =</p>
-
-<p>&lsquo;Calendar&rsquo;[Date].[QuarterNo]</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Number =
+&#39;Calendar&#39;[Date].[QuarterNo]</code></pre></div>
 <p><strong><li></strong> Формула для получения названия квартала:</p>
-
-<p>Quarter_Name =</p>
-
-<p>&lsquo;Calendar&rsquo;[Date].[Quarter]</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Name =
+&#39;Calendar&#39;[Date].[Quarter]</code></pre></div>
 <p><strong><li></strong> Формула для получения номера месяца:</p>
-
-<p>Month_Number =</p>
-
-<p>&lsquo;Calendar&rsquo;[Date].[MonthNo]</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_Number =
+&#39;Calendar&#39;[Date].[MonthNo]</code></pre></div>
 <p><strong><li></strong> Формула для получения названия месяца:</p>
-
-<p>Month_Name =</p>
-
-<p>&lsquo;Calendar&rsquo;[Date].[Month]</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_Name =
+&#39;Calendar&#39;[Date].[Month]</code></pre></div>
 <blockquote>
 <p><em>Как вы, наверно, уже поняли, подобным образом мы получили минимальный набор временных разрезов, о котором упоминалось выше. Лично я за этот способ агитирую всеми лапами, однако, указанный способ имеет как достоинства, так и недостатки. Пожалуй, нужно не забыть написать статейку по этому поводу</em></p>
 </blockquote>
@@ -261,73 +240,43 @@
 <p><strong>2-й способ &ndash; использование &ldquo;выделенной&rdquo; функции:</strong></p>
 
 <p><strong><li></strong> Формула для получения года:</p>
-
-<p>Year =</p>
-
-<p>YEAR ( &lsquo;Calendar&rsquo;[Date] )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Year =
+YEAR ( &#39;Calendar&#39;[Date] )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера месяца:</p>
-
-<p>Month_Number =</p>
-
-<p>MONTH ( &lsquo;Calendar&rsquo;[Date] )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_Number =
+MONTH ( &#39;Calendar&#39;[Date] )</code></pre></div>
 <p><strong><li></strong> Формула для получения названия месяца:</p>
-
-<p>Month_Number =</p>
-
-<p>MONTH ( &lsquo;Calendar&rsquo;[Date] )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_Number =
+MONTH ( &#39;Calendar&#39;[Date] )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера недели (2-й параметр &ndash; это начало недели, так как в России неделя начинается с понедельника, то значение равно &ldquo;2&rdquo;):</p>
-
-<p>Week_Number =</p>
-
-<p>WEEKNUM ( &lsquo;Calendar&rsquo;[Date]; 2 )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Week_Number =
+WEEKNUM ( &#39;Calendar&#39;[Date]; 2 )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера дня в неделе (2-й параметр &ndash; это выбор номера дня и начала недели, так как в России 1-й день недели &ndash; понедельник, то значение равно &ldquo;2&rdquo;):</p>
-
-<p>Weekday_Number =</p>
-
-<p>WEEKDAY ( &lsquo;Calendar&rsquo;[Date]; 2 )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Weekday_Number =
+WEEKDAY ( &#39;Calendar&#39;[Date]; 2 )</code></pre></div>
 <blockquote>
 <p><em>Выделенных функций довольно мало, поэтому, если 1-й метод не устраивает, нужно воспользоваться либо универсальной функцией расчета дополнительных значений (вариант №3), либо  использовать какие-то другие способы</em></p>
 </blockquote>
 
 <p>Для получения номера квартала можно использовать следующую формулу:</p>
-
-<p>Quarter_Name =</p>
-
-<p>ROUNDUP ( DIVIDE ( MONTH ( &lsquo;Calendar&rsquo;[Date] ); 3 ); 0 )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Name =
+ROUNDUP ( DIVIDE ( MONTH ( &#39;Calendar&#39;[Date] ); 3 ); 0 )</code></pre></div>
 <p><strong>3-й способ &ndash; использование универсальной функции:</strong></p>
 
 <p>В качестве универсальной функции для формирования календаря можно воспользоваться функцией &ldquo;FORMAT&rdquo;. Ниже представлены несколько примеров ее использования, поскольку предопределенных и пользовательских форматов чисел, даты и времени великое множество.</p>
 
 <p><strong><li></strong> Формула для получения года:</p>
-
-<p>Year =</p>
-
-<p>FORMAT ( &lsquo;Calendar&rsquo;[Date]; &ldquo;YYYY&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Year =
+FORMAT ( &#39;Calendar&#39;[Date]; &#34;YYYY&#34; )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера квартала:</p>
-
-<p>Quarter_Number =</p>
-
-<p>FORMAT ( &lsquo;Calendar&rsquo;[Date]; &ldquo;Q&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Number =
+FORMAT ( &#39;Calendar&#39;[Date]; &#34;Q&#34; )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера месяца:</p>
-
-<p>Month_Number =</p>
-
-<p>FORMAT ( &lsquo;Calendar&rsquo;[Date]; &ldquo;MM&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_Number =
+FORMAT ( &#39;Calendar&#39;[Date]; &#34;MM&#34; )</code></pre></div>
 <p><strong><li></strong> Формула для получения названия месяца:</p>
-
-<p>Quarter_Number =</p>
-
-<p>FORMAT ( &lsquo;Calendar&rsquo;[Date]; &ldquo;MMMM&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Number = 
+FORMAT ( &#39;Calendar&#39;[Date]; &#34;MMMM&#34; )</code></pre></div>
 <blockquote>
 <p><em>Рвав-рвав, с календарем мы, наконец, закончили. Пойду игрушку распотрошу, чтоб хозяину веселее было!</em></p>
 

@@ -181,29 +181,39 @@
 <p><img src="https://kkadikin.ru/images/blog/blog_007_screen_3.jpg" alt="blog_007_screen_3" /></p>
 
 <p><strong><li></strong> В результате данных дейстыий будет сформирована конструкция следующего вида (имя по умолчанию изменено):</p>
-
-<p>Построение автоматически =</p>
-
-<p>CALCULATE ( SUM ( &lsquo;Dataset&rsquo;[Amount] ); FILTER ( CALCULATETABLE ( SUMMARIZE ( &lsquo;Dataset&rsquo;; &lsquo;Dataset&rsquo;[Month_Number]; &lsquo;Dataset&rsquo;[Month_Name] ); ALLSELECTED ( &lsquo;Dataset&rsquo; ) ); ISONORAFTER ( &lsquo;Dataset&rsquo;[Month_Number]; MAX ( &lsquo;Dataset&rsquo;[Month_Number] ); DESC; &lsquo;Dataset&rsquo;[Month_Name]; MAX ( &lsquo;Dataset&rsquo;[Month_Name] ); DESC ) ) )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Построение автоматически =
+CALCULATE (
+    SUM ( &#39;Dataset&#39;[Amount] );
+    FILTER (
+        CALCULATETABLE (
+            SUMMARIZE ( &#39;Dataset&#39;; &#39;Dataset&#39;[Month_Number]; &#39;Dataset&#39;[Month_Name] );
+            ALLSELECTED ( &#39;Dataset&#39; )
+        );
+        ISONORAFTER (
+                &#39;Dataset&#39;[Month_Number]; MAX ( &#39;Dataset&#39;[Month_Number] ); DESC;
+                &#39;Dataset&#39;[Month_Name]; MAX ( &#39;Dataset&#39;[Month_Name] ); DESC
+        )
+    )
+)</code></pre></div>
 <p><em>Рвав-рвав, как вы видите, конструкция довольно монструозная (аж лапки подрагивают!), но зато для того, чтобы ее построить, потребовались минимальные усилия!</em></p>
 
 <p><strong>Решение при помощи обычной меры, порстроенной вручную:</strong></p>
 
 <p><strong><li></strong> Формирование меры для подсчета нарастающего итога вручную предполагает некоторые дополнительные действия со стороны конечного пользователя, а именно &ndash; получение значения даты конца месяца, например, созданием дополнительного расчетного столбца, имеющего следующую формулу:</p>
-
-<p>Month_End =</p>
-
-<p>EOMONTH ( &lsquo;Dataset&rsquo;[Date]; 0 )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_End =
+EOMONTH ( &#39;Dataset&#39;[Date]; 0 )</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_007_screen_4.jpg" alt="blog_007_screen_4" /></p>
 
 <p><strong><li></strong> Конструкция нужной меры будет выглядеть следующим образом:</p>
-
-<p>Построение вручную =</p>
-
-<p>CALCULATE ( SUM ( &lsquo;Dataset&rsquo;[Amount] ); FILTER ( ALL ( &lsquo;Dataset&rsquo; ); &lsquo;Dataset&rsquo;[Month_End] &lt;= MAX ( &lsquo;Dataset&rsquo;[Month_End] ) ); VALUES ( &lsquo;Dataset&rsquo;[Row] ) )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Построение вручную =
+CALCULATE (
+    SUM ( &#39;Dataset&#39;[Amount] );
+    FILTER (
+        ALL ( &#39;Dataset&#39; );
+        &#39;Dataset&#39;[Month_End] &lt;= MAX ( &#39;Dataset&#39;[Month_End] )
+    );
+    VALUES ( &#39;Dataset&#39;[Row] )
+)</code></pre></div>
 <p><em>Рвав-рвав, здесь конечная формула получилась гораздо &ldquo;легче&rdquo;, и теперь главное &ndash; это проверить корректность полученного результата.</em></p>
 
 <p><strong>Проверка результатов:</strong></p>

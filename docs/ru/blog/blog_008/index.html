@@ -165,33 +165,39 @@
 <p><strong>Односоставное условие:</strong></p>
 
 <p><strong><li></strong> Если необходимый результат зависит от выполнения одного условия (см. столбец &ldquo;Критерий 2&rdquo;), то можно использовать простую конструкцию следующего вида:</p>
-
-<p>Конструкция Switch =</p>
-
-<p>SWITCH ( &lsquo;Dataset&rsquo;[Критерий 2]; &ldquo;Собака Смайл&rdquo;; &ldquo;Молодец!&rdquo;; &ldquo;Песик Тедди&rdquo;; &ldquo;Умница :-)&ldquo;; &ldquo;Мы еще не определились :-Р&rdquo; )</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_008_screen_2.jpg" alt="blog_008_screen_2" /></p>
-
-<p><em>В данном случае мы однозначно утверждаем, что собака Смайл &ndash; молодец, песик Тедди &ndash; умница, а про всех остальных мы этого сказать не можем.</em></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Конструкция Switch =
+SWITCH (
+    &#39;Dataset&#39;[Критерий 2];
+    &#34;Собака Смайл&#34;; &#34;Молодец!&#34;;
+    &#34;Песик Тедди&#34;; &#34;Умница :-)&#34;;
+    &#34;Мы еще не определились :-Р&#34;
+)</code></pre></div>
 <p><strong>Многосоставное условие:</strong></p>
 
 <p><strong><li></strong> Если необходимый результат зависит от выполнения комплекса условий (см. дополнительно столбец &ldquo;Критерий 1&rdquo;), то исходную конструкцию необходимо дополнить следующим образом:</p>
-
-<p>Конструкция Switch - True =</p>
-
-<p>SWITCH ( TRUE (); &lsquo;Dataset&rsquo;[Критерий 1] = &ldquo;Джек-рассел-терьер&rdquo; &amp;&amp; &lsquo;Dataset&rsquo;[Критерий 2] = &ldquo;Собака Смайл&rdquo;; &ldquo;Молодец!&rdquo;; &lsquo;Dataset&rsquo;[Критерий 1] = &ldquo;Йоркширский терьер&rdquo; &amp;&amp; &lsquo;Dataset&rsquo;[Критерий 2] = &ldquo;Песик Тедди&rdquo;; &ldquo;Умница :-)&ldquo;; &ldquo;Мы еще не определились :-Р&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Конструкция Switch - True =
+SWITCH (
+    TRUE ();
+    &#39;Dataset&#39;[Критерий 1] = &#34;Джек-рассел-терьер&#34;
+        &amp;&amp; &#39;Dataset&#39;[Критерий 2] = &#34;Собака Смайл&#34;; &#34;Молодец!&#34;;
+    &#39;Dataset&#39;[Критерий 1] = &#34;Йоркширский терьер&#34;
+        &amp;&amp; &#39;Dataset&#39;[Критерий 2] = &#34;Песик Тедди&#34;; &#34;Умница :-)&#34;;
+    &#34;Мы еще не определились :-Р&#34;
+)</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_008_screen_3.jpg" alt="blog_008_screen_3" /></p>
 
 <p><em>В данном случае мы однозначно утверждаем, что собака Смайл, являющийся Джек-рассел-терьером &ndash; молодец, Йоркширский терьер песик Тедди &ndash; умница, а про всех остальных мы ничего не знаем.</em></p>
 
 <p><strong><li></strong> Однако, следует иметь в виду, что указанная конструкция предусматиривает выполнение всех заданных условий, в противном случае результат  будет неотличим от общей массы:</p>
-
-<p>Невыполнение условий =</p>
-
-<p>SWITCH ( TRUE (); &lsquo;Dataset&rsquo;[Критерий 1] = &ldquo;Немецкая овчарка&rdquo; &amp;&amp; &lsquo;Dataset&rsquo;[Критерий 2] = &ldquo;Собака Смайл&rdquo;; &ldquo;Молодец!&rdquo;; &lsquo;Dataset&rsquo;[Критерий 1] = &ldquo;Йоркширский терьер&rdquo; &amp;&amp; &lsquo;Dataset&rsquo;[Критерий 2] = &ldquo;Песик Тедди&rdquo;; &ldquo;Умница :-)&ldquo;; &ldquo;Мы еще не определились :-Р&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Невыполнение условий =
+SWITCH (
+    TRUE ();
+    &#39;Dataset&#39;[Критерий 1] = &#34;Немецкая овчарка&#34;
+        &amp;&amp; &#39;Dataset&#39;[Критерий 2] = &#34;Собака Смайл&#34;; &#34;Молодец!&#34;;
+    &#39;Dataset&#39;[Критерий 1] = &#34;Йоркширский терьер&#34;
+        &amp;&amp; &#39;Dataset&#39;[Критерий 2] = &#34;Песик Тедди&#34;; &#34;Умница :-)&#34;;
+    &#34;Мы еще не определились :-Р&#34;
+)</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_008_screen_4.jpg" alt="blog_008_screen_4" /></p>
 
 <p><em>В данном случае мы однозначно утверждаем, что собака Смайл, не являющийся Джек-рассел-терьером, никакой не молодец.</em></p>

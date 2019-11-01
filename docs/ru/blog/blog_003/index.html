@@ -201,21 +201,15 @@
 </blockquote>
 
 <p><strong>Лайфхак от хитрой собаки:</strong></p>
-
-<p>Менеджер =</p>
-
-<p>VAR _Manager =
-    VALUES ( Datset[Менеджер проекта] )</p>
-
-<p>VAR _QuantityRows =
-    COUNTROWS ( _Manager )</p>
-
-<p>VAR _Result =
-    IF ( _QuantityRows &gt; 1; &ldquo;Выберите менеджера&rdquo;; _Manager )</p>
-
-<p>RETURN
-    _Result</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Менеджер =
+VAR _Manager =
+    VALUES ( Datset[Менеджер проекта] )
+VAR _QuantityRows =
+    COUNTROWS ( _Manager )
+VAR _Result =
+    IF ( _QuantityRows &gt; 1; &#34;Выберите менеджера&#34;; _Manager )
+RETURN
+    _Result</code></pre></div>
 <p>Как вы можете убедиться, подобная штука поможет вам избежать несогласованности при визуализации данных, в случае, когда в фильтре ничего не выбрано.</p>
 
 <p><img src="https://kkadikin.ru/images/blog/blog_003_screen_5.jpg" alt="blog_003_screen_5" /></p>
@@ -229,11 +223,8 @@
 
 <p><em>P.P.S. Безмерно уважаемые двуногие предложили еще более изящный вариант:</em></p>
 </blockquote>
-
-<p>Менеджер =</p>
-
-<p>SELECTEDVALUE ( Dataset[Менеджер проекта]; &ldquo;Несколько менеджеров&rdquo; )</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Менеджер =
+SELECTEDVALUE ( Dataset[Менеджер проекта]; &#34;Несколько менеджеров&#34; )</code></pre></div>
             </div>
         </div>
     </div>
