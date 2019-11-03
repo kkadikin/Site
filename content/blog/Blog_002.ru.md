@@ -25,7 +25,7 @@ author: Smile
 
 **<li>** [Собакенские будни - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
 
-**<li>** [Собакенские будни - конструкции Related и Lookupvalue](https://kkadikin.ru/ru/blog/blog_008/)
+**<li>** [Собакенские будни - конструкции Related и Lookupvalue](https://kkadikin.ru/ru/blog/blog_009/)
 
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ**
