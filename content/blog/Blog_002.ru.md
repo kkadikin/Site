@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-11-01
+date: 2019-11-04
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -23,7 +23,9 @@ author: Smile
 
 **<li>** [Мелкие радости - быстрые меры, или хозяйкам на заметку](https://kkadikin.ru/ru/blog/blog_007/)
 
-**<li>** [Мелкие радости - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
+**<li>** [Собакенские будни - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
+
+**<li>** [Собакенские будни - конструкции Related и Lookupvalue](https://kkadikin.ru/ru/blog/blog_008/)
 
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ**
