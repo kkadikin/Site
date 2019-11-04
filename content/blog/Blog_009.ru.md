@@ -38,10 +38,10 @@ author: Smile
 
 **<li>** Данная функция работает только при наличии связей между данными, все, что необходимо сделать -- это определиться с базовой таблицей, а затем выбрать нужный столбец из другой таблицы:
 
-<!--Эпитет - со связью =
-    RELATED ( ‘Dataset 2’[Эпитет] )-->
-
-Эпитет&nbsp;-&nbsp;со&nbsp;связью&nbsp;=<br><span class="Keyword" style="color:#0070FF">RELATED</span><span class="Parenthesis" style="color:#969696">&nbsp;(</span>&nbsp;'Dataset&nbsp;2'[Эпитет]&nbsp;<span class="Parenthesis" style="color:#969696">)</span><br>
+```dax
+Эпитет - со связью =
+RELATED ( ‘Dataset 2’[Эпитет] )
+```
 
 ![blog_009_screen_4] (https://kkadikin.ru/images/blog/blog_009_screen_4.jpg)
 
@@ -60,10 +60,10 @@ author: Smile
 
 **<li>** Сначала необходимо указать столбец желаемого результата из присоединяемой таблицы, а затем - поле ключа для поиска необходимых данных в обоих наборах. Формула, позволяющая получить составной набор данных, выглядит следующим образом:
 
-<!--Эпитет - без связи =
-    LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )-->
-
-Эпитет&nbsp;-&nbsp;без&nbsp;связи&nbsp;=<br><span class="Keyword" style="color:#0070FF">LOOKUPVALUE</span><span class="Parenthesis" style="color:#969696">&nbsp;(</span>&nbsp;'Dataset&nbsp;2'[Эпитет];&nbsp;'Dataset&nbsp;2'[Питомец];&nbsp;'Dataset&nbsp;1'[Питомец]&nbsp;<span class="Parenthesis" style="color:#969696">)</span><br>
+```dax
+Эпитет - без связи =
+LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )
+```
 
 ![blog_009_screen_7] (https://kkadikin.ru/images/blog/blog_009_screen_7.jpg)
 

@@ -177,12 +177,8 @@
 <p><strong>Конструкции Related:</strong></p>
 
 <p><strong><li></strong> Данная функция работает только при наличии связей между данными, все, что необходимо сделать &ndash; это определиться с базовой таблицей, а затем выбрать нужный столбец из другой таблицы:</p>
-
-<!--Эпитет - со связью =
-    RELATED ( ‘Dataset 2’[Эпитет] )-->
-
-<p>Эпитет&nbsp;-&nbsp;со&nbsp;связью&nbsp;=<br><span class="Keyword" style="color:#0070FF">RELATED</span><span class="Parenthesis" style="color:#969696">&nbsp;(</span>&nbsp;&lsquo;Dataset&nbsp;2&rsquo;[Эпитет]&nbsp;<span class="Parenthesis" style="color:#969696">)</span><br></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Эпитет - со связью =
+RELATED ( ‘Dataset 2’[Эпитет] )</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_009_screen_4.jpg" alt="blog_009_screen_4" /></p>
 
 <p>В результате указанного действия мы получили составной набор данных, где указано, например, что &ldquo;Джек-рассел терьер собака Смайл молодец&rdquo;, а Йоркширский терьер песик Тедди умница :-)&ldquo;.</p>
@@ -198,12 +194,8 @@
 <p><img src="https://kkadikin.ru/images/blog/blog_009_screen_6.jpg" alt="blog_009_screen_6" /></p>
 
 <p><strong><li></strong> Сначала необходимо указать столбец желаемого результата из присоединяемой таблицы, а затем - поле ключа для поиска необходимых данных в обоих наборах. Формула, позволяющая получить составной набор данных, выглядит следующим образом:</p>
-
-<!--Эпитет - без связи =
-    LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )-->
-
-<p>Эпитет&nbsp;-&nbsp;без&nbsp;связи&nbsp;=<br><span class="Keyword" style="color:#0070FF">LOOKUPVALUE</span><span class="Parenthesis" style="color:#969696">&nbsp;(</span>&nbsp;&lsquo;Dataset&nbsp;2&rsquo;[Эпитет];&nbsp;&lsquo;Dataset&nbsp;2&rsquo;[Питомец];&nbsp;&lsquo;Dataset&nbsp;1&rsquo;[Питомец]&nbsp;<span class="Parenthesis" style="color:#969696">)</span><br></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Эпитет - без связи =
+LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_009_screen_7.jpg" alt="blog_009_screen_7" /></p>
 
 <p><strong><li></strong> При формировании визуального элемента полученный результат аналогичен вариантам 1 и 2, но, из-за отсутствия связи между данными, на иллюстрации эти варианты стали неработоспособны:</p>
