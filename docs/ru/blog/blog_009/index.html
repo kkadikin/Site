@@ -2,7 +2,7 @@
 <html class="no-js" lang="ru-ru"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Список публикаций">
+<meta name="description" content="Собакенские будни - конструкции Related и Lookupvalue">
 <meta name="author" content="Themefisher.com">
 <meta name="generator" content="Hugo 0.55.5" />
 
@@ -132,8 +132,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <img src="https://kkadikin.ru/images/blog/blog_002_foto.jpg" class="w-100 mb-3" alt="Post-Image">
-                <h2>Список публикаций</h2>
+                <img src="https://kkadikin.ru/images/blog/blog_009_foto.jpg" class="w-100 mb-3" alt="Post-Image">
+                <h2>Собакенские будни - конструкции Related и Lookupvalue</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -147,58 +147,66 @@
                     </ul>
                 </div>
                 <blockquote>
-<p><em>Рвав-рвав, доброго времени суток!</em></p>
+<p><em>Рвав-рвав, сегодня я &ndash; собака-двередержака!</em></p>
 
-<p><em>В данном сообщении содержится общий список публикаций, который вам позволит быстро найти интересующий контент.</em></p>
+<p><em>Перед вами &ndash; 2-я заметка из нашего цикла &ldquo;Собакенские будн&rdquo;, и ниже мы рассмотрим использование таких конструкций, как Related и Lookupvalue. При помощи данных функций можно присоединять данные, содержащиеся в разных таблицах, друг к другом. Прошаренная собака для целей демонстрации будет использовать тотже пример, что и в статье <a href="https://kkadikin.ru/ru/blog/blog_008/">Собакенские будни - конструкция Switch</a>.</em></p>
 </blockquote>
 
-<p><strong>БЛОГ</strong></p>
+<p><strong>Пример:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_001/">Вступительное слово</a></p>
+<p><strong><li></strong> Имеется 2 набора данных, содержащих различную информацию, но при этом в каждом из набоов пристствует уникальный ключ (см. столбец &ldquo;Питомец&rdquo;):</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_003/">Мелкие радости - нюансы выбора значения в срезе</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_1.jpg" alt="blog_009_screen_1" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_004/">Мелкие радости - фиксация момента обновления отчетности</a></p>
+<p><em>Кстати, если ключ отсутствует, не опускать хвост ни в коем разе, его всегда можно сделать самостоятельно, лишь бы данные обоих наборов были хоть как-то сопоставимы.</em></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_005/">Мелкие радости - визуализация параметра Power Query</a></p>
+<p><strong>Задача:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_006/">Мелкие радости - избавляемся от Blank / Пусто</a></p>
+<p>Собрать данные из обоих наборов в одном визуальном элементе, например, в элементе &ldquo;Table&rdquo; (&ldquo;Таблица&rdquo;).</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_007/">Мелкие радости - быстрые меры, или хозяйкам на заметку</a></p>
+<p><strong>Использование функционала:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_008/">Собакенские будни - конструкция Switch</a></p>
+<p><strong><li></strong> Если мы можем связать данные посредством имеющегося ключа, и у нас не стоит задачи объединения данных в одну сущность, то все что необходимо сделать &ndash; это настроить нужную связь на уровне модели:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_009/">Собакенские будни - конструкции Related и Lookupvalue</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_2.jpg" alt="blog_009_screen_2" /></p>
 
-<p><strong>ТЕМАТИЧЕСКИЕ СТАТЬИ</strong></p>
+<p><strong><li></strong> Дальше уже можно переходить непосредственно к построению визуального элемента, вобщем, проще не бывает:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_001/">Создание календаря при помощи DAX</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_3.jpg" alt="blog_009_screen_3" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_002/">Нюансы использования встроенной иерархии дат</a></p>
+<p><strong>Конструкции Related:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_003/">Использование мер в качестве переключателя</a></p>
+<p><strong><li></strong> Данная функция работает только при наличии связей между данными, все, что необходимо сделать &ndash; это определиться с базовой таблицей, а затем выбрать нужный столбец из другой таблицы:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Эпитет - со связью = 
+RELATED ( &#39;Dataset 2&#39;[Эпитет] )</code></pre></div>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_4.jpg" alt="blog_009_screen_4" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_004/">Отслеживание длительности проекта</a></p>
+<p>В результате указанного действия мы получили составной набор данных, где указано, например, что &ldquo;Джек-рассел терьер собака Смайл молодец&rdquo;, а Йоркширский терьер песик Тедди умница :-)&ldquo;.</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_005/">Параметры на уровне Power Query</a></p>
+<p><strong><li></strong> При формировании визуального элемента результат аналогичен 1-му варианту.</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_006/">Дорога в облака</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_5.jpg" alt="blog_009_screen_5" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_007/">Построчное построение отчета</a></p>
+<p><strong>Конструкции Lookupvalue:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_008/">Ретроспектива</a></p>
+<p><strong><li></strong> Данная функция работает более хитрым образом, при этом, непосредственное наличие связей между данными для ее работы необязательно, поэтому, для чистоты эксперимента, настроенная ранее связь между &ldquo;Dataset 1&rdquo; и &ldquo;Dataset 2&rdquo; удалена:</p>
 
-<p><strong>РАЗРАБОТКИ</strong></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_6.jpg" alt="blog_009_screen_6" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_001/">Производственный календарь</a></p>
+<p><strong><li></strong> Формула, позволяющая получить составной набор данных, выглядит следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Эпитет - без связи =
+LOOKUPVALUE ( &#39;Dataset 2&#39;[Эпитет]; &#39;Dataset 2&#39;[Питомец]; &#39;Dataset 1&#39;[Питомец] )</code></pre></div>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_7.jpg" alt="blog_009_screen_7" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_002/">График работы сотрудников</a></p>
+<p><strong><li></strong> При формировании визуального элемента полученный результат аналогичен вариантам 1 и 2, но, из-за отсутствия связи между данными, на иллюстрации эти варианты стали неработоспособны:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_003/">День рождения в коллективе</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_8.jpg" alt="blog_009_screen_8" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_004/">Аптечка первой помощи</a></p>
+<p><em>Рвав=рвав, товарищи, даже если в связи с особенностями вашей модели связи построить нельзя &ndash; это не повод для грусти!</em></p>
 
 <blockquote>
+<p><em>Держащий нос по ветру,</em></p>
+
 <p><em>Ваш Смайл</em></p>
 </blockquote>
 
