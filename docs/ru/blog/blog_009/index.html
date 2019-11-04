@@ -178,6 +178,9 @@
 
 <p><strong><li></strong> Данная функция работает только при наличии связей между данными, все, что необходимо сделать &ndash; это определиться с базовой таблицей, а затем выбрать нужный столбец из другой таблицы:</p>
 
+<!--Эпитет - со связью =
+    RELATED ( ‘Dataset 2’[Эпитет] )-->
+
 <p>Эпитет&nbsp;-&nbsp;со&nbsp;связью&nbsp;=<br><span class="Keyword" style="color:#0070FF">RELATED</span><span class="Parenthesis" style="color:#969696">&nbsp;(</span>&nbsp;&lsquo;Dataset&nbsp;2&rsquo;[Эпитет]&nbsp;<span class="Parenthesis" style="color:#969696">)</span><br></p>
 
 <p><img src="https://kkadikin.ru/images/blog/blog_009_screen_4.jpg" alt="blog_009_screen_4" /></p>
@@ -196,6 +199,9 @@
 
 <p><strong><li></strong> Сначала необходимо указать столбец желаемого результата из присоединяемой таблицы, а затем - поле ключа для поиска необходимых данных в обоих наборах. Формула, позволяющая получить составной набор данных, выглядит следующим образом:</p>
 
+<!--Эпитет - без связи =
+    LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )-->
+
 <p>Эпитет&nbsp;-&nbsp;без&nbsp;связи&nbsp;=<br><span class="Keyword" style="color:#0070FF">LOOKUPVALUE</span><span class="Parenthesis" style="color:#969696">&nbsp;(</span>&nbsp;&lsquo;Dataset&nbsp;2&rsquo;[Эпитет];&nbsp;&lsquo;Dataset&nbsp;2&rsquo;[Питомец];&nbsp;&lsquo;Dataset&nbsp;1&rsquo;[Питомец]&nbsp;<span class="Parenthesis" style="color:#969696">)</span><br></p>
 
 <p><img src="https://kkadikin.ru/images/blog/blog_009_screen_7.jpg" alt="blog_009_screen_7" /></p>
@@ -204,7 +210,7 @@
 
 <p><img src="https://kkadikin.ru/images/blog/blog_009_screen_8.jpg" alt="blog_009_screen_8" /></p>
 
-<p><em>Рвав=рвав, товарищи, даже если в связи с особенностями вашей модели связи построить нельзя &ndash; это не повод для грусти!</em></p>
+<p><em>Рвав-рвав, товарищи, даже если в связи с особенностями вашей модели связи построить нельзя &ndash; это не повод для грусти!</em></p>
 
 <blockquote>
 <p><em>Держащий нос по ветру,</em></p>
