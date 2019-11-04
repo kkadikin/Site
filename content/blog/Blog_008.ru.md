@@ -1,5 +1,5 @@
 ---
-title: Собакенские будни 1 - конструкция Switch
+title: Собакенские будни - конструкция Switch
 date: 2019-11-01
 image: images/blog/blog_008_foto.jpg
 author: Smile
