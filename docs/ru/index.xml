@@ -7,27 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Собакенские будни - конструкции Related и Lookupvalue</title>
-      <link>https://kkadikin.ru/ru/blog/blog_009/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/blog_009/</guid>
-      <description>Рвав-рвав, сегодня я &amp;ndash; собака-двередержака!
-Перед вами &amp;ndash; 2-я заметка из нашего цикла &amp;ldquo;Собакенские будн&amp;rdquo;, и ниже мы рассмотрим использование таких конструкций, как Related и Lookupvalue. При помощи данных функций можно присоединять данные, содержащиеся в разных таблицах, друг к другу. Прошаренная собака для целей демонстрации будет использовать тотже пример, что и в статье Собакенские будни - конструкция Switch.
- Пример:
- Имеется 2 набора данных, содержащих различную информацию, но при этом в каждом из набоов пристствует уникальный ключ (см.</description>
-    </item>
-    
-    <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -40,6 +28,18 @@
  Мелкие радости - избавляемся от Blank / Пусто
  Мелкие радости - быстрые меры, или хозяйкам на заметку
  Собакенские будни - конструкция Switch</description>
+    </item>
+    
+    <item>
+      <title>Собакенские будни - конструкции Related и Lookupvalue</title>
+      <link>https://kkadikin.ru/ru/blog/blog_009/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_009/</guid>
+      <description>Рвав-рвав, сегодня я &amp;ndash; собака-двередержака!
+Перед вами &amp;ndash; 2-я заметка из нашего цикла &amp;ldquo;Собакенские будн&amp;rdquo;, и ниже мы рассмотрим использование таких конструкций, как Related и Lookupvalue. При помощи данных функций можно присоединять данные, содержащиеся в разных таблицах, друг к другу. Прошаренная собака для целей демонстрации будет использовать тотже пример, что и в статье Собакенские будни - конструкция Switch.
+ Пример:
+ Имеется 2 набора данных, содержащих различную информацию, но при этом в каждом из набоов пристствует уникальный ключ (см.</description>
     </item>
     
     <item>
