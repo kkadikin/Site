@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Нестандартная сортировка</title>
+      <link>https://kkadikin.ru/ru/blog/article_009/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_009/</guid>
+      <description>Рвав-рвав, собака Смайл опять с вами!
+Есть просто отличная новость: любопытный пес изыскал возможность вложенной сортировки данных, несмотря на то, что сортировка возможна как бы по одному столбцу&amp;hellip;
+ Пример:
+Имеется набор данных следующего вида:
+&amp;ndash; оборудование и порядковый номер для его сортировки;
+&amp;ndash; устройства и порядковый номер для их сортировки.
+Задача:
+На основе представленных данных построить матрицу, в которой на верхнем уровне расположено оборудование, а на нижнем &amp;ndash; соответствующее устройства.</description>
+    </item>
     
     <item>
       <title>Список публикаций</title>
