@@ -46,7 +46,7 @@ author: Smile
 
 **<li>** [Ретроспектива](https://kkadikin.ru/ru/blog/article_008/)
 
-**<li>** [Нестандартная сортировка](https://kkadikin.ru/ru/blog/article_008/)
+**<li>** [Нестандартная сортировка](https://kkadikin.ru/ru/blog/article_009/)
 
 **РАЗРАБОТКИ**
 
