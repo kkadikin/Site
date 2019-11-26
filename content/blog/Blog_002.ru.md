@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-11-05
+date: 2019-11-26
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -45,6 +45,8 @@ author: Smile
 **<li>** [Построчное построение отчета](https://kkadikin.ru/ru/blog/article_007/)
 
 **<li>** [Ретроспектива](https://kkadikin.ru/ru/blog/article_008/)
+
+**<li>** [Нестандартная сортировка](https://kkadikin.ru/ru/blog/article_008/)
 
 **РАЗРАБОТКИ**
 
