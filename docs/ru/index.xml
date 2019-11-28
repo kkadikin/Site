@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Tue, 26 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Социальный проект</title>
+      <link>https://kkadikin.ru/ru/blog/article_010/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_010/</guid>
+      <description>Рвав-рвав, собака Смайл спешит поделиться новостью!
+Представляем вашему вниманию свою 3-ю разработку комплекта отчетности &amp;ldquo;Офисная жизнь&amp;rdquo; &amp;ndash; отчет &amp;ldquo;День рождения в коллективе&amp;rdquo;, иллюстрирующий праздничные события.
+ Отчет реализован при помощи DAX и Power Query, и построен на базе производственного календаря.
+ Да-да, вы не ошиблись, это снова он - Производственный календарь. Собака Смайл всегда знает, что надо сделать в 1-ю очередь, потому что, несмотря на кажущуюся простоту и обыденность, без этой штуки любому офису никуда!</description>
+    </item>
     
     <item>
       <title>Нестандартная сортировка</title>

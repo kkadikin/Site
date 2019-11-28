@@ -1,7 +1,7 @@
 ---
-title: День рождения в коллективе
-date: 2019-08-23
-image: images/blog/dev_003_foto.jpg
+title: Социальный проект
+date: 2019-11-28
+image: images/blog/art_010_foto.jpg
 author: Smile
 ---
 
