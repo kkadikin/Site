@@ -58,4 +58,6 @@ author: Smile
 
 **<li>** [Аптечка первой помощи](https://kkadikin.ru/ru/blog/dev_004/)
 
+**<li>** [Мониторинг питомцев](https://kkadikin.ru/ru/blog/dev_000/)
+
 > *Ваш Смайл*

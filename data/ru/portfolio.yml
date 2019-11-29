@@ -41,3 +41,7 @@ item   :
   - title     : Ретроспектива
     image     : images/portfolio/portfolio-7.jpg
     category  : articles
+
+  - title     : Мониторинг питомцев
+    image     : images/portfolio/portfolio-8.jpg
+    category  : developments
