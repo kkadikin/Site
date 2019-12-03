@@ -7,25 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Мониторинг питомцев</title>
-      <link>https://kkadikin.ru/ru/blog/dev_000/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/dev_000/</guid>
-      <description>Рвав-рвав, с вами социально-ответственный собака Смайл!
-В связи с прошедшим Днем рождения, а также в рамках постоянной работы над собой, мы рады представить вам свою очередную разработку &amp;ndash; отчет c кодовым названием &amp;ldquo;Мониторинг питомцев&amp;rdquo;. Отчет построен по данным российской базы чипированных животных, данные, используемые в отчете &amp;ndash; общего характера. Собака Смайл выражает благодарность коллеге хозяина &amp;ndash; Дмитрию Власову за помощь в создании процедуры парсинга исходных данных. Описание разработки, за исключением процедуры парсинга, &amp;ndash; представлено ниже.</description>
-    </item>
-    
-    <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -38,6 +28,16 @@
  Мелкие радости - избавляемся от Blank / Пусто
  Мелкие радости - быстрые меры, или хозяйкам на заметку
  Собакенские будни - конструкция Switch</description>
+    </item>
+    
+    <item>
+      <title>Мониторинг питомцев</title>
+      <link>https://kkadikin.ru/ru/blog/dev_000/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/dev_000/</guid>
+      <description>Рвав-рвав, с вами социально-ответственный собака Смайл!
+В связи с прошедшим Днем рождения, а также в рамках постоянной работы над собой, мы рады представить вам свою очередную разработку &amp;ndash; отчет c кодовым названием &amp;ldquo;Мониторинг питомцев&amp;rdquo;. Отчет построен по данным российской базы чипированных животных, данные, используемые в отчете &amp;ndash; общего характера. Собака Смайл выражает благодарность коллеге хозяина &amp;ndash; Дмитрию Власову за помощь в создании процедуры парсинга исходных данных. Описание разработки, за исключением процедуры парсинга, &amp;ndash; представлено ниже.</description>
     </item>
     
     <item>

@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-12-02
+date: 2019-12-03
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
