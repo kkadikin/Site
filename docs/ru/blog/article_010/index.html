@@ -155,7 +155,7 @@
 
 <p><em>Приходится носить всякую фигню. Сопротивление бесполезно. Надеюсь, вы тоже мучаетесь, так как вместе - веселее.</em></p>
 
-<p><em>Сегодня хотелось бы описать работу с так называемой &ldquo;сломанной&rdquo; иерархией данных, когда уровни иерархии / подчинения не структурированы.</em></p>
+<p><em>Сегодня хотелось бы описать работу с так называемой &ldquo;сломанной&rdquo; иерархией данных, когда уровни иерархии / подчинения не структурированы. В принципе, это довольно часто встречающаяся ситуация, из которой каждый выходит так, как может, но собакак Смайл в данной статье постарается разъяснить все доступным языком. Что называется &ldquo;Повторение - мать учения.&rdquo;</em></p>
 </blockquote>
 
 <p><strong>Пример:</strong></p>
@@ -233,16 +233,57 @@ IF (
     );
     &#39;Staff Hierarhy&#39;[2nd level]
 )</code></pre></div>
-<p>Собственно, 1-я задача по построению автоматическим путем выровненной иерархии на этом закончена, единственное, с чем надо определиться - это с необходимым количеством, поскольку для каждого уровня требуется отдельный расчетный столбец.</p>
+<p>Собственно, 1-я цель по построению автоматическим путем выровненной иерархии на этом закончена, единственное, с чем надо определиться - это с необходимым количеством уровней, поскольку для каждого уровня требуется отдельный расчетный столбец.</p>
 
-<p><strong>Визуализация данных:</strong></p>
+<p><strong>Визуализация данных - стандартное поведение иерархии:</strong></p>
 
 <p><strong><li></strong> Используя стандартный элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), мы можем &ldquo;соединить воедино&rdquo; данные справочника &ldquo;Staff Hierarhy&rdquo; и основного набора данных - таблицы &ldquo;Dataset&rdquo;. Визуальный элемент будет выглядеть следующим образом:</p>
 
 <p><img src="https://kkadikin.ru/images/blog/art_010_screen_6.jpg" alt="art_010_screen_6" /></p>
 
+<p>При построении матрицы в иерархическом дереве присутствуют дубли в имени сотрудников. Это объяснимое поведение, поскольку &ldquo;оно так работает&rdquo;, однако повторяющиеся значения можно убрать, используя &ldquo;дополнительные приседания&rdquo;, а именно - соответствующие меры.</p>
+
+<p><strong>Схлопывание иерархии:</strong></p>
+
+<p><strong><li></strong> Для достижения 2-й поставленной цели нам необходимо рассчитать несколько мер, начиная с определения нижнего уровня вложенности:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Depth Value = 
+ISFILTERED ( &#39;Staff Hierarhy&#39;[1st level] ) + 
+ISFILTERED ( &#39;Staff Hierarhy&#39;[2nd level] ) + 
+ISFILTERED ( &#39;Staff Hierarhy&#39;[3rd level] )</code></pre></div>
+<p><strong><li></strong> Место каждого сотрудника в иерархическом дереве определяется при помощи следующей конструкции:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Hierarhy Value = 
+MAX ( &#39;Staff Hierarhy&#39;[Hierarchy Level] )</code></pre></div>
+<p><strong><li></strong> Рассчет суммы по каждому участнику производится по формуле:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Subtotal Amount = 
+IF (
+    [Depth Value] &gt; [Hierarhy Value] + 1;
+    BLANK ();
+    IF (
+        [Depth Value] = [Hierarhy Value] + 1;
+        IF (
+            AND (
+                VALUES ( &#39;Staff Hierarhy&#39;[End Link] ) = FALSE;
+                SUM ( &#39;Dataset&#39;[Amount] ) &lt;&gt; 0
+            );
+            SUM ( &#39;Dataset&#39;[Amount] );
+            BLANK ()
+        );
+        SUM ( &#39;Dataset&#39;[Amount] )
+    )
+)</code></pre></div>
+<p><strong><li></strong> Устранение дубликатов в иерархическом дереве со сдвигом промежуточных итогов реализуется следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Final Amount = 
+IF ( [Depth Value] &gt; [Hierarhy Value]; BLANK (); SUM ( &#39;Dataset&#39;[Amount] ) )</code></pre></div>
+<p><strong>Визуализация данных - настроенное поведение иерархии:</strong></p>
+
+<p><strong><li></strong> Используя стандартный элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), и поставив в качестве значения меру &ldquo;Final Amount&rdquo; мы можем получить приятный глазу результат:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_7.jpg" alt="art_010_screen_7" /></p>
+
+<p>При этом суммирование по уровню иерархии, так называемые промежуточные итоги, включает в себя как подчиненные элементы, так и свое собственное значение.</p>
+
 <blockquote>
-<p><em>Рвав-рвав, до новых встреч!</em></p>
+<p><em>Рвав-рвав, наконец-то конец, до новых встречь в Новом году!</em></p>
 
 <p><em>Ваш Смайл</em></p>
 </blockquote>
