@@ -178,15 +178,61 @@
 
 <p><strong>Структурирование иерархии:</strong></p>
 
-<p><strong><li></strong> В целях устранения хаоса в исходных данных для начала нам необходимо понять, является ли конкретное значение конечным элементом иерархии. В этом нам пожет помочь столбец &ldquo;End Link&rdquo;, в принципе, делать его необязательно, но в случае большого объема данных он сможет помочь при проверке конечного результата:</p>
+<p><strong><li></strong> В целях устранения хаоса в исходных данных для начала нам необходимо понять, является ли конкретное значение конечным элементом иерархии. В этом нам может помочь столбец &ldquo;End Link&rdquo;, в принципе, делать его необязательно, но в случае большого объема данных он сможет помочь при проверке конечного результата:</p>
 
 <p><img src="https://kkadikin.ru/images/blog/art_010_screen_2.jpg" alt="art_010_screen_2" /></p>
+
+<p>Формула указанного столбца выглядит следующим образом:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">End Link = 
 CALCULATE (
     COUNTROWS ( &#39;Staff Hierarhy&#39; );
     ALL ( &#39;Staff Hierarhy&#39; );
     &#39;Staff Hierarhy&#39;[Parent Key] = EARLIER ( &#39;Staff Hierarhy&#39;[User ID] )
 ) = 0</code></pre></div>
+<p><strong><li></strong> Следующим шагом является построение цепочки родительских значений, для последующего определения уровня иерархии. В этом нам поможет столбец &ldquo;Hierarchy View&rdquo;, рассчитанный при помощи функции &ldquo;PATH&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_3.jpg" alt="art_010_screen_3" /></p>
+
+<p>Формула указанного столбца рассчитывается так:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Hierarchy View = 
+PATH ( &#39;Staff Hierarhy&#39;[User ID]; &#39;Staff Hierarhy&#39;[Parent Key] )</code></pre></div>
+<p><strong><li></strong> Подсчет уровня иерархии, проиллюстрированнный в столбце &ldquo;Hierarchy Level&rdquo;, можно произвести при помощи функции &ldquo;PATHLENGHT&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_4.jpg" alt="art_010_screen_4" /></p>
+
+<p>Формула указанного столбца выглядит следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Hierarchy Level = 
+PATHLENGTH ( &#39;Staff Hierarhy&#39;[Hierarchy View] )</code></pre></div>
+<p><strong><li></strong> Выполнив указанные шаги, можно приступать непосредственно к построению уровней иерархии при помощи функции &ldquo;PATHITEM&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_5.jpg" alt="art_010_screen_5" /></p>
+
+<p>Формула столбца для 1-го уровня иерархии - &ldquo;1st level&rdquo; представляет собой следующую конструкцию:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">1st level = 
+LOOKUPVALUE (
+    &#39;Staff Hierarhy&#39;[Name];
+    &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 1; INTEGER )
+)</code></pre></div>
+<p>Формула столбца для 2-го уровня иерархии - &ldquo;2nd level&rdquo; представляет собой следующую конструкцию:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">2nd level = 
+IF (
+    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 2;
+    LOOKUPVALUE (
+        &#39;Staff Hierarhy&#39;[Name];
+        &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 2; INTEGER )
+    );
+    &#39;Staff Hierarhy&#39;[1st level]
+)</code></pre></div>
+<p>Формула столбца для 3-го уровня иерархии - &ldquo;3rd level&rdquo; представляет собой следующую конструкцию:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">3rd level = 
+IF (
+    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 3;
+    LOOKUPVALUE (
+        &#39;Staff Hierarhy&#39;[Name];
+        &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 3; INTEGER )
+    );
+    &#39;Staff Hierarhy&#39;[2nd level]
+)</code></pre></div>
 <blockquote>
 <p><em>Рвав-рвав, до новых встреч!</em></p>
 
