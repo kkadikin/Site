@@ -514,7 +514,7 @@ a:focus, a:hover {
 
 .navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .navigation .navbar-nav > li > a:focus {
   background: none;
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .navigation .navbar-toggler {
@@ -617,7 +617,7 @@ a:focus, a:hover {
 }
 
 .hero-area .block p {
-  color: #707d8f;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -665,8 +665,8 @@ a:focus, a:hover {
   transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
-  background: #fff;
-  color: #f0326b;
+  background: #DE1931;
+  color: #FFF;
   line-height: 80px;
   font-size: 30px;
   margin-left: 5px;
