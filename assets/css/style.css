@@ -46,6 +46,7 @@ iframe {
 a, a:focus, a:hover {
   text-decoration: none;
   outline: 0;
+  color: #FFF;
 }
 
 a:focus, a:hover {
@@ -1849,7 +1850,7 @@ a:focus, a:hover {
 }
 
 .footer-bottom a {
-  color: #007BFF;
+  color: #DE1931;
 }
 
 .subscribe-form .form-control {
