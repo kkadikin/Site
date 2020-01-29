@@ -476,6 +476,7 @@ a:focus, a:hover {
 
 .single-page-header .breadcrumb li {
   display: inline-block;
+  color: #DE1931;
 }
 
 .single-page-header .breadcrumb li a {
@@ -488,7 +489,7 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li.active a {
-  color: #FFF;
+  color: #DE1931;
 }
 
 /*KK 05.02.2019 Изменение цвета меню с 707d8f на ffc107*/
