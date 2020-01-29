@@ -1760,8 +1760,8 @@ a:focus, a:hover {
   justify-content: center;
 }
 .pagination li{
-  margin: 0 5px;
-  font-size: 20px;
+  margin: 15px;
+  font-size: 15px;
 }
 .pagination li a{
   color: #404040;
