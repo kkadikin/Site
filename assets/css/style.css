@@ -1794,7 +1794,7 @@ a:focus, a:hover {
 .top-footer p {
   font-size: 13px;
   line-height: 30px;
-  color: #bdbdbd;
+  color: #FFF;
   font-weight: 300;
   padding-right: 20px;
 }
@@ -1802,7 +1802,7 @@ a:focus, a:hover {
 .top-footer li a {
   font-size: 13px;
   line-height: 30px;
-  color: #bdbdbd;
+  color: #FFF;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -1825,7 +1825,7 @@ a:focus, a:hover {
 .footer-bottom h5 {
   font-size: 12px;
   line-height: 1;
-  color: #888888;
+  color: #FFF;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1836,7 +1836,7 @@ a:focus, a:hover {
 .footer-bottom h6 {
   font-size: 11px;
   line-height: 15px;
-  color: #888888;
+  color: #FFF;
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -1848,7 +1848,7 @@ a:focus, a:hover {
 }
 
 .footer-bottom a {
-  color: #DE1931;
+  color: #007BFF;
 }
 
 .subscribe-form .form-control {
