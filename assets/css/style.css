@@ -49,7 +49,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-  color: #f0326b;
+  color: #FFF;
 }
 
 .btn-main, .btn-main-sm {
@@ -151,7 +151,7 @@ a:focus, a:hover {
 }
 
 #preloader {
-  background: #f0326b;
+  background: #DE1931;
   height: 100%;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -407,7 +407,7 @@ a:focus, a:hover {
 }
 
 .header-bradcrumb a:hover {
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .slick-slide {
@@ -424,15 +424,15 @@ a:focus, a:hover {
 }
 
 .commonTab .nav-tabs .nav-item .nav-link {
-  background: #f7bac1 ;
+  background: #F7F7F7;
   color: #666;
   text-transform: capitalize;
   border-radius: 20px;
 }
 
-/* KK 07.04.2019 Изменение фона кнопки с #f0326b на background-image: linear-gradient(100deg,#f9643d,#fe2a77);*/
+/* KK 07.04.2019 Изменение фона кнопки с #DE1931 на background-image: linear-gradient(100deg,#f9643d,#fe2a77);*/
 .commonTab .nav-tabs .nav-item .nav-link.active {
-  border: 1px solid #f0326b;
+  border: 1px solid #DE1931;
   background-image: linear-gradient(100deg,#DE1931,#DE1931);
   color: #fff;
 }
@@ -540,7 +540,7 @@ a:focus, a:hover {
 
 .navigation .dropdown .dropdown-item:hover {
   background: transparent;
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .navigation .dropdown .dropdown-menu {
@@ -738,7 +738,7 @@ a:focus, a:hover {
 
 .about h4 {
   font-size: 14px;
-  color: #f0326b;
+  color: #DE1931;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -860,7 +860,7 @@ a:focus, a:hover {
 .contact-form input:hover,
 .contact-form textarea:hover,
 .contact-form #contact-submit:hover {
-  border-color: #f0326b;
+  border-color: #DE1931;
 }
 
 /*KK 07.04.2019 Добавление цвета перехода в кнопку */
@@ -869,7 +869,7 @@ a:focus, a:hover {
   padding: 15px 0;
   width: 100%;
   margin: 0;
-  background: #f0326b;
+  background: #DE1931;
   color: #fff;
   border-radius: 0;
   cursor: pointer;
@@ -900,7 +900,7 @@ a:focus, a:hover {
   height: 30px;
   width: 30px;
   text-align: center;
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .social-icon li a i {
@@ -1000,7 +1000,7 @@ a:focus, a:hover {
 .counters-item i {
   font-size: 40px;
   display: inline-block;
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .counters-item h3 {
@@ -1093,12 +1093,12 @@ a:focus, a:hover {
 }
 
 .portfolio-filter button:hover {
-  border-bottom: 2px solid #f0326b;
+  border-bottom: 2px solid #DE1931;
   color: #000;
 }
 
 .portfolio-filter button.mixitup-control-active {
-  border-bottom: 2px solid #f0326b;
+  border-bottom: 2px solid #DE1931;
   color: #000;
 }
 
@@ -1167,7 +1167,7 @@ a:focus, a:hover {
 }
 
 .portfolio-block .caption .search-icon {
-  background: #f0326b;
+  background: #DE1931;
   color: #fff;
   display: inline-block;
   padding: 4px 13px;
@@ -1204,7 +1204,7 @@ a:focus, a:hover {
 
 .services .service-block i {
   font-size: 40px;
-  color: #f0326b;
+  color: #DE1931;
   background: linear-gradient(100deg, #DE1931, #DE1931);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1284,7 +1284,7 @@ a:focus, a:hover {
   transition: all 0.3s ease 0s;
 }
 
-/* KK 23.03.2019 Замена цвета #f0326b на #f9f9f9, добавление выравнивания по центру text-align: center; */
+/* KK 23.03.2019 Замена цвета #DE1931 на #f9f9f9, добавление выравнивания по центру text-align: center; */
 .service-list .block {
   background: #f9f9f9;
   color: #fff;
@@ -1313,7 +1313,7 @@ a:focus, a:hover {
 }
 .client-service-list li i{
   margin-right: 10px;
-  color: #f0326b;
+  color: #DE1931;
 }
 
 /*=================================================================
@@ -1336,7 +1336,7 @@ a:focus, a:hover {
 }
 
 .team-skills .progress-block .progress .progress-bar {
-  background: #f0326b;
+  background: #DE1931;
   box-shadow: none;
 }
 
@@ -1381,7 +1381,7 @@ a:focus, a:hover {
 }
 
 .development-steps .step-2 {
-  background-color: #f0326b;
+  background-color: #DE1931;
 }
 
 .development-steps .step-2 h4, .development-steps .step-2 p {
@@ -1458,7 +1458,7 @@ a:focus, a:hover {
 }
 
 .team-member .member-content ul li a i {
-  color: #f0326b;
+  color: #DE1931;
   background: linear-gradient(100deg, #DE1931, #DE1931);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1483,7 +1483,7 @@ a:focus, a:hover {
   Testimonial section
 ==================================================================*/
 
-/*KK 08.03.2019 Изменение цвета с #f0326b на #1f2532*/
+/*KK 08.03.2019 Изменение цвета с #DE1931 на #1f2532*/
 .testimonial {
   background: #1f2532;
   position: relative;
@@ -1651,7 +1651,7 @@ a:focus, a:hover {
 }
 
 .next-prev a:hover {
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .next-prev .prev-post i {
@@ -1674,7 +1674,7 @@ a:focus, a:hover {
 }
 
 .social-profile ul li a i:hover {
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .comments-section {
@@ -1722,7 +1722,7 @@ a:focus, a:hover {
 }
 
 .comment-wrap .media .media-heading a {
-  color: #f0326b;
+  color: #DE1931;
   font-size: 13px;
 }
 
@@ -1747,7 +1747,7 @@ a:focus, a:hover {
 
 .comment-reply-form input:focus, .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #f0326b;
+  border: 1px solid #DE1931;
 }
 
 .comment-reply-form textarea, .comment-reply-form .btn-main, .comment-reply-form .btn-main-sm {
@@ -1768,7 +1768,7 @@ a:focus, a:hover {
   color: #cccccc;
 }
 .pagination li.active a{
-  color: #f0326b;
+  color: #DE1931;
   font-weight: 600;
 }
 
@@ -1812,7 +1812,7 @@ a:focus, a:hover {
 }
 
 .top-footer li a:hover {
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .footer-bottom {
@@ -1848,7 +1848,7 @@ a:focus, a:hover {
 }
 
 .footer-bottom a {
-  color: #f0326b;
+  color: #DE1931;
 }
 
 .subscribe-form .form-control {
