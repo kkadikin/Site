@@ -57,7 +57,7 @@ a:focus, a:hover {
   background-color: #21D6BF;
   background-image: linear-gradient(100deg, #f9643d, #fe2a77);*/
   background-color: #DE1931;
-  color: #fff;
+  color: #FFF;
   display: inline-block;
   font-size: 14px;
   letter-spacing: 1px;
@@ -68,7 +68,7 @@ a:focus, a:hover {
 }
 
 .btn-main:hover, .btn-main-sm:hover {
-  color: #fff;
+  color: #FFF;
 }
 
 .btn-main-sm {
@@ -77,8 +77,8 @@ a:focus, a:hover {
 }
 
 .btn-transparent {
-  color: #fff;
-  border: 1px solid #fff;
+  color: #FFF;
+  border: 1px solid #FFF;
   display: inline-block;
   font-size: 13px;
   letter-spacing: 1px;
@@ -87,7 +87,7 @@ a:focus, a:hover {
 }
 
 .btn-transparent:hover {
-  color: #fff;
+  color: #FFF;
 }
 
 .mt-10 {
@@ -188,7 +188,7 @@ a:focus, a:hover {
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 100%;
   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
   animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
@@ -434,14 +434,14 @@ a:focus, a:hover {
 .commonTab .nav-tabs .nav-item .nav-link.active {
   border: 1px solid #DE1931;
   background-image: linear-gradient(100deg,#DE1931,#DE1931);
-  color: #fff;
+  color: #FFF;
 }
 
 .commonTab .nav-tabs .nav-item .nav-link:hover {
   border: 1px solid #DE1931;
   border-radius: 20px;
   background: #DE1931;
-  color: #fff;
+  color: #FFF;
 }
 
 .commonTab .tab-content {
@@ -465,7 +465,7 @@ a:focus, a:hover {
   background: #1f2532;
   padding: 50px 0;
   text-align: center;
-  color: #fff;
+  color: #FFF;
   position: relative;
 }
 
@@ -488,12 +488,12 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li.active a {
-  color: #fff;
+  color: #FFF;
 }
 
 /*KK 05.02.2019 Изменение цвета меню с 707d8f на ffc107*/
 .navigation .navbar-nav > li > a {
-  color: #fff;
+  color: #FFF;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -518,7 +518,7 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-toggler {
-  color: #fff;
+  color: #FFF;
   font-size: 30px;
   cursor: pointer;
   outline: none;
@@ -534,7 +534,7 @@ a:focus, a:hover {
 
 .navigation .dropdown .dropdown-item {
   padding: 8px 15px;
-  color: #fff;
+  color: #FFF;
   font-size: 13px;
 }
 
@@ -600,7 +600,7 @@ a:focus, a:hover {
 
 /*KK 26.02.2019 Изменение размера шрифта с 15px на 17px*/
 .hero-area .block {
-  color: #fff;
+  color: #FFF;
   font-size: 17px;
   padding-left: 30px;
 }
@@ -617,7 +617,7 @@ a:focus, a:hover {
 }
 
 .hero-area .block p {
-  color: #ffffff;
+  color: #FFFfff;
   margin-bottom: 20px;
 }
 
@@ -687,7 +687,7 @@ a:focus, a:hover {
 }
 
 .hero-area-video .block {
-  color: #fff;
+  color: #FFF;
   text-align: center;
 }
 
@@ -698,7 +698,7 @@ a:focus, a:hover {
 }
 
 .hero-area-video .block p {
-  color: #fff;
+  color: #FFF;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 3px;
@@ -721,7 +721,7 @@ a:focus, a:hover {
   About us section
 ==================================================================*/
 .about {
-  background: #fff;
+  background: #FFF;
 }
 
 .about h2 {
@@ -795,7 +795,7 @@ a:focus, a:hover {
 .call-to-action {
   padding: 100px 0 230px;
   background-size: cover;
-  color: #fff;
+  color: #FFF;
 }
 
 .call-to-action h2 {
@@ -803,7 +803,7 @@ a:focus, a:hover {
 }
 
 .call-to-action p {
-  color: #fff;
+  color: #FFF;
 }
 
 .call-to-action .btn-main, .call-to-action .btn-main-sm {
@@ -817,7 +817,7 @@ a:focus, a:hover {
   padding: 100px 0;
   background-image: url("../images/call-to-action/call-to-action-bg.jpg");
   background-size: cover;
-  color: #fff;
+  color: #FFF;
 }
 
 .call-to-action-2 h2 {
@@ -825,7 +825,7 @@ a:focus, a:hover {
 }
 
 .call-to-action-2 p {
-  color: #fff;
+  color: #FFF;
 }
 
 .call-to-action-2 .btn-main, .call-to-action-2 .btn-main-sm {
@@ -870,7 +870,7 @@ a:focus, a:hover {
   width: 100%;
   margin: 0;
   background: #DE1931;
-  color: #fff;
+  color: #FFF;
   border-radius: 0;
   cursor: pointer;
   background-image: linear-gradient(100deg,#DE1931,#DE1931);
@@ -922,7 +922,7 @@ a:focus, a:hover {
 .success {
   background-color: #6cb670;
   border-radius: 4px;
-  color: #fff;
+  color: #FFF;
   display: none;
   font-size: 13px;
   padding: 10px;
@@ -943,7 +943,7 @@ a:focus, a:hover {
   padding: 40px 0;
   min-height: 250px;
   text-align: center;
-  background: #fff;
+  background: #FFF;
   border-radius: 3px;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
 }*/
@@ -1015,7 +1015,7 @@ a:focus, a:hover {
 /*KK 13.03.2019 Убрано margin-bottom: 15px, border-radius: 3px, padding-bottom: 40px, замена цвета f9f9f9*/
 .pricing-table .pricing-item {
   text-align: center;
-  background: #fff;
+  background: #FFF;
 }
 
 .pricing-table .pricing-item a.btn-main, .pricing-table .pricing-item a.btn-main-sm {
@@ -1041,19 +1041,19 @@ a:focus, a:hover {
 .pricing-table .price-title {
   padding: 20px 0 20px;
   text-align: center;
-  color: #fff;
+  color: #FFF;
   height: 20rem;
 }
 
 /*KK 13.03.2019 Изменение стиля по блокам цен: font-size: 15px, убрано text-transform: uppercase;*/
 .pricing-table .price-title > h3 {
-  color: #fff;
+  color: #FFF;
   font-weight: 700;
   margin: 0 0 5px;
   font-size: 14px;
 }
 
-/*KK 13.03.2019 Изменение стиля по блокам цен: замена цвета #fff, размера шрифта 14px, толщина шрифта с 400, положение текста 18*/
+/*KK 13.03.2019 Изменение стиля по блокам цен: замена цвета #FFF, размера шрифта 14px, толщина шрифта с 400, положение текста 18*/
 .pricing-table .price-title > p {
   color: #383e47;
   font-size: 17px;
@@ -1163,12 +1163,12 @@ a:focus, a:hover {
 }
 
 .portfolio-block .caption h4 a {
-  color: #fff;
+  color: #FFF;
 }
 
 .portfolio-block .caption .search-icon {
   background: #DE1931;
-  color: #fff;
+  color: #FFF;
   display: inline-block;
   padding: 4px 13px;
   font-size: 25px;
@@ -1186,7 +1186,7 @@ a:focus, a:hover {
 
 .services .service-block {
   padding: 20px;
-  background: #ffffff;
+  background: #FFFfff;
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 0.3s ease 0s;
@@ -1245,7 +1245,7 @@ a:focus, a:hover {
 
 /*KK 25.02.2019 Изменение стиля по этапам рабочего процесса
 .service-2 .service-item {
-  background: #fff;
+  background: #FFF;
   border: 1px solid #eee;
   padding: 50px 20px;
   margin-right: -1px;
@@ -1276,7 +1276,7 @@ a:focus, a:hover {
   display: inline-block;
   border-radius: 30px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
-  color: #fff;
+  color: #FFF;
   height: 55px;
   line-height: 55px;
   margin-bottom: 20px;
@@ -1287,7 +1287,7 @@ a:focus, a:hover {
 /* KK 23.03.2019 Замена цвета #DE1931 на #f9f9f9, добавление выравнивания по центру text-align: center; */
 .service-list .block {
   background: #f9f9f9;
-  color: #fff;
+  color: #FFF;
   padding: 30px;
   text-align: center;
 }
@@ -1385,7 +1385,7 @@ a:focus, a:hover {
 }
 
 .development-steps .step-2 h4, .development-steps .step-2 p {
-  color: #fff;
+  color: #FFF;
 }
 
 .development-steps .step-3 {
@@ -1393,7 +1393,7 @@ a:focus, a:hover {
 }
 
 .development-steps .step-3 h4, .development-steps .step-3 p {
-  color: #fff;
+  color: #FFF;
 }
 
 .development-steps .step-4 {
@@ -1401,13 +1401,13 @@ a:focus, a:hover {
 }
 
 .development-steps .step-4 h4, .development-steps .step-4 p {
-  color: #fff;
+  color: #FFF;
 }
 
 /*=================================================================
   Our Team
   ==================================================================*/
-/* KK 23.03.2019 Замена цвета #fff на #f9f9f9 */
+/* KK 23.03.2019 Замена цвета #FFF на #f9f9f9 */
   .team-member {
   background: #f9f9f9;
   margin-bottom: 15px;
@@ -1491,7 +1491,7 @@ a:focus, a:hover {
 
 .testimonial .item i {
   font-size: 40px;
-  color: #fff;
+  color: #FFF;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -1502,14 +1502,14 @@ a:focus, a:hover {
 
 .testimonial .item .client-details p {
   font-size: 17px;
-  color: #fff;
+  color: #FFF;
   font-weight: 200;
   padding: 0 10%;
 }
 
 .testimonial .item .client-meta {
   margin-top: 8px;
-  color: #fff;
+  color: #FFF;
 }
 
 /*KK 08.03.2019 Изменение параметра margin-bottom с 4px на 10px*/
@@ -1534,7 +1534,7 @@ a:focus, a:hover {
   Latest Posts
 ==================================================================*/
 .post-item {
-  background: #fff;
+  background: #FFF;
   margin-bottom: 40px;
   text-align: justify;
 }
@@ -1626,7 +1626,7 @@ a:focus, a:hover {
 }
 
 .single-blog {
-  background-color: #fff;
+  background-color: #FFF;
   margin-bottom: 50px;
   padding: 20px;
 }
@@ -1784,7 +1784,7 @@ a:focus, a:hover {
 .top-footer h3 {
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  color: #FFF;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
