@@ -45,3 +45,7 @@ item   :
   - title     : Мониторинг питомцев
     image     : images/portfolio/portfolio-8.jpg
     category  : developments
+
+  - title     : Дизайнерские штучки
+    image     : images/portfolio/portfolio-9.jpg
+    category  : articles

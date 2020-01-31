@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2019-12-19
+date: 2020-01-31
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -49,6 +49,8 @@ author: Smile
 **<li>** [Нестандартная сортировка](https://kkadikin.ru/ru/blog/article_009/)
 
 **<li>** [Сломанная иерархия](https://kkadikin.ru/ru/blog/article_010/)
+
+**<li>** [Дизайнерские штучки](https://kkadikin.ru/ru/blog/article_011/)
 
 **РАЗРАБОТКИ**
 

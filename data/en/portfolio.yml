@@ -41,3 +41,11 @@ item   :
   - title     : Retrospective
     image     : images/portfolio/portfolio-7.jpg
     category  : articles
+
+  - title     : Pet's Monitor
+    image     : images/portfolio/portfolio-8.jpg
+    category  : developments
+
+  - title     : Design technique
+    image     : images/portfolio/portfolio-9.jpg
+    category  : articles
