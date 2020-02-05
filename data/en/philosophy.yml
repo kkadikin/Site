@@ -79,10 +79,9 @@ tabItem       :
     image     : images/company/company-5.jpg
 
   - id        : job
-    title     : Job
+    title     : Occupation
     heading   : The Place of efforts
     content   : >
                 <br>
-                Adored owner works at international consulting company <a href="https://awara-it.com/ru/">Awara IT</a> <br>
-                Awara IT offices are located in Russia, Finland, Spain, USA, Germany, Kazakhstan.
+                My favorite master works at international consulting company, but we are always willing to find the time for interesting contacts, ideas and offers.
     image     : images/company/company-6.jpg
