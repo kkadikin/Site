@@ -169,7 +169,6 @@ DefaultContentLanguage = "ru"
         cityMap             = "/images/about/map-eng.jpg"
         contactFoto         = "/images/about/contact.jpg"
         mail                = "E-mail: <br> kadikin@mail.ru"
-        whatsapp            = "Профиль WhatsApp"
 
     # Call to Action Section on About Page
     [Languages.en.params.cta]
