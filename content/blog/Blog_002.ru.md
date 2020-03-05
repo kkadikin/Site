@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2020-01-31
+date: 2020-03-05
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -26,6 +26,8 @@ author: Smile
 **<li>** [Собакенские будни - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
 
 **<li>** [Собакенские будни - конструкции Related и Lookupvalue](https://kkadikin.ru/ru/blog/blog_009/)
+
+**<li>** [Мелкие радости - расчет отклонений](https://kkadikin.ru/ru/blog/blog_010/)
 
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ**
