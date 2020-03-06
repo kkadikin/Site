@@ -7,28 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Мелкие радости - расчет отклонений</title>
-      <link>https://kkadikin.ru/ru/blog/blog_010/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/blog_010/</guid>
-      <description>Рвав-рвав, физкульт-привет от собаки Смайла!
-Похоже, вопрос дизайна незримо присутствует в окружающих меня вещах, и это будет уже 2-я заметка в этом году (из 2-х!), на эту тему :-)
-Сегодня мы рассмотрим часто встречающиеся запросы по визуализации сравнения плана и факта в наиболее простом его варианте - таблице. На эту тему написано довольно много, и, в принципе, тема не особо сложна.
- Пример:
-В качестве исходных данных имеется набор, содержащий вид товара, а также плановую и фактическую суммы.</description>
-    </item>
-    
-    <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -41,6 +28,19 @@
  Мелкие радости - избавляемся от Blank / Пусто
  Мелкие радости - быстрые меры, или хозяйкам на заметку
  Собакенские будни - конструкция Switch</description>
+    </item>
+    
+    <item>
+      <title>Мелкие радости - расчет отклонений</title>
+      <link>https://kkadikin.ru/ru/blog/blog_010/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_010/</guid>
+      <description>Рвав-рвав, физкульт-привет от собаки Смайла!
+Похоже, вопрос дизайна незримо присутствует в окружающих меня вещах, и это будет уже 2-я заметка в этом году (из 2-х!), на эту тему :-)
+Сегодня мы рассмотрим часто встречающиеся запросы по визуализации сравнения плана и факта в наиболее простом его варианте - таблице. На эту тему написано довольно много, и, в принципе, тема не особо сложна.
+ Пример:
+В качестве исходных данных имеется набор, содержащий вид товара, а также плановую и фактическую суммы.</description>
     </item>
     
     <item>
