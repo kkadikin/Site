@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2020-03-06
+date: 2020-03-12
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -23,11 +23,13 @@ author: Smile
 
 **<li>** [Мелкие радости - быстрые меры, или хозяйкам на заметку](https://kkadikin.ru/ru/blog/blog_007/)
 
+**<li>** [Мелкие радости - расчет отклонений](https://kkadikin.ru/ru/blog/blog_010/)
+
+**<li>** [Мелкие радости - выгрузка большого объема данных](https://kkadikin.ru/ru/blog/blog_011/)
+
 **<li>** [Собакенские будни - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
 
 **<li>** [Собакенские будни - конструкции Related и Lookupvalue](https://kkadikin.ru/ru/blog/blog_009/)
-
-**<li>** [Мелкие радости - расчет отклонений](https://kkadikin.ru/ru/blog/blog_010/)
 
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ**
