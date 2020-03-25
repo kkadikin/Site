@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2020-03-12
+date: 2020-03-25
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -55,6 +55,8 @@ author: Smile
 **<li>** [Сломанная иерархия](https://kkadikin.ru/ru/blog/article_010/)
 
 **<li>** [Дизайнерские штучки](https://kkadikin.ru/ru/blog/article_011/)
+
+**<li>** [Обучение режима "Q&A" русскому языку](https://kkadikin.ru/ru/blog/article_012/)
 
 **РАЗРАБОТКИ**
 

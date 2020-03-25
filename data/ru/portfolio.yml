@@ -49,3 +49,7 @@ item   :
   - title     : Дизайнерские штучки
     image     : images/portfolio/portfolio-9.jpg
     category  : articles
+
+  - title     : Q&A на русском языке
+    image     : images/portfolio/portfolio-10.jpg
+    category  : articles
