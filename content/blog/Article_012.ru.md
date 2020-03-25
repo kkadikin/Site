@@ -244,4 +244,4 @@ COUNTROWS ( 'Requests' )
 
 **ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ**
 
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNzNkYmM4NjMtOWJjYy00ZTdiLTk5MmEtMmQwMGNjNjI1ZmNkIiwidCI6IjE4YjFiOTZhLTk0MTQtNDE3MC1iNmNhLTZkODU3NTJlNTZmOCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+Продемонстрировать результаты в общедоступном виде не получится, поскольку при использовании метода "Опубликовать в Интернете" режим Q&A становится недоступным, и работает непосредственно внутри кабинета.
