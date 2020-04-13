@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Сломанная иерархия">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.55.5" />
+<meta name="generator" content="Hugo 0.69.0" />
 
 <title>Smile advisory</title>
 
@@ -148,115 +148,85 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, здесь и сейчас с вами собака Смайл!</em></p>
-
 <p><em>Для начала немного о том, почему я грустный:</em></p>
-
 <p><em>Санкт-Петебрург, середина декабря (!) - дождь, грязюка, холоднюка.</em></p>
-
 <p><em>Приходится носить всякую фигню. Сопротивление бесполезно. Надеюсь, вы тоже мучаетесь, так как вместе - веселее.</em></p>
-
-<p><em>Сегодня хотелось бы описать работу с так называемой &ldquo;сломанной&rdquo; иерархией данных. В принципе, это довольно часто встречающаяся ситуация, из которой каждый выходит так, как может, но собака Смайл в данной статье постарается разъяснить все доступным языком. Так сказать, &ldquo;Повторение - мать учения.&rdquo;</em></p>
+<p><em>Сегодня хотелось бы описать работу с так называемой &ldquo;сломанной&rdquo; иерархией данных. В принципе, это довольно часто встречающаяся ситуация, из которой каждый выходит так, как может, но собака Смайл в данной статье постарается разъяснить все доступным языком. Так сказать, &ldquo;Повторение - мать учения.&quot;</em></p>
 </blockquote>
-
 <p><strong>Пример:</strong></p>
-
 <p>В качестве исходных данных поступила информация следующего вида:</p>
-
 <p>&ndash; основной набор данных, содержащий ID пользователя, номер документа и сумму - &ldquo;Dataset&rdquo;;</p>
-
 <p>&ndash; справочник, содержащий информацию о структуре подчинения между сотрудниками - &ldquo;Staff Hierarhy&rdquo;.</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_010_screen_1.jpg" alt="art_010_screen_1" /></p>
-
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_1.jpg" alt="art_010_screen_1"></p>
 <p><strong>Задача:</strong></p>
-
 <p>На основе представленных данных реализовать следующие требования:</p>
-
 <p>&ndash; построить иерархию данных таким образом, чтобы у каждого сотрудника было одинаковое количество уровней иерархии;</p>
-
 <p>&ndash; убрать повторяющиеся значения на разных уровнях иерархии, то есть, произвести ее &ldquo;схлопывание&rdquo;.</p>
-
 <p><strong>Построение структурированной иерархии в справочнике &ldquo;Staff Hierarhy&rdquo;:</strong></p>
-
-<p><strong><li></strong> В целях устранения хаоса в исходных данных для начала нам необходимо понять, является ли конкретное значение конечным элементом иерархии. В этом нам может помочь столбец &ldquo;End Link&rdquo;.</p>
-
+<p><strong><!-- raw HTML omitted --></strong> В целях устранения хаоса в исходных данных для начала нам необходимо понять, является ли конкретное значение конечным элементом иерархии. В этом нам может помочь столбец &ldquo;End Link&rdquo;.</p>
 <p>В принципе, делать его необязательно, но в случае большого объема данных он сможет помочь при проверке конечного результата:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_010_screen_2.jpg" alt="art_010_screen_2" /></p>
-
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_2.jpg" alt="art_010_screen_2"></p>
 <p>Формула указанного столбца выглядит следующим образом:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">End Link = 
+<pre><code class="language-dax" data-lang="dax">End Link = 
 CALCULATE (
-    COUNTROWS ( &#39;Staff Hierarhy&#39; );
-    ALL ( &#39;Staff Hierarhy&#39; );
-    &#39;Staff Hierarhy&#39;[Parent Key] = EARLIER ( &#39;Staff Hierarhy&#39;[User ID] )
-) = 0</code></pre></div>
-<p><strong><li></strong> Следующим шагом является построение цепочки родительских значений, для последующего определения уровня иерархии. В этом нам поможет столбец &ldquo;Hierarchy View&rdquo;, рассчитанный при помощи функции &ldquo;PATH&rdquo;:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_010_screen_3.jpg" alt="art_010_screen_3" /></p>
-
+    COUNTROWS ( 'Staff Hierarhy' );
+    ALL ( 'Staff Hierarhy' );
+    'Staff Hierarhy'[Parent Key] = EARLIER ( 'Staff Hierarhy'[User ID] )
+) = 0
+</code></pre><p><strong><!-- raw HTML omitted --></strong> Следующим шагом является построение цепочки родительских значений, для последующего определения уровня иерархии. В этом нам поможет столбец &ldquo;Hierarchy View&rdquo;, рассчитанный при помощи функции &ldquo;PATH&rdquo;:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_3.jpg" alt="art_010_screen_3"></p>
 <p>Формула указанного столбца рассчитывается так:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Hierarchy View = 
-PATH ( &#39;Staff Hierarhy&#39;[User ID]; &#39;Staff Hierarhy&#39;[Parent Key] )</code></pre></div>
-<p><strong><li></strong> Подсчет уровня иерархии, проиллюстрированнный в столбце &ldquo;Hierarchy Level&rdquo;, можно произвести при помощи функции &ldquo;PATHLENGHT&rdquo;:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_010_screen_4.jpg" alt="art_010_screen_4" /></p>
-
+<pre><code class="language-dax" data-lang="dax">Hierarchy View = 
+PATH ( 'Staff Hierarhy'[User ID]; 'Staff Hierarhy'[Parent Key] )
+</code></pre><p><strong><!-- raw HTML omitted --></strong> Подсчет уровня иерархии, проиллюстрированнный в столбце &ldquo;Hierarchy Level&rdquo;, можно произвести при помощи функции &ldquo;PATHLENGHT&rdquo;:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_4.jpg" alt="art_010_screen_4"></p>
 <p>Формула указанного столбца выглядит следующим образом:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Hierarchy Level = 
-PATHLENGTH ( &#39;Staff Hierarhy&#39;[Hierarchy View] )</code></pre></div>
-<p><strong><li></strong> Выполнив указанные шаги, можно приступать непосредственно к построению уровней иерархии при помощи функций &ldquo;PATHITEM&rdquo; и &ldquo;LOOKUPVALUE&rdquo;:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_010_screen_5.jpg" alt="art_010_screen_5" /></p>
-
+<pre><code class="language-dax" data-lang="dax">Hierarchy Level = 
+PATHLENGTH ( 'Staff Hierarhy'[Hierarchy View] )
+</code></pre><p><strong><!-- raw HTML omitted --></strong> Выполнив указанные шаги, можно приступать непосредственно к построению уровней иерархии при помощи функций &ldquo;PATHITEM&rdquo; и &ldquo;LOOKUPVALUE&rdquo;:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_5.jpg" alt="art_010_screen_5"></p>
 <p>Формула столбца для 1-го уровня иерархии - &ldquo;1st level&rdquo; представляет собой следующую конструкцию:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">1st level = 
+<pre><code class="language-dax" data-lang="dax">1st level = 
 LOOKUPVALUE (
-    &#39;Staff Hierarhy&#39;[Name];
-    &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 1; INTEGER )
-)</code></pre></div>
-<p>Формула столбца для 2-го уровня иерархии - &ldquo;2nd level&rdquo; представляет собой следующую конструкцию:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">2nd level = 
+    'Staff Hierarhy'[Name];
+    'Staff Hierarhy'[User ID]; PATHITEM ( 'Staff Hierarhy'[Hierarchy View]; 1; INTEGER )
+)
+</code></pre><p>Формула столбца для 2-го уровня иерархии - &ldquo;2nd level&rdquo; представляет собой следующую конструкцию:</p>
+<pre><code class="language-dax" data-lang="dax">2nd level = 
 IF (
-    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 2;
+    'Staff Hierarhy'[Hierarchy Level] &gt;= 2;
     LOOKUPVALUE (
-        &#39;Staff Hierarhy&#39;[Name];
-        &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 2; INTEGER )
+        'Staff Hierarhy'[Name];
+        'Staff Hierarhy'[User ID]; PATHITEM ( 'Staff Hierarhy'[Hierarchy View]; 2; INTEGER )
     );
-    &#39;Staff Hierarhy&#39;[1st level]
-)</code></pre></div>
-<p>Формула столбца для 3-го уровня иерархии - &ldquo;3rd level&rdquo; представляет собой следующую конструкцию:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">3rd level = 
+    'Staff Hierarhy'[1st level]
+)
+</code></pre><p>Формула столбца для 3-го уровня иерархии - &ldquo;3rd level&rdquo; представляет собой следующую конструкцию:</p>
+<pre><code class="language-dax" data-lang="dax">3rd level = 
 IF (
-    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 3;
+    'Staff Hierarhy'[Hierarchy Level] &gt;= 3;
     LOOKUPVALUE (
-        &#39;Staff Hierarhy&#39;[Name];
-        &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 3; INTEGER )
+        'Staff Hierarhy'[Name];
+        'Staff Hierarhy'[User ID]; PATHITEM ( 'Staff Hierarhy'[Hierarchy View]; 3; INTEGER )
     );
-    &#39;Staff Hierarhy&#39;[2nd level]
-)</code></pre></div>
-<p>Собственно, 1-я цель по построению автоматическим путем выровненной иерархии на этом закончена, единственное, с чем надо определиться - это с необходимым количеством уровней, поскольку для каждого уровня требуется отдельный расчетный столбец.</p>
-
+    'Staff Hierarhy'[2nd level]
+)
+</code></pre><p>Собственно, 1-я цель по построению автоматическим путем выровненной иерархии на этом закончена, единственное, с чем надо определиться - это с необходимым количеством уровней, поскольку для каждого уровня требуется отдельный расчетный столбец.</p>
 <p><strong>Визуализация данных - стандартное поведение иерархии:</strong></p>
-
-<p><strong><li></strong> Используя стандартный элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), мы можем &ldquo;соединить воедино&rdquo; данные справочника &ldquo;Staff Hierarhy&rdquo; и основного набора данных - таблицы &ldquo;Dataset&rdquo;. Визуальный элемент будет выглядеть следующим образом:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_010_screen_6.jpg" alt="art_010_screen_6" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Используя стандартный элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), мы можем &ldquo;соединить воедино&rdquo; данные справочника &ldquo;Staff Hierarhy&rdquo; и основного набора данных - таблицы &ldquo;Dataset&rdquo;. Визуальный элемент будет выглядеть следующим образом:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_6.jpg" alt="art_010_screen_6"></p>
 <p>При построении матрицы в иерархическом дереве присутствуют дубли в имени сотрудников. Это объяснимое поведение, поскольку &ldquo;оно так работает&rdquo;, однако повторяющиеся значения можно убрать, используя &ldquo;дополнительные приседания&rdquo;, а именно - соответствующие меры.</p>
-
 <p><strong>Схлопывание иерархии:</strong></p>
-
-<p><strong><li></strong> Для достижения 2-й поставленной цели нам необходимо рассчитать несколько мер, начиная с определения нижнего уровня вложенности:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Depth Value = 
-ISFILTERED ( &#39;Staff Hierarhy&#39;[1st level] ) + 
-ISFILTERED ( &#39;Staff Hierarhy&#39;[2nd level] ) + 
-ISFILTERED ( &#39;Staff Hierarhy&#39;[3rd level] )</code></pre></div>
-<p><strong><li></strong> Место каждого сотрудника в иерархическом дереве определяется при помощи следующей конструкции:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Hierarhy Value = 
-MAX ( &#39;Staff Hierarhy&#39;[Hierarchy Level] )</code></pre></div>
-<p><strong><li></strong> Рассчет суммы по каждому участнику производится по формуле:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Subtotal Amount = 
+<p><strong><!-- raw HTML omitted --></strong> Для достижения 2-й поставленной цели нам необходимо рассчитать несколько мер, начиная с определения нижнего уровня вложенности:</p>
+<pre><code class="language-dax" data-lang="dax">Depth Value = 
+ISFILTERED ( 'Staff Hierarhy'[1st level] ) + 
+ISFILTERED ( 'Staff Hierarhy'[2nd level] ) + 
+ISFILTERED ( 'Staff Hierarhy'[3rd level] )
+</code></pre><p><strong><!-- raw HTML omitted --></strong> Место каждого сотрудника в иерархическом дереве определяется при помощи следующей конструкции:</p>
+<pre><code class="language-dax" data-lang="dax">Hierarhy Value = 
+MAX ( 'Staff Hierarhy'[Hierarchy Level] )
+</code></pre><p><strong><!-- raw HTML omitted --></strong> Рассчет суммы по каждому участнику производится по формуле:</p>
+<pre><code class="language-dax" data-lang="dax">Subtotal Amount = 
 IF (
     [Depth Value] &gt; [Hierarhy Value] + 1;
     BLANK ();
@@ -264,29 +234,24 @@ IF (
         [Depth Value] = [Hierarhy Value] + 1;
         IF (
             AND (
-                VALUES ( &#39;Staff Hierarhy&#39;[End Link] ) = FALSE;
-                SUM ( &#39;Dataset&#39;[Amount] ) &lt;&gt; 0
+                VALUES ( 'Staff Hierarhy'[End Link] ) = FALSE;
+                SUM ( 'Dataset'[Amount] ) &lt;&gt; 0
             );
-            SUM ( &#39;Dataset&#39;[Amount] );
+            SUM ( 'Dataset'[Amount] );
             BLANK ()
         );
-        SUM ( &#39;Dataset&#39;[Amount] )
+        SUM ( 'Dataset'[Amount] )
     )
-)</code></pre></div>
-<p><strong><li></strong> Устранение дубликатов в иерархическом дереве со сдвигом промежуточных итогов реализуется следующим образом:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Final Amount = 
-IF ( [Depth Value] &gt; [Hierarhy Value]; BLANK (); SUM ( &#39;Dataset&#39;[Amount] ) )</code></pre></div>
-<p><strong>Визуализация данных - настроенное поведение иерархии:</strong></p>
-
-<p><strong><li></strong> Используя стандартный элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), и поставив в качестве значения меру &ldquo;Final Amount&rdquo; мы можем получить правильный, а также приятный глазу результат:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_010_screen_7.jpg" alt="art_010_screen_7" /></p>
-
+)
+</code></pre><p><strong><!-- raw HTML omitted --></strong> Устранение дубликатов в иерархическом дереве со сдвигом промежуточных итогов реализуется следующим образом:</p>
+<pre><code class="language-dax" data-lang="dax">Final Amount = 
+IF ( [Depth Value] &gt; [Hierarhy Value]; BLANK (); SUM ( 'Dataset'[Amount] ) )
+</code></pre><p><strong>Визуализация данных - настроенное поведение иерархии:</strong></p>
+<p><strong><!-- raw HTML omitted --></strong> Используя стандартный элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), и поставив в качестве значения меру &ldquo;Final Amount&rdquo; мы можем получить правильный, а также приятный глазу результат:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_010_screen_7.jpg" alt="art_010_screen_7"></p>
 <p>При этом суммирование по уровню иерархии, так называемые промежуточные итоги, включает в себя как подчиненные элементы, так и свое собственное значение.</p>
-
 <blockquote>
 <p><em>Рвав-рвав, наконец-то конец, до новых встречь в Новом году!</em></p>
-
 <p><em>Ваш Смайл</em></p>
 </blockquote>
 

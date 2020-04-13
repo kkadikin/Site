@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Собакенские будни - конструкции Related и Lookupvalue">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.55.5" />
+<meta name="generator" content="Hugo 0.69.0" />
 
 <title>Smile advisory</title>
 
@@ -148,65 +148,39 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, сегодня я &ndash; собака-двередержака!</em></p>
-
 <p><em>Перед вами &ndash; 2-я заметка из нашего цикла &ldquo;Собакенские будни&rdquo;, и ниже мы рассмотрим использование таких конструкций, как Related и Lookupvalue. При помощи данных функций можно присоединять данные, содержащиеся в разных таблицах, друг к другу. Прошаренная собака для целей демонстрации будет использовать тотже пример, что и в статье <a href="https://kkadikin.ru/ru/blog/blog_008/">Собакенские будни - конструкция Switch</a>.</em></p>
 </blockquote>
-
 <p><strong>Пример:</strong></p>
-
-<p><strong><li></strong> Имеется 2 набора данных, содержащих различную информацию, но при этом в каждом из набоов пристствует уникальный ключ (см. столбец &ldquo;Питомец&rdquo;):</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_1.jpg" alt="blog_009_screen_1" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Имеется 2 набора данных, содержащих различную информацию, но при этом в каждом из набоов пристствует уникальный ключ (см. столбец &ldquo;Питомец&rdquo;):</p>
+<p>![blog_009_screen_1] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_1.jpg">https://kkadikin.ru/images/blog/blog_009_screen_1.jpg</a>)</p>
 <p><em>Кстати, если ключ отсутствует, не опускать хвост ни в коем разе, его всегда можно сделать самостоятельно, лишь бы данные обоих наборов были хоть как-то сопоставимы.</em></p>
-
 <p><strong>Задача:</strong></p>
-
 <p>Собрать данные из обоих наборов в одном визуальном элементе, например, в элементе &ldquo;Table&rdquo; (&ldquo;Таблица&rdquo;).</p>
-
 <p><strong>Использование функционала:</strong></p>
-
-<p><strong><li></strong> Если мы можем связать данные посредством имеющегося ключа, и у нас не стоит задачи объединения данных в одну сущность, то все что необходимо сделать &ndash; это настроить нужную связь на уровне модели:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_2.jpg" alt="blog_009_screen_2" /></p>
-
-<p><strong><li></strong> Дальше уже можно переходить непосредственно к построению визуального элемента, вобщем, проще не бывает:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_3.jpg" alt="blog_009_screen_3" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Если мы можем связать данные посредством имеющегося ключа, и у нас не стоит задачи объединения данных в одну сущность, то все что необходимо сделать &ndash; это настроить нужную связь на уровне модели:</p>
+<p>![blog_009_screen_2] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_2.jpg">https://kkadikin.ru/images/blog/blog_009_screen_2.jpg</a>)</p>
+<p><strong><!-- raw HTML omitted --></strong> Дальше уже можно переходить непосредственно к построению визуального элемента, вобщем, проще не бывает:</p>
+<p>![blog_009_screen_3] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_3.jpg">https://kkadikin.ru/images/blog/blog_009_screen_3.jpg</a>)</p>
 <p><strong>Конструкции Related:</strong></p>
-
-<p><strong><li></strong> Данная функция работает только при наличии связей между данными, все, что необходимо сделать &ndash; это определиться с базовой таблицей, а затем выбрать нужный столбец из другой таблицы:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Эпитет - со связью =
-RELATED ( ‘Dataset 2’[Эпитет] )</code></pre></div>
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_4.jpg" alt="blog_009_screen_4" /></p>
-
-<p>В результате указанного действия мы получили составной набор данных, где указано, например, что &ldquo;Джек-рассел терьер собака Смайл молодец&rdquo;, а Йоркширский терьер песик Тедди умница :-)&ldquo;.</p>
-
-<p><strong><li></strong> При формировании визуального элемента результат аналогичен 1-му варианту.</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_5.jpg" alt="blog_009_screen_5" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Данная функция работает только при наличии связей между данными, все, что необходимо сделать &ndash; это определиться с базовой таблицей, а затем выбрать нужный столбец из другой таблицы:</p>
+<pre><code class="language-dax" data-lang="dax">Эпитет - со связью =
+RELATED ( ‘Dataset 2’[Эпитет] )
+</code></pre><p>![blog_009_screen_4] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_4.jpg">https://kkadikin.ru/images/blog/blog_009_screen_4.jpg</a>)</p>
+<p>В результате указанного действия мы получили составной набор данных, где указано, например, что &ldquo;Джек-рассел терьер собака Смайл молодец&rdquo;, а Йоркширский терьер песик Тедди умница :-)&quot;.</p>
+<p><strong><!-- raw HTML omitted --></strong> При формировании визуального элемента результат аналогичен 1-му варианту.</p>
+<p>![blog_009_screen_5] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_5.jpg">https://kkadikin.ru/images/blog/blog_009_screen_5.jpg</a>)</p>
 <p><strong>Конструкции Lookupvalue:</strong></p>
-
-<p><strong><li></strong> Данная функция работает более хитрым образом, при этом, непосредственное наличие связей между данными для ее работы необязательно, поэтому, для чистоты эксперимента, настроенная ранее связь между &ldquo;Dataset 1&rdquo; и &ldquo;Dataset 2&rdquo; удалена:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_6.jpg" alt="blog_009_screen_6" /></p>
-
-<p><strong><li></strong> Сначала необходимо указать столбец желаемого результата из присоединяемой таблицы, а затем - поле ключа для поиска необходимых данных в обоих наборах. Формула, позволяющая получить составной набор данных, выглядит следующим образом:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Эпитет - без связи =
-LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )</code></pre></div>
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_7.jpg" alt="blog_009_screen_7" /></p>
-
-<p><strong><li></strong> При формировании визуального элемента полученный результат аналогичен вариантам 1 и 2, но, из-за отсутствия связи между данными, на иллюстрации эти варианты стали неработоспособны:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_009_screen_8.jpg" alt="blog_009_screen_8" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Данная функция работает более хитрым образом, при этом, непосредственное наличие связей между данными для ее работы необязательно, поэтому, для чистоты эксперимента, настроенная ранее связь между &ldquo;Dataset 1&rdquo; и &ldquo;Dataset 2&rdquo; удалена:</p>
+<p>![blog_009_screen_6] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_6.jpg">https://kkadikin.ru/images/blog/blog_009_screen_6.jpg</a>)</p>
+<p><strong><!-- raw HTML omitted --></strong> Сначала необходимо указать столбец желаемого результата из присоединяемой таблицы, а затем - поле ключа для поиска необходимых данных в обоих наборах. Формула, позволяющая получить составной набор данных, выглядит следующим образом:</p>
+<pre><code class="language-dax" data-lang="dax">Эпитет - без связи =
+LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )
+</code></pre><p>![blog_009_screen_7] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_7.jpg">https://kkadikin.ru/images/blog/blog_009_screen_7.jpg</a>)</p>
+<p><strong><!-- raw HTML omitted --></strong> При формировании визуального элемента полученный результат аналогичен вариантам 1 и 2, но, из-за отсутствия связи между данными, на иллюстрации эти варианты стали неработоспособны:</p>
+<p>![blog_009_screen_8] (<a href="https://kkadikin.ru/images/blog/blog_009_screen_8.jpg">https://kkadikin.ru/images/blog/blog_009_screen_8.jpg</a>)</p>
 <p><em>Рвав-рвав, товарищи, даже если в связи с особенностями вашей модели связи построить нельзя &ndash; это не повод для грусти!</em></p>
-
 <blockquote>
 <p><em>Держащий нос по ветру,</em></p>
-
 <p><em>Ваш Смайл</em></p>
 </blockquote>
 
