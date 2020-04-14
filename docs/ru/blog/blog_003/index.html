@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Мелкие радости - нюансы выбора значения в срезе">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.55.5" />
 
 <title>Smile advisory</title>
 
@@ -148,55 +148,83 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, сегодня я &ndash; собака-мечтатель!</em></p>
+
 <p><em>А поскольку я мелкий эгоист (мелкий в плане размера, а не эгоизма!), то в связи с существующим настроением начинаю реализовывать свою мечту:</em></p>
+
 <p><em>уря-уря, мы начинаем публиковать контент под названием &ldquo;Мелкие радости&rdquo;,  который был неосторожно обещан в статье <a href="https://kkadikin.ru/ru/blog/article_003/">Использование мер в качестве переключателя</a>.</em></p>
+
 <p><em>Спешу напомнить, что здесь планируется размещать материал о неких хитростях по принципу &ldquo;Мелочь, а приятно&rdquo;.</em></p>
+
 <p><em>Итак, поехали, 1-я заметка представлена ниже.</em></p>
 </blockquote>
+
 <p><strong>Пример:</strong></p>
+
 <p>Есть таблица, содержащая некий список проектов и ответственного менеджера.</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_1.jpg" alt="blog_003_screen_1"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_1.jpg" alt="blog_003_screen_1" /></p>
+
 <p><strong>Задача:</strong></p>
+
 <p>Вывести количество проектов по каждому менеджеру при помощи элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) .</p>
+
 <blockquote>
 <p><em>Вроде бы, все просто :-)</em></p>
 </blockquote>
+
 <p><strong>Решение:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Создаем фильтр по менеджеру;</p>
-<p><strong><!-- raw HTML omitted --></strong> Создаем карточку для менеджера;</p>
-<p><strong><!-- raw HTML omitted --></strong> Создаем карточку для количества проектов, значение которой можно посчитать различными способами, например, мерой (Количество проектов = COUNTROWS(&lsquo;Datset&rsquo;), или при помощи свойства &ldquo;Count&rdquo; на значении элемента.</p>
+
+<p><strong><li></strong> Создаем фильтр по менеджеру;</p>
+
+<p><strong><li></strong> Создаем карточку для менеджера;</p>
+
+<p><strong><li></strong> Создаем карточку для количества проектов, значение которой можно посчитать различными способами, например, мерой (Количество проектов = COUNTROWS(&lsquo;Datset&rsquo;), или при помощи свойства &ldquo;Count&rdquo; на значении элемента.</p>
+
 <p>При фильтрации данных кажется, что все отлично, начинаем радоваться, поскольку у 1-го менеджера 3 проекта, а у 2-го &ndash; 2.</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_2.jpg" alt="blog_003_screen_2"></p>
-<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_3.jpg" alt="blog_003_screen_3"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_2.jpg" alt="blog_003_screen_2" /></p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_3.jpg" alt="blog_003_screen_3" /></p>
+
 <p>Но как только пользователь не выберет ничего, то выяснится, что радость была преждевременной, поскольку, несмотря на правильное общее количество проектов &ndash; 5, в карточке менеджера будет отображено значение, равное:</p>
-<p><strong><!-- raw HTML omitted --></strong> &ldquo;Менеджер 1&rdquo;, если в свойствах значения элемента стоит дефолтный вариант &ldquo;First&rdquo; (&ldquo;Первый&rdquo;);</p>
-<p><strong><!-- raw HTML omitted --></strong> &ldquo;Менеджер 2&rdquo;, если в свойствах значения элемента стоит ариант &ldquo;Last&rdquo; (&ldquo;Последний&rdquo;).</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_4.jpg" alt="blog_003_screen_4"></p>
+
+<p><strong><li></strong> &ldquo;Менеджер 1&rdquo;, если в свойствах значения элемента стоит дефолтный вариант &ldquo;First&rdquo; (&ldquo;Первый&rdquo;);</p>
+
+<p><strong><li></strong> &ldquo;Менеджер 2&rdquo;, если в свойствах значения элемента стоит ариант &ldquo;Last&rdquo; (&ldquo;Последний&rdquo;).</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_4.jpg" alt="blog_003_screen_4" /></p>
+
 <p>Возможным выходом из этой ситуации является дополнительная настройка фильтра, а именно включение настройки &ldquo;Single select&rdquo; (&ldquo;Единичное выделение&rdquo;), но тогда значения в карточках будут всегда отфильтрованы по умолчанию в разрезе менеджеров, что &ldquo;не есть хорошо&rdquo;.</p>
+
 <blockquote>
 <p><em>Р-р-р-р-р-р, собаке Смайлу подобная ситуация активно не нравится, и поэтому он подготовил собственное решение, а именно, решил вывести текст-предупреждение для пользователя о том, что ему необходимо выбрать конкретное значение.</em></p>
 </blockquote>
+
 <p><strong>Лайфхак от хитрой собаки:</strong></p>
-<pre><code class="language-dax" data-lang="dax">Менеджер =
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Менеджер =
 VAR _Manager =
     VALUES ( Datset[Менеджер проекта] )
 VAR _QuantityRows =
     COUNTROWS ( _Manager )
 VAR _Result =
-    IF ( _QuantityRows &gt; 1; &quot;Выберите менеджера&quot;; _Manager )
+    IF ( _QuantityRows &gt; 1; &#34;Выберите менеджера&#34;; _Manager )
 RETURN
-    _Result
-</code></pre><p>Как вы можете убедиться, подобная штука поможет вам избежать несогласованности при визуализации данных, в случае, когда в фильтре ничего не выбрано.</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_5.jpg" alt="blog_003_screen_5"></p>
+    _Result</code></pre></div>
+<p>Как вы можете убедиться, подобная штука поможет вам избежать несогласованности при визуализации данных, в случае, когда в фильтре ничего не выбрано.</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_003_screen_5.jpg" alt="blog_003_screen_5" /></p>
+
 <blockquote>
 <p><em>Рвав-рвав, на этом все, пойду на праздник, авось, чего перепадет&hellip;</em></p>
+
 <p><em>Ваш Смайл</em></p>
+
 <p><em>P.S. Любителям понажимать на кнопочки &ndash; увы, в рубрике &ldquo;Мелкие радости&rdquo; вам облом :-Р</em></p>
+
 <p><em>P.P.S. Безмерно уважаемые двуногие предложили еще более изящный вариант:</em></p>
 </blockquote>
-<pre><code class="language-dax" data-lang="dax">Менеджер =
-SELECTEDVALUE ( Dataset[Менеджер проекта]; &quot;Несколько менеджеров&quot; )
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Менеджер =
+SELECTEDVALUE ( Dataset[Менеджер проекта]; &#34;Несколько менеджеров&#34; )</code></pre></div>
             </div>
         </div>
     </div>

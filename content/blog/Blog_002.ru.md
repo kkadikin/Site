@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2020-04-13
+date: 2020-04-14
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
