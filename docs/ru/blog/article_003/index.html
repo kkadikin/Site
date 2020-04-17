@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Использование мер в качестве переключателя">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.55.5" />
 
 <title>Smile advisory</title>
 
@@ -148,61 +148,80 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, пес Смайл приветствует аудиторию!</em></p>
+
 <p><em>Поскольку я пес молодой, и на память не жалуюсь, в своей статье о 1-й разработке <a href="https://kkadikin.ru/ru/blog/dev_001/">Производственный календарь</a> я обещал рассказать о таком понятии, как &ldquo;переключаемая мера&rdquo;, это может пригодитьься, например, при реализации концепции мультивалютной отчетности, то есть пересчета исходных данных в локальной валюте в другие денежные единицы. Данные в рублях мы будем пересчитывать в доллары и евро.</em></p>
+
 <p><em>В общем случае, конечно, данную методу можно применять при реализации любых отчетов, приложив немного дополнительных услилий, вы, тем самым, обеспечите удобство конечных пользователей. Сама идея, конечно, не нова, материалов на этот счет в сети довольно много.</em></p>
 </blockquote>
+
 <p>Для построения обозначенного примера, нам необходимы исходные данные следующего вида:</p>
-<p><img src="https://kkadikin.ru/images/blog/art_003_screen_1.jpg" alt="art_003_screen_1"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_003_screen_1.jpg" alt="art_003_screen_1" /></p>
+
 <blockquote>
 <p><em>Пример с реализацией мультивалютной отчетности выбран не просто так, поскольку обожаемый хозяин часто сталкивается в своей работе с подобными запросами клиентов. Например, пересчет в другие валюты активно используется при планировании бюджета компании, при этом часто бывает так, что в процессе бюджетного года планы еще корректируются :-)</em></p>
 </blockquote>
+
 <p><strong>Пояснения примера:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Визуальный элемент &ldquo;Курсы валют&rdquo; &ndash; cодержит плановые курсы на определенную дату для российского рубля (RUR), доллара США (USD), и евро (EUR), то есть это обычный справочник.</p>
-<p><strong><!-- raw HTML omitted --></strong> Визуальный элемент &ldquo;Набор данных&rdquo; &ndash; cодержит суммы в локальной валюте (RUR), для которых необходимо сделать пересчет, также на определенную дату.</p>
+
+<p><strong><li></strong> Визуальный элемент &ldquo;Курсы валют&rdquo; &ndash; cодержит плановые курсы на определенную дату для российского рубля (RUR), доллара США (USD), и евро (EUR), то есть это обычный справочник.</p>
+
+<p><strong><li></strong> Визуальный элемент &ldquo;Набор данных&rdquo; &ndash; cодержит суммы в локальной валюте (RUR), для которых необходимо сделать пересчет, также на определенную дату.</p>
+
 <p><strong>Процесс разработки:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Создана таблица &ldquo;Dataset&rdquo; &ndash; таблица, содержащая входящие данные, а именно столбцы &ldquo;Дата&rdquo; и &ldquo;Оригинальная сумма&rdquo;, таблица создана на уровне Power Query.</p>
-<p><strong><!-- raw HTML omitted --></strong> Создана таблица &ldquo;Exchange rates&rdquo; &ndash; таблица, содержащая входящие данные, а именно столбцы &ldquo;Код валюты&rdquo;, &ldquo;Дата&rdquo; и &ldquo;Курс валюты&rdquo;, таблица создана на уровне Power Query.</p>
-<p><strong><!-- raw HTML omitted --></strong> Создана таблица &ldquo;Slicer&rdquo; &ndash; таблица, представляющая собой справочник валютных кодов, созданный на уровне DAX, при помощи следующей формулы:</p>
-<pre><code class="language-dax" data-lang="dax">Slicer =
+
+<p><strong><li></strong> Создана таблица &ldquo;Dataset&rdquo; &ndash; таблица, содержащая входящие данные, а именно столбцы &ldquo;Дата&rdquo; и &ldquo;Оригинальная сумма&rdquo;, таблица создана на уровне Power Query.</p>
+
+<p><strong><li></strong> Создана таблица &ldquo;Exchange rates&rdquo; &ndash; таблица, содержащая входящие данные, а именно столбцы &ldquo;Код валюты&rdquo;, &ldquo;Дата&rdquo; и &ldquo;Курс валюты&rdquo;, таблица создана на уровне Power Query.</p>
+
+<p><strong><li></strong> Создана таблица &ldquo;Slicer&rdquo; &ndash; таблица, представляющая собой справочник валютных кодов, созданный на уровне DAX, при помощи следующей формулы:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Slicer =
 DISTINCT (
-    SELECTCOLUMNS ( 'Exchange rates'; &quot;Код валюты&quot;; 'Exchange rates'[Код валюты] )
-)
-</code></pre><p>Данная таблица будет содержать все, что необходимо для реализации меры-переключателя, визуальным воплощением переключателя, как вы, наверное, уже поняли из названия таблицы, будет обычный элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;).</p>
-<p><strong><!-- raw HTML omitted --></strong> В таблице &ldquo;Slicer&rdquo; создан расчетный столбец &ldquo;Порядок&rdquo; &ndash; столбец, содержащий индекс, привязанный к определенному коду валюты, который необходим для корректной работы механизма переключения. Формула столбца следующая:</p>
-<pre><code class="language-dax" data-lang="dax">Порядок =
-SWITCH ( 'Slicer'[Код валюты]; &quot;RUR&quot;; 1; &quot;USD&quot;; 2; &quot;EUR&quot;; 3 )
-</code></pre><p><strong><!-- raw HTML omitted --></strong> В таблице &ldquo;Slicer&rdquo; также создан расчетный столбец &ldquo;Название&rdquo; &ndash; столбец, содержащий текстовые названия кодов валют, элемент необязателен, создан для удобства конечного пользователя. Формула столбца следующая:</p>
-<pre><code class="language-dax" data-lang="dax">Название = 
-SWITCH ( 'Slicer'[Порядок]; 1; &quot;Российский рубль&quot;; 2; &quot;Доллар США&quot;; 3; &quot;Евро&quot; )
-</code></pre><p>В результате шагов, описаных выше, должна получиться таблица, представленная ниже</p>
-<p><img src="https://kkadikin.ru/images/blog/art_003_screen_2.jpg" alt="art_003_screen_2"></p>
-<p><strong><!-- raw HTML omitted --></strong> Организация связей между данными в получившейся модели выглядит следующим образом:</p>
-<p><img src="https://kkadikin.ru/images/blog/art_003_relations.jpg" alt="art_003_relations"></p>
-<p><strong><!-- raw HTML omitted --></strong> Далее необходимо реализовать рассчеты, позволяющие пересчитать исходную сумму в каждую из валют. Для этого необходимо создать, как минимум, две меры, для доллара США и евро, но в нашем примере для целей проверки корректности пересчета &ldquo;оригинальная сумма -&gt; пересчитанная сумма&rdquo;, также создается мера для российского рубля. Ее мы также будем использовать в дальнейшем для значения &ldquo;по умолчанию&rdquo;.</p>
+    SELECTCOLUMNS ( &#39;Exchange rates&#39;; &#34;Код валюты&#34;; &#39;Exchange rates&#39;[Код валюты] )
+)</code></pre></div>
+<p>Данная таблица будет содержать все, что необходимо для реализации меры-переключателя, визуальным воплощением переключателя, как вы, наверное, уже поняли из названия таблицы, будет обычный элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;).</p>
+
+<p><strong><li></strong> В таблице &ldquo;Slicer&rdquo; создан расчетный столбец &ldquo;Порядок&rdquo; &ndash; столбец, содержащий индекс, привязанный к определенному коду валюты, который необходим для корректной работы механизма переключения. Формула столбца следующая:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Порядок =
+SWITCH ( &#39;Slicer&#39;[Код валюты]; &#34;RUR&#34;; 1; &#34;USD&#34;; 2; &#34;EUR&#34;; 3 )</code></pre></div>
+<p><strong><li></strong> В таблице &ldquo;Slicer&rdquo; также создан расчетный столбец &ldquo;Название&rdquo; &ndash; столбец, содержащий текстовые названия кодов валют, элемент необязателен, создан для удобства конечного пользователя. Формула столбца следующая:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Название = 
+SWITCH ( &#39;Slicer&#39;[Порядок]; 1; &#34;Российский рубль&#34;; 2; &#34;Доллар США&#34;; 3; &#34;Евро&#34; )</code></pre></div>
+<p>В результате шагов, описаных выше, должна получиться таблица, представленная ниже</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_003_screen_2.jpg" alt="art_003_screen_2" /></p>
+
+<p><strong><li></strong> Организация связей между данными в получившейся модели выглядит следующим образом:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_003_relations.jpg" alt="art_003_relations" /></p>
+
+<p><strong><li></strong> Далее необходимо реализовать рассчеты, позволяющие пересчитать исходную сумму в каждую из валют. Для этого необходимо создать, как минимум, две меры, для доллара США и евро, но в нашем примере для целей проверки корректности пересчета &ldquo;оригинальная сумма -&gt; пересчитанная сумма&rdquo;, также создается мера для российского рубля. Ее мы также будем использовать в дальнейшем для значения &ldquo;по умолчанию&rdquo;.</p>
+
 <p>Пример формулы может выглядеть следующим образом, хотя, конечно, вариантов может быть несколько:</p>
-<pre><code class="language-dax" data-lang="dax">USD =
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">USD =
 VAR _StartAmount =
-    SUM ( 'Dataset'[Оригинальная  сумма] )
+    SUM ( &#39;Dataset&#39;[Оригинальная  сумма] )
 VAR _Rate =
     MAXX (
-        FILTER ( 'Exchange rates'; 'Exchange rates'[Код валюты] = &quot;USD&quot; );
-        'Exchange rates'[Курс валюты]
+        FILTER ( &#39;Exchange rates&#39;; &#39;Exchange rates&#39;[Код валюты] = &#34;USD&#34; );
+        &#39;Exchange rates&#39;[Курс валюты]
     )
 VAR _EndAmount =
     DIVIDE ( _StartAmount; _Rate; 0 )
 RETURN
-    _EndAmount
-</code></pre><blockquote>
-<p><em>Совет от хитрой собаки Смайла:</em></p>
-</blockquote>
+    _EndAmount</code></pre></div>
 <blockquote>
+<p><em>Совет от хитрой собаки Смайла:</em></p>
+
 <p>&ndash; <em>Если конструкции, применяемые в расчетах, не просты, например, содержат несколько действий, как в формуле выше, то на первых порах лучше разбить итоговую формулу на несколько составляющих (переменных) используя &ldquo;var&rdquo;.</em></p>
-<p>&ndash; Если к имени переменной добавлять знак &ldquo;_&quot;, то при подстановке в формулу ваши переменные можно будет быстро найти в общем списке.*</p>
+
+<p>&ndash; Если к имени переменной добавлять знак &ldquo;_&ldquo;, то при подстановке в формулу ваши переменные можно будет быстро найти в общем списке.*</p>
 </blockquote>
-<p><strong><!-- raw HTML omitted --></strong> формула меры-переключателя строится следующим образом:</p>
-<pre><code class="language-dax" data-lang="dax">Переключатель =
+
+<p><strong><li></strong> формула меры-переключателя строится следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Переключатель =
 VAR _Toggle =
-    SELECTEDVALUE ( 'Slicer'[Порядок] )
+    SELECTEDVALUE ( &#39;Slicer&#39;[Порядок] )
 RETURN
     SWITCH (
         TRUE ();
@@ -210,32 +229,48 @@ RETURN
         _Toggle = 2; [USD];
         _Toggle = 3; [EUR];
         [RUR]
-    )
-</code></pre><blockquote>
-<p><em>Товарищи, ловите очередное обещание:</em></p>
-</blockquote>
+    )</code></pre></div>
 <blockquote>
+<p><em>Товарищи, ловите очередное обещание:</em></p>
+
 <p><em>есть идея создавать отдельные посты для описания работы тех вещей, которые часто применяются в повседневной жизни. Планируется выкладывать некоторые хитрости по принципу &ldquo;Мелочь, а приятно&rdquo;. Волевым решением, но с одобрения высоких инстанций, данный контент будет иметь общий заголовок &ldquo;Мелкие радости&rdquo; с раскрытием темы поста</em></p>
 </blockquote>
+
 <p><strong>Процесс визуализации данных:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Создать визуальный фильтр &ldquo;Валюта отчетности&rdquo;, используя элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;), при этом в качестве значений использовать данные столбца &ldquo;Название&rdquo; таблицы &ldquo;Slicer&rdquo;, собственно при помощи данного элемента будет происходить процесс переключения;</p>
-<p><strong><!-- raw HTML omitted --></strong> Создать таблицу &ldquo;Курсы валют&rdquo;, используя элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), таблица визуализирует исходные данные &ndash; значения курсов валют на конкретные даты,таблица необходима для иллюстрации результатов пересчета;</p>
-<p><strong><!-- raw HTML omitted --></strong> Создать таблицу &ldquo;Набор данных&rdquo;, используя элемент &ldquo;Table&rdquo; (&ldquo;Таблица&rdquo;), таблица визуализирует как исходные данные &ndash; столбцы &ldquo;Дата&rdquo; и &ldquo;Оригинальная сумма&rdquo;, так и получившийся результат работ - столбец &ldquo;Пересчитанная сумма&rdquo;.</p>
+
+<p><strong><li></strong> Создать визуальный фильтр &ldquo;Валюта отчетности&rdquo;, используя элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;), при этом в качестве значений использовать данные столбца &ldquo;Название&rdquo; таблицы &ldquo;Slicer&rdquo;, собственно при помощи данного элемента будет происходить процесс переключения;</p>
+
+<p><strong><li></strong> Создать таблицу &ldquo;Курсы валют&rdquo;, используя элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), таблица визуализирует исходные данные &ndash; значения курсов валют на конкретные даты,таблица необходима для иллюстрации результатов пересчета;</p>
+
+<p><strong><li></strong> Создать таблицу &ldquo;Набор данных&rdquo;, используя элемент &ldquo;Table&rdquo; (&ldquo;Таблица&rdquo;), таблица визуализирует как исходные данные &ndash; столбцы &ldquo;Дата&rdquo; и &ldquo;Оригинальная сумма&rdquo;, так и получившийся результат работ - столбец &ldquo;Пересчитанная сумма&rdquo;.</p>
+
 <p>Пересчет в доллары США (обратите внимание, при нажатии кнопки &ldquo;Доллар США&rdquo; в визуальном фильтре &ldquo;Валюта отчетности&rdquo;, в таблице &ldquo;Набор данных&rdquo; по столбцу &ldquo;Пересчитанная сумма&rdquo; значения в разрезе дат изменяются&rdquo;):</p>
-<p><img src="https://kkadikin.ru/images/blog/art_003_screen_3.jpg" alt="art_003_screen_3"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_003_screen_3.jpg" alt="art_003_screen_3" /></p>
+
 <p>Пересчет в евро:</p>
-<p><img src="https://kkadikin.ru/images/blog/art_003_screen_4.jpg" alt="art_003_screen_4"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_003_screen_4.jpg" alt="art_003_screen_4" /></p>
+
 <p>Вид по умолчанию, а также пересчет в российские рубли (кнопка &ldquo;Российский рубль&rdquo; в визуальном фильтре &ldquo;Валюта отчетности&rdquo; не нажата, в таблице &ldquo;Набор данных&rdquo; по столбцу &ldquo;Пересчитанная сумма значения тождественны входящим данным, поскольку курс валюты равен &ldquo;1&rdquo;):</p>
-<p><img src="https://kkadikin.ru/images/blog/art_003_screen_5.jpg" alt="art_003_screen_5"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_003_screen_5.jpg" alt="art_003_screen_5" /></p>
+
 <p>И в качестве последнего штриха, благодаря последнему апдейту Power BI Desktop, значения в срезе мы можем фильтровать, оставив только необходимые.</p>
-<p><img src="https://kkadikin.ru/images/blog/art_003_screen_6.jpg" alt="art_003_screen_6"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_003_screen_6.jpg" alt="art_003_screen_6" /></p>
+
 <blockquote>
 <p><em>Рвав-рвав, товарищи, надеюсь, это было познавательно!</em></p>
+
 <p><em>Статья закончена, а я спать пошел, завидуйте мне, двуногие, я сплю когда хочу :-Р</em></p>
+
 <p><em>Ваш Смайл</em></p>
 </blockquote>
+
 <p><strong>ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ</strong></p>
-<!-- raw HTML omitted -->
+
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWY5Y2I5OTAtNmMyNi00NjI4LWJhY2UtZDFhMDJlNTRkZWYzIiwidCI6IjE4YjFiOTZhLTk0MTQtNDE3MC1iNmNhLTZkODU3NTJlNTZmOCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
             </div>
         </div>

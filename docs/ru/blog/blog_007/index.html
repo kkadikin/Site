@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Мелкие радости - быстрые меры, или хозяйкам на заметку">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.55.5" />
 
 <title>Smile advisory</title>
 
@@ -148,75 +148,115 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, сегодня я &ndash; собака-грязесобирака!</em></p>
+
 <p><em>Перед вами &ndash; 5-я заметка из нашего цикла &ldquo;Мелкие радости&rdquo;, и ниже мы рассмотрим использование функционала построения мер при помощи встроенного мастера &ndash; так называемые &ldquo;Быстрые меры&rdquo;. Принцип работы с функционалом будет рассмотрен на примере рассчета накопительного итога.</em></p>
 </blockquote>
+
 <p><strong>Пример:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Имеется набор данных, содержащий распределение различных сумм в разрезе статьи (столбец &ldquo;Строка отчета&rdquo;), и периода (соответствующие столбцы месяцев):</p>
-<p>![blog_007_screen_1] (<a href="https://kkadikin.ru/images/blog/blog_007_screen_1.jpg">https://kkadikin.ru/images/blog/blog_007_screen_1.jpg</a>)</p>
+
+<p><strong><li></strong> Имеется набор данных, содержащий распределение различных сумм в разрезе статьи (столбец &ldquo;Строка отчета&rdquo;), и периода (соответствующие столбцы месяцев):</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_007_screen_1.jpg" alt="blog_007_screen_1" /></p>
+
 <p><strong>Задача:</strong></p>
+
 <p>Рассчитать суммы накопительного итога в разрезе соответствующего периода времени (месяц), используя 2 способа создания конечного рассчета:</p>
+
 <p>&ndash; быстрые меры &ndash; построение автоматическим путем;</p>
+
 <p>&ndash; обычные меры &ndash; построение вручную.</p>
+
 <p><strong>Решение при помощи функционала &ldquo;Быстрые меры&rdquo;:</strong></p>
-<p>Данный функционал построения мер <em>&quot;&hellip;запускает набор команд DAX в фоновом режиме на основе данных, которые вы вводите в диалоговое окно&hellip;&quot;.</em></p>
+
+<p>Данный функционал построения мер <em>&rdquo;&hellip;запускает набор команд DAX в фоновом режиме на основе данных, которые вы вводите в диалоговое окно&hellip;&ldquo;.</em></p>
+
 <p>По сути &ndash; это некий помощник пользователя, предлагающий использовать встроенные механизмы для выполнения тех или иных рассчетов.</p>
-<p><strong><!-- raw HTML omitted --></strong> Для запуска данного функционала можно, например, нажать кнопку &ldquo;New Quick Measure&rdquo; (&ldquo;Новая быстрая мера&rdquo;), расположенную на закладке &ldquo;Home&rdquo; (&ldquo;Главная&rdquo;):</p>
-<p>![blog_007_screen_2] (<a href="https://kkadikin.ru/images/blog/blog_007_screen_2.jpg">https://kkadikin.ru/images/blog/blog_007_screen_2.jpg</a>)</p>
-<p><strong><!-- raw HTML omitted --></strong> После этого необходимо выбрать нужный тип рассчета (в нашем случае это &ldquo;Нарастающий итог&rdquo;) и заполнить соответствующие поля:</p>
-<p>![blog_007_screen_3] (<a href="https://kkadikin.ru/images/blog/blog_007_screen_3.jpg">https://kkadikin.ru/images/blog/blog_007_screen_3.jpg</a>)</p>
-<p><strong><!-- raw HTML omitted --></strong> В результате данных дейстыий будет сформирована конструкция следующего вида (имя по умолчанию изменено):</p>
-<pre><code class="language-dax" data-lang="dax">Построение автоматически =
+
+<p><strong><li></strong> Для запуска данного функционала можно, например, нажать кнопку &ldquo;New Quick Measure&rdquo; (&ldquo;Новая быстрая мера&rdquo;), расположенную на закладке &ldquo;Home&rdquo; (&ldquo;Главная&rdquo;):</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_007_screen_2.jpg" alt="blog_007_screen_2" /></p>
+
+<p><strong><li></strong> После этого необходимо выбрать нужный тип рассчета (в нашем случае это &ldquo;Нарастающий итог&rdquo;) и заполнить соответствующие поля:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_007_screen_3.jpg" alt="blog_007_screen_3" /></p>
+
+<p><strong><li></strong> В результате данных дейстыий будет сформирована конструкция следующего вида (имя по умолчанию изменено):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Построение автоматически =
 CALCULATE (
-    SUM ( 'Dataset'[Amount] );
+    SUM ( &#39;Dataset&#39;[Amount] );
     FILTER (
         CALCULATETABLE (
-            SUMMARIZE ( 'Dataset'; 'Dataset'[Month_Number]; 'Dataset'[Month_Name] );
-            ALLSELECTED ( 'Dataset' )
+            SUMMARIZE ( &#39;Dataset&#39;; &#39;Dataset&#39;[Month_Number]; &#39;Dataset&#39;[Month_Name] );
+            ALLSELECTED ( &#39;Dataset&#39; )
         );
         ISONORAFTER (
-                'Dataset'[Month_Number]; MAX ( 'Dataset'[Month_Number] ); DESC;
-                'Dataset'[Month_Name]; MAX ( 'Dataset'[Month_Name] ); DESC
+                &#39;Dataset&#39;[Month_Number]; MAX ( &#39;Dataset&#39;[Month_Number] ); DESC;
+                &#39;Dataset&#39;[Month_Name]; MAX ( &#39;Dataset&#39;[Month_Name] ); DESC
         )
     )
-)
-</code></pre><p><em>Рвав-рвав, как вы видите, конструкция довольно монструозная (аж лапки подрагивают!), но зато для того, чтобы ее построить, потребовались минимальные усилия!</em></p>
+)</code></pre></div>
+<p><em>Рвав-рвав, как вы видите, конструкция довольно монструозная (аж лапки подрагивают!), но зато для того, чтобы ее построить, потребовались минимальные усилия!</em></p>
+
 <p><strong>Решение при помощи обычной меры, порстроенной вручную:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Формирование меры для подсчета нарастающего итога вручную предполагает некоторые дополнительные действия со стороны конечного пользователя, а именно &ndash; получение значения даты конца месяца, например, созданием дополнительного расчетного столбца, имеющего следующую формулу:</p>
-<pre><code class="language-dax" data-lang="dax">Month_End =
-EOMONTH ( 'Dataset'[Date]; 0 )
-</code></pre><p>![blog_007_screen_4] (<a href="https://kkadikin.ru/images/blog/blog_007_screen_4.jpg">https://kkadikin.ru/images/blog/blog_007_screen_4.jpg</a>)</p>
-<p><strong><!-- raw HTML omitted --></strong> Конструкция нужной меры будет выглядеть следующим образом:</p>
-<pre><code class="language-dax" data-lang="dax">Построение вручную =
+
+<p><strong><li></strong> Формирование меры для подсчета нарастающего итога вручную предполагает некоторые дополнительные действия со стороны конечного пользователя, а именно &ndash; получение значения даты конца месяца, например, созданием дополнительного расчетного столбца, имеющего следующую формулу:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_End =
+EOMONTH ( &#39;Dataset&#39;[Date]; 0 )</code></pre></div>
+<p><img src="https://kkadikin.ru/images/blog/blog_007_screen_4.jpg" alt="blog_007_screen_4" /></p>
+
+<p><strong><li></strong> Конструкция нужной меры будет выглядеть следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Построение вручную =
 CALCULATE (
-    SUM ( 'Dataset'[Amount] );
+    SUM ( &#39;Dataset&#39;[Amount] );
     FILTER (
-        ALL ( 'Dataset' );
-        'Dataset'[Month_End] &lt;= MAX ( 'Dataset'[Month_End] )
+        ALL ( &#39;Dataset&#39; );
+        &#39;Dataset&#39;[Month_End] &lt;= MAX ( &#39;Dataset&#39;[Month_End] )
     );
-    VALUES ( 'Dataset'[Row] )
-)
-</code></pre><p><em>Рвав-рвав, здесь конечная формула получилась гораздо &ldquo;легче&rdquo;, и теперь главное &ndash; это проверить корректность полученного результата.</em></p>
+    VALUES ( &#39;Dataset&#39;[Row] )
+)</code></pre></div>
+<p><em>Рвав-рвав, здесь конечная формула получилась гораздо &ldquo;легче&rdquo;, и теперь главное &ndash; это проверить корректность полученного результата.</em></p>
+
 <p><strong>Проверка результатов:</strong></p>
+
 <p>Для проверки результатов были предварительно построены следующие визуализации:</p>
+
 <p>&ndash; 2 таблицы (по одной на каждый вид рассчета), с использованием элемента &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;);</p>
+
 <p>&ndash; Визуальный фильтр по строкам отчета, с использованием элемента &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;);</p>
+
 <p>&ndash; Визуальный фильтр по месяцам, с использованием элемента &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;).</p>
-<p><strong><!-- raw HTML omitted --></strong> При отсутствии фильтров оба рассчета идентичны и работают корректно, поскольку значение нарастающего итога для месяца &ldquo;Март&rdquo; считается как:</p>
+
+<p><strong><li></strong> При отсутствии фильтров оба рассчета идентичны и работают корректно, поскольку значение нарастающего итога для месяца &ldquo;Март&rdquo; считается как:</p>
+
 <p>&ndash; для 1-ой строки: 100 + 200 + 300 = 600;</p>
+
 <p>&ndash; для 2-ой строки: 400 + 500 + 600 = 1500.</p>
-<p>![blog_007_screen_5] (<a href="https://kkadikin.ru/images/blog/blog_007_screen_5.jpg">https://kkadikin.ru/images/blog/blog_007_screen_5.jpg</a>)</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_007_screen_5.jpg" alt="blog_007_screen_5" /></p>
+
 <p><em>Рвав-рвав, по результатам проверки задача считается выполненной, но, как всегда &ldquo;Дьявол кроется в деталях&rdquo;.</em></p>
-<p><strong><!-- raw HTML omitted --></strong> Если отфильтровать данные по какой-то строке, например, по значению &ldquo;Статья 1&rdquo;, оба рассчета также идентичны:</p>
-<p>![blog_007_screen_6] (<a href="https://kkadikin.ru/images/blog/blog_007_screen_6.jpg">https://kkadikin.ru/images/blog/blog_007_screen_6.jpg</a>)</p>
-<p><strong><!-- raw HTML omitted --></strong> Если отфильтровать данные по какому-то столбцу, например, по значениям &ldquo;Январь&rdquo; и &ldquo;Март&rdquo;, итоговые цифры не будут равны друг другу, так как для значения &ldquo;Март&rdquo; быстрая мера показывает результат наростающего итога, равный &ldquo;400&rdquo;, а ручная &ndash; &ldquo;600&rdquo;:</p>
-<p>![blog_007_screen_7] (<a href="https://kkadikin.ru/images/blog/blog_007_screen_7.jpg">https://kkadikin.ru/images/blog/blog_007_screen_7.jpg</a>)</p>
+
+<p><strong><li></strong> Если отфильтровать данные по какой-то строке, например, по значению &ldquo;Статья 1&rdquo;, оба рассчета также идентичны:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_007_screen_6.jpg" alt="blog_007_screen_6" /></p>
+
+<p><strong><li></strong> Если отфильтровать данные по какому-то столбцу, например, по значениям &ldquo;Январь&rdquo; и &ldquo;Март&rdquo;, итоговые цифры не будут равны друг другу, так как для значения &ldquo;Март&rdquo; быстрая мера показывает результат наростающего итога, равный &ldquo;400&rdquo;, а ручная &ndash; &ldquo;600&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_007_screen_7.jpg" alt="blog_007_screen_7" /></p>
+
 <p><strong>Выводы собаки Смайла:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> <em>Как уже говорилось выше, в принципе, задача решена, поскольку при отсутствии фильтра по периоду рассчеты обоими способами идентичны;</em></p>
-<p><strong><!-- raw HTML omitted --></strong> <em>При использовании механизма &ldquo;Быстрые меры&rdquo; в рассчетах присутствует некая дополнительная логика (при фильтрации периода в значение нарастающего итога берется то, что указано явным образом, то есть для значения &ldquo;Январь&rdquo; &ndash; &ldquo;100&rdquo;, а &ldquo;Март&rdquo; &ndash; &ldquo;300&rdquo;, сумма чего и составляет показанные в отчете &ldquo;400&rdquo;.</em></p>
-<p><strong><!-- raw HTML omitted --></strong> <em>Ручная мера также стабильно показывает для значения &ldquo;Март&rdquo; нужные &ldquo;600&rdquo; даже при фильтрации периода, однако это неявное поведение, по сути фильтр здесь влияет только на количество столбцов визуального элемента;</em></p>
-<p><strong><!-- raw HTML omitted --></strong> <em>Дополнительная логика, встроенная в механизм &ldquo;Быстрые меры&rdquo; иногда может быть не совсем понятна конечному пользователю, однако это не означает, что данная конструкция является неправильной / некорректной / и пр., просто она другая, и ее применение может быть действительно обосновано.</em></p>
+
+<p><strong><li></strong> <em>Как уже говорилось выше, в принципе, задача решена, поскольку при отсутствии фильтра по периоду рассчеты обоими способами идентичны;</em></p>
+
+<p><strong><li></strong> <em>При использовании механизма &ldquo;Быстрые меры&rdquo; в рассчетах присутствует некая дополнительная логика (при фильтрации периода в значение нарастающего итога берется то, что указано явным образом, то есть для значения &ldquo;Январь&rdquo; &ndash; &ldquo;100&rdquo;, а &ldquo;Март&rdquo; &ndash; &ldquo;300&rdquo;, сумма чего и составляет показанные в отчете &ldquo;400&rdquo;.</em></p>
+
+<p><strong><li></strong> <em>Ручная мера также стабильно показывает для значения &ldquo;Март&rdquo; нужные &ldquo;600&rdquo; даже при фильтрации периода, однако это неявное поведение, по сути фильтр здесь влияет только на количество столбцов визуального элемента;</em></p>
+
+<p><strong><li></strong> <em>Дополнительная логика, встроенная в механизм &ldquo;Быстрые меры&rdquo; иногда может быть не совсем понятна конечному пользователю, однако это не означает, что данная конструкция является неправильной / некорректной / и пр., просто она другая, и ее применение может быть действительно обосновано.</em></p>
+
 <blockquote>
 <p><em>Танки грязи не боятся</em>,</p>
+
 <p><em>Ваш Смайл</em></p>
 </blockquote>
 

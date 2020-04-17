@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Нюансы использования встроенной иерархии дат">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.55.5" />
 
 <title>Smile advisory</title>
 
@@ -148,43 +148,72 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, cмотрите, что нарыл!</em></p>
+
 <p><em>Я собака обязательный, исполнительный, да и вообще, самый лучший :-Р</em></p>
+
 <p><em>В связи с этим, несмотря на то, что &ldquo;Обещанного 3 года ждут&rdquo;, подготовил материал о плюсах и минусах использования встроенной иерархии дат, о которых обещал рассказать в своей статье <a href="https://kkadikin.ru/ru/blog/article_001/">Создание календаря при помощи DAX</a>.</em></p>
+
 <p><em>В общем, идея написания материала возникла после общения с &ldquo;матерыми волкодавами&rdquo;, коммуникабельность и любопытство &ndash; страшная сила!</em></p>
 </blockquote>
+
 <p>За встроенную иерархию дат в Power BI отвечает опция, расположенная здесь:</p>
+
 <p>File -&gt; Options and settings -&gt; Options -&gt; Data Load -&gt; Auto date/time</p>
+
 <p>По умолчанию данная настройка активна, но ее, конечно, можно принудительно отключить, сняв соответствующий флаг и нажав кнопку &ldquo;ОК&rdquo;.</p>
+
 <p><strong>Положительные моменты использования встроенной иерархии дат:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Просто, быстро и удобно;</p>
-<p><strong><!-- raw HTML omitted --></strong> Минимальные знания синтаксиса DAX при построении итоговой конструкции типа:</p>
-<pre><code class="language-dax" data-lang="dax">Year =
-'Calendar'[Date].[Year]
-</code></pre><p><strong><!-- raw HTML omitted --></strong> Отсутствие дополнительных телодвижений при построении визуальных элементов в случае, если в их конструкции используются временные отрезки.</p>
+
+<p><strong><li></strong> Просто, быстро и удобно;</p>
+
+<p><strong><li></strong> Минимальные знания синтаксиса DAX при построении итоговой конструкции типа:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Year =
+&#39;Calendar&#39;[Date].[Year]</code></pre></div>
+<p><strong><li></strong> Отсутствие дополнительных телодвижений при построении визуальных элементов в случае, если в их конструкции используются временные отрезки.</p>
+
 <blockquote>
-<p><em>Как я уже говорил, это наиболее подходящий способ для новичка, да и не только, за который я агитирую всеми ламами :-)&quot;</em></p>
+<p><em>Как я уже говорил, это наиболее подходящий способ для новичка, да и не только, за который я агитирую всеми ламами :-)&rdquo;</em></p>
 </blockquote>
+
 <p><strong>Отрицательные моменты использования встроенной иерархии дат:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> При использовании встроенной иерархии дат неявным образом в системе создаются скрытые дополнительные таблицы, которых не видно невооруженным глазом. То есть увидеть их через Power BI Desktop вы не сможете. Указанные таблицы будут содержать данные, начиная с 1 января по 31 декабря для самого раннего и самого позднего года, присутствующего в наборе значений;</p>
+
+<p><strong><li></strong> При использовании встроенной иерархии дат неявным образом в системе создаются скрытые дополнительные таблицы, которых не видно невооруженным глазом. То есть увидеть их через Power BI Desktop вы не сможете. Указанные таблицы будут содержать данные, начиная с 1 января по 31 декабря для самого раннего и самого позднего года, присутствующего в наборе значений;</p>
+
 <blockquote>
 <p><em>Лично мне, в данном конкретном случае, повезло, поскольку нюх у меня отличный, собакен я коммуникабельный, сам неплох, да и знакомые &ldquo;матерые волкодавы&rdquo; имеются!</em></p>
 </blockquote>
-<p><strong><!-- raw HTML omitted --></strong> Более того, если в вашем наборе данных имеется не один столбец с датами, это будет происходить каждый раз, то есть на каждый столбец с датами будет создано по одной таблице (!).</p>
+
+<p><strong><li></strong> Более того, если в вашем наборе данных имеется не один столбец с датами, это будет происходить каждый раз, то есть на каждый столбец с датами будет создано по одной таблице (!).</p>
+
 <p><strong>Проиллюстрировать отрицательные моменты нам поможет &ldquo;DAX Studio&rdquo;, пошаговая инструкция:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Запустить DAX Studio:</p>
-<p><img src="https://kkadikin.ru/images/blog/art_002_screen_1.jpg" alt="art_002_screen_1"></p>
-<p><strong><!-- raw HTML omitted --></strong> Открыть необходимый файл Power BI Desktop (&quot;*.pbix&rdquo;) &ndash; в нашем случае файл называется &ldquo;Test&rdquo;;</p>
-<p><strong><!-- raw HTML omitted --></strong> Переместить переключатель в положении &ldquo;PBI/SSDT Model&rdquo;:</p>
-<p><img src="https://kkadikin.ru/images/blog/art_002_screen_2.jpg" alt="art_002_screen_2"></p>
-<p><strong><!-- raw HTML omitted --></strong> Нажать кнопку &ldquo;Connect&rdquo;;</p>
-<p><strong><!-- raw HTML omitted --></strong> В открывшемся окне &ldquo;Dax Studio&rdquo; (слева) посмотреть на получившийся результат &ndash; помимо таблицы &ldquo;Тест встроенной иерархии&rdquo; со столбцом &ldquo;Дата&rdquo;, созданном при загрузке данных в файл &ldquo;Test&rdquo; Power BI Desktop, мы можем увидеть еще 2 таблицы со своими наборами столбцов:</p>
-<p>​		&ndash; таблица шаблона &ndash; &ldquo;DateTableTemplate_c5f722e8-4eeb-4c50-b955-c0b41b18b70f&rdquo;;</p>
-<p>​		&ndash; таблица данных  &ndash; &ldquo;LocalDateTable_c0daab8b-7b8f-4c19-abda-de5d10a8c4c9&rdquo;.</p>
-<p><img src="https://kkadikin.ru/images/blog/art_002_screen_3.jpg" alt="art_002_screen_3"></p>
+
+<p><strong><li></strong> Запустить DAX Studio:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_002_screen_1.jpg" alt="art_002_screen_1" /></p>
+
+<p><strong><li></strong> Открыть необходимый файл Power BI Desktop (&rdquo;*.pbix&rdquo;) &ndash; в нашем случае файл называется &ldquo;Test&rdquo;;</p>
+
+<p><strong><li></strong> Переместить переключатель в положении &ldquo;PBI/SSDT Model&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_002_screen_2.jpg" alt="art_002_screen_2" /></p>
+
+<p><strong><li></strong> Нажать кнопку &ldquo;Connect&rdquo;;</p>
+
+<p><strong><li></strong> В открывшемся окне &ldquo;Dax Studio&rdquo; (слева) посмотреть на получившийся результат &ndash; помимо таблицы &ldquo;Тест встроенной иерархии&rdquo; со столбцом &ldquo;Дата&rdquo;, созданном при загрузке данных в файл &ldquo;Test&rdquo; Power BI Desktop, мы можем увидеть еще 2 таблицы со своими наборами столбцов:</p>
+
+<p>​       &ndash; таблица шаблона &ndash; &ldquo;DateTableTemplate_c5f722e8-4eeb-4c50-b955-c0b41b18b70f&rdquo;;</p>
+
+<p>​       &ndash; таблица данных  &ndash; &ldquo;LocalDateTable_c0daab8b-7b8f-4c19-abda-de5d10a8c4c9&rdquo;.</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_002_screen_3.jpg" alt="art_002_screen_3" /></p>
+
 <p>По итогам, при действительно больших объемах данных использование встроенной иерархии дат может отрицательно сказаться на производительности системы в целом, но если ваши потребности относительно невелики, то на это можно не обращать внимания.</p>
+
 <blockquote>
 <p><em>Рвав-рвав, на этом, собственно, все.</em></p>
+
 <p><em>Пойду на прогулку, на улице дождь, но правильной собаке это не помеха!</em></p>
+
 <p><em>Ваш Смайл</em></p>
 </blockquote>
 

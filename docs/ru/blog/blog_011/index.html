@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Мелкие радости - выгрузка большого объема данных">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.55.5" />
 
 <title>Smile advisory</title>
 
@@ -148,44 +148,76 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, сегодня я &ndash; собака-курочка!</em></p>
+
 <p><em>Перед вами &ndash; 7-я заметка из нашего цикла &ldquo;Мелкие радости&rdquo;, и сегодня мы рассмотрим такой наболевший вопрос, как выгрузка большого объема данных из MS Power BI.</em>
 <em>В последнее время часто попадаются ситуации, когда нашу любимую систему используют как некое промежуточное средство, для выгрузки данных в MS Excel в целях дальнейшего анализа (с построением, опять-таки, сводных таблиц и прочими делами).</em></p>
-<p><em>Свое особое мнение на этот счет могу высказать отдельно, и не здесь, а пока, как говорится: &ldquo;&hellip;Ну надо так надо!&quot;</em></p>
+
+<p><em>Свое особое мнение на этот счет могу высказать отдельно, и не здесь, а пока, как говорится: &ldquo;&hellip;Ну надо так надо!&rdquo;</em></p>
 </blockquote>
+
 <p><strong>Пример:</strong></p>
+
 <p>В качестве исходных данных имеется набор, содержащий всего один столбец &ndash; &ldquo;Номер&rdquo;, в котором, однако, содержится больше 150 тысяч значений:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_1.jpg" alt="blog_011_screen_1"></p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_1.jpg" alt="blog_011_screen_1" /></p>
+
 <p><strong>Задача:</strong></p>
+
 <p>Получить указанный набор значений в MS Excel.</p>
+
 <blockquote>
 <p><em>Рвав-рвав, в выполнении данной задачи нам поможет такой инструмент, как DAX Studio.</em></p>
+
 <p><em>Количество записей в объеме &ldquo;150 010&rdquo; взято не &ldquo;с потолка&rdquo;, а в связи с тем, что, например, с облаке (служба Power BI Service), существует ограничение на выгрузку в объеме &ldquo;150 000&rdquo; для файла Excel, и &ldquo;30 000&rdquo; для файла CSV.</em></p>
 </blockquote>
+
 <p><strong>Реализация требований:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Открываем файл Power BI, содержащий модель данных.</p>
-<p><strong><!-- raw HTML omitted --></strong> Запускаем DAX Studio:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_2.jpg" alt="blog_011_screen_2"></p>
-<p><strong><!-- raw HTML omitted --></strong> Устанавливаем переключатель в пункт &ldquo;PBI / SSDT Model&rdquo;:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_3.jpg" alt="blog_011_screen_3"></p>
-<p><strong><!-- raw HTML omitted --></strong> Устанавливаем переключатель в пункт &ldquo;Connect&rdquo;.</p>
-<p><strong><!-- raw HTML omitted --></strong> В открывшемся окне запроса пишем нужную команду &ldquo;EVALUATE&rdquo; с имененем нужной таблицы, в нашем случае &ndash; &lsquo;Dataset&rsquo;:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_4.jpg" alt="blog_011_screen_4"></p>
-<p><strong><!-- raw HTML omitted --></strong> Запускаем запрос на выполнение при помощи кнопки &ldquo;Run&rdquo; (Путь: Закладка Home -&gt; Кнопка &ldquo;Run&rdquo;), ну или на клавиатуре &ndash; &ldquo;F5&rdquo;, в результате выполнения запроса в нижней части экрана в разделе &ldquo;Results&rdquo;) появятся данные:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_5.jpg" alt="blog_011_screen_5"></p>
-<p><strong><!-- raw HTML omitted --></strong> Указываем способ сохранения данных при помощи кнопки &ldquo;Output&rdquo; (Путь: Закладка Home -&gt; Кнопка &ldquo;Output&rdquo; -&gt; Кнопка &ldquo;File&rdquo;).</p>
-<p><strong><!-- raw HTML omitted --></strong> В результате описанных действий в нижней части экрана в разделе &ldquo;Results&rdquo; появится сообщение следующего вида:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_6.jpg" alt="blog_011_screen_6"></p>
-<p><strong><!-- raw HTML omitted --></strong> Повторно запускаем запрос на выполнение.</p>
-<p><strong><!-- raw HTML omitted --></strong> В открывшемся окне указываем желаемое има файла, и его тип:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_7.jpg" alt="blog_011_screen_7"></p>
+
+<p><strong><li></strong> Открываем файл Power BI, содержащий модель данных.</p>
+
+<p><strong><li></strong> Запускаем DAX Studio:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_2.jpg" alt="blog_011_screen_2" /></p>
+
+<p><strong><li></strong> Устанавливаем переключатель в пункт &ldquo;PBI / SSDT Model&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_3.jpg" alt="blog_011_screen_3" /></p>
+
+<p><strong><li></strong> Устанавливаем переключатель в пункт &ldquo;Connect&rdquo;.</p>
+
+<p><strong><li></strong> В открывшемся окне запроса пишем нужную команду &ldquo;EVALUATE&rdquo; с имененем нужной таблицы, в нашем случае &ndash; &lsquo;Dataset&rsquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_4.jpg" alt="blog_011_screen_4" /></p>
+
+<p><strong><li></strong> Запускаем запрос на выполнение при помощи кнопки &ldquo;Run&rdquo; (Путь: Закладка Home -&gt; Кнопка &ldquo;Run&rdquo;), ну или на клавиатуре &ndash; &ldquo;F5&rdquo;, в результате выполнения запроса в нижней части экрана в разделе &ldquo;Results&rdquo;) появятся данные:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_5.jpg" alt="blog_011_screen_5" /></p>
+
+<p><strong><li></strong> Указываем способ сохранения данных при помощи кнопки &ldquo;Output&rdquo; (Путь: Закладка Home -&gt; Кнопка &ldquo;Output&rdquo; -&gt; Кнопка &ldquo;File&rdquo;).</p>
+
+<p><strong><li></strong> В результате описанных действий в нижней части экрана в разделе &ldquo;Results&rdquo; появится сообщение следующего вида:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_6.jpg" alt="blog_011_screen_6" /></p>
+
+<p><strong><li></strong> Повторно запускаем запрос на выполнение.</p>
+
+<p><strong><li></strong> В открывшемся окне указываем желаемое има файла, и его тип:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_011_screen_7.jpg" alt="blog_011_screen_7" /></p>
+
 <blockquote>
-<p><em>Рвав-рвав, окно сохранения у вас может отличаться от рисунка, поскольку здесь папки скрыты &ndash; у собак свои секреты!&quot;</em></p>
+<p><em>Рвав-рвав, окно сохранения у вас может отличаться от рисунка, поскольку здесь папки скрыты &ndash; у собак свои секреты!&rdquo;</em></p>
+
 <p><em>Также, в качестве рекомендации для сохранения лучше выбирать кодировку UTF-8.</em></p>
 </blockquote>
-<p><strong><!-- raw HTML omitted --></strong> Нажать кнопку &ldquo;Сохранить&rdquo;.</p>
-<p><strong><!-- raw HTML omitted --></strong> Открыть получившийся файл при помощи MS Excel и проверить результат.</p>
+
+<p><strong><li></strong> Нажать кнопку &ldquo;Сохранить&rdquo;.</p>
+
+<p><strong><li></strong> Открыть получившийся файл при помощи MS Excel и проверить результат.</p>
+
 <blockquote>
 <p><em>Рвав-рвав, DAX Studio всем в лапы!</em></p>
+
 <p><em>Ваш Смайл</em></p>
 </blockquote>
 

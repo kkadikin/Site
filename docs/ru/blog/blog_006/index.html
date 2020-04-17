@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Мелкие радости - избавляемся от Blank / Пусто">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.55.5" />
 
 <title>Smile advisory</title>
 
@@ -148,36 +148,53 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, я сегодня &ndash; собака-уничтожитель!</em></p>
+
 <p><em>Перед вами &ndash; 4-я заметка из нашего цикла &ldquo;Мелкие радости&rdquo;, и мы сегодня поговорим о том, как избавиться от значений типа &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) в некоторых визуальных элементах, которые появляются в результате фильтрации данных.</em></p>
 </blockquote>
+
 <p><strong>Пример:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> Имеется набор данных, содержащий исходную информацию в разрезе количества (столбец &ldquo;Количество&rdquo;) и номенклатуры (столбец &ldquo;Название&rdquo;, имеющий значения &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;), а также номенклатурный справочник, содержащий более полную номенклатуру, чем в исходном наборе (значение &ldquo;Апельсины&rdquo;):</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_1.jpg" alt="blog_006_screen_1"></p>
-<p><strong><!-- raw HTML omitted --></strong> Существует визуальный фильтр, построенный согласно номенклатурному справочнику, то есть содержащий 3 значения: &ldquo;Апельсины&rdquo;, &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;.</p>
-<p><strong><!-- raw HTML omitted --></strong> Данные связаны между собой при  помощи однонаправленной связи &ldquo;Один-ко-многим&rdquo;:</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_2.jpg" alt="blog_006_screen_2"></p>
+
+<p><strong><li></strong> Имеется набор данных, содержащий исходную информацию в разрезе количества (столбец &ldquo;Количество&rdquo;) и номенклатуры (столбец &ldquo;Название&rdquo;, имеющий значения &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;), а также номенклатурный справочник, содержащий более полную номенклатуру, чем в исходном наборе (значение &ldquo;Апельсины&rdquo;):</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_1.jpg" alt="blog_006_screen_1" /></p>
+
+<p><strong><li></strong> Существует визуальный фильтр, построенный согласно номенклатурному справочнику, то есть содержащий 3 значения: &ldquo;Апельсины&rdquo;, &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;.</p>
+
+<p><strong><li></strong> Данные связаны между собой при  помощи однонаправленной связи &ldquo;Один-ко-многим&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_2.jpg" alt="blog_006_screen_2" /></p>
+
 <p><strong>Задача:</strong></p>
+
 <p>Поскольку фильтр построен на основании номенклатурного справочника, то при выборе значения &ldquo;Апельсины&rdquo;, элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) в стандартном исполнении отобразит значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;), что может создать определенные неудобства в восприятии данных. Так как количество &ndash; значение числовое, требуется заменить значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) на &ldquo;0&rdquo;.</p>
+
 <p><strong>Решение:</strong></p>
-<p><strong><!-- raw HTML omitted --></strong> При построении элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) необходимо использовать меру, а не столбец &ldquo;Количество&rdquo; с данными исходного набора значений, или, в других случаях &ndash; рассчетный столбец. Применение меры позволит не использовать вшитый алгоритм рассчета при построении визуализации.</p>
-<p><strong><!-- raw HTML omitted --></strong> Для более наглядной иллюстрации вшитый алгоритм подсчета количества единиц номенклатуры в визуальном элементе элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) можно заменить на аналогичный расчет при помощи меры, формула которой будет выглядеть следующим образом:</p>
-<pre><code class="language-dax" data-lang="dax">Вид по умолчанию =
-SUM ( 'Dataset'[Количество] )
-</code></pre><p><strong><!-- raw HTML omitted --></strong> При выборе в фильтре значения, равного &ldquo;Апельсины&rdquo;, мера, описанная выше, отобразит значение, равное &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;):</p>
-<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_3.jpg" alt="blog_006_screen_3"></p>
-<p><strong><!-- raw HTML omitted --></strong> Модифицировать работу указанного алгоритма можно, дополнительно используя функцию ISBLANK, конструкция меры при этом слегка усложнится, и примет следующий вид:</p>
-<pre><code class="language-dax" data-lang="dax">Модифицированный вид =
+
+<p><strong><li></strong> При построении элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) необходимо использовать меру, а не столбец &ldquo;Количество&rdquo; с данными исходного набора значений, или, в других случаях &ndash; рассчетный столбец. Применение меры позволит не использовать вшитый алгоритм рассчета при построении визуализации.</p>
+
+<p><strong><li></strong> Для более наглядной иллюстрации вшитый алгоритм подсчета количества единиц номенклатуры в визуальном элементе элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) можно заменить на аналогичный расчет при помощи меры, формула которой будет выглядеть следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Вид по умолчанию =
+SUM ( &#39;Dataset&#39;[Количество] )</code></pre></div>
+<p><strong><li></strong> При выборе в фильтре значения, равного &ldquo;Апельсины&rdquo;, мера, описанная выше, отобразит значение, равное &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;):</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_3.jpg" alt="blog_006_screen_3" /></p>
+
+<p><strong><li></strong> Модифицировать работу указанного алгоритма можно, дополнительно используя функцию ISBLANK, конструкция меры при этом слегка усложнится, и примет следующий вид:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Модифицированный вид =
 VAR _Quantity =
-    SUM ( 'Dataset'[Количество] )
+    SUM ( &#39;Dataset&#39;[Количество] )
 VAR _Result =
     IF ( ISBLANK ( _Quantity ); 0; _Quantity )
 RETURN
-    _Result
-</code></pre><p><img src="https://kkadikin.ru/images/blog/blog_006_screen_4.jpg" alt="blog_006_screen_4"></p>
+    _Result</code></pre></div>
+<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_4.jpg" alt="blog_006_screen_4" /></p>
+
 <blockquote>
 <p><em>Рвав-рвав, как говорится, &ldquo;The End&rdquo;, а применять данную фишечку, по мнению скромного меня, нужно везде, где возможно, так как, в конечном итоге, значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) плохо влияет на восприятие информации - раз, и портит итоговый дизайн - два.</em></p>
+
 <p><em>Ваш Смайл</em></p>
-<p><em>P.S. Собака Смайл получил feedback, предложили формулу типа: SUM() + 0.</em> 
+
+<p><em>P.S. Собака Смайл получил feedback, предложили формулу типа: SUM() + 0.</em>
 <em>В принципе да, работает, но вместо 0 в решении с использованием ISBLANK можно также написать что-то тектовое, и это также будет работать, Смайл старается делать универсальные штуки, а не точечные решения :-)</em></p>
 </blockquote>
 
