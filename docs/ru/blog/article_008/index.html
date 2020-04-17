@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="Ретроспектива">
 <meta name="author" content="Themefisher.com">
-<meta name="generator" content="Hugo 0.55.5" />
+<meta name="generator" content="Hugo 0.69.0" />
 
 <title>Smile advisory</title>
 
@@ -148,108 +148,62 @@
                 </div>
                 <blockquote>
 <p><em>Рвав-рвав, собака Смайл поздравляет всех с началом отопительного сезона!</em></p>
-
 <p><em>Сегодня мудрый не по годам собакен научит вас &ldquo;глядеть в прошлое&rdquo;, то есть продемонстрирует на примере построение механизма ретроспективы.</em></p>
 </blockquote>
-
 <p><strong>Пример:</strong></p>
-
 <p>Имеется набор данных следующего вида:</p>
-
-<p><strong><li></strong> сотрудник;</p>
-
-<p><strong><li></strong> дата приема на работу;</p>
-
-<p><strong><li></strong> дата увольнения с работы;</p>
-
-<p><strong><li></strong> признак того, что сотрудник работает в компании в настоящее время;</p>
-
-<p><strong><li></strong> должность (позиция) сотрудника.</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_008_screen_1.jpg" alt="art_008_screen_1" /></p>
-
-<p><strong><li></strong> Календарь выделен в качестве отдельной таблицы, при этом он создан &ldquo;динамическим образом&rdquo;, а именно:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Calendar =
-CALENDAR ( FIRSTDATE ( &#39;Dataset&#39;[Employment_Date] ); TODAY () )</code></pre></div>
-<p><strong>Задача:</strong></p>
-
+<p><strong><!-- raw HTML omitted --></strong> сотрудник;</p>
+<p><strong><!-- raw HTML omitted --></strong> дата приема на работу;</p>
+<p><strong><!-- raw HTML omitted --></strong> дата увольнения с работы;</p>
+<p><strong><!-- raw HTML omitted --></strong> признак того, что сотрудник работает в компании в настоящее время;</p>
+<p><strong><!-- raw HTML omitted --></strong> должность (позиция) сотрудника.</p>
+<p><img src="https://kkadikin.ru/images/blog/art_008_screen_1.jpg" alt="art_008_screen_1"></p>
+<p><strong><!-- raw HTML omitted --></strong> Календарь выделен в качестве отдельной таблицы, при этом он создан &ldquo;динамическим образом&rdquo;, а именно:</p>
+<pre><code class="language-dax" data-lang="dax">Calendar =
+CALENDAR ( FIRSTDATE ( 'Dataset'[Employment_Date] ); TODAY () )
+</code></pre><p><strong>Задача:</strong></p>
 <p>На основе представленных данных построить отчет табличного вида, позволяющий оценить количество  и качество работающего персонала в определенный момент времени в прошлом.</p>
-
 <p><em>Рвав-рвав, предварительное описание составлено, теперь можно приступать к построению машины времени!</em></p>
-
 <p><strong>Решение:</strong></p>
-
-<p><strong><li></strong> На уровне Power Query cоздано представление таблицы &ldquo;Dataset&rdquo;, при помощи контекстного меню &ldquo;Reference&rdquo; (&ldquo;Ссылка&rdquo;), имя представления задано как &ldquo;Employee_dates&rdquo;.</p>
-
-<p><strong><li></strong> Для решение поставленной задачи необходимо однозначно понимать, работал ли конкретный сотрудник в определенный момент времени. Для этого в созданное представление добавлен пользовательский столбец &ldquo;Working_Date&rdquo;, формирующийся следующим образом:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">List.Dates ( [Employment_Date], 
+<p><strong><!-- raw HTML omitted --></strong> На уровне Power Query cоздано представление таблицы &ldquo;Dataset&rdquo;, при помощи контекстного меню &ldquo;Reference&rdquo; (&ldquo;Ссылка&rdquo;), имя представления задано как &ldquo;Employee_dates&rdquo;.</p>
+<p><strong><!-- raw HTML omitted --></strong> Для решение поставленной задачи необходимо однозначно понимать, работал ли конкретный сотрудник в определенный момент времени. Для этого в созданное представление добавлен пользовательский столбец &ldquo;Working_Date&rdquo;, формирующийся следующим образом:</p>
+<pre><code class="language-dax" data-lang="dax">List.Dates ( [Employment_Date], 
 Duration.TotalDays( [Dismissal_Date] - [Employment_Date] ) + 1,
-#duration( 1, 0, 0, 0 ) )</code></pre></div>
-<p><em>Рвав-рвав, есть один тонкий момент:</em></p>
-
+#duration( 1, 0, 0, 0 ) )
+</code></pre><p><em>Рвав-рвав, есть один тонкий момент:</em></p>
 <p><em>Данная формула возвращает список значений с шагом, равным заданному промежутку (одному дню). Поскольку количество значений определяется разницей между начальной и конечной датой списка, дополнительно сделано искуственное приращение на одно значение, так как, если человек устроился сегодня, а уволился завтра, то фактически он отработал два дня, а не один.</em></p>
-
-<p><strong><li></strong> Далее необходимо &ldquo;развернуть&rdquo; сформированные данные в разрезе сотрудника, должности и даты его работы, а также удалить лишнюю информацию. В результате данного комплекса действий, мы получим автоматически обновляемое представление &ldquo;Employee_dates&rdquo; со следующей структурой:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_008_screen_2.jpg" alt="art_008_screen_2" /></p>
-
-<p><strong><li></strong> На этом работы с Power Query завершены, далее необходимо настроить связи между данными:</p>
-
+<p><strong><!-- raw HTML omitted --></strong> Далее необходимо &ldquo;развернуть&rdquo; сформированные данные в разрезе сотрудника, должности и даты его работы, а также удалить лишнюю информацию. В результате данного комплекса действий, мы получим автоматически обновляемое представление &ldquo;Employee_dates&rdquo; со следующей структурой:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_008_screen_2.jpg" alt="art_008_screen_2"></p>
+<p><strong><!-- raw HTML omitted --></strong> На этом работы с Power Query завершены, далее необходимо настроить связи между данными:</p>
 <p>&ndash; связь одностороннего типа &ldquo;Many to one&rdquo; (&ldquo;Многие к одному&rdquo;) для Employee_dates -&gt; Calendar;</p>
-
 <p>&ndash; связь двустороннего типа &ldquo;Many to one&rdquo; (&ldquo;Многие к одному&rdquo;) для Employee_dates -&gt; Dataset.</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_008_screen_3.jpg" alt="art_008_screen_3" /></p>
-
-<p><strong><li></strong> После формирования модели данных, можно приступить к дополнительным рассчетам, иллюстрирующим полученный результат, в виде, понятном конечному пользователю. Например, можно рассчитать:</p>
-
+<p><img src="https://kkadikin.ru/images/blog/art_008_screen_3.jpg" alt="art_008_screen_3"></p>
+<p><strong><!-- raw HTML omitted --></strong> После формирования модели данных, можно приступить к дополнительным рассчетам, иллюстрирующим полученный результат, в виде, понятном конечному пользователю. Например, можно рассчитать:</p>
 <p>&ndash; общее количество персонала;</p>
-
 <p>&ndash; количество персонала, работающего в настояцее время;</p>
-
 <p>&ndash; количество персонала на определенной должности.</p>
-
 <p><strong>Процесс визуализации данных:</strong></p>
-
-<p><strong><li></strong> Создать несколько элементов &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) для визуализации статистической информации по персоналу, используя соответствующие меры.</p>
-
-<p><strong><li></strong> Создать визуальный фильтр &ldquo;Период&rdquo;, используя элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;), при этом в качестве значений использовать данные столбца &ldquo;Date&rdquo; таблицы &ldquo;Календарь&rdquo;. При помощи данного элемента будет происходить процесс фильтрации дат с использованием двусторонней (!) связи&rdquo;.</p>
-
-<p><strong><li></strong>  Создать визуальный фильтр &ldquo;Должность&rdquo;, используя элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;), при этом в качестве значений использовать данные столбца &ldquo;Position&rdquo; таблицы &ldquo;Dataset&rdquo;. При помощи данного элемента будет происходить процесс фильтрации сотрудников согласно занимемой должности.</p>
-
-<p><strong><li></strong> создать таблицу &ldquo;Список сотрудников&rdquo;, используя элемент &ldquo;Table&rdquo; (&ldquo;Таблица&rdquo;), таблица является основным элементом отчета, и содержит полный список сотрудников.</p>
-
-<p><strong><li></strong> Исходя из нашего набора данных, в период с 01 января по 27 сентября 2019 года в компании было 12 сотрудников, 2 сотрудника занимали позицию Старшего менеджера, а 10 &ndash; Менеджера, и при этом в настоящий момент в компании работает 8 человек:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_008_screen_4.jpg" alt="art_008_screen_4" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Создать несколько элементов &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) для визуализации статистической информации по персоналу, используя соответствующие меры.</p>
+<p><strong><!-- raw HTML omitted --></strong> Создать визуальный фильтр &ldquo;Период&rdquo;, используя элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;), при этом в качестве значений использовать данные столбца &ldquo;Date&rdquo; таблицы &ldquo;Календарь&rdquo;. При помощи данного элемента будет происходить процесс фильтрации дат с использованием двусторонней (!) связи&rdquo;.</p>
+<p><strong><!-- raw HTML omitted --></strong>  Создать визуальный фильтр &ldquo;Должность&rdquo;, используя элемент &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;), при этом в качестве значений использовать данные столбца &ldquo;Position&rdquo; таблицы &ldquo;Dataset&rdquo;. При помощи данного элемента будет происходить процесс фильтрации сотрудников согласно занимемой должности.</p>
+<p><strong><!-- raw HTML omitted --></strong> создать таблицу &ldquo;Список сотрудников&rdquo;, используя элемент &ldquo;Table&rdquo; (&ldquo;Таблица&rdquo;), таблица является основным элементом отчета, и содержит полный список сотрудников.</p>
+<p><strong><!-- raw HTML omitted --></strong> Исходя из нашего набора данных, в период с 01 января по 27 сентября 2019 года в компании было 12 сотрудников, 2 сотрудника занимали позицию Старшего менеджера, а 10 &ndash; Менеджера, и при этом в настоящий момент в компании работает 8 человек:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_008_screen_4.jpg" alt="art_008_screen_4"></p>
 <p><strong>Пояснения к отчету:</strong></p>
-
-<p><strong><li></strong> Если все сделано верно, то при изменении кочечного отрезка времени с &ldquo;27.09.2019&rdquo; на &ldquo;12.02.2019&rdquo; в таблице &ldquo;Список сотрудников&rdquo; должно отобразиться два сотрудника, поскольку ближайшая дата приема 3-го сотрудника &ndash; это &ldquo;14.02.2019&rdquo;, а подобное значение не должно учитываться в расчетах в соответствии с указанным периодом:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_008_screen_5.jpg" alt="art_008_screen_5" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Если все сделано верно, то при изменении кочечного отрезка времени с &ldquo;27.09.2019&rdquo; на &ldquo;12.02.2019&rdquo; в таблице &ldquo;Список сотрудников&rdquo; должно отобразиться два сотрудника, поскольку ближайшая дата приема 3-го сотрудника &ndash; это &ldquo;14.02.2019&rdquo;, а подобное значение не должно учитываться в расчетах в соответствии с указанным периодом:</p>
+<p><img src="https://kkadikin.ru/images/blog/art_008_screen_5.jpg" alt="art_008_screen_5"></p>
 <p>То есть, по данным построенного отчета, в период с 14.01.2019 по 12.02.2019 в компании работало 2 человека на позиции Старшего менеджера, и при этом они оба продолжают работать в настоящий момент.</p>
-
-<p><strong><li></strong> Фильтр &ldquo;Период&rdquo; работает в обе стороны, и вернув конечную дату в значение &ldquo;сегодня&rdquo; (или более позднее), а затем изменив значение начального отрезка времени с &ldquo;14.01.2019&rdquo; на &ldquo;01.06.2019&rdquo;, в таблице &ldquo;Список сотрудников&rdquo; должно будет отобразиться 11 записей, поскольку один из сотрудников покинул компанию накануне (31.07.2019):</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_008_screen_6.jpg" alt="art_008_screen_6" /></p>
-
-<p><strong><li></strong> Фильтрация данных при помощи дополнительных срезов (например, &ldquo;Должность&rdquo;), также производится корректным образом, поскольку, при нажатии кнопки &ldquo;Менеджер&rdquo;, таблица &ldquo;Список сотрудников&rdquo; отображает 9 записей, что соответствует значению меры &ldquo;Менеджер, всего&rdquo;, визуализированному при помощи элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;).</p>
-
-<p><img src="https://kkadikin.ru/images/blog/art_008_screen_7.jpg" alt="art_008_screen_7" /></p>
-
+<p><strong><!-- raw HTML omitted --></strong> Фильтр &ldquo;Период&rdquo; работает в обе стороны, и вернув конечную дату в значение &ldquo;сегодня&rdquo; (или более позднее), а затем изменив значение начального отрезка времени с &ldquo;14.01.2019&rdquo; на &ldquo;01.06.2019&rdquo;, в таблице &ldquo;Список сотрудников&rdquo; должно будет отобразиться 11 записей, поскольку один из сотрудников покинул компанию накануне (31.07.2019):</p>
+<p><img src="https://kkadikin.ru/images/blog/art_008_screen_6.jpg" alt="art_008_screen_6"></p>
+<p><strong><!-- raw HTML omitted --></strong> Фильтрация данных при помощи дополнительных срезов (например, &ldquo;Должность&rdquo;), также производится корректным образом, поскольку, при нажатии кнопки &ldquo;Менеджер&rdquo;, таблица &ldquo;Список сотрудников&rdquo; отображает 9 записей, что соответствует значению меры &ldquo;Менеджер, всего&rdquo;, визуализированному при помощи элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;).</p>
+<p><img src="https://kkadikin.ru/images/blog/art_008_screen_7.jpg" alt="art_008_screen_7"></p>
 <blockquote>
 <p><em>Рвав-рвав, наша машина времени успешно введена в эксплуатацию, хотя, конечно, смотреть &ldquo;что у тебя было&rdquo; &ndash; несколько грустновато&hellip;</em></p>
-
 <p><em>Бегу проверять свои заначки :-)</em></p>
-
 <p><em>Ваш Смайл</em></p>
 </blockquote>
-
 <p><strong>ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ</strong></p>
-
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNWRjYmEzNjYtNDFiYi00NmE5LWFhNjAtOTg0YWIwMzkwZGY1IiwidCI6IjE4YjFiOTZhLTk0MTQtNDE3MC1iNmNhLTZkODU3NTJlNTZmOCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+<!-- raw HTML omitted -->
 
             </div>
         </div>
