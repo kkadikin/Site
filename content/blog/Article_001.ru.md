@@ -146,14 +146,14 @@ MONTH ( 'Calendar'[Date] )
 
 ```dax
 Week_Number =
-WEEKNUM ( 'Calendar'[Date]; 2 )
+WEEKNUM ( 'Calendar'[Date], 2 )
 ```
 
 **<li>** Формула для получения номера дня в неделе (2-й параметр -- это выбор номера дня и начала недели, так как в России 1-й день недели -- понедельник, то значение равно "2"):
 
 ```dax
 Weekday_Number =
-WEEKDAY ( 'Calendar'[Date]; 2 )
+WEEKDAY ( 'Calendar'[Date], 2 )
 ```
 
 > *Рвав-рвав, выделенных функций довольно мало, поэтому, если 1-й метод не устраивает, нужно воспользоваться либо универсальной функцией расчета дополнительных значений (вариант №3), либо  использовать какие-то другие способы.*
@@ -162,7 +162,7 @@ WEEKDAY ( 'Calendar'[Date]; 2 )
 
 ```dax
 Quarter_Name =
-ROUNDUP ( DIVIDE ( MONTH ( 'Calendar'[Date] ); 3 ); 0 )
+ROUNDUP ( DIVIDE ( MONTH ( 'Calendar'[Date] ), 3 ), 0 )
 ```
 
 > *Рвав-рвав, на момент написания статьи формула, указанная выше, была одним из «обходных» способов получения номера квартала, сейчас есть функция «QUARTER».*
@@ -176,28 +176,28 @@ ROUNDUP ( DIVIDE ( MONTH ( 'Calendar'[Date] ); 3 ); 0 )
 
 ```dax
 Year =
-FORMAT ( 'Calendar'[Date]; "YYYY" )
+FORMAT ( 'Calendar'[Date], "YYYY" )
 ```
 
 **<li>** Формула для получения номера квартала:
 
 ```dax
 Quarter_Number =
-FORMAT ( 'Calendar'[Date]; "Q" )
+FORMAT ( 'Calendar'[Date], "Q" )
 ```
 
 **<li>** Формула для получения номера месяца:
 
 ```dax
 Month_Number =
-FORMAT ( 'Calendar'[Date]; "MM" )
+FORMAT ( 'Calendar'[Date], "MM" )
 ```
 
 **<li>** Формула для получения названия месяца:
 
 ```dax
 Quarter_Number = 
-FORMAT ( 'Calendar'[Date]; "MMMM" )
+FORMAT ( 'Calendar'[Date], "MMMM" )
 ```
 
 > *Рвав-рвав, с календарем мы, наконец, закончили. Пойду игрушку распотрошу, чтоб хозяину веселее было!*

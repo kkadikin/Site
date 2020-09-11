@@ -252,17 +252,17 @@ MONTH ( &#39;Calendar&#39;[Date] )</code></pre></div>
 MONTH ( &#39;Calendar&#39;[Date] )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера недели (2-й параметр &ndash; это начало недели, так как в России неделя начинается с понедельника, то значение равно &ldquo;2&rdquo;):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Week_Number =
-WEEKNUM ( &#39;Calendar&#39;[Date]; 2 )</code></pre></div>
+WEEKNUM ( &#39;Calendar&#39;[Date], 2 )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера дня в неделе (2-й параметр &ndash; это выбор номера дня и начала недели, так как в России 1-й день недели &ndash; понедельник, то значение равно &ldquo;2&rdquo;):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Weekday_Number =
-WEEKDAY ( &#39;Calendar&#39;[Date]; 2 )</code></pre></div>
+WEEKDAY ( &#39;Calendar&#39;[Date], 2 )</code></pre></div>
 <blockquote>
 <p><em>Рвав-рвав, выделенных функций довольно мало, поэтому, если 1-й метод не устраивает, нужно воспользоваться либо универсальной функцией расчета дополнительных значений (вариант №3), либо  использовать какие-то другие способы.</em></p>
 </blockquote>
 
 <p>Для получения номера квартала можно использовать следующую формулу:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Name =
-ROUNDUP ( DIVIDE ( MONTH ( &#39;Calendar&#39;[Date] ); 3 ); 0 )</code></pre></div>
+ROUNDUP ( DIVIDE ( MONTH ( &#39;Calendar&#39;[Date] ), 3 ), 0 )</code></pre></div>
 <blockquote>
 <p><em>Рвав-рвав, на момент написания статьи формула, указанная выше, была одним из «обходных» способов получения номера квартала, сейчас есть функция «QUARTER».</em></p>
 </blockquote>
@@ -273,16 +273,16 @@ ROUNDUP ( DIVIDE ( MONTH ( &#39;Calendar&#39;[Date] ); 3 ); 0 )</code></pre></di
 
 <p><strong><li></strong> Формула для получения года:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Year =
-FORMAT ( &#39;Calendar&#39;[Date]; &#34;YYYY&#34; )</code></pre></div>
+FORMAT ( &#39;Calendar&#39;[Date], &#34;YYYY&#34; )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера квартала:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Number =
-FORMAT ( &#39;Calendar&#39;[Date]; &#34;Q&#34; )</code></pre></div>
+FORMAT ( &#39;Calendar&#39;[Date], &#34;Q&#34; )</code></pre></div>
 <p><strong><li></strong> Формула для получения номера месяца:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Month_Number =
-FORMAT ( &#39;Calendar&#39;[Date]; &#34;MM&#34; )</code></pre></div>
+FORMAT ( &#39;Calendar&#39;[Date], &#34;MM&#34; )</code></pre></div>
 <p><strong><li></strong> Формула для получения названия месяца:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Quarter_Number = 
-FORMAT ( &#39;Calendar&#39;[Date]; &#34;MMMM&#34; )</code></pre></div>
+FORMAT ( &#39;Calendar&#39;[Date], &#34;MMMM&#34; )</code></pre></div>
 <blockquote>
 <p><em>Рвав-рвав, с календарем мы, наконец, закончили. Пойду игрушку распотрошу, чтоб хозяину веселее было!</em></p>
 
