@@ -36,8 +36,13 @@ author: Smile
 **<li>** Поэтому следующим шагом надо сохранить себе ссылку из адресной строки для дальнейшего использования при получении данных непосредственно в Power BI. Значение ссылки получилось следующим:
 
 "https://www.cbr.ru/currency_base/dynamics/?"
-"UniDbQuery.Posted=True&UniDbQuery.mode=1&UniDbQuery.date_req1=&UniDbQuery.date_req2=&UniDbQuery."
-"VAL_NM_RQ=R01235&UniDbQuery.From=01.12.2020&UniDbQuery.To=06.12.2020"
+"UniDbQuery.Posted=True&
+"UniDbQuery.mode=1&"
+"UniDbQuery.date_req1=&"
+"UniDbQuery.date_req2=&"
+"UniDbQuery.VAL_NM_RQ=R01235&"
+"UniDbQuery.From=01.12.2020&"
+"UniDbQuery.To=06.12.2020"
 
 **<li>** Дальше необходимо проверить, взлетит эта штука или нет, поэтому необходимо сделать тестовый запрос для получения данных с источником "Интернет", используя при это полученную ссылку:
 
