@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2020-04-14
+date: 2020-12-28
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -57,6 +57,9 @@ author: Smile
 **<li>** [Дизайнерские штучки](https://kkadikin.ru/ru/blog/article_011/)
 
 **<li>** [Обучение режима "Q&A" русскому языку](https://kkadikin.ru/ru/blog/article_012/)
+
+**<li>** [Кто добыл, того и тапки](https://kkadikin.ru/ru/blog/article_013/)
+
 
 **РАЗРАБОТКИ**
 

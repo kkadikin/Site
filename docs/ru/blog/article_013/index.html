@@ -142,7 +142,7 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>26 December 2020</span>
+                            <span>28 December 2020</span>
                         </li>
                     </ul>
                 </div>
@@ -182,7 +182,9 @@
 
 <p><strong><li></strong> Поэтому следующим шагом надо сохранить себе ссылку из адресной строки для дальнейшего использования при получении данных непосредственно в Power BI. Значение ссылки получилось следующим:</p>
 
-<p><a href="https://www.cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&amp;UniDbQuery.mode=1&amp;UniDbQuery.date_req1=&amp;UniDbQuery.date_req2=&amp;UniDbQuery.VAL_NM_RQ=R01235&amp;UniDbQuery.From=01.12.2020&amp;UniDbQuery.To=06.12.2020">https://www.cbr.ru/currency_base/dynamics/?UniDbQuery.Posted=True&amp;UniDbQuery.mode=1&amp;UniDbQuery.date_req1=&amp;UniDbQuery.date_req2=&amp;UniDbQuery.VAL_NM_RQ=R01235&amp;UniDbQuery.From=01.12.2020&amp;UniDbQuery.To=06.12.2020</a></p>
+<p>&ldquo;<a href="https://www.cbr.ru/currency_base/dynamics/?&quot;">https://www.cbr.ru/currency_base/dynamics/?&quot;</a>
+&ldquo;UniDbQuery.Posted=True&amp;UniDbQuery.mode=1&amp;UniDbQuery.date_req1=&amp;UniDbQuery.date_req2=&amp;UniDbQuery.&rdquo;
+&ldquo;VAL_NM_RQ=R01235&amp;UniDbQuery.From=01.12.2020&amp;UniDbQuery.To=06.12.2020&rdquo;</p>
 
 <p><strong><li></strong> Дальше необходимо проверить, взлетит эта штука или нет, поэтому необходимо сделать тестовый запрос для получения данных с источником &ldquo;Интернет&rdquo;, используя при это полученную ссылку:</p>
 
@@ -213,7 +215,7 @@
 <p><img src="https://kkadikin.ru/images/blog/art_013_screen_8.jpg" alt="art_013_screen_8" /></p>
 
 <blockquote>
-<p><em>Рвав-рвав, поскольку встроенного календаря при вводе параметров Power Query не предусмотрено, а параметр, работающий с типом значений нам не подходит, то при создании параметров вполне можно оставить текстовый формат даты –- это никак не повлияет на удобство конечного пользователя. Также можно ввести для параметров значения по умолчанию, в данном случае, период равен 2020-му (текущему) году.</em></p>
+<p><em>Рвав-рвав, поскольку встроенного календаря при вводе параметров Power Query не предусмотрено, а параметр, работающий с типом значений нам не подходит, то при создании параметров вполне можно оставить текстовый формат даты &ndash; это никак не повлияет на удобство конечного пользователя. Также можно ввести для параметров значения по умолчанию, в данном случае, период равен 2020-му (текущему) году.</em></p>
 </blockquote>
 
 <p><strong><li></strong> Далее требуется получить таблицу, содержащую столбец с параметрической ссылкой, для этого сохраненную ранее ссылку нужно разбить на составные части, а затем –- собрать заново.
