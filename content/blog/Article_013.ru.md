@@ -37,7 +37,7 @@ author: Smile
 
 "https://www.cbr.ru/currency_base/dynamics/?"
 
-"UniDbQuery.Posted=True&
+"UniDbQuery.Posted=True&"
 
 "UniDbQuery.mode=1&"
 
@@ -61,7 +61,7 @@ author: Smile
 
 ![art_013_screen_4](https://kkadikin.ru/images/blog/art_013_screen_4.jpg)
 
-**<li>** В части окна, относящейся к навигатору, необходимо выбрать нужную HTML-таблицу из доступного списка, поскольку, как правило, на интернет-странице таблица не одна. В нашем случае –- это "Таблица 3":
+**<li>** В части окна, относящейся к навигатору, необходимо выбрать нужную HTML-таблицу из доступного списка, поскольку, как правило, на интернет-странице таблица не одна. В нашем случае -- это "Таблица 3":
 
 ![art_013_screen_5](https://kkadikin.ru/images/blog/art_013_screen_5.jpg)
 
