@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2020-12-28
+date: 2020-12-29
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---

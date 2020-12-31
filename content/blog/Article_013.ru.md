@@ -1,6 +1,6 @@
 ---
 title: Кто добыл, того и тапки
-date: 2020-12-27
+date: 2020-12-28
 image: images/blog/art_013_foto.jpg
 author: Smile
 ---
