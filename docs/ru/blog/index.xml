@@ -15,7 +15,7 @@
     <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -33,7 +33,7 @@
     <item>
       <title>Кто добыл, того и тапки</title>
       <link>https://kkadikin.ru/ru/blog/article_013/</link>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_013/</guid>
       <description>Рвав-рвав, собака Смайл снова творит!
@@ -398,6 +398,18 @@
  Описание разработок &amp;ndash; собственно, этим все сказано, см. раздел Портфолио
  Ваш Смайл
  </description>
+    </item>
+    
+    <item>
+      <title>Проверено на себе: Power Apps</title>
+      <link>https://kkadikin.ru/ru/blog/article_014/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_014/</guid>
+      <description>Рвав-рвав, собака Смайл познает новые горизонты!
+После долгого перерыва (пандемия и вот это вот все), решил снова заняться написанием нового контента, поскольку обновлять старый трудолюбивой собаке слегка поднадоело. Появилась идея расписать процесс получения валютных курсов из Интернета в автоматическом режиме за любой период времени. Тема, конечно, далеко не нова, но, как говорится, &amp;ldquo;Своя рубашка ближе к телу…&amp;rdquo;, хоть смысл вложен был не тот :-)
+ Задача:
+ы</description>
     </item>
     
   </channel>
