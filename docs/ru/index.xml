@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Проверено на себе: Power Apps</title>
+      <link>https://kkadikin.ru/ru/blog/article_014/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_014/</guid>
+      <description>Рвав-рвав, собака Смайл познает новые горизонты!
+После долгого перерыва (пандемия и вот это вот все), решил снова заняться написанием нового контента, поскольку обновлять старый трудолюбивой собаке слегка поднадоело. Появилась идея расписать процесс получения валютных курсов из Интернета в автоматическом режиме за любой период времени. Тема, конечно, далеко не нова, но, как говорится, &amp;ldquo;Своя рубашка ближе к телу…&amp;rdquo;, хоть смысл вложен был не тот :-)
+ Задача:
+ы</description>
+    </item>
     
     <item>
       <title>Список публикаций</title>
@@ -398,18 +410,6 @@
  Описание разработок &amp;ndash; собственно, этим все сказано, см. раздел Портфолио
  Ваш Смайл
  </description>
-    </item>
-    
-    <item>
-      <title>Проверено на себе: Power Apps</title>
-      <link>https://kkadikin.ru/ru/blog/article_014/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/article_014/</guid>
-      <description>Рвав-рвав, собака Смайл познает новые горизонты!
-После долгого перерыва (пандемия и вот это вот все), решил снова заняться написанием нового контента, поскольку обновлять старый трудолюбивой собаке слегка поднадоело. Появилась идея расписать процесс получения валютных курсов из Интернета в автоматическом режиме за любой период времени. Тема, конечно, далеко не нова, но, как говорится, &amp;ldquo;Своя рубашка ближе к телу…&amp;rdquo;, хоть смысл вложен был не тот :-)
- Задача:
-ы</description>
     </item>
     
   </channel>
