@@ -60,7 +60,7 @@ author: Smile
 
 **<li>** [Кто добыл, того и тапки](https://kkadikin.ru/ru/blog/article_013/)
 
-**<li>** ["Проверено на себе: Power Apps"](https://kkadikin.ru/ru/blog/article_014/)
+**<li>** [Проверено на себе: Power Apps](https://kkadikin.ru/ru/blog/article_014/)
 
 
 **РАЗРАБОТКИ**
