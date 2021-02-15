@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2020-12-29
+date: 2021-02-15
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -59,6 +59,8 @@ author: Smile
 **<li>** [Обучение режима "Q&A" русскому языку](https://kkadikin.ru/ru/blog/article_012/)
 
 **<li>** [Кто добыл, того и тапки](https://kkadikin.ru/ru/blog/article_013/)
+
+**<li>** ["Проверено на себе: Power Apps"](https://kkadikin.ru/ru/blog/article_014/)
 
 
 **РАЗРАБОТКИ**

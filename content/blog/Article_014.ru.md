@@ -1,6 +1,6 @@
 ---
 title: "Проверено на себе: Power Apps"
-date: 2021-02-12
+date: 2021-02-14
 image: images/blog/art_014_foto.jpg
 author: Smile
 ---
