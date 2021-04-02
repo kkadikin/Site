@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2021-02-15
+date: 2021-04-02
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -26,6 +26,8 @@ author: Smile
 **<li>** [Мелкие радости - расчет отклонений](https://kkadikin.ru/ru/blog/blog_010/)
 
 **<li>** [Мелкие радости - выгрузка большого объема данных](https://kkadikin.ru/ru/blog/blog_011/)
+
+**<li>** [Мелкие радости - разметка периодов](https://kkadikin.ru/ru/blog/blog_012/)
 
 **<li>** [Собакенские будни - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
 

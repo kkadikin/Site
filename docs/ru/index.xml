@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -28,6 +28,18 @@
  Мелкие радости - избавляемся от Blank / Пусто
  Мелкие радости - быстрые меры, или хозяйкам на заметку
  Мелкие радости - расчет отклонений</description>
+    </item>
+    
+    <item>
+      <title>Мелкие радости - разметка периодов</title>
+      <link>https://kkadikin.ru/ru/blog/blog_012/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_012/</guid>
+      <description>Рвав-рвав, сегодня я – собака-задремака!
+Перед вами – 8-я заметка из нашего цикла «Мелкие радости», и сегодня мы рассмотрим такую проблему, как ручная разметка периодов, дабы «по нажатию одной кнопки» получать необходимый результат.
+Ну и, буду честен, постоянно отвечать на вопрос: «А как получить текущий месяц?» и тому подобное, порядком поднадоело.
+*Вообще, в Power все это решается при помощи элемента визуализации &amp;ldquo;Slicer&amp;rdquo; (&amp;ldquo;Срез&amp;rdquo;), работающего в относительном режиме, но вот, например, на промежутке «неделя» он работает не совсем корректно.</description>
     </item>
     
     <item>
