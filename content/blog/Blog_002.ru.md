@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2021-04-02
+date: 2021-06-05
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -76,5 +76,7 @@ author: Smile
 **<li>** [Аптечка первой помощи](https://kkadikin.ru/ru/blog/dev_004/)
 
 **<li>** [Мониторинг питомцев](https://kkadikin.ru/ru/blog/dev_000/)
+
+**<li>** [Резюме сотрудников](https://kkadikin.ru/ru/blog/dev_005/)
 
 > *Ваш Смайл*
