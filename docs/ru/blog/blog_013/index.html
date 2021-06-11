@@ -2,7 +2,7 @@
 <html class="no-js" lang="ru-ru"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Мелкие радости - избавляемся от Blank / Пусто">
+<meta name="description" content="Собакенские будни - конструкция USERELATIONSHIP">
 <meta name="author" content="Themefisher.com">
 <meta name="generator" content="Hugo 0.55.5" />
 
@@ -132,8 +132,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <img src="https://kkadikin.ru/images/blog/blog_006_foto.jpg" class="w-100 mb-3" alt="Post-Image">
-                <h2>Мелкие радости - избавляемся от Blank / Пусто</h2>
+                <img src="https://kkadikin.ru/images/blog/blog_013_foto.jpg" class="w-100 mb-3" alt="Post-Image">
+                <h2>Собакенские будни - конструкция USERELATIONSHIP</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -142,60 +142,72 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>12 September 2019</span>
+                            <span>11 June 2021</span>
                         </li>
                     </ul>
                 </div>
                 <blockquote>
-<p><em>Рвав-рвав, сегодня я &ndash; собака-уничтожитель!</em></p>
+<p><em>Рвав-рвав, сегодня я &ndash; собака-вспоминака!</em></p>
 
-<p><em>Перед вами &ndash; 4-я заметка из нашего цикла &ldquo;Мелкие радости&rdquo;, и мы сегодня поговорим о том, как избавиться от значений типа &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) в некоторых визуальных элементах, которые появляются в результате фильтрации данных.</em></p>
+<p><em>Перед вами &ndash; 3-я заметка из нашего цикла &ldquo;Собакенские будни&rdquo;, и ниже мы рассмотрим использование такой конструкции, как Userelationship. При помощи данной функции можно переопределить активную связь на время выполнение запроса. Синтаксис указанной функции из серии «проще практически не бывает», однако, покопавшись в памяти, собака-вспоминака вспомнил, что встречал в одном сообществе такую вот задачку: &ldquo;Так и так, хочу в одну таблицу подтянуть столбец из другой таблицы (по принципу работы RELATED), но при этом активную связь надо переопределить, не перестраивая связи в модели…&rdquo;</em></p>
+
+<p><em>Ваш покорный слуга не помнит, чем там кончилось дело, как быстро оно заканчивалось, и, более того, в сообществе не поняли, почему оно надо именно так, но, что забавно, решение все-таки есть.</em></p>
 </blockquote>
 
 <p><strong>Пример:</strong></p>
 
-<p><strong><li></strong> Имеется набор данных, содержащий исходную информацию в разрезе количества (столбец &ldquo;Количество&rdquo;) и номенклатуры (столбец &ldquo;Название&rdquo;, имеющий значения &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;), а также номенклатурный справочник, содержащий более полную номенклатуру, чем в исходном наборе (значение &ldquo;Апельсины&rdquo;):</p>
+<p><strong><li></strong> Таблица &ldquo;Данные по сотрудникам&rdquo; содержит необходимые сведения о сотрудниках, а именно, ID сотрудника (например, менеджера по закупкам), некое значение (например, количество заказов), ID ответственного лица (пусть это будет куратор соответствующего менеджера):</p>
 
-<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_1.jpg" alt="blog_006_screen_1" /></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_013_screen_1.jpg" alt="blog_013_screen_1" /></p>
 
-<p><strong><li></strong> Существует визуальный фильтр, построенный согласно номенклатурному справочнику, то есть содержащий 3 значения: &ldquo;Апельсины&rdquo;, &ldquo;Груши&rdquo; и &ldquo;Яблоки&rdquo;.</p>
+<p><strong><li></strong> Таблица &ldquo;Справочник сотрудников&rdquo; содержит ID сотрудника, и его фамилию:</p>
 
-<p><strong><li></strong> Данные связаны между собой при  помощи однонаправленной связи &ldquo;Один-ко-многим&rdquo;:</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_2.jpg" alt="blog_006_screen_2" /></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_013_screen_2.jpg" alt="blog_013_screen_2" /></p>
 
 <p><strong>Задача:</strong></p>
 
-<p>Поскольку фильтр построен на основании номенклатурного справочника, то при выборе значения &ldquo;Апельсины&rdquo;, элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) в стандартном исполнении отобразит значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;), что может создать определенные неудобства в восприятии данных. Так как количество &ndash; значение числовое, требуется заменить значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) на &ldquo;0&rdquo;.</p>
-
-<p><strong>Решение:</strong></p>
-
-<p><strong><li></strong> При построении элемента &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) необходимо использовать меру, а не столбец &ldquo;Количество&rdquo; с данными исходного набора значений, или, в других случаях &ndash; рассчетный столбец. Применение меры позволит не использовать вшитый алгоритм рассчета при построении визуализации.</p>
-
-<p><strong><li></strong> Для более наглядной иллюстрации вшитый алгоритм подсчета количества единиц номенклатуры в визуальном элементе элемент &ldquo;Card&rdquo; (&ldquo;Карточка&rdquo;) можно заменить на аналогичный расчет при помощи меры, формула которой будет выглядеть следующим образом:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Вид по умолчанию =
-SUM ( &#39;Dataset&#39;[Количество] )</code></pre></div>
-<p><strong><li></strong> При выборе в фильтре значения, равного &ldquo;Апельсины&rdquo;, мера, описанная выше, отобразит значение, равное &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;):</p>
-
-<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_3.jpg" alt="blog_006_screen_3" /></p>
-
-<p><strong><li></strong> Модифицировать работу указанного алгоритма можно, дополнительно используя функцию ISBLANK, конструкция меры при этом слегка усложнится, и примет следующий вид:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Модифицированный вид =
-VAR _Quantity =
-    SUM ( &#39;Dataset&#39;[Количество] )
-VAR _Result =
-    IF ( ISBLANK ( _Quantity ); 0; _Quantity )
-RETURN
-    _Result</code></pre></div>
-<p><img src="https://kkadikin.ru/images/blog/blog_006_screen_4.jpg" alt="blog_006_screen_4" /></p>
+<p>Подтянуть в таблицу «Данные по сотрудникам» фамилии как сотрудников, так и ответственных лиц.</p>
 
 <blockquote>
-<p><em>Рвав-рвав, как говорится, &ldquo;The End&rdquo;, а применять данную фишечку, по мнению скромного меня, нужно везде, где возможно, так как, в конечном итоге, значение &ldquo;Blank&rdquo; (&ldquo;Пусто&rdquo;) плохо влияет на восприятие информации - раз, и портит итоговый дизайн - два.</em></p>
+<p><em>Рвав-рвав, конечно, есть много неспортивных способов выполнения поступившего запроса (например, с использованием функции Switch, условного столбца в Power Query и пр.), но поскольку это не интересно и не универсально, мы это, естественно, не рассматриваем.</em></p>
+</blockquote>
+
+<p><strong>Получение значения &ldquo;Фамилия сотрудника&rdquo;:</strong></p>
+
+<p><strong><li></strong> Тут все просто, необходимо настроить нужную связь на уровне модели по полю &ldquo;ID_Сотрудника&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_013_screen_3.jpg" alt="blog_013_screen_3" /></p>
+
+<p><strong><li></strong> Дальше можно переходить непосредственно к созданию расчетного столбца в таблице &ldquo;Данные по сотрудникам&rdquo;, используя следующую формулу:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Фамилия_Cотрудника =
+RELATED ( &#39;Справочник сотрудников&#39;[Фамилия] )</code></pre></div>
+<p><strong><li></strong> Затем можно проверить получившийся результат:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_013_screen_4.jpg" alt="blog_013_screen_4" /></p>
+
+<p><strong>Получение значения &ldquo;Фамилия ответственного&rdquo;:</strong></p>
+
+<p><strong><li></strong> Необходимо настроить вторую связь на уровне модели по полю &ldquo;ID_Ответственного&rdquo;, при этом то, что она будет неактивной &ndash; это нормально:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_013_screen_5.jpg" alt="blog_013_screen_5" /></p>
+
+<p><strong><li></strong> Дальше можно переходить непосредственно к созданию расчетного столбца в таблице &ldquo;Данные по сотрудникам&rdquo;, используя следующую формулу:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Фамилия_Ответственного =
+CALCULATE (
+    MINX ( &#39;Данные по сотрудникам&#39;, RELATED ( &#39;Справочник сотрудников&#39;[Фамилия] ) ),
+    ALL ( &#39;Справочник сотрудников&#39; ),
+    USERELATIONSHIP ( &#39;Данные по сотрудникам&#39;[ID_Ответственного], &#39;Справочник сотрудников&#39;[ID_Сотрудника] )
+)</code></pre></div>
+<p><strong><li></strong> Затем можно проверить получившийся результат:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_013_screen_6.jpg" alt="blog_013_screen_6" /></p>
+
+<blockquote>
+<p><em>Рвав-рвав, товарищи, намешали, что могли, получили, что хотели…</em></p>
+
+<p><em>Всем хорошей погоды и горячей воды!</em></p>
 
 <p><em>Ваш Смайл</em></p>
-
-<p><em>P.S. Собака Смайл получил feedback, предложили формулу типа: SUM() + 0.</em>
-<em>В принципе да, работает, но вместо 0 в решении с использованием ISBLANK можно также написать что-то тектовое, и это также будет работать, Смайл старается делать универсальные штуки, а не точечные решения :-)</em></p>
 </blockquote>
 
             </div>
