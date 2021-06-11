@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2021-06-05
+date: 2021-06-11
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -32,6 +32,8 @@ author: Smile
 **<li>** [Собакенские будни - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
 
 **<li>** [Собакенские будни - конструкции Related и Lookupvalue](https://kkadikin.ru/ru/blog/blog_009/)
+
+**<li>** [Собакенские будни - конструкция Userelationship](https://kkadikin.ru/ru/blog/blog_013/)
 
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ**
