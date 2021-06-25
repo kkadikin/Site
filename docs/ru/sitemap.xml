@@ -144,11 +144,6 @@
   </url>
   
   <url>
-    <loc>https://kkadikin.ru/ru/blog/dev_003/</loc>
-    <lastmod>2020-07-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kkadikin.ru/ru/blog/article_005/</loc>
     <lastmod>2020-07-25T00:00:00+00:00</lastmod>
   </url>
@@ -166,6 +161,11 @@
   <url>
     <loc>https://kkadikin.ru/ru/blog/article_004/</loc>
     <lastmod>2020-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kkadikin.ru/ru/blog/dev_003/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
