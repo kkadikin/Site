@@ -1,6 +1,6 @@
 ---
 title: Параметры на уровне Power Query
-date: 2020-07-26
+date: 2020-07-25
 image: images/blog/art_005_foto.jpg
 author: Smile
 ---
