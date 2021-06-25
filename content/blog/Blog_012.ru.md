@@ -1,6 +1,6 @@
 ---
 title: Мелкие радости - разметка периодов
-date: 2021-04-01
+date: 2021-04-04
 image: images/blog/blog_012_foto.jpg
 author: Smile
 ---

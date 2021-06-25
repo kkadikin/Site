@@ -1,6 +1,6 @@
 ---
 title: Ретроспектива
-date: 2019-09-27
+date: 2020-08-29
 image: images/blog/art_008_foto.jpg
 author: Smile
 ---
@@ -29,7 +29,7 @@ author: Smile
 
 ```dax
 Calendar =
-CALENDAR ( FIRSTDATE ( 'Dataset'[Employment_Date] ); TODAY () )
+CALENDAR ( FIRSTDATE ( 'Dataset'[Employment_Date] ), TODAY () )
 ```
 
 

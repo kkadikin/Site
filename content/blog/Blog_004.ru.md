@@ -1,6 +1,6 @@
 ---
 title: Мелкие радости - фиксация момента обновления отчетности
-date: 2019-08-12
+date: 2020-07-12
 image: images/blog/blog_004_foto.jpg
 author: Smile
 ---

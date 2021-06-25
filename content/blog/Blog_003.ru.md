@@ -1,6 +1,6 @@
 ---
 title: Мелкие радости - нюансы выбора значения в срезе
-date: 2019-08-02
+date: 2020-07-04
 image: images/blog/blog_003_foto.jpg
 author: Smile
 ---
@@ -62,7 +62,7 @@ VAR _Manager =
 VAR _QuantityRows =
     COUNTROWS ( _Manager )
 VAR _Result =
-    IF ( _QuantityRows > 1; "Выберите менеджера"; _Manager )
+    IF ( _QuantityRows > 1, "Выберите менеджера", _Manager )
 RETURN
     _Result
 ```
@@ -81,5 +81,5 @@ RETURN
 
 ```dax
 Менеджер =
-SELECTEDVALUE ( Dataset[Менеджер проекта]; "Несколько менеджеров" )
+SELECTEDVALUE ( Dataset[Менеджер проекта], "Несколько менеджеров" )
 ```

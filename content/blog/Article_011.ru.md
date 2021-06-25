@@ -1,6 +1,6 @@
 ---
 title: Дизайнерские штучки
-date: 2020-01-30
+date: 2020-11-21
 image: images/blog/art_011_foto.jpg
 author: Smile
 ---

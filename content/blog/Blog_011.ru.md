@@ -1,6 +1,6 @@
 ---
 title: Мелкие радости - выгрузка большого объема данных
-date: 2020-03-12
+date: 2020-11-22
 image: images/blog/blog_011_foto.jpg
 author: Smile
 ---

@@ -1,6 +1,6 @@
 ---
 title: Собакенские будни - конструкция Userelationship
-date: 2021-06-11
+date: 2021-06-12
 image: images/blog/blog_013_foto.jpg
 author: Smile
 ---

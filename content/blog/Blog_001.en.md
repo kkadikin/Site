@@ -1,6 +1,6 @@
 ---
 title: Opening remarks
-date: 2019-05-30
+date: 2021-06-14
 image: images/blog/blog_001_foto.jpg
 author: Smile
 ---

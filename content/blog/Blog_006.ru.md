@@ -1,6 +1,6 @@
 ---
 title: Мелкие радости - избавляемся от Blank / Пусто
-date: 2019-09-12
+date: 2020-08-02
 image: images/blog/blog_006_foto.jpg
 author: Smile
 ---
@@ -50,7 +50,7 @@ SUM ( 'Dataset'[Количество] )
 VAR _Quantity =
     SUM ( 'Dataset'[Количество] )
 VAR _Result =
-    IF ( ISBLANK ( _Quantity ); 0; _Quantity )
+    IF ( ISBLANK ( _Quantity ), 0, _Quantity )
 RETURN
     _Result
 ```

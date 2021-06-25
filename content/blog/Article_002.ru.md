@@ -1,6 +1,6 @@
 ---
 title: Нюансы использования встроенной иерархии дат
-date: 2019-07-09
+date: 2020-06-07
 image: images/blog/art_002_foto.jpg
 author: Smile
 ---

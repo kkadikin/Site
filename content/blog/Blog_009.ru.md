@@ -1,6 +1,6 @@
 ---
 title: Собакенские будни - конструкции Related и Lookupvalue
-date: 2019-11-04
+date: 2020-10-04
 image: images/blog/blog_009_foto.jpg
 author: Smile
 ---
@@ -62,7 +62,7 @@ RELATED ( ‘Dataset 2’[Эпитет] )
 
 ```dax
 Эпитет - без связи =
-LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )
+LOOKUPVALUE ( ‘Dataset 2’[Эпитет], ‘Dataset 2’[Питомец], ‘Dataset 1’[Питомец] )
 ```
 
 ![blog_009_screen_7] (https://kkadikin.ru/images/blog/blog_009_screen_7.jpg)

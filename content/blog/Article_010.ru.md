@@ -1,6 +1,6 @@
 ---
 title: Сломанная иерархия
-date: 2019-12-18
+date: 2020-10-18
 image: images/blog/art_010_foto.jpg
 author: Smile
 ---
@@ -9,7 +9,7 @@ author: Smile
 >
 > *Для начала немного о том, почему я грустный:* 
 >
-> *Санкт-Петебрург, середина декабря (!) - дождь, грязюка, холоднюка.*
+> *Санкт-Петебрург, дождь, грязюка, холоднюка.*
 >
 > *Приходится носить всякую фигню. Сопротивление бесполезно. Надеюсь, вы тоже мучаетесь, так как вместе - веселее.*
 >
@@ -49,8 +49,8 @@ author: Smile
 ```dax
 End Link = 
 CALCULATE (
-    COUNTROWS ( 'Staff Hierarhy' );
-    ALL ( 'Staff Hierarhy' );
+    COUNTROWS ( 'Staff Hierarhy' ),
+    ALL ( 'Staff Hierarhy' ),
     'Staff Hierarhy'[Parent Key] = EARLIER ( 'Staff Hierarhy'[User ID] )
 ) = 0
 ```
@@ -63,7 +63,7 @@ CALCULATE (
 
 ```dax
 Hierarchy View = 
-PATH ( 'Staff Hierarhy'[User ID]; 'Staff Hierarhy'[Parent Key] )
+PATH ( 'Staff Hierarhy'[User ID], 'Staff Hierarhy'[Parent Key] )
 ```
 
 **<li>** Подсчет уровня иерархии, проиллюстрированнный в столбце "Hierarchy Level", можно произвести при помощи функции "PATHLENGHT":
@@ -86,8 +86,8 @@ PATHLENGTH ( 'Staff Hierarhy'[Hierarchy View] )
 ```dax
 1st level = 
 LOOKUPVALUE (
-    'Staff Hierarhy'[Name];
-    'Staff Hierarhy'[User ID]; PATHITEM ( 'Staff Hierarhy'[Hierarchy View]; 1; INTEGER )
+    'Staff Hierarhy'[Name],
+    'Staff Hierarhy'[User ID], PATHITEM ( 'Staff Hierarhy'[Hierarchy View], 1, INTEGER )
 )
 ```
 
@@ -96,11 +96,11 @@ LOOKUPVALUE (
 ```dax
 2nd level = 
 IF (
-    'Staff Hierarhy'[Hierarchy Level] >= 2;
+    'Staff Hierarhy'[Hierarchy Level] >= 2,
     LOOKUPVALUE (
-        'Staff Hierarhy'[Name];
-        'Staff Hierarhy'[User ID]; PATHITEM ( 'Staff Hierarhy'[Hierarchy View]; 2; INTEGER )
-    );
+        'Staff Hierarhy'[Name],
+        'Staff Hierarhy'[User ID], PATHITEM ( 'Staff Hierarhy'[Hierarchy View], 2, INTEGER )
+    ),
     'Staff Hierarhy'[1st level]
 )
 ```
@@ -110,11 +110,11 @@ IF (
 ```dax
 3rd level = 
 IF (
-    'Staff Hierarhy'[Hierarchy Level] >= 3;
+    'Staff Hierarhy'[Hierarchy Level] >= 3,
     LOOKUPVALUE (
-        'Staff Hierarhy'[Name];
-        'Staff Hierarhy'[User ID]; PATHITEM ( 'Staff Hierarhy'[Hierarchy View]; 3; INTEGER )
-    );
+        'Staff Hierarhy'[Name],
+        'Staff Hierarhy'[User ID], PATHITEM ( 'Staff Hierarhy'[Hierarchy View], 3, INTEGER )
+    ),
     'Staff Hierarhy'[2nd level]
 )
 ```
@@ -154,18 +154,18 @@ MAX ( 'Staff Hierarhy'[Hierarchy Level] )
 ```dax
 Subtotal Amount = 
 IF (
-    [Depth Value] > [Hierarhy Value] + 1;
-    BLANK ();
+    [Depth Value] > [Hierarhy Value] + 1,
+    BLANK (),
     IF (
-        [Depth Value] = [Hierarhy Value] + 1;
+        [Depth Value] = [Hierarhy Value] + 1,
         IF (
             AND (
-                VALUES ( 'Staff Hierarhy'[End Link] ) = FALSE;
+                VALUES ( 'Staff Hierarhy'[End Link] ) = FALSE,
                 SUM ( 'Dataset'[Amount] ) <> 0
-            );
-            SUM ( 'Dataset'[Amount] );
+            ),
+            SUM ( 'Dataset'[Amount] ),
             BLANK ()
-        );
+        ),
         SUM ( 'Dataset'[Amount] )
     )
 )
@@ -175,7 +175,7 @@ IF (
 
 ```dax
 Final Amount = 
-IF ( [Depth Value] > [Hierarhy Value]; BLANK (); SUM ( 'Dataset'[Amount] ) )
+IF ( [Depth Value] > [Hierarhy Value], BLANK (), SUM ( 'Dataset'[Amount] ) )
 ```
 
 

@@ -1,6 +1,6 @@
 ---
 title: Мелкие радости - быстрые меры, или хозяйкам на заметку
-date: 2019-10-01
+date: 2020-09-05
 image: images/blog/blog_007_foto.jpg
 author: Smile
 ---
@@ -45,15 +45,15 @@ author: Smile
 ```dax
 Построение автоматически =
 CALCULATE (
-    SUM ( 'Dataset'[Amount] );
+    SUM ( 'Dataset'[Amount] ),
     FILTER (
         CALCULATETABLE (
-            SUMMARIZE ( 'Dataset'; 'Dataset'[Month_Number]; 'Dataset'[Month_Name] );
+            SUMMARIZE ( 'Dataset', 'Dataset'[Month_Number], 'Dataset'[Month_Name] ),
             ALLSELECTED ( 'Dataset' )
         );
         ISONORAFTER (
-                'Dataset'[Month_Number]; MAX ( 'Dataset'[Month_Number] ); DESC;
-                'Dataset'[Month_Name]; MAX ( 'Dataset'[Month_Name] ); DESC
+                'Dataset'[Month_Number], MAX ( 'Dataset'[Month_Number] ), DESC,
+                'Dataset'[Month_Name], MAX ( 'Dataset'[Month_Name] ), DESC
         )
     )
 )
@@ -68,7 +68,7 @@ CALCULATE (
 
 ```dax
 Month_End =
-EOMONTH ( 'Dataset'[Date]; 0 )
+EOMONTH ( 'Dataset'[Date], 0 )
 ```
 
 ![blog_007_screen_4] (https://kkadikin.ru/images/blog/blog_007_screen_4.jpg)
@@ -78,11 +78,11 @@ EOMONTH ( 'Dataset'[Date]; 0 )
 ```dax
 Построение вручную =
 CALCULATE (
-    SUM ( 'Dataset'[Amount] );
+    SUM ( 'Dataset'[Amount] ),
     FILTER (
-        ALL ( 'Dataset' );
+        ALL ( 'Dataset' ),
         'Dataset'[Month_End] <= MAX ( 'Dataset'[Month_End] )
-    );
+    ),
     VALUES ( 'Dataset'[Row] )
 )
 ```
