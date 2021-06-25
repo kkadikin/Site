@@ -142,7 +142,7 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>18 December 2019</span>
+                            <span>18 October 2020</span>
                         </li>
                     </ul>
                 </div>
@@ -151,7 +151,7 @@
 
 <p><em>Для начала немного о том, почему я грустный:</em></p>
 
-<p><em>Санкт-Петебрург, середина декабря (!) - дождь, грязюка, холоднюка.</em></p>
+<p><em>Санкт-Петебрург, дождь, грязюка, холоднюка.</em></p>
 
 <p><em>Приходится носить всякую фигню. Сопротивление бесполезно. Надеюсь, вы тоже мучаетесь, так как вместе - веселее.</em></p>
 
@@ -187,8 +187,8 @@
 <p>Формула указанного столбца выглядит следующим образом:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">End Link = 
 CALCULATE (
-    COUNTROWS ( &#39;Staff Hierarhy&#39; );
-    ALL ( &#39;Staff Hierarhy&#39; );
+    COUNTROWS ( &#39;Staff Hierarhy&#39; ),
+    ALL ( &#39;Staff Hierarhy&#39; ),
     &#39;Staff Hierarhy&#39;[Parent Key] = EARLIER ( &#39;Staff Hierarhy&#39;[User ID] )
 ) = 0</code></pre></div>
 <p><strong><li></strong> Следующим шагом является построение цепочки родительских значений, для последующего определения уровня иерархии. В этом нам поможет столбец &ldquo;Hierarchy View&rdquo;, рассчитанный при помощи функции &ldquo;PATH&rdquo;:</p>
@@ -197,7 +197,7 @@ CALCULATE (
 
 <p>Формула указанного столбца рассчитывается так:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Hierarchy View = 
-PATH ( &#39;Staff Hierarhy&#39;[User ID]; &#39;Staff Hierarhy&#39;[Parent Key] )</code></pre></div>
+PATH ( &#39;Staff Hierarhy&#39;[User ID], &#39;Staff Hierarhy&#39;[Parent Key] )</code></pre></div>
 <p><strong><li></strong> Подсчет уровня иерархии, проиллюстрированнный в столбце &ldquo;Hierarchy Level&rdquo;, можно произвести при помощи функции &ldquo;PATHLENGHT&rdquo;:</p>
 
 <p><img src="https://kkadikin.ru/images/blog/art_010_screen_4.jpg" alt="art_010_screen_4" /></p>
@@ -212,27 +212,27 @@ PATHLENGTH ( &#39;Staff Hierarhy&#39;[Hierarchy View] )</code></pre></div>
 <p>Формула столбца для 1-го уровня иерархии - &ldquo;1st level&rdquo; представляет собой следующую конструкцию:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">1st level = 
 LOOKUPVALUE (
-    &#39;Staff Hierarhy&#39;[Name];
-    &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 1; INTEGER )
+    &#39;Staff Hierarhy&#39;[Name],
+    &#39;Staff Hierarhy&#39;[User ID], PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View], 1, INTEGER )
 )</code></pre></div>
 <p>Формула столбца для 2-го уровня иерархии - &ldquo;2nd level&rdquo; представляет собой следующую конструкцию:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">2nd level = 
 IF (
-    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 2;
+    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 2,
     LOOKUPVALUE (
-        &#39;Staff Hierarhy&#39;[Name];
-        &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 2; INTEGER )
-    );
+        &#39;Staff Hierarhy&#39;[Name],
+        &#39;Staff Hierarhy&#39;[User ID], PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View], 2, INTEGER )
+    ),
     &#39;Staff Hierarhy&#39;[1st level]
 )</code></pre></div>
 <p>Формула столбца для 3-го уровня иерархии - &ldquo;3rd level&rdquo; представляет собой следующую конструкцию:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">3rd level = 
 IF (
-    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 3;
+    &#39;Staff Hierarhy&#39;[Hierarchy Level] &gt;= 3,
     LOOKUPVALUE (
-        &#39;Staff Hierarhy&#39;[Name];
-        &#39;Staff Hierarhy&#39;[User ID]; PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View]; 3; INTEGER )
-    );
+        &#39;Staff Hierarhy&#39;[Name],
+        &#39;Staff Hierarhy&#39;[User ID], PATHITEM ( &#39;Staff Hierarhy&#39;[Hierarchy View], 3, INTEGER )
+    ),
     &#39;Staff Hierarhy&#39;[2nd level]
 )</code></pre></div>
 <p>Собственно, 1-я цель по построению автоматическим путем выровненной иерархии на этом закончена, единственное, с чем надо определиться - это с необходимым количеством уровней, поскольку для каждого уровня требуется отдельный расчетный столбец.</p>
@@ -258,24 +258,24 @@ MAX ( &#39;Staff Hierarhy&#39;[Hierarchy Level] )</code></pre></div>
 <p><strong><li></strong> Рассчет суммы по каждому участнику производится по формуле:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Subtotal Amount = 
 IF (
-    [Depth Value] &gt; [Hierarhy Value] + 1;
-    BLANK ();
+    [Depth Value] &gt; [Hierarhy Value] + 1,
+    BLANK (),
     IF (
-        [Depth Value] = [Hierarhy Value] + 1;
+        [Depth Value] = [Hierarhy Value] + 1,
         IF (
             AND (
-                VALUES ( &#39;Staff Hierarhy&#39;[End Link] ) = FALSE;
+                VALUES ( &#39;Staff Hierarhy&#39;[End Link] ) = FALSE,
                 SUM ( &#39;Dataset&#39;[Amount] ) &lt;&gt; 0
-            );
-            SUM ( &#39;Dataset&#39;[Amount] );
+            ),
+            SUM ( &#39;Dataset&#39;[Amount] ),
             BLANK ()
-        );
+        ),
         SUM ( &#39;Dataset&#39;[Amount] )
     )
 )</code></pre></div>
 <p><strong><li></strong> Устранение дубликатов в иерархическом дереве со сдвигом промежуточных итогов реализуется следующим образом:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Final Amount = 
-IF ( [Depth Value] &gt; [Hierarhy Value]; BLANK (); SUM ( &#39;Dataset&#39;[Amount] ) )</code></pre></div>
+IF ( [Depth Value] &gt; [Hierarhy Value], BLANK (), SUM ( &#39;Dataset&#39;[Amount] ) )</code></pre></div>
 <p><strong>Визуализация данных - настроенное поведение иерархии:</strong></p>
 
 <p><strong><li></strong> Используя стандартный элемент &ldquo;Matrix&rdquo; (&ldquo;Матрица&rdquo;), и поставив в качестве значения меру &ldquo;Final Amount&rdquo; мы можем получить правильный, а также приятный глазу результат:</p>

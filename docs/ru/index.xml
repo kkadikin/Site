@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -31,9 +31,23 @@
     </item>
     
     <item>
+      <title>Вступительное слово</title>
+      <link>https://kkadikin.ru/ru/blog/blog_001/</link>
+      <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_001/</guid>
+      <description>Рвав-рвав, с вами я, собака Смайл!
+Есть прекрасная новость: мы с хозяином начинаем публиковать контент.
+ Раздел Блог будет содержать следующую информацию:
+ Короткие заметки &amp;ndash; блок &amp;ldquo;Мелкие радости&amp;rdquo;, представляющий собой описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query.
+ Короткие заметки &amp;ndash; блок &amp;ldquo;Собакенские будни&amp;rdquo;, представляющий собой пояснения по работе некоторых интересных функций DAX и Power Query/
+ Тематические статьи &amp;ndash; описание кейсов, формируемых в процессе реализации конкретной задачи.</description>
+    </item>
+    
+    <item>
       <title>Собакенские будни - конструкция Userelationship</title>
       <link>https://kkadikin.ru/ru/blog/blog_013/</link>
-      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_013/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-вспоминака!
@@ -43,7 +57,7 @@
     <item>
       <title>Резюме сотрудников</title>
       <link>https://kkadikin.ru/ru/blog/dev_005/</link>
-      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/dev_005/</guid>
       <description>Рвав-рвав, собака Смайл снова побаловался дизайном!
@@ -55,7 +69,7 @@
     <item>
       <title>Мелкие радости - разметка периодов</title>
       <link>https://kkadikin.ru/ru/blog/blog_012/</link>
-      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_012/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-задремака!
@@ -77,7 +91,7 @@
     <item>
       <title>Кто добыл, того и тапки</title>
       <link>https://kkadikin.ru/ru/blog/article_013/</link>
-      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_013/</guid>
       <description>Рвав-рвав, собака Смайл снова творит!
@@ -89,22 +103,21 @@
     <item>
       <title>Обучение режима &#34;Q&amp;A&#34; русскому языку</title>
       <link>https://kkadikin.ru/ru/blog/article_012/</link>
-      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_012/</guid>
-      <description>Рвав-рвав, весна вступает в свои права!
-Пока все сидят по домам, а те, кто имеет возможность &amp;ndash; трудится удаленно, пришло время написать очередную статью.
+      <description>Рвав-рвав, зима не спешит в наши двери!
+Пока некоторые сидят по домам, а те, кто имеет возможность &amp;ndash; трудятся удаленно, пришло время написать очередную статью.
 В этот раз будет весьма неожиданная тема: собака Смайл будет обучать режим работы &amp;ldquo;Questions and Answers&amp;rdquo; (Q&amp;amp;A) русскому языку, используя как встроенные возможности, так и редактирование yaml-схемы.
 Он сказал: «Поехали!», и взмахнул хвостом&amp;hellip; (парафраза)
  Пример:
-Для иллюстрации работы режима Q&amp;amp;A представим следующую ситуацию:
-в компании существует несколько складов с разными видами продукции, осуществляющих отгрузку по заявкам, поступающим от внешних сотрудников.</description>
+Для иллюстрации работы режима Q&amp;amp;A представим следующую ситуацию:</description>
     </item>
     
     <item>
       <title>Мелкие радости - выгрузка большого объема данных</title>
       <link>https://kkadikin.ru/ru/blog/blog_011/</link>
-      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_011/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-курочка!
@@ -113,20 +126,9 @@
     </item>
     
     <item>
-      <title>Мелкие радости - расчет отклонений</title>
-      <link>https://kkadikin.ru/ru/blog/blog_010/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/blog_010/</guid>
-      <description>Рвав-рвав, сегодня я &amp;ndash; фитнес-собака!
-Похоже, вопрос дизайна незримо присутствует в окружающих меня вещах, и это будет уже 2-я заметка в этом году (из 2-х!), на эту тему :-)
-Перед вами &amp;ndash; 6-я заметка из нашего цикла &amp;ldquo;Мелкие радости&amp;rdquo;, и сегодня мы рассмотрим часто встречающиеся запросы по визуализации сравнения плана и факта в наиболее простом его варианте - таблице. На эту тему написано довольно много, и, в принципе, тема не особо сложна.</description>
-    </item>
-    
-    <item>
       <title>Дизайнерские штучки</title>
       <link>https://kkadikin.ru/ru/blog/article_011/</link>
-      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_011/</guid>
       <description>Рвав-рвав, всем привет в новом году!
@@ -139,51 +141,33 @@
     </item>
     
     <item>
+      <title>Мелкие радости - расчет отклонений</title>
+      <link>https://kkadikin.ru/ru/blog/blog_010/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_010/</guid>
+      <description>Рвав-рвав, сегодня я &amp;ndash; фитнес-собака!
+Похоже, вопрос дизайна незримо присутствует в окружающих меня вещах, и это будет уже 2-я заметка в этом году (из 2-х!), на эту тему :-)
+Перед вами &amp;ndash; 6-я заметка из нашего цикла &amp;ldquo;Мелкие радости&amp;rdquo;, и сегодня мы рассмотрим часто встречающиеся запросы по визуализации сравнения плана и факта в наиболее простом его варианте - таблице. На эту тему написано довольно много, и, в принципе, тема не особо сложна.</description>
+    </item>
+    
+    <item>
       <title>Сломанная иерархия</title>
       <link>https://kkadikin.ru/ru/blog/article_010/</link>
-      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_010/</guid>
       <description>Рвав-рвав, здесь и сейчас с вами собака Смайл!
 Для начала немного о том, почему я грустный:
-Санкт-Петебрург, середина декабря (!) - дождь, грязюка, холоднюка.
+Санкт-Петебрург, дождь, грязюка, холоднюка.
 Приходится носить всякую фигню. Сопротивление бесполезно. Надеюсь, вы тоже мучаетесь, так как вместе - веселее.
 Сегодня хотелось бы описать работу с так называемой &amp;ldquo;сломанной&amp;rdquo; иерархией данных. В принципе, это довольно часто встречающаяся ситуация, из которой каждый выходит так, как может, но собака Смайл в данной статье постарается разъяснить все доступным языком.</description>
     </item>
     
     <item>
-      <title>Мониторинг питомцев</title>
-      <link>https://kkadikin.ru/ru/blog/dev_000/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/dev_000/</guid>
-      <description>Рвав-рвав, с вами социально-ответственный собака Смайл!
-В связи с прошедшим Днем рождения, а также в рамках постоянной работы над собой, мы рады представить вам свою очередную разработку &amp;ndash; отчет c кодовым названием &amp;ldquo;Мониторинг питомцев&amp;rdquo;.
-Отчет построен по данным российской базы чипированных животных, а данные, представленные в отчете &amp;ndash; общего характера.
-Собака Смайл выражает благодарность коллеге хозяина Дмитрию Власову за помощь в создании процедуры парсинга исходных данных.
-Описание разработки, за исключением процедуры парсинга, представлено ниже.</description>
-    </item>
-    
-    <item>
-      <title>Нестандартная сортировка</title>
-      <link>https://kkadikin.ru/ru/blog/article_009/</link>
-      <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/article_009/</guid>
-      <description>Рвав-рвав, собака Смайл опять с вами!
-Есть просто отличная новость: любопытный пес изыскал возможность вложенной сортировки данных, несмотря на то, что сортировка возможна как бы по одному столбцу&amp;hellip;
- Пример:
-Имеется набор данных следующего вида:
- оборудование и порядковый номер для его сортировки;
- устройства и порядковый номер для их сортировки.
-Задача:
-На основе представленных данных построить матрицу, в которой на верхнем уровне расположено оборудование, а на нижнем &amp;ndash; соответствующее устройства.</description>
-    </item>
-    
-    <item>
       <title>Собакенские будни - конструкции Related и Lookupvalue</title>
       <link>https://kkadikin.ru/ru/blog/blog_009/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_009/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-двередержака!
@@ -195,7 +179,7 @@
     <item>
       <title>Собакенские будни - конструкция Switch</title>
       <link>https://kkadikin.ru/ru/blog/blog_008/</link>
-      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_008/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-наблюдака!
@@ -204,9 +188,38 @@
     </item>
     
     <item>
+      <title>Нестандартная сортировка</title>
+      <link>https://kkadikin.ru/ru/blog/article_009/</link>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_009/</guid>
+      <description>Рвав-рвав, собака Смайл опять с вами!
+Есть просто отличная новость: любопытный пес изыскал возможность вложенной сортировки данных, несмотря на то, что сортировка возможна как бы по одному столбцу&amp;hellip;
+ Пример:
+Имеется набор данных следующего вида:
+ оборудование и порядковый номер для его сортировки,
+ устройства и порядковый номер для их сортировки.
+Задача:
+На основе представленных данных построить матрицу, в которой на верхнем уровне расположено оборудование, а на нижнем &amp;ndash; соответствующее устройства.</description>
+    </item>
+    
+    <item>
+      <title>Мониторинг питомцев</title>
+      <link>https://kkadikin.ru/ru/blog/dev_000/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/dev_000/</guid>
+      <description>Рвав-рвав, с вами социально-ответственный собака Смайл!
+В связи с прошедшим Днем рождения, а также в рамках постоянной работы над собой, мы рады представить вам свою очередную разработку &amp;ndash; отчет c кодовым названием &amp;ldquo;Мониторинг питомцев&amp;rdquo;.
+Отчет построен по данным российской базы чипированных животных, а данные, представленные в отчете &amp;ndash; общего характера.
+Собака Смайл выражает благодарность коллеге хозяина Дмитрию Власову за помощь в создании процедуры парсинга исходных данных.
+Описание разработки, за исключением процедуры парсинга, представлено ниже.</description>
+    </item>
+    
+    <item>
       <title>Мелкие радости - быстрые меры, или хозяйкам на заметку</title>
       <link>https://kkadikin.ru/ru/blog/blog_007/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_007/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-грязесобирака!
@@ -218,9 +231,22 @@
     </item>
     
     <item>
+      <title>Аптечка первой помощи</title>
+      <link>https://kkadikin.ru/ru/blog/dev_004/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/dev_004/</guid>
+      <description>Рвав-рвав, собака Смайл говорит: &amp;ldquo;Здрям!&amp;rdquo;
+Представляем вашему вниманию свою 4-ю разработку комплекта отчетности &amp;ldquo;Офисная жизнь&amp;rdquo; &amp;ndash; отчет &amp;ldquo;Аптечка первой помощи&amp;rdquo;, помогающий контролировать наличие в офисе такой важной вещи, как лекарства.
+ВАЖНО: Информация, представленная в отчете, носит демонстрационный характер, и не является руководством к действию, собака Смайл при разработке активно пользовался гуглом.
+ Отчет реализован при помощи DAX и Power Query, и построен на базе производственного календаря.
+ Рвав-рвав, не устаю повторять, что &amp;ldquo;Производственный календарь&amp;rdquo; &amp;ndash; наше все.</description>
+    </item>
+    
+    <item>
       <title>Ретроспектива</title>
       <link>https://kkadikin.ru/ru/blog/article_008/</link>
-      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_008/</guid>
       <description>Рвав-рвав, собака Смайл поздравляет всех с началом отопительного сезона!
@@ -238,7 +264,7 @@
     <item>
       <title>Построчное построение отчета</title>
       <link>https://kkadikin.ru/ru/blog/article_007/</link>
-      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_007/</guid>
       <description>Рвав-рвав, собака Смайл снова взялся за перо!
@@ -250,7 +276,7 @@
     <item>
       <title>Дорога в облака</title>
       <link>https://kkadikin.ru/ru/blog/article_006/</link>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_006/</guid>
       <description>Рвав-рвав, неудержимый собака Смайл решил написать статью по &amp;ldquo;горячим следам&amp;rdquo;!
@@ -263,7 +289,7 @@
     <item>
       <title>Мелкие радости - избавляемся от Blank / Пусто</title>
       <link>https://kkadikin.ru/ru/blog/blog_006/</link>
-      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_006/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-уничтожитель!
@@ -273,22 +299,9 @@
     </item>
     
     <item>
-      <title>Аптечка первой помощи</title>
-      <link>https://kkadikin.ru/ru/blog/dev_004/</link>
-      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/dev_004/</guid>
-      <description>Рвав-рвав, собака Смайл говорит: &amp;ldquo;Здрям!&amp;rdquo;
-Представляем вашему вниманию свою 4-ю разработку комплекта отчетности &amp;ldquo;Офисная жизнь&amp;rdquo; &amp;ndash; отчет &amp;ldquo;Аптечка первой помощи&amp;rdquo;, помогающий контролировать наличие в офисе такой важной вещи, как лекарства.
-ВАЖНО: Информация, представленная в отчете, носит демонстрационный характер, и не является руководством к действию, собака Смайл при разработке активно пользовался гуглом.
- Отчет реализован при помощи DAX и Power Query, и построен на базе производственного календаря.
- Рвав-рвав, не устаю повторять, что &amp;ldquo;Производственный календарь&amp;rdquo; &amp;ndash; наше все.</description>
-    </item>
-    
-    <item>
       <title>Мелкие радости - визуализация параметра Power Query</title>
       <link>https://kkadikin.ru/ru/blog/blog_005/</link>
-      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_005/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака в кабачках!
@@ -298,7 +311,7 @@
     <item>
       <title>Параметры на уровне Power Query</title>
       <link>https://kkadikin.ru/ru/blog/article_005/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_005/</guid>
       <description>Рвав-рвав, здесь снова собака Смайл!
@@ -311,7 +324,7 @@
     <item>
       <title>День рождения в коллективе</title>
       <link>https://kkadikin.ru/ru/blog/dev_003/</link>
-      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/dev_003/</guid>
       <description>Рвав-рвав, собака Смайл спешит поделиться новостью!
@@ -323,7 +336,7 @@
     <item>
       <title>Мелкие радости - фиксация момента обновления отчетности</title>
       <link>https://kkadikin.ru/ru/blog/blog_004/</link>
-      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_004/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; черт языкастый!
@@ -337,7 +350,7 @@
     <item>
       <title>Мелкие радости - нюансы выбора значения в срезе</title>
       <link>https://kkadikin.ru/ru/blog/blog_003/</link>
-      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_003/</guid>
       <description>Рвав-рвав, сегодня я &amp;ndash; собака-мечтатель!
@@ -351,7 +364,7 @@
     <item>
       <title>Отслеживание длительности проекта</title>
       <link>https://kkadikin.ru/ru/blog/article_004/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_004/</guid>
       <description>Рвав-рвав, зубастый собака Смайл рад вас приветствовать!
@@ -365,7 +378,7 @@
     <item>
       <title>Использование мер в качестве переключателя</title>
       <link>https://kkadikin.ru/ru/blog/article_003/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_003/</guid>
       <description>Рвав-рвав, собака Смайл приветствует аудиторию!
@@ -376,7 +389,7 @@
     <item>
       <title>Нюансы использования встроенной иерархии дат</title>
       <link>https://kkadikin.ru/ru/blog/article_002/</link>
-      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_002/</guid>
       <description>Рвав-рвав, смотрите, что нарыл!
@@ -387,21 +400,9 @@
     </item>
     
     <item>
-      <title>Создание календаря при помощи DAX</title>
-      <link>https://kkadikin.ru/ru/blog/article_001/</link>
-      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/article_001/</guid>
-      <description>Рвав-рвав, собака Смайл продолжает эфир!
-Мы с хозяином собрались с силами, и решили написать свою 1-ю статью, посвященную созданию календаря. Несмотря на то, что не писал про это только ленивый, подобная вещь очень важна
- Календарь в Power BI можно создать, по большому счету, 3-мя различными способами:
- Загрузка из внешнего источника &amp;ndash; это самый примитивный способ, проблема тут только в том, чтобы найти подходящий. Если упорства не хватило, то календарь можно самостоятельно сформировать в MS Excel.</description>
-    </item>
-    
-    <item>
       <title>График работы сотрудников</title>
       <link>https://kkadikin.ru/ru/blog/dev_002/</link>
-      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/dev_002/</guid>
       <description>Рвав-рвав, собака Смайл на связи!
@@ -413,9 +414,21 @@
     </item>
     
     <item>
+      <title>Создание календаря при помощи DAX</title>
+      <link>https://kkadikin.ru/ru/blog/article_001/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_001/</guid>
+      <description>Рвав-рвав, собака Смайл продолжает эфир!
+Мы с хозяином собрались с силами, и решили написать свою 1-ю статью, посвященную созданию календаря. Несмотря на то, что не писал про это только ленивый, подобная вещь очень важна
+ Календарь в Power BI можно создать, по большому счету, 3-мя различными способами:
+ Загрузка из внешнего источника &amp;ndash; это самый примитивный способ, проблема тут только в том, чтобы найти подходящий. Если упорства не хватило, то календарь можно самостоятельно сформировать в MS Excel.</description>
+    </item>
+    
+    <item>
       <title>Производственный календарь</title>
       <link>https://kkadikin.ru/ru/blog/dev_001/</link>
-      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/dev_001/</guid>
       <description>Рвав-рвав, всем хорошего настроения!
@@ -426,22 +439,6 @@
  Общее количество рабочих дней, при этом отдельно выделены сокращенные рабочие дни.
  Количество рабочих часов, которое считается отдельно в зависимости от продолжительности рабочей недели.
  Количество нерабочих дней, а именно выходных, праздничных, и так называемых &amp;ldquo;перенесенных&amp;rdquo; нерабочих дней.</description>
-    </item>
-    
-    <item>
-      <title>Вступительное слово</title>
-      <link>https://kkadikin.ru/ru/blog/blog_001/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/blog_001/</guid>
-      <description> Рвав-рвав, с вами я, собака Смайл!
-Есть прекрасная новость: мы с хозяином начинаем публиковать контент.
- Раздел Блог будет содержать следующую информацию:
- Короткие сообщения &amp;ndash; описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query.
- Тематические статьи &amp;ndash; описание кейсов, формируемых в процессе реализации конкретной задачи.
- Описание разработок &amp;ndash; собственно, этим все сказано, см. раздел Портфолио
- Ваш Смайл
- </description>
     </item>
     
   </channel>

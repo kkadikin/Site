@@ -142,7 +142,7 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>12 September 2019</span>
+                            <span>2 August 2020</span>
                         </li>
                     </ul>
                 </div>
@@ -184,7 +184,7 @@ SUM ( &#39;Dataset&#39;[Количество] )</code></pre></div>
 VAR _Quantity =
     SUM ( &#39;Dataset&#39;[Количество] )
 VAR _Result =
-    IF ( ISBLANK ( _Quantity ); 0; _Quantity )
+    IF ( ISBLANK ( _Quantity ), 0, _Quantity )
 RETURN
     _Result</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_006_screen_4.jpg" alt="blog_006_screen_4" /></p>

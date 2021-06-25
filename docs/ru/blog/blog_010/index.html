@@ -142,7 +142,7 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>5 March 2020</span>
+                            <span>7 November 2020</span>
                         </li>
                     </ul>
                 </div>
@@ -197,16 +197,16 @@
 SUM ( &#39;Таблица&#39;[Плановая сумма] )</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Факт =
 SUM ( &#39;Таблица&#39;[Фактическая сумма] )</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Абсолютное отклонение =
 [Факт] - [План]</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Относительное отклонение =
-DIVIDE ( [Абсолютное отклонение]; [План]; 0 )</code></pre></div>
+DIVIDE ( [Абсолютное отклонение], [План], 0 )</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_010_screen_2.jpg" alt="blog_010_screen_2" /></p>
 
 <p><strong><li></strong> Следующим шагом создание меры для цветового обозначения, кодировку цветов, естественно, нужно предварительно подобрать:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Цвет = 
 SWITCH (
-    TRUE ();
-    [Абсолютное отклонение] &gt; 0; &#34;#009900&#34;;
-    [Абсолютное отклонение] &lt; 0; &#34;#ff0000&#34;;
-    [Абсолютное отклонение] = 0; &#34;#ffff00&#34;
+    TRUE (),
+    [Абсолютное отклонение] &gt; 0, &#34;#009900&#34;,
+    [Абсолютное отклонение] &lt; 0, &#34;#ff0000&#34;,
+    [Абсолютное отклонение] = 0, &#34;#ffff00&#34;
 )</code></pre></div>
 <p><strong><li></strong>  Далее необходимо собрать получишийся результат в один столбец, с добавлением определенных символов Unicode и форматирования.</p>
 
@@ -214,23 +214,23 @@ SWITCH (
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Результат = 
 VAR _AbsoluteDeviation =
     IF ( 
-        [Абсолютное отклонение] &gt; 0; &#34;+&#34; &amp; [Абсолютное отклонение]; [Абсолютное отклонение] 
+        [Абсолютное отклонение] &gt; 0, &#34;+&#34; &amp; [Абсолютное отклонение], [Абсолютное отклонение] 
     )
 VAR _RelativeDeviation =
     IF (
-        [Относительное отклонение] &gt; 0;
-        &#34;+&#34; &amp; FORMAT ( [Относительное отклонение]; &#34;0.0%&#34; );
-        FORMAT ( [Относительное отклонение]; &#34;0.0%&#34; )
+        [Относительное отклонение] &gt; 0,
+        &#34;+&#34; &amp; FORMAT ( [Относительное отклонение], &#34;0.0%&#34; ),
+        FORMAT ( [Относительное отклонение], &#34;0.0%&#34; )
     )
 VAR _UnicodeSquare = 9724
 VAR _UnicodeTriangleUp = 9650
 VAR _UnicodeTriangleDown = 9660
 VAR _UnicodeLable =
     SWITCH (
-        TRUE ();
-        [Абсолютное отклонение] = 0; UNICHAR ( _UnicodeSquare );
-        [Абсолютное отклонение] &gt; 0; UNICHAR ( _UnicodeTriangleUp );
-        [Абсолютное отклонение] &lt; 0; UNICHAR ( _UnicodeTriangleDown );
+        TRUE (),
+        [Абсолютное отклонение] = 0, UNICHAR ( _UnicodeSquare ),
+        [Абсолютное отклонение] &gt; 0, UNICHAR ( _UnicodeTriangleUp ),
+        [Абсолютное отклонение] &lt; 0, UNICHAR ( _UnicodeTriangleDown ),
         BLANK ()
     )
 VAR _UnicodeLongSpace = 8194

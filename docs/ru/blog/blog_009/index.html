@@ -142,7 +142,7 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>4 November 2019</span>
+                            <span>4 October 2020</span>
                         </li>
                     </ul>
                 </div>
@@ -195,7 +195,7 @@ RELATED ( ‘Dataset 2’[Эпитет] )</code></pre></div>
 
 <p><strong><li></strong> Сначала необходимо указать столбец желаемого результата из присоединяемой таблицы, а затем - поле ключа для поиска необходимых данных в обоих наборах. Формула, позволяющая получить составной набор данных, выглядит следующим образом:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Эпитет - без связи =
-LOOKUPVALUE ( ‘Dataset 2’[Эпитет]; ‘Dataset 2’[Питомец]; ‘Dataset 1’[Питомец] )</code></pre></div>
+LOOKUPVALUE ( ‘Dataset 2’[Эпитет], ‘Dataset 2’[Питомец], ‘Dataset 1’[Питомец] )</code></pre></div>
 <p><img src="https://kkadikin.ru/images/blog/blog_009_screen_7.jpg" alt="blog_009_screen_7" /></p>
 
 <p><strong><li></strong> При формировании визуального элемента полученный результат аналогичен вариантам 1 и 2, но, из-за отсутствия связи между данными, на иллюстрации эти варианты стали неработоспособны:</p>
