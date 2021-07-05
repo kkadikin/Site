@@ -49,7 +49,7 @@ CALENDAR ( FIRSTDATE ( 'Dataset'[Employment_Date] ), TODAY () )
 ```dax
 List.Dates ( [Employment_Date], 
 Duration.TotalDays( [Dismissal_Date] - [Employment_Date] ) + 1,
-#duration( 1, 0, 0, 0 ) )
+#duration( 1, 0, 0, 0 ) ) )
 ```
 
 *Рвав-рвав, есть один тонкий момент:*

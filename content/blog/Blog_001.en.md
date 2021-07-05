@@ -1,13 +1,13 @@
 ---
 title: Opening remarks
-date: 2021-06-14
+date: 2021-07-05
 image: images/blog/blog_001_foto.jpg
 author: Smile
 ---
 
 > *Rwaw-rwaw, dog Smile with you!*
 >
-> *There is great news: we are starting to publish content with my owner KK.*
+> *There is great news: we continue to publish content with my owner K.K.*
 >
 > *Please, see my "Hunter notes" at [Blog](https://kkadikin.ru/ru/blog/) section in Russian.*
 >

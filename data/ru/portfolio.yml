@@ -61,3 +61,7 @@ item   :
   - title     : Резюме сотрудников
     image     : images/portfolio/portfolio-13.jpg
     category  : developments
+
+  - title     : Распределение задач по исполнителям
+    image     : images/portfolio/portfolio-14.jpg
+    category  : developments
