@@ -81,4 +81,6 @@ author: Smile
 
 **<li>** [Резюме сотрудников](https://kkadikin.ru/ru/blog/dev_005/)
 
+**<li>** [Распределение задач по исполнителям](https://kkadikin.ru/ru/blog/dev_006/)
+
 > *Ваш Смайл*
