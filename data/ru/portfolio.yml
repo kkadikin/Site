@@ -59,8 +59,12 @@ item   :
     category  : articles
 
   - title     : Резюме сотрудников
-    image     : images/portfolio/portfolio-13.jpg
+    image     : images/portfolio/portfolio-12.jpg
     category  : developments
+
+  - title     : Подготовка прогноза
+    image     : images/portfolio/portfolio-13.jpg
+    category  : articles
 
   - title     : Распределение задач по исполнителям
     image     : images/portfolio/portfolio-14.jpg

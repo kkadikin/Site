@@ -2,7 +2,7 @@
 <html class="no-js" lang="ru-ru"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Вступительное слово">
+<meta name="description" content="Подготовка прогноза">
 <meta name="author" content="Themefisher.com">
 <meta name="generator" content="Hugo 0.55.5" />
 
@@ -132,8 +132,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <img src="https://kkadikin.ru/images/blog/blog_001_foto.jpg" class="w-100 mb-3" alt="Post-Image">
-                <h2>Вступительное слово</h2>
+                <img src="https://kkadikin.ru/images/blog/art_015_foto.jpg" class="w-100 mb-3" alt="Post-Image">
+                <h2>Подготовка прогноза</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -142,31 +142,92 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>6 July 2021</span>
+                            <span>3 July 2021</span>
                         </li>
                     </ul>
                 </div>
                 <blockquote>
-<p><em>Рвав-рвав, с вами я, собака Смайл!</em></p>
+<p><em>Рвав-рвав, собака Смайл готов к обеду!</em></p>
 
-<p><em>Есть прекрасная новость: мы с хозяином продолжаем публиковать контент.</em></p>
+<p><em>Сегодня мы рассмотрим такую популярную вещь, имеющуюся практически в любой компании, как прогноз, представляющий собой некий симбиоз плановых и фактических данных.</em></p>
 </blockquote>
 
-<p>Раздел <a href="https://kkadikin.ru/ru/blog/">Блог</a> будет содержать следующую информацию:</p>
+<p><strong>Пример:</strong></p>
 
-<p><strong><li></strong> Короткие заметки &ndash; блок &ldquo;Мелкие радости&rdquo;, представляющий собой описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query.</p>
+<p><strong><li></strong> Таблица &ldquo;План&rdquo; содержит необходимые сведения об операции на календарный год, а именно, дату формирования плана, статью, сумму и направление транзакции:</p>
 
-<p><strong><li></strong> Короткие заметки &ndash; блок &ldquo;Собакенские будни&rdquo;, представляющий собой пояснения по работе некоторых интересных функций DAX и Power Query.</p>
+<p><img src="https://kkadikin.ru/images/blog/art_015_screen_1.jpg" alt="art_015_screen_1" /></p>
 
-<p><strong><li></strong> Тематические статьи &ndash; описание кейсов, формируемых в процессе реализации конкретной задачи.</p>
+<p><strong><li></strong> Таблица &ldquo;Факт&rdquo; построена аналогичным образом, и содержит необходимые сведения об операции за прошедший период времени (по количеству полных месяцев):</p>
 
-<p><strong><li></strong> Описание разработок &ndash; собственно, этим все сказано, см. раздел <a href="https://kkadikin.ru/ru/portfolio/">Портфолио</a></p>
+<p><img src="https://kkadikin.ru/images/blog/art_015_screen_2.jpg" alt="art_015_screen_2" /></p>
+
+<p><strong><li></strong> В качестве отдельной таблицы выделен календарь.</p>
+
+<p><strong>Задача:</strong></p>
+
+<p><strong><li></strong> На основе представленных данных построить помесячный прогноз компании, дополнительно рассчитав значения накопительным итогом.</p>
 
 <blockquote>
-<p><em>Рвав-рвав, самый лучший в мире пес постарается периодически просматривать старые материалы, и поддерживать их актуальное состояние.</em></p>
+<p><em>Рвав-рвав, применительно к обозначенной задаче, мы будем строить отдельную &ldquo;физическую&rdquo; таблицу на уровне модели, поскольку так проще с точки зрения дальнейшей поддержки, и нагляднее для конечного пользователя.</em></p>
+</blockquote>
+
+<p><strong>Процесс разработки:</strong></p>
+
+<p><strong><li></strong> Поскольку мы планируем сделать симбиоз плановых и фактических данных, предварительно необходимо промаркировать соответствующие данные. Это делается путем добавления дополнительного расчетного столбца в соответствующих таблицах.</p>
+
+<p>Обновленная таблица &ldquo;План&rdquo;, в результате данных действий, приобретет следующий вид:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_015_screen_3.jpg" alt="art_015_screen_3" /></p>
+
+<p><strong><li></strong> Обновленная таблица &ldquo;Факт&rdquo; станет выглядеть следующим образом:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_015_screen_4.jpg" alt="art_015_screen_4" /></p>
+
+<p><strong><li></strong> После разметки имеющихся данных остается только произвести их слияние, создав для этого таблицу &ldquo;Прогноз&rdquo; с использованием следующей конструкции:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Прогноз = 
+UNION (
+    &#39;Факт&#39;,
+    FILTER ( &#39;План&#39;, MONTH ( &#39;План&#39;[Дата формирования плана] ) &gt;= MONTH ( TODAY () ) )
+)</code></pre></div>
+<p><strong><li></strong> Затем необходимо связать данные между собой, схема модели представлена на следующем рисунке:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/art_015_screen_5.jpg" alt="art_015_screen_5" /></p>
+
+<p><strong><li></strong> Дальше все относительно просто, поскольку у нас получилась именно &ldquo;физическая&rdquo; таблица. Мера для прогноза по месяцам выглядит следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Прогноз по месяцам = 
+SUM ( &#39;Прогноз&#39;[Количество] )</code></pre></div>
+<p><strong><li></strong> Мера для прогноза, показывающая накопительный итог, формируется следующим образом:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Прогноз накопительным итогом = 
+CALCULATE (
+    SUM ( &#39;Прогноз&#39;[Количество] ),
+    FILTER (
+        ALL ( &#39;Прогноз&#39; ),
+        &#39;Прогноз&#39;[Дата прогноза] &lt;= MAX ( &#39;Прогноз&#39;[Дата прогноза] )
+    ),
+    VALUES ( &#39;Прогноз&#39;[Статья отчета] )
+)</code></pre></div>
+<blockquote>
+<p><em>Рвав-рвав, собственно, на этом все, конечная остановка, все на выход) Поскольку все остальные элементы отчета можно воспринимать исключительно как обогащение полученных данных.</em></p>
+</blockquote>
+
+<p><strong><li></strong> Например, в качестве некоего украшательства было сделано условно форматирование, маркирующее плановые и фактические данными разными цветами. При этом условное форматирование было сделано мерой, возвращающий цвет:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Цветовая метка прогноза = 
+SWITCH (
+    SELECTEDVALUE ( &#39;Прогноз&#39;[Метка данных] ),
+    &#34;План&#34;, &#34;#00B9FF&#34;,
+    &#34;Факт&#34;, &#34;#85BB65&#34;,
+    &#34;#FFFFFF&#34;
+)</code></pre></div>
+<blockquote>
+<p><em>В общем, совестливый собакен не счел возможным выложить «голый» отчет, но жара постепенно сводит с ума, и описывать очень простые вещи типа получения отклонения мы тут не будем.</em></p>
 
 <p><em>Ваш Смайл</em></p>
 </blockquote>
+
+<p><strong>ДЛЯ ЛЮБИТЕЛЕЙ ПОНАЖИМАТЬ НА КНОПОЧКИ</strong></p>
+
+<iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMzIyMWRlMzItYjU5OS00YTMwLWIwZjYtOGVlNzIzZWNlM2NmIiwidCI6IjE4YjFiOTZhLTk0MTQtNDE3MC1iNmNhLTZkODU3NTJlNTZmOCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
             </div>
         </div>

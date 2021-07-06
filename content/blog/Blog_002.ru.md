@@ -66,6 +66,8 @@ author: Smile
 
 **<li>** [Проверено на себе: Power Apps](https://kkadikin.ru/ru/blog/article_014/)
 
+**<li>** [Подготовка прогноза](https://kkadikin.ru/ru/blog/article_015/)
+
 
 **РАЗРАБОТКИ**
 
