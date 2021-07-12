@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Список публикаций</title>
+      <link>https://kkadikin.ru/ru/blog/blog_002/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
+      <description>Рвав-рвав, доброго времени суток!
+В данном сообщении содержится общий список публикаций, который вам позволит быстро найти интересующий контент.
+ БЛОГ
+ Вступительное слово
+ Мелкие радости - нюансы выбора значения в срезе
+ Мелкие радости - фиксация момента обновления отчетности
+ Мелкие радости - визуализация параметра Power Query
+ Мелкие радости - избавляемся от Blank / Пусто
+ Мелкие радости - быстрые меры, или хозяйкам на заметку
+ Мелкие радости - расчет отклонений</description>
+    </item>
     
     <item>
       <title>Вступительное слово</title>
@@ -24,24 +42,6 @@
  Короткие заметки &amp;ndash; блок &amp;ldquo;Мелкие радости&amp;rdquo;, представляющий собой описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query.
  Короткие заметки &amp;ndash; блок &amp;ldquo;Собакенские будни&amp;rdquo;, представляющий собой пояснения по работе некоторых интересных функций DAX и Power Query.
  Тематические статьи &amp;ndash; описание кейсов, формируемых в процессе реализации конкретной задачи.</description>
-    </item>
-    
-    <item>
-      <title>Список публикаций</title>
-      <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
-      <description>Рвав-рвав, доброго времени суток!
-В данном сообщении содержится общий список публикаций, который вам позволит быстро найти интересующий контент.
- БЛОГ
- Вступительное слово
- Мелкие радости - нюансы выбора значения в срезе
- Мелкие радости - фиксация момента обновления отчетности
- Мелкие радости - визуализация параметра Power Query
- Мелкие радости - избавляемся от Blank / Пусто
- Мелкие радости - быстрые меры, или хозяйкам на заметку
- Мелкие радости - расчет отклонений</description>
     </item>
     
     <item>
