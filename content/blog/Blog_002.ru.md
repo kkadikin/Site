@@ -68,6 +68,8 @@ author: Smile
 
 **<li>** [Подготовка прогноза](https://kkadikin.ru/ru/blog/article_015/)
 
+**<li>** [Различные способы достижения цели в MS Power BI](https://kkadikin.ru/ru/blog/article_016/)
+
 
 **РАЗРАБОТКИ**
 
