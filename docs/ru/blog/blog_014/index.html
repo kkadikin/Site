@@ -2,7 +2,7 @@
 <html class="no-js" lang="ru-ru"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Список публикаций">
+<meta name="description" content="Мелкие радости - удаление двойного заголовка таблицы">
 <meta name="author" content="Themefisher.com">
 
 <meta name="generator" content="Hugo 0.55.5" />
@@ -150,8 +150,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <img src="https://kkadikin.ru/images/blog/blog_002_foto.jpg" class="w-100 mb-3" alt="Post-Image">
-                <h2>Список публикаций</h2>
+                <img src="https://kkadikin.ru/images/blog/blog_014_foto.jpg" class="w-100 mb-3" alt="Post-Image">
+                <h2>Мелкие радости - удаление двойного заголовка таблицы</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -160,95 +160,89 @@
                         </li>
                         <li class="list-inline-item">
                             <span>at</span>
-                            <span>13 July 2021</span>
+                            <span>11 July 2021</span>
                         </li>
                     </ul>
                 </div>
                 <blockquote>
-<p><em>Рвав-рвав, доброго времени суток!</em></p>
+<p><em>Рвав-рвав, сегодня я &ndash; собака-разузнака!</em></p>
 
-<p><em>В данном сообщении содержится общий список публикаций, который вам позволит быстро найти интересующий контент.</em></p>
+<p><em>Перед вами &ndash; 9-я заметка из нашего цикла &ldquo;Мелкие радости&rdquo;, ниже мы рассмотрим такую проблему, как обработка двойной шапки в исходных данных.</em></p>
+
+<p><em>Обычно подобна штукенция присутствует в данных при использовании файловой выгрузки (если она не самописная, конечно) из &ldquo;материнской&rdquo; системы, например, 1С и пр.</em></p>
+
+<p><em>Вообще, в Power все это решается при помощи элемента визуализации &ldquo;Slicer&rdquo; (&ldquo;Срез&rdquo;), работающего в относительном режиме, но вот, например, на промежутке «неделя» он работает не совсем корректно. К тому же, подобные вещи часто используются в расчетах.</em></p>
+
+<p><em>В общем, сегодня мы будем совместно познавать Power Query, используя, так сказать, классику жанра, поскольку подобная задача далеко не нова…</em></p>
 </blockquote>
 
-<p><strong>БЛОГ</strong></p>
+<p><strong>Пример:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_001/">Вступительное слово</a></p>
+<p>В качестве исходных данных файл MS Excel, с таблицей, содержащий двойной заголовок следующего вида:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_003/">Мелкие радости - нюансы выбора значения в срезе</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_01.jpg" alt="blog_014_screen_01" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_004/">Мелкие радости - фиксация момента обновления отчетности</a></p>
+<p><strong>Задача:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_005/">Мелкие радости - визуализация параметра Power Query</a></p>
+<p>Трансформировать исходную таблицу таким образом, чтобы устранить двойной заголовок, то есть, в итоге, таблица должна стать плоской.</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_006/">Мелкие радости - избавляемся от Blank / Пусто</a></p>
+<p><strong>Процесс разработки:</strong></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_007/">Мелкие радости - быстрые меры, или хозяйкам на заметку</a></p>
+<p><strong><li></strong> Для начала необходимо импортировать данные в Power BI:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_010/">Мелкие радости - расчет отклонений</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_02.jpg" alt="blog_014_screen_02" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_011/">Мелкие радости - выгрузка большого объема данных</a></p>
+<p><strong><li></strong> Удалить все шаги до шага &ldquo;Навигация&rdquo;, поскольку в настройке &ldquo;по умолчанию&rdquo; при загрузке происходит автоматическое повышение заголовков и автоматическое присвоение типов данных:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_012/">Мелкие радости - разметка периодов</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_03.jpg" alt="blog_014_screen_03" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_014/">Мелкие радости - удаление двойного заголовка таблицы</a></p>
+<p><strong><li></strong> Транспонировать таблицу, использовав на вкладке &ldquo;Преобразование&rdquo; кнопку &ldquo;Транспонировать&rdquo;:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_008/">Собакенские будни - конструкция Switch</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_04.jpg" alt="blog_014_screen_04" /></p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_009/">Собакенские будни - конструкции Related и Lookupvalue</a></p>
+<p><strong><li></strong> Объединить первые 2 столбца, поскольку шапка таблицы содержит 2 уровня, использовав на вкладке &ldquo;Преобразование&rdquo; кнопку &ldquo;Объединить столбцы&rdquo;:</p>
 
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/blog_013/">Собакенские будни - конструкция Userelationship</a></p>
-
-<p><strong>ТЕМАТИЧЕСКИЕ СТАТЬИ</strong></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_001/">Создание календаря при помощи DAX</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_002/">Нюансы использования встроенной иерархии дат</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_003/">Использование мер в качестве переключателя</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_004/">Отслеживание длительности проекта</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_005/">Параметры на уровне Power Query</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_006/">Дорога в облака</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_007/">Построчное построение отчета</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_008/">Ретроспектива</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_009/">Нестандартная сортировка</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_010/">Сломанная иерархия</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_011/">Дизайнерские штучки</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_012/">Обучение режима &ldquo;Q&amp;A&rdquo; русскому языку</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_013/">Кто добыл, того и тапки</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_014/">Проверено на себе: Power Apps</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_015/">Подготовка прогноза</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/article_016/">Различные способы достижения цели в MS Power BI</a></p>
-
-<p><strong>РАЗРАБОТКИ</strong></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_001/">Производственный календарь</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_002/">График работы сотрудников</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_003/">День рождения в коллективе</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_004/">Аптечка первой помощи</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_000/">Мониторинг питомцев</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_005/">Резюме сотрудников</a></p>
-
-<p><strong><li></strong> <a href="https://kkadikin.ru/ru/blog/dev_006/">Распределение задач по исполнителям</a></p>
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_05.jpg" alt="blog_014_screen_05" /></p>
 
 <blockquote>
+<p><em>Рвав-рвав, при объединении столбцов необходимо указать какой-нибудь разделитель, в нашем случае это знак равенства ( «=» ).</em></p>
+</blockquote>
+
+<p><strong><li></strong> Транспонировать получившуюся таблицу обратно:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_06.jpg" alt="blog_014_screen_06" /></p>
+
+<p><strong><li></strong> Поставить заголовки столбцов, например, воспользовавшись функционалом повышения заголовков:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_07.jpg" alt="blog_014_screen_07" /></p>
+
+<p><strong><li></strong> Повышение заголовков потянет за собой шаг изменения типа данных, который можно оставить.</p>
+
+<p><strong><li></strong> Следующим шагом необходимо отменить свертывание «дополнительных» столбцов, для этого на   вкладке &ldquo;Преобразование&rdquo; следует воспользоваться кнопкой &ldquo;Отменить свертывание столбцов&rdquo;, использовав при этом функцию &ldquo;Отменить свертывание других столбцов&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_08.jpg" alt="blog_014_screen_08" /></p>
+
+<p><strong><li></strong> Разделить столбец &ldquo;Атрибут&rdquo; по имеющемуся разделителю, то есть знаку равенства ( «=») , который использовался ранее в качестве разделителя, воспользовавшись кнопкой &ldquo;Разделить столбец&rdquo; на вкладке &ldquo;Главная&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_09.jpg" alt="blog_014_screen_09" /></p>
+
+<p><strong><li></strong> Присвоить окончательные название получившимся столбцам:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_10.jpg" alt="blog_014_screen_10" /></p>
+
+<p><strong><li></strong> Далее следует заменить значение &ldquo;Пусто&rdquo; на значение &ldquo;null&rdquo; в столбце &ldquo;Город&rdquo;, воспользовавшись кнопкой &ldquo;Замена значений&rdquo; на вкладке &ldquo;Преобразование&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_11.jpg" alt="blog_014_screen_11" /></p>
+
+<p><strong><li></strong> Последним шагом является корректное заполнение ячеек, содержащих значение &ldquo;null&rdquo;, по столбцу &ldquo;Город&rdquo;. Данное действие можно выполнить автоматически, выбрав опцию &ldquo;Заполнить вниз&rdquo;, имеющуюся у кнопки &ldquo;Заполнить&rdquo; на вкладке &ldquo;Преобразование&rdquo;:</p>
+
+<p><img src="https://kkadikin.ru/images/blog/blog_014_screen_12.jpg" alt="blog_014_screen_12" /></p>
+
+<p><strong><li></strong> После последовательного выполнения перечисленных шагов для сохранения внесенных изменений необходимо нажать кнопку &ldquo;Закрыть и применить&rdquo;, расположенную на закладке &ldquo;Главная&rdquo;.</p>
+
+<blockquote>
+<p><em>Рвав-рвав, извините, но я уже все, лапы ломит, и хвост отваливается…</em></p>
+
 <p><em>Ваш Смайл</em></p>
 </blockquote>
 

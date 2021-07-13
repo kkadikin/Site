@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2021-07-12
+date: 2021-07-13
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -28,6 +28,8 @@ author: Smile
 **<li>** [Мелкие радости - выгрузка большого объема данных](https://kkadikin.ru/ru/blog/blog_011/)
 
 **<li>** [Мелкие радости - разметка периодов](https://kkadikin.ru/ru/blog/blog_012/)
+
+**<li>** [Мелкие радости - удаление двойного заголовка таблицы](https://kkadikin.ru/ru/blog/blog_014/)
 
 **<li>** [Собакенские будни - конструкция Switch](https://kkadikin.ru/ru/blog/blog_008/)
 
