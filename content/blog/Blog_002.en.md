@@ -89,4 +89,6 @@ author: Smile
 
 **<li>** [Tasks assignment for implementers](https://kkadikin.ru/ru/blog/dev_006/ "Creating Gantt chart using standard functional Power BI, such as "Matrix" visual")
 
-> *Ваш Смайл*
+> *Sincerely yours,*
+>
+> *Smile*
