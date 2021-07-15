@@ -1,2 +1,16 @@
 User-Agent: *
-Allow: /
+
+Disallow: /*_openstat=
+Disallow: /*_ga=
+Disallow: /*gclid=
+Disallow: /*yclid=
+Disallow: /?sid=*
+Disallow: /*ppc=
+Disallow: /*utm_*=
+Disallow: /*utmz*=
+
+Clean-param: yclid
+Clean-param: utm_source
+
+Host: https://kkadikin.ru
+Sitemap: https://kkadikin.ru/sitemap.xml
