@@ -15,7 +15,7 @@
     <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -33,7 +33,7 @@
     <item>
       <title>Вступительное слово</title>
       <link>https://kkadikin.ru/ru/blog/blog_001/</link>
-      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_001/</guid>
       <description>Рвав-рвав, с вами я, собака Смайл!
@@ -42,6 +42,20 @@
  Короткие заметки &amp;ndash; блок &amp;ldquo;Мелкие радости&amp;rdquo;, представляющий собой описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query.
  Короткие заметки &amp;ndash; блок &amp;ldquo;Собакенские будни&amp;rdquo;, представляющий собой пояснения по работе некоторых интересных функций DAX и Power Query.
  Тематические статьи &amp;ndash; описание кейсов, формируемых в процессе реализации конкретной задачи.</description>
+    </item>
+    
+    <item>
+      <title>Мелкие радости - управление раcчетом подитогов</title>
+      <link>https://kkadikin.ru/ru/blog/blog_015/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/blog_015/</guid>
+      <description>Рвав-рвав, сегодня я &amp;ndash; собака-управляка!
+Перед вами &amp;ndash; 10-я заметка из нашего цикла &amp;ldquo;Мелкие радости&amp;rdquo;, ниже мы рассмотрим такую задачу, как вывод разных составляющих при расчете подитогов в матрице, в зависимости от уровня.
+ Пример:
+В качестве исходных данных имеется набор, содержащий товарные позиции, а именно группу товаров, бренд и цену:
+Задача:
+Построить матрицу таким образом, чтобы в зависимости от уровня подитога выводился определенный расчет, например, обычная сумма или средняя.</description>
     </item>
     
     <item>

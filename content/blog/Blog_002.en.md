@@ -1,6 +1,6 @@
 ---
 title: List of publications
-date: 2021-07-13
+date: 2021-07-20
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -30,6 +30,8 @@ author: Smile
 **<li>** [Small pleasures - calendar period marking](https://kkadikin.ru/ru/blog/blog_012/ "Description of the methodology for marking up a calendar created using DAX for custom periods")
 
 **<li>** [Small pleasures - а two-line table header removing](https://kkadikin.ru/ru/blog/blog_014/ "The technique description for transforming data into a flat table")
+
+**<li>** [Small pleasures - Subtotals calculations control](https://kkadikin.ru/ru/blog/blog_015/ "The methodology description for separately calculating subtotals depending on the data level")
 
 **<li>** [Lifestyle - function Switch](https://kkadikin.ru/ru/blog/blog_008/ "An example of using the Switch function in 2 modes of operation")
 
