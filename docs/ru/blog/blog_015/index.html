@@ -195,8 +195,8 @@ VAR _Amount =
 RETURN
     SWITCH (
         TRUE (),
-        ISINSCOPE ( &#39;Таблица&#39;[Группа] ), _Average,
         ISINSCOPE ( &#39;Таблица&#39;[Цена] ), _Amount,
+        ISINSCOPE ( &#39;Таблица&#39;[Группа] ), _Average,
         FORMAT ( _Amount, &#34;## ### ₽&#34; )
     )</code></pre></div>
 <blockquote>
