@@ -187,18 +187,13 @@
 <p><img src="https://kkadikin.ru/images/blog/blog_015_screen_2.jpg" alt="blog_015_screen_2" /></p>
 
 <p><strong><li></strong> После этого необходимо написать меру, которая бы имела в себе проверку на уровень данных, а также указание на применение необходимых расчетов:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Расчет по уровням = 
-VAR _Average =
-    AVERAGE ( &#39;Таблица&#39;[Цена] )
-VAR _Amount =
-    SUM ( &#39;Таблица&#39;[Цена] )
-RETURN
-    SWITCH (
-        TRUE (),
-        ISINSCOPE ( &#39;Таблица&#39;[Цена] ), _Amount,
-        ISINSCOPE ( &#39;Таблица&#39;[Группа] ), _Average,
-        FORMAT ( _Amount, &#34;## ### ₽&#34; )
-    )</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Расчет по уровням =
+SWITCH (
+    TRUE (),
+    ISINSCOPE ( &#39;Таблица&#39;[Бренд] ), SUM ( &#39;Таблица&#39;[Цена] ),
+    ISINSCOPE ( &#39;Таблица&#39;[Группа] ), AVERAGE ( &#39;Таблица&#39;[Цена] ),
+    FORMAT ( SUM ( &#39;Таблица&#39;[Цена] ), &#34;## ### ₽&#34; )
+)</code></pre></div>
 <blockquote>
 <p><em>Рвав-рвав, в данной формуле идет раздельный расчет с проверкой уровня при помощи функции ISINSCOPE, а также добавлено форматирование общего итога (для демонстрации возможности отдельного управления).</em></p>
 
@@ -213,6 +208,8 @@ RETURN
 <p><em>Рвав-рвав, собственно, на этом все.</em></p>
 
 <p><em>Ваш Смайл</em></p>
+
+<p><em>P.S. Рвав-рвав, после публикации обнаружился один тонкий момент при тестировании на других данных (несколько строк одного бренда): важен порядок проверки уровней, а именно, считать надо «снизу-вверх), и отсутствие переменных, поскольку они не пересчитываются.</em></p>
 </blockquote>
 
             </div>
