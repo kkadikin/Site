@@ -219,9 +219,6 @@
 <p><img src="https://kkadikin.ru/images/blog/art_017_screen_5.jpg" alt="art_017_screen_5" /></p>
 
 <p><strong><li></strong> Для того, чтобы рассчитать длительность временного промежутка в формате &ldquo;день/время&rdquo;, при создании расчетного столбца можно применить следующую формулу:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Расчетный столбец (DAX) = 
-IF ( &#39;Таблица&#39;[Код валюты] = &#34;USD&#34;, &#34;Доллар США&#34;, &#34;Евро&#34; )</code></pre></div>
-<p><strong><li></strong> Ну и последнее, что было придумано &ndash; это, конечно же, мера:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Длительность (день/время) = 
 VAR _Difference = &#39;Перечень задач&#39;[Окончание задачи] - &#39;Перечень задач&#39;[Начало задачи]
 RETURN
