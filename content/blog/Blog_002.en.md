@@ -1,6 +1,6 @@
 ---
 title: List of publications
-date: 2021-07-20
+date: 2021-07-26
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -73,6 +73,8 @@ author: Smile
 **<li>** [Preparing forecast](https://kkadikin.ru/ru/blog/article_015/ "Describe how to create forecast & plan-fact analysis")
 
 **<li>** [Different ways to achieve the goal in MS Power BI](https://kkadikin.ru/ru/blog/article_016/ "Different ways demonstration to get the right calculation result in Power BI")
+
+**<li>** [Converting time values](https://kkadikin.ru/ru/blog/article_017/ "Description of the method for converting time values")
 
 
 **РАЗРАБОТКИ**
