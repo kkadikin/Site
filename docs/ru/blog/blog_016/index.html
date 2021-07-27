@@ -195,8 +195,7 @@ CALCULATE (
 <p><strong>Решение при помощи меры</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Дублирование (мера) = 
 CALCULATE (
-    COUNT ( &#39;Таблица&#39;[Товар] ),
-    ALLEXCEPT ( &#39;Таблица&#39;, &#39;Таблица&#39;[Товар], &#39;Таблица&#39;[Заказ] )
+    COUNT ( &#39;Таблица&#39;[Товар] )
 )</code></pre></div>
 <p><strong><li></strong> Проверка получившегося результата:</p>
 
