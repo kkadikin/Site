@@ -1,6 +1,6 @@
 ---
 title: List of publications
-date: 2021-07-26
+date: 2021-07-27
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -32,6 +32,8 @@ author: Smile
 **<li>** [Small pleasures - а two-line table header removing](https://kkadikin.ru/ru/blog/blog_014/ "The technique description for transforming data into a flat table")
 
 **<li>** [Small pleasures - Subtotals calculations control](https://kkadikin.ru/ru/blog/blog_015/ "The methodology description for separately calculating subtotals depending on the data level")
+
+**<li>** [Small pleasures - Duplicate values ​​detection](https://kkadikin.ru/ru/blog/blog_016/ "Duplicate values ​​detection using сalculating column or measure")
 
 **<li>** [Lifestyle - function Switch](https://kkadikin.ru/ru/blog/blog_008/ "An example of using the Switch function in 2 modes of operation")
 
