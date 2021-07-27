@@ -13,33 +13,33 @@ author: Smile
 
 **<li>** [Opening remarks](https://kkadikin.ru/ru/blog/blog_001/)
 
-**<li>** [Small pleasures - the nuances of selecting a value in a sliser](https://kkadikin.ru/ru/blog/blog_003/ "Uncovering the nuances of using the "Slicer" visual to display data")
+**<li>** [Small pleasures: The nuances of selecting a value in a sliser](https://kkadikin.ru/ru/blog/blog_003/ "Uncovering the nuances of using the "Slicer" visual to display data")
 
-**<li>** [Small pleasures - fixing the moment of updating the reporting](https://kkadikin.ru/ru/blog/blog_004/ "Displaying the update time of the report")
+**<li>** [Small pleasures: Fixing the moment of updating the reporting](https://kkadikin.ru/ru/blog/blog_004/ "Displaying the update time of the report")
 
-**<li>** [Small pleasures - visualization of Power Query parameters](https://kkadikin.ru/ru/blog/blog_005/ "Technique for rendering values entered by the user as Power Query parameters")
+**<li>** [Small pleasures: Visualization of Power Query parameters](https://kkadikin.ru/ru/blog/blog_005/ "Technique for rendering values entered by the user as Power Query parameters")
 
-**<li>** [Small pleasures - getting rid of Blank](https://kkadikin.ru/ru/blog/blog_006/ "Revealing the nuances of displaying information in the absence of values, taking into account the imposed filter")
+**<li>** [Small pleasures: Getting rid of Blank](https://kkadikin.ru/ru/blog/blog_006/ "Revealing the nuances of displaying information in the absence of values, taking into account the imposed filter")
 
-**<li>** [Small pleasures - quick measures, or note to housewives](https://kkadikin.ru/ru/blog/blog_007/ "Coverage of the mechanism for using the "Quick Measures" functionality using the example of creating a Cumulative Total measure")
+**<li>** [Small pleasures: Quick measures, or note to housewives](https://kkadikin.ru/ru/blog/blog_007/ "Coverage of the mechanism for using the "Quick Measures" functionality using the example of creating a Cumulative Total measure")
 
-**<li>** [Small pleasures - calculation of deviations](https://kkadikin.ru/ru/blog/blog_010/ "Methods for constructing data visualization for analyzing deviations of actual values from planned")
+**<li>** [Small pleasures: Calculation of deviations](https://kkadikin.ru/ru/blog/blog_010/ "Methods for constructing data visualization for analyzing deviations of actual values from planned")
 
-**<li>** [Small pleasures - large data export](https://kkadikin.ru/ru/blog/blog_011/ "Description of the method for unloading a data array of more than 150,000 lines into MS Excel")
+**<li>** [Small pleasures: Large data export](https://kkadikin.ru/ru/blog/blog_011/ "Description of the method for unloading a data array of more than 150,000 lines into MS Excel")
 
-**<li>** [Small pleasures - calendar period marking](https://kkadikin.ru/ru/blog/blog_012/ "Description of the methodology for marking up a calendar created using DAX for custom periods")
+**<li>** [Small pleasures: Calendar period marking](https://kkadikin.ru/ru/blog/blog_012/ "Description of the methodology for marking up a calendar created using DAX for custom periods")
 
-**<li>** [Small pleasures - а two-line table header removing](https://kkadikin.ru/ru/blog/blog_014/ "The technique description for transforming data into a flat table")
+**<li>** [Small pleasures: A two-line table header removing](https://kkadikin.ru/ru/blog/blog_014/ "The technique description for transforming data into a flat table")
 
-**<li>** [Small pleasures - Subtotals calculations control](https://kkadikin.ru/ru/blog/blog_015/ "The methodology description for separately calculating subtotals depending on the data level")
+**<li>** [Small pleasures: Subtotals calculations control](https://kkadikin.ru/ru/blog/blog_015/ "The methodology description for separately calculating subtotals depending on the data level")
 
-**<li>** [Small pleasures - Duplicate values ​​detection](https://kkadikin.ru/ru/blog/blog_016/ "Duplicate values ​​detection using сalculating column or measure")
+**<li>** [Small pleasures: Duplicate values ​​detection](https://kkadikin.ru/ru/blog/blog_016/ "Duplicate values ​​detection using сalculating column or measure")
 
-**<li>** [Lifestyle - function Switch](https://kkadikin.ru/ru/blog/blog_008/ "An example of using the Switch function in 2 modes of operation")
+**<li>** [Lifestyle: Function Switch](https://kkadikin.ru/ru/blog/blog_008/ "An example of using the Switch function in 2 modes of operation")
 
-**<li>** [Lifestyle - function Related & Lookupvalue](https://kkadikin.ru/ru/blog/blog_009/ "An example of using the Related and Lookupvalue functions")
+**<li>** [Lifestyle: Function Related & Lookupvalue](https://kkadikin.ru/ru/blog/blog_009/ "An example of using the Related and Lookupvalue functions")
 
-**<li>** [Lifestyle - function Userelationship](https://kkadikin.ru/ru/blog/blog_013/ "An example of using the Userelationship function")
+**<li>** [Lifestyle: Function Userelationship](https://kkadikin.ru/ru/blog/blog_013/ "An example of using the Userelationship function")
 
 
 **ТЕМАТИЧЕСКИЕ СТАТЬИ**
