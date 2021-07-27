@@ -1,6 +1,6 @@
 ---
 title: Список публикаций
-date: 2021-07-26
+date: 2021-07-27
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
