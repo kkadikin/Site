@@ -1,7 +1,7 @@
 ---
 title: Мелкие радости - обнаружение повторяющихся значений
 date: 2021-07-25
-image: images/blog/blog_016_foto.jpg
+image: images/blog/blog_015_foto.jpg
 author: Smile
 ---
 
