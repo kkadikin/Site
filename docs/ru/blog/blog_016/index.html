@@ -185,8 +185,8 @@
 <p><strong><li></strong> Для подсчета дублирующих позиций можно написать следующую формулу:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dax" data-lang="dax">Дублирование (столбец) = 
 CALCULATE (
-    COUNT ( [Товар] ),
-    FILTER ( &#39;Таблица&#39;, [Товар] = EARLIER ( &#39;Таблица&#39;[Товар] ) )
+    COUNT ( &#39;Таблица&#39;[Товар] ),
+    ALLEXCEPT ( &#39;Таблица&#39;, &#39;Таблица&#39;[Заказ], &#39;Таблица&#39;[Товар] )
 )</code></pre></div>
 <p><strong><li></strong> Проверка получившегося результата:</p>
 
