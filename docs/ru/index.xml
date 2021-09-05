@@ -7,28 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Статистика сайта</title>
-      <link>https://kkadikin.ru/ru/blog/dev_007/</link>
-      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
+      <title>Вступительное слово</title>
+      <link>https://kkadikin.ru/ru/blog/blog_001/</link>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/dev_007/</guid>
-      <description>Рвав-рвав, собака Смайл пробует на зуб Яндекс Метрику!
-Прежде, чем начать описание разработки, хочется выразить благодарность Александру Морину и Максиму Уварову за создание кастомного коннектора. Также хочется предупредить, что &amp;ldquo;разборки&amp;rdquo; с самой Яндекс Метрикой, потребовавшие с моей стороны немалых сил, остаются за рамками данной статьи.
- Отчет реализован при помощи DAX и Power Query.
-Разработка содержит 3 листа:
- Лист &amp;ldquo;Просмотры&amp;rdquo; &amp;ndash; титульный лист отчета, содержащий данные о количествах просмотра определенного тематического контента.</description>
+      <guid>https://kkadikin.ru/ru/blog/blog_001/</guid>
+      <description>Рвав-рвав, с вами я, собака Смайл!
+Есть прекрасная новость: мы с хозяином продолжаем публиковать контент.
+ Раздел Блог будет содержать следующую информацию:
+ Короткие заметки &amp;ndash; блок &amp;ldquo;Мелкие радости&amp;rdquo;, представляющий собой описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query.
+ Короткие заметки &amp;ndash; блок &amp;ldquo;Собакенские будни&amp;rdquo;, представляющий собой пояснения по работе некоторых интересных функций DAX и Power Query.
+ Тематические статьи &amp;ndash; описание кейсов, формируемых в процессе реализации конкретной задачи.</description>
     </item>
     
     <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -45,17 +46,16 @@
     </item>
     
     <item>
-      <title>Вступительное слово</title>
-      <link>https://kkadikin.ru/ru/blog/blog_001/</link>
-      <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
+      <title>Статистика веб-сайта</title>
+      <link>https://kkadikin.ru/ru/blog/dev_007/</link>
+      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://kkadikin.ru/ru/blog/blog_001/</guid>
-      <description>Рвав-рвав, с вами я, собака Смайл!
-Есть прекрасная новость: мы с хозяином продолжаем публиковать контент.
- Раздел Блог будет содержать следующую информацию:
- Короткие заметки &amp;ndash; блок &amp;ldquo;Мелкие радости&amp;rdquo;, представляющий собой описание всяких интересных фишек, позволяющих творить посредством функционала DAX и Power Query.
- Короткие заметки &amp;ndash; блок &amp;ldquo;Собакенские будни&amp;rdquo;, представляющий собой пояснения по работе некоторых интересных функций DAX и Power Query.
- Тематические статьи &amp;ndash; описание кейсов, формируемых в процессе реализации конкретной задачи.</description>
+      <guid>https://kkadikin.ru/ru/blog/dev_007/</guid>
+      <description>Рвав-рвав, собака Смайл пробует на зуб Яндекс Метрику!
+Прежде, чем начать описание разработки, хочется выразить благодарность Александру Морину и Максиму Уварову за создание кастомного коннектора. Также хочется предупредить, что &amp;ldquo;разборки&amp;rdquo; с самой Яндекс Метрикой, потребовавшие с моей стороны немалых сил, остаются за рамками данной статьи.
+ Отчет реализован при помощи DAX и Power Query.
+Разработка содержит 3 листа:
+ Лист &amp;ldquo;Просмотры&amp;rdquo; &amp;ndash; титульный лист отчета, содержащий данные о количествах просмотра определенного тематического контента.</description>
     </item>
     
     <item>

@@ -1,6 +1,6 @@
 ---
 title: List of publications
-date: 2021-07-27
+date: 2021-09-05
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -9,7 +9,7 @@ author: Smile
 >
 > *This message contains a general list of publications, which will allow you to quickly find the content of interest.*
  
-**БЛОГ**
+**BLOG MESSAGES**
 
 **<li>** [Opening remarks](https://kkadikin.ru/ru/blog/blog_001/)
 
@@ -42,7 +42,7 @@ author: Smile
 **<li>** [Lifestyle: Function Userelationship](https://kkadikin.ru/ru/blog/blog_013/ "An example of using the Userelationship function")
 
 
-**ТЕМАТИЧЕСКИЕ СТАТЬИ**
+**FEATURE ARTICLES**
 
 **<li>** [Creating a calendar using DAX](https://kkadikin.ru/ru/blog/article_001/ "Describing several ways to create a calendar using DAX")
 
@@ -79,7 +79,7 @@ author: Smile
 **<li>** [Converting time values](https://kkadikin.ru/ru/blog/article_017/ "Description of the method for converting time values")
 
 
-**РАЗРАБОТКИ**
+**OWN DEVELOPMENTS**
 
 **<li>** [Production schedule](https://kkadikin.ru/ru/blog/dev_001/ "Company production schedule")
 
@@ -94,6 +94,8 @@ author: Smile
 **<li>** [Curriculum vitae report](https://kkadikin.ru/ru/blog/dev_005/ "A report intended for internal use by the HR department of the company, containing basic information about the employee, as well as his resume, the form of which is built using standard Power BI functionality")
 
 **<li>** [Tasks assignment for implementers](https://kkadikin.ru/ru/blog/dev_006/ "Creating Gantt chart using standard functional Power BI, such as "Matrix" visual")
+
+**<li>** [Wedite statistics](https://kkadikin.ru/ru/blog/dev_007/ "Creating Power BI report of website statistics based on Yandex Metrika")
 
 > *Sincerely yours,*
 >
