@@ -1,5 +1,5 @@
 ---
-title: Мелкие радости - управление раcчетом подитогов
+title: Мелкие радости - управление раcчетом подытогов
 date: 2021-07-17
 image: images/blog/blog_015_foto.jpg
 author: Smile
