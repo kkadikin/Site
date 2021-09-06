@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <lastBuildDate>Sun, 05 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kkadikin.ru/ru/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Вступительное слово</title>
       <link>https://kkadikin.ru/ru/blog/blog_001/</link>
-      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_001/</guid>
       <description>Рвав-рвав, с вами я, собака Смайл!
@@ -29,7 +29,7 @@
     <item>
       <title>Список публикаций</title>
       <link>https://kkadikin.ru/ru/blog/blog_002/</link>
-      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/blog_002/</guid>
       <description>Рвав-рвав, доброго времени суток!
@@ -43,6 +43,17 @@
  Мелкие радости: быстрые меры, или хозяйкам на заметку
  Мелкие радости: расчет отклонений
  Мелкие радости: выгрузка большого объема данных</description>
+    </item>
+    
+    <item>
+      <title>Измерение расстояния по координатам</title>
+      <link>https://kkadikin.ru/ru/blog/article_018/</link>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkadikin.ru/ru/blog/article_018/</guid>
+      <description>Рвав-рвав, собака Смайл нынче землемер!
+Собака Смайл все глубже погружается в процесс создания пользовательских функций, а поскольку теория без практики мертва, стараемся сразу подыскать им практическое применение. Поэтому сегодня мы рассмотрим такую задачу, как определение расстояния по координатам.
+Вообще надо сказать, что, пока обдумывал материал в голове, что отделаюсь &amp;ldquo;легким испугом&amp;rdquo;, типа: ну вот будет у меня 1-я точка как 0, и вторая как 25, чего не посчитать-то? А вот фига, все оказалось куда интереснее.</description>
     </item>
     
     <item>
@@ -78,7 +89,8 @@
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kkadikin.ru/ru/blog/article_017/</guid>
-      <description>Сегодня в программе &amp;ldquo;адская смесь&amp;rdquo;, а именно: пользовательские функции Power Query (пытаемся развиваться в новом направлении), редактирование кода Power Query посредством расширенного редактора, ну и DAX, само собой.
+      <description>Рвав-рвав, собака Смайл бренчит железками!
+Сегодня в программе &amp;ldquo;адская смесь&amp;rdquo;, а именно: пользовательские функции Power Query (пытаемся развиваться в новом направлении), редактирование кода Power Query посредством расширенного редактора, ну и DAX, само собой.
  Пример:
  Таблица &amp;ldquo;Перечень задач&amp;rdquo; содержит одну строку с названием задачи, а также датах ее начала и окончания в кодировке &amp;ldquo;Unix-time&amp;rdquo;:
 Задача:

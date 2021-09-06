@@ -1,6 +1,6 @@
 ---
 title: List of publications
-date: 2021-09-05
+date: 2021-09-06
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
@@ -77,6 +77,8 @@ author: Smile
 **<li>** [Different ways to achieve the goal in MS Power BI](https://kkadikin.ru/ru/blog/article_016/ "Different ways demonstration to get the right calculation result in Power BI")
 
 **<li>** [Converting time values](https://kkadikin.ru/ru/blog/article_017/ "Description of the method for converting time values")
+
+**<li>** [Measuring the distance by coordinates](https://kkadikin.ru/ru/blog/article_018/ "The methodology description for the mechanism implementation for calculating the distance between 2 points of the route")
 
 
 **OWN DEVELOPMENTS**

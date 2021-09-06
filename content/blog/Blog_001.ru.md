@@ -1,6 +1,6 @@
 ---
 title: Вступительное слово
-date: 2021-09-05
+date: 2021-09-06
 image: images/blog/blog_001_foto.jpg
 author: Smile
 ---
