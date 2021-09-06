@@ -1,6 +1,6 @@
 ---
 title: Измерение расстояния по координатам
-date: 2021-09-06
+date: 2021-09-05
 image: images/blog/art_018_foto.jpg
 author: Smile
 ---
