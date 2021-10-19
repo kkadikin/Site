@@ -97,7 +97,7 @@ author: Smile
 
 **<li>** [Tasks assignment for implementers](https://kkadikin.ru/ru/blog/dev_006/ "Creating Gantt chart using standard functional Power BI, such as "Matrix" visual")
 
-**<li>** [Wedite statistics](https://kkadikin.ru/ru/blog/dev_007/ "Creating Power BI report of website statistics based on Yandex Metrika")
+**<li>** [Wedsite statistics](https://kkadikin.ru/ru/blog/dev_007/ "Creating Power BI report of website statistics based on Yandex Metrika")
 
 > *Sincerely yours,*
 >

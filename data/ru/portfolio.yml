@@ -15,7 +15,7 @@ filtermenu    :
 
 item   :
   - title     : Производственный календарь
-    image     : images/portfolio/portfolio-1.jpg
+    image     : images/portfolio/portfolio_01.png
     category  : developments
 
   - title     : График работы сотрудников
