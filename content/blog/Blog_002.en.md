@@ -1,6 +1,6 @@
 ---
 title: List of publications
-date: 2021-09-06
+date: 2021-10-19
 image: images/blog/blog_002_foto.jpg
 author: Smile
 ---
