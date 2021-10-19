@@ -80,6 +80,8 @@ author: Smile
 
 **<li>** [Measuring the distance by coordinates](https://kkadikin.ru/ru/blog/article_018/ "The methodology description for the mechanism implementation for calculating the distance between 2 points of the route")
 
+**<li>** [The standarts of reports development](https://kkadikin.ru/ru/blog/article_019/ "The personal standarts of reports development by Dog Smile")
+
 
 **OWN DEVELOPMENTS**
 
