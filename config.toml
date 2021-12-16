@@ -59,7 +59,7 @@ DefaultContentLanguage = "ru"
     # KK 01.06.2019 Убрано по комментариям, добавлю что-то позже
     #   description_3       = "К сожалению, основной контент сайта будет доступен на русском языке, так как с английским языком имеются проблемы :-)"
         button              = true
-        btnText             = "Мы переехали"
+        btnText             = "Мы переехали :-)"
         btnURL              = "https://kadikin.pro"
         videoThumb          = "/images/smile_main.png"
         videoURL            = "/images/smile_main_video_rus.mp4"
